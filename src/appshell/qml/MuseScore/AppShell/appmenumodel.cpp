@@ -212,7 +212,6 @@ MenuItem* AppMenuModel::makeFileMenu()
         makeMenuItem("file-import-audio-to-score"),
         makeMenuItem("file-export"),
         makeMenuItem("file-export-pianomania"),
-        makeMenuItem("file-export-pianomania-all"),
         makeSeparator(),
         makeMenuItem("project-properties"),
         makeMenuItem("parts", TranslatableString("action", "Parts…")),

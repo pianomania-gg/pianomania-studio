@@ -111,13 +111,6 @@ const UiActionList ProjectUiActions::m_actions = {
              TranslatableString("action", "Pianomania Export…"),
              IconCode::Code::SHARE_FILE
              ),
-    UiAction("file-export-pianomania-all",
-             mu::context::UiCtxAny,
-             mu::context::CTX_ANY,
-             TranslatableString("action", "Pianomania Export All…"),
-             TranslatableString("action", "Pianomania Export All…"),
-             IconCode::Code::SHARE_FILE
-             ),
     UiAction("file-import-pdf",
              mu::context::UiCtxAny,
              mu::context::CTX_ANY,
