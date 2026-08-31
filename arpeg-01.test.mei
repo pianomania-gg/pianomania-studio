@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:pm="http://pianomania.gg/ns/mei" meiversion="5.1+basic">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Untitled score</title>
+            <respStmt>
+               <persName role="composer">Composer / arranger</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2023-09-15T16:04:09" />
+         </pubStmt>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef pm:timesig-xy-top="0.672,6.553" pm:timesig-xy="0.672,6.553" pm:timesig-xy-bottom="0.672,6.364">
+                  <pgHead>
+                     <rend halign="center" valign="top">
+                        <rend type="title" fontsize="x-large" pm:xy="5.000,6.794">Untitled score</rend>
+                        <lb />
+                        <rend type="subtitle" fontsize="large" pm:xy="5.000,6.442">Subtitle</rend>
+                     </rend>
+                     <rend halign="right" valign="bottom">
+                        <rend type="composer" pm:xy="8.753,6.744">Composer / arranger</rend>
+                     </rend>
+                  </pgHead>
+                  <staffGrp>
+                     <staffGrp bar.thru="true" symbol="brace">
+                        <label>Piano</label>
+                        <labelAbbr>Pno.</labelAbbr>
+                        <instrDef midi.instrnum="0" />
+                        <staffDef n="1" lines="5" meter.count="4" meter.unit="4" pm:timesig-xy="0.672,6.553">
+                           <clef shape="G" line="2" />
+                        </staffDef>
+                        <staffDef n="2" lines="5" meter.count="4" meter.unit="4" pm:timesig-xy="0.672,6.364">
+                           <clef shape="F" line="4" />
+                        </staffDef>
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="s1">
+                  <pb />
+                  <sb pm:top-left-x="0.591" pm:top-left-y="6.909" pm:bottom-right-x="9.409" pm:bottom-right-y="6.679" />
+                  <sb type="mscore-manual" pm:top-left-x="0.591" pm:top-left-y="6.553" pm:bottom-right-x="9.409" pm:bottom-right-y="6.292" />
+                  <measure xml:id="mqwzpzv" n="1" pm:top-left-x="0.591" pm:top-left-y="6.571" pm:bottom-right-x="0.942" pm:bottom-right-y="6.274">
+                     <staff xml:id="m1s1" n="1">
+                        <layer xml:id="m1s1l1" n="1">
+                           <chord xml:id="c1eb9d0y" dur="2" stem.dir="up" stem.len="5.25" beat="1.0000" pm:xy="0.750,6.553">
+                              <note xml:id="n1thvjy5" pname="e" oct="4" stem.dir="up" beat="1.0000" pm:xy="0.750,6.481" idx="0" />
+                              <note xml:id="nfee3zr" pname="a" oct="4" stem.dir="up" beat="1.0000" pm:xy="0.750,6.508" idx="0" />
+                              <note xml:id="nx7gvp1" pname="c" oct="5" stem.dir="up" beat="1.0000" pm:xy="0.750,6.526" idx="0" />
+                           </chord>
+                           <chord xml:id="c9xix6d" dur="2" stem.dir="up" stem.len="5.25" beat="3.0000" pm:xy="0.845,6.553">
+                              <note xml:id="n11rniuo" pname="e" oct="4" stem.dir="up" beat="3.0000" pm:xy="0.845,6.481" idx="1" />
+                              <note xml:id="n6oq8io" pname="a" oct="4" stem.dir="up" beat="3.0000" pm:xy="0.845,6.508" idx="1" />
+                              <note xml:id="n1yjrjch" pname="c" oct="5" stem.dir="up" beat="3.0000" pm:xy="0.845,6.526" idx="1" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff xml:id="m7s1" n="2">
+                        <layer xml:id="m7s1l1" n="1">
+                           <chord xml:id="c1y10f2v" dur="2" stem.dir="down" stem.len="6" beat="1.0000" pm:xy="0.750,6.364">
+                              <note xml:id="n1sabmf1" pname="a" oct="2" stem.dir="down" beat="1.0000" pm:xy="0.750,6.301" idx="0" />
+                              <note xml:id="n1th4flc" pname="e" oct="3" stem.dir="down" beat="1.0000" pm:xy="0.750,6.337" idx="0" />
+                              <note xml:id="n1snfmld" pname="a" oct="3" stem.dir="down" beat="1.0000" pm:xy="0.750,6.364" idx="0" />
+                           </chord>
+                           <chord xml:id="c907san" dur="2" stem.dir="down" stem.len="6" beat="3.0000" pm:xy="0.845,6.364">
+                              <note xml:id="n1a4q39h" pname="a" oct="2" stem.dir="down" beat="3.0000" pm:xy="0.845,6.301" idx="1" />
+                              <note xml:id="n11gzfo4" pname="e" oct="3" stem.dir="down" beat="3.0000" pm:xy="0.845,6.337" idx="1" />
+                              <note xml:id="nh6ywe8" pname="a" oct="3" stem.dir="down" beat="3.0000" pm:xy="0.845,6.364" idx="1" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <arpeg xml:id="afdq3mv" startid="#c1eb9d0y" />
+                     <arpeg xml:id="a1qj38ny" order="up" startid="#c9xix6d" arrow="true" />
+                     <arpeg xml:id="a1phbcbl" startid="#c1y10f2v" />
+                     <arpeg xml:id="a1pn1kv2" order="down" startid="#c907san" arrow="true" />
+                  </measure>
+                  <measure xml:id="m1c9d7lb" right="end" n="2" pm:top-left-x="0.942" pm:top-left-y="6.571" pm:bottom-right-x="1.248" pm:bottom-right-y="6.274">
+                     <staff xml:id="m14s1" n="1">
+                        <layer xml:id="m14s1l1" n="1">
+                           <chord xml:id="cvur0u5" dur="4" stem.dir="up" stem.len="5.25" beat="1.0000" pm:xy="0.973,6.553">
+                              <note xml:id="n1vefi8" pname="e" oct="4" stem.dir="up" beat="1.0000" pm:xy="0.973,6.481" idx="2" />
+                              <note xml:id="n1e77770" pname="a" oct="4" stem.dir="up" beat="1.0000" pm:xy="0.973,6.508" idx="2" />
+                              <note xml:id="n1jaenk4" pname="c" oct="5" stem.dir="up" beat="1.0000" pm:xy="0.973,6.526" idx="2" />
+                           </chord>
+                           <chord xml:id="c10hvdyu" dur="4" stem.dir="up" stem.len="5.25" beat="2.0000" pm:xy="1.039,6.553">
+                              <note xml:id="n10degku" pname="e" oct="4" stem.dir="up" beat="2.0000" pm:xy="1.039,6.481" idx="3" />
+                              <note xml:id="n19cfjj7" pname="a" oct="4" stem.dir="up" beat="2.0000" pm:xy="1.039,6.508" idx="3" />
+                              <note xml:id="nnnnj7i" pname="c" oct="5" stem.dir="up" beat="2.0000" pm:xy="1.039,6.526" idx="3" />
+                           </chord>
+                           <chord xml:id="cst9ojd" dur="4" stem.dir="up" stem.len="5.25" beat="3.0000" pm:xy="1.102,6.553">
+                              <note xml:id="n97d699" pname="e" oct="4" stem.dir="up" beat="3.0000" pm:xy="1.102,6.481" idx="4" />
+                              <note xml:id="n1zn0ih" pname="a" oct="4" stem.dir="up" beat="3.0000" pm:xy="1.102,6.508" idx="4" />
+                              <note xml:id="n1gn2eey" pname="c" oct="5" stem.dir="up" beat="3.0000" pm:xy="1.102,6.526" idx="4" />
+                           </chord>
+                           <chord xml:id="c19aaoo2" dur="4" stem.dir="up" stem.len="5.25" beat="4.0000" pm:xy="1.165,6.553">
+                              <note xml:id="n13h8a2z" pname="e" oct="4" stem.dir="up" beat="4.0000" pm:xy="1.165,6.481" idx="5" />
+                              <note xml:id="n1x2eges" pname="a" oct="4" stem.dir="up" beat="4.0000" pm:xy="1.165,6.508" idx="5" />
+                              <note xml:id="n12f5xp6" pname="c" oct="5" stem.dir="up" beat="4.0000" pm:xy="1.165,6.526" idx="5" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff xml:id="m26s1" n="2">
+                        <layer xml:id="m26s1l1" n="1">
+                           <chord xml:id="cb2xb2y" dur="4" stem.dir="down" stem.len="6" beat="1.0000" pm:xy="0.973,6.364">
+                              <note xml:id="n1ev333h" pname="a" oct="2" stem.dir="down" beat="1.0000" pm:xy="0.973,6.301" idx="2" />
+                              <note xml:id="n14zdr16" pname="e" oct="3" stem.dir="down" beat="1.0000" pm:xy="0.973,6.337" idx="2" />
+                              <note xml:id="nvgsumh" pname="a" oct="3" stem.dir="down" beat="1.0000" pm:xy="0.973,6.364" idx="2" />
+                           </chord>
+                           <chord xml:id="c15vxuk7" dur="4" stem.dir="down" stem.len="6" beat="2.0000" pm:xy="1.039,6.364">
+                              <note xml:id="n15rigdf" pname="a" oct="2" stem.dir="down" beat="2.0000" pm:xy="1.039,6.301" idx="3" />
+                              <note xml:id="n1qg14t6" pname="e" oct="3" stem.dir="down" beat="2.0000" pm:xy="1.039,6.337" idx="3" />
+                              <note xml:id="n1vkeycq" pname="a" oct="3" stem.dir="down" beat="2.0000" pm:xy="1.039,6.364" idx="3" />
+                           </chord>
+                           <chord xml:id="c1uz77nb" dur="4" stem.dir="down" stem.len="6" beat="3.0000" pm:xy="1.102,6.364">
+                              <note xml:id="ncjpewv" pname="a" oct="2" stem.dir="down" beat="3.0000" pm:xy="1.102,6.301" idx="4" />
+                              <note xml:id="n10sz5ie" pname="e" oct="3" stem.dir="down" beat="3.0000" pm:xy="1.102,6.337" idx="4" />
+                              <note xml:id="n11dtxko" pname="a" oct="3" stem.dir="down" beat="3.0000" pm:xy="1.102,6.364" idx="4" />
+                           </chord>
+                           <chord xml:id="cbnsr28" dur="4" stem.dir="down" stem.len="6" beat="4.0000" pm:xy="1.165,6.364">
+                              <note xml:id="nmi3ri3" pname="a" oct="2" stem.dir="down" beat="4.0000" pm:xy="1.165,6.301" idx="5" />
+                              <note xml:id="n7lpixn" pname="e" oct="3" stem.dir="down" beat="4.0000" pm:xy="1.165,6.337" idx="5" />
+                              <note xml:id="nzfn62o" pname="a" oct="3" stem.dir="down" beat="4.0000" pm:xy="1.165,6.364" idx="5" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <arpeg xml:id="a1guep6g" startid="#cvur0u5" plist="#cb2xb2y" />
+                     <arpeg xml:id="a1ow2vem" order="up" startid="#c10hvdyu" arrow="true" plist="#c15vxuk7" />
+                     <arpeg xml:id="a16bovme" order="nonarp" startid="#cst9ojd" plist="#c1uz77nb" />
+                     <arpeg xml:id="aso4y6f" order="nonarp" startid="#c19aaoo2" />
+                     <arpeg xml:id="ata9nc8" order="nonarp" startid="#cbnsr28" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:pm="http://pianomania.gg/ns/mei" meiversion="5.1+basic">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title />
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2023-08-11T14:54:58" />
+         </pubStmt>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef pm:timesig-xy-top="0.667,6.496" pm:timesig-xy="0.667,6.496">
+                  <pgHead>
+                     <rend halign="center" valign="top">
+                        <rend type="title" fontsize="x-large" pm:xy="5.000,6.766">Tuplet and beam example</rend>
+                     </rend>
+                  </pgHead>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" meter.count="4" meter.unit="4" pm:timesig-xy="0.667,6.496">
+                        <clef shape="G" line="2" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="s1">
+                  <pb />
+                  <sb pm:top-left-x="0.591" pm:top-left-y="6.909" pm:bottom-right-x="9.409" pm:bottom-right-y="6.622" />
+                  <sb type="mscore-manual" pm:top-left-x="0.591" pm:top-left-y="6.496" pm:bottom-right-x="9.409" pm:bottom-right-y="6.424" />
+                  <measure xml:id="mzwx4m1" n="1" pm:top-left-x="0.591" pm:top-left-y="6.514" pm:bottom-right-x="1.045" pm:bottom-right-y="6.406">
+                     <staff xml:id="m1s1" n="1">
+                        <layer xml:id="m1s1l1" n="1">
+                           <tuplet xml:id="tu0b3ah" num="3" numbase="2" bracket.place="below" num.place="below" pm:tuplet-geometry-version="1" pm:tuplet-placement="below" pm:tuplet-number-visible="true" pm:tuplet-bracket-visible="true" pm:tuplet-number-center="0.864,6.365" pm:tuplet-bracket-segments="0.727,6.367,0.826,6.366;0.902,6.365,1.002,6.363" pm:tuplet-bracket-hooks="0.727,6.381,0.727,6.367;1.002,6.363,1.002,6.376">
+                              <beam>
+                                 <note xml:id="n1ih09hv" dur="8" pname="d" oct="5" stem.dir="down" stem.len="3.25" beat="1.0000" pm:xy="0.735,6.478" idx="0" />
+                                 <note xml:id="n1h0g4jq" dur="8" pname="d" oct="5" stem.dir="down" stem.len="3.25" beat="1.3333" pm:xy="0.768,6.478" idx="1" />
+                              </beam>
+                              <beam>
+                                 <note xml:id="nomedtn" type="mscore-beam-begin" dur="8" pname="d" oct="5" stem.dir="down" stem.len="3.25" beat="1.6667" pm:xy="0.801,6.478" idx="2" />
+                                 <note xml:id="ntmb6i8" dur="8" pname="d" oct="5" stem.dir="down" stem.len="3.25" beat="2.0000" pm:xy="0.834,6.478" idx="3" />
+                              </beam>
+                              <rest xml:id="r1rl7yax" dur="2" beat="2.3333" yOffset="2.00" hand="left" pm:xy="0.868,6.460" />
+                              <note xml:id="n1nooisc" dur="4" pname="d" oct="5" stem.dir="down" stem.len="3.5" beat="3.6667" pm:xy="0.942,6.478" idx="4" />
+                              <note xml:id="n5ek7si" dur="4" pname="d" oct="5" stem.dir="down" stem.len="3.5" beat="4.3333" pm:xy="0.992,6.478" idx="5" />
+                           </tuplet>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="mivq3wj" n="2" pm:top-left-x="1.045" pm:top-left-y="6.514" pm:bottom-right-x="1.711" pm:bottom-right-y="6.406">
+                     <staff xml:id="m8s1" n="1">
+                        <layer xml:id="m8s1l1" n="1">
+                           <beam>
+                              <tuplet xml:id="t1i8f9zy" num="3" numbase="2" bracket.place="below" num.place="below" pm:tuplet-geometry-version="1" pm:tuplet-placement="below" pm:tuplet-number-visible="true" pm:tuplet-bracket-visible="false" pm:tuplet-number-center="1.098,6.352">
+                                 <note xml:id="n1y90lg5" dur="16" pname="c" oct="5" stem.dir="down" stem.len="3.5" beat="1.0000" pm:xy="1.068,6.469" idx="0" />
+                                 <note xml:id="nh6gv13" dur="16" pname="d" oct="5" stem.dir="down" stem.len="4" beat="1.1667" pm:xy="1.098,6.478" idx="6" />
+                                 <note xml:id="nujwqgo" dur="16" pname="c" oct="5" stem.dir="down" stem.len="3.5" beat="1.3333" pm:xy="1.127,6.469" idx="1" />
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet xml:id="t27ot0c" num="3" numbase="2" bracket.place="below" num.place="below" pm:tuplet-geometry-version="1" pm:tuplet-placement="below" pm:tuplet-number-visible="true" pm:tuplet-bracket-visible="false" pm:tuplet-number-center="1.187,6.365">
+                                 <note xml:id="nh0ehye" type="mscore-beam-begin" dur="16" pname="d" oct="5" stem.dir="down" stem.len="3.25" beat="1.5000" pm:xy="1.157,6.478" idx="7" />
+                                 <note xml:id="n1lzg8vg" dur="16" pname="e" oct="5" stem.dir="down" stem.len="3.75" beat="1.6667" pm:xy="1.187,6.487" idx="0" />
+                                 <note xml:id="n7t7j93" dur="16" pname="d" oct="5" stem.dir="down" stem.len="3.25" beat="1.8333" pm:xy="1.217,6.478" idx="8" />
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet xml:id="t1rnqp1h" num="3" numbase="2" bracket.place="below" num.place="below" pm:tuplet-geometry-version="1" pm:tuplet-placement="below" pm:tuplet-number-visible="true" pm:tuplet-bracket-visible="false" pm:tuplet-number-center="1.276,6.352">
+                                 <note xml:id="nesu0lc" dur="16" pname="c" oct="5" stem.dir="down" stem.len="3.5" beat="2.0000" pm:xy="1.246,6.469" idx="2" />
+                                 <note xml:id="n10v9nid" dur="16" pname="d" oct="5" stem.dir="down" stem.len="4" beat="2.1667" pm:xy="1.276,6.478" idx="9" />
+                                 <note xml:id="nxf38n7" dur="16" pname="c" oct="5" stem.dir="down" stem.len="3.5" beat="2.3333" pm:xy="1.306,6.469" idx="3" />
+                              </tuplet>
+                              <tuplet xml:id="t1tkr7su" num="3" numbase="2" bracket.place="below" num.place="below" pm:tuplet-geometry-version="1" pm:tuplet-placement="below" pm:tuplet-number-visible="true" pm:tuplet-bracket-visible="false" pm:tuplet-number-center="1.365,6.352">
+                                 <note xml:id="n1ee7sk6" dur="16" pname="d" oct="5" stem.dir="down" stem.len="4" beat="2.5000" pm:xy="1.336,6.478" idx="10" />
+                                 <note xml:id="n2s274q" dur="16" pname="e" oct="5" stem.dir="down" stem.len="4.5" beat="2.6667" pm:xy="1.365,6.487" idx="1" />
+                                 <note xml:id="nta6nhs" dur="16" pname="d" oct="5" stem.dir="down" stem.len="4" beat="2.8333" pm:xy="1.395,6.478" idx="11" />
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet xml:id="tmc629v" num="3" numbase="2" bracket.place="below" num.place="below" pm:tuplet-geometry-version="1" pm:tuplet-placement="below" pm:tuplet-number-visible="true" pm:tuplet-bracket-visible="false" pm:tuplet-number-center="1.454,6.367">
+                                 <note xml:id="nirkgvu" dur="16" pname="e" oct="5" stem.dir="down" stem.len="3.5025" beat="3.0000" pm:xy="1.425,6.487" idx="2" />
+                                 <note xml:id="n1gi5yqi" dur="16" pname="f" oct="5" stem.dir="down" stem.len="4.0842" beat="3.1667" pm:xy="1.454,6.496" idx="0" />
+                                 <note xml:id="n1r78f48" dur="16" pname="e" oct="5" stem.dir="down" stem.len="3.6658" beat="3.3333" pm:xy="1.484,6.487" idx="3" />
+                              </tuplet>
+                              <note xml:id="n18oi5aw" dur="8" pname="d" oct="5" stem.dir="down" stem.len="3.2475" beat="3.5000" pm:xy="1.514,6.478" idx="12" />
+                           </beam>
+                           <beam>
+                              <note xml:id="ni8h3fr" dur="8" pname="e" oct="5" stem.dir="down" stem.len="3.7478" beat="4.0000" pm:xy="1.556,6.487" idx="4" />
+                              <tuplet xml:id="tkem6ue" num="3" numbase="2" bracket.place="below" num.place="below" pm:tuplet-geometry-version="1" pm:tuplet-placement="below" pm:tuplet-number-visible="true" pm:tuplet-bracket-visible="false" pm:tuplet-number-center="1.628,6.366">
+                                 <note xml:id="n137cs0x" dur="16" pname="f" oct="5" stem.dir="down" stem.len="4.1461" beat="4.5000" pm:xy="1.598,6.496" idx="1" />
+                                 <note xml:id="ng1jve7" dur="16" pname="g" oct="5" stem.dir="down" stem.len="4.5742" beat="4.6667" pm:xy="1.628,6.505" idx="0" />
+                                 <note xml:id="n3ct119" dur="16" pname="f" oct="5" stem.dir="down" stem.len="4.0022" beat="4.8333" pm:xy="1.657,6.496" idx="2" />
+                              </tuplet>
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="mp2axse" right="end" n="3" pm:top-left-x="1.711" pm:top-left-y="6.514" pm:bottom-right-x="2.219" pm:bottom-right-y="6.406">
+                     <staff xml:id="m29s1" n="1">
+                        <layer xml:id="m29s1l1" n="1">
+                           <beam>
+                              <note xml:id="n6i24a2" dur="8" pname="e" oct="5" stem.dir="down" stem.len="3.5031" beat="1.0000" pm:xy="1.734,6.487" idx="5" />
+                              <note xml:id="nufkt1h" dur="16" pname="d" oct="5" stem.dir="down" stem.len="3.1459" beat="1.5000" pm:xy="1.776,6.478" idx="13" />
+                              <note xml:id="nicc5lb" dur="16" pname="d" oct="5" stem.dir="down" stem.len="3.2469" beat="1.7500" pm:xy="1.805,6.478" idx="14" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n18le3no" dur="8" pname="c" oct="5" stem.dir="down" stem.len="3.251" beat="2.0000" pm:xy="1.835,6.469" idx="4" />
+                              <tuplet xml:id="t1x4q6ks" num="3" numbase="2" bracket.place="below" num.place="below" pm:tuplet-geometry-version="1" pm:tuplet-placement="below" pm:tuplet-number-visible="true" pm:tuplet-bracket-visible="true" pm:tuplet-number-center="1.908,6.354" pm:tuplet-bracket-segments="1.863,6.355,1.869,6.355;1.946,6.353,1.953,6.353" pm:tuplet-bracket-hooks="1.863,6.368,1.863,6.355;1.953,6.353,1.953,6.367">
+                                 <note xml:id="ndzoh9k" dur="16" pname="d" oct="5" stem.dir="down" stem.len="3.7983" beat="2.5000" pm:xy="1.877,6.478" idx="15" />
+                                 <note xml:id="nqo5pl5" dur="16" pname="e" oct="5" stem.dir="down" stem.len="4.3317" beat="2.6667" pm:xy="1.907,6.487" idx="6" />
+                                 <note xml:id="n3esi7p" dur="16" pname="d" oct="5" stem.dir="down" stem.len="3.8652" beat="2.8333" pm:xy="1.936,6.478" idx="16" />
+                              </tuplet>
+                              <tuplet xml:id="t1xtmgp8" num="3" numbase="2" bracket.place="below" num.place="below" pm:tuplet-geometry-version="1" pm:tuplet-placement="below" pm:tuplet-number-visible="true" pm:tuplet-bracket-visible="true" pm:tuplet-number-center="1.997,6.352" pm:tuplet-bracket-segments="1.952,6.353,1.959,6.353;2.035,6.352,2.042,6.352" pm:tuplet-bracket-hooks="1.952,6.366,1.952,6.353;2.042,6.352,2.042,6.365">
+                                 <note xml:id="n13khj6u" type="mscore-beam-mid" dur="16" pname="c" oct="5" stem.dir="down" stem.len="3.3986" beat="3.0000" pm:xy="1.966,6.469" idx="5" />
+                                 <note xml:id="n2di44i" dur="16" pname="d" oct="5" stem.dir="down" stem.len="3.9321" beat="3.1667" pm:xy="1.996,6.478" idx="17" />
+                                 <note xml:id="nqvhjhc" dur="16" pname="c" oct="5" stem.dir="down" stem.len="3.4655" beat="3.3333" pm:xy="2.026,6.469" idx="6" />
+                              </tuplet>
+                              <note xml:id="n1tk2ux6" dur="8" pname="b" oct="4" stem.dir="down" stem.len="2.999" beat="3.5000" pm:xy="2.055,6.460" idx="0" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n21cmm6" dur="8" pname="d" oct="5" stem.dir="down" stem.len="3.2542" beat="4.0000" pm:xy="2.097,6.478" idx="18" />
+                              <note xml:id="n11mlqfw" dur="8" pname="c" oct="5" stem.dir="down" stem.len="2.9958" beat="4.5000" pm:xy="2.149,6.469" idx="0">
+                                 <accid accid="s" pm:xy="2.127,6.469" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:pm="http://pianomania.gg/ns/mei" meiversion="5.1+basic">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Glissando test</title>
+            <respStmt>
+               <persName role="composer">Klaus Rettinghaus</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2024-11-16T17:10:13" />
+         </pubStmt>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef pm:timesig-xy-top="0.667,6.553" pm:timesig-xy="0.667,6.553">
+                  <pgHead>
+                     <rend halign="center" valign="top">
+                        <rend type="title" fontsize="x-large" pm:xy="5.000,6.794">Glissando test</rend>
+                     </rend>
+                     <rend halign="right" valign="bottom">
+                        <rend type="composer" pm:xy="8.807,6.745">Klaus Rettinghaus</rend>
+                     </rend>
+                  </pgHead>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" meter.count="4" meter.unit="4" pm:timesig-xy="0.667,6.553">
+                        <label>Piano</label>
+                        <labelAbbr>Pno.</labelAbbr>
+                        <clef shape="G" line="2" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="s1">
+                  <pb />
+                  <sb pm:top-left-x="0.591" pm:top-left-y="6.909" pm:bottom-right-x="9.409" pm:bottom-right-y="6.679" />
+                  <sb type="mscore-manual" pm:top-left-x="0.591" pm:top-left-y="6.553" pm:bottom-right-x="9.409" pm:bottom-right-y="6.481" />
+                  <measure xml:id="m1mzzq1e" n="1" pm:top-left-x="0.591" pm:top-left-y="6.571" pm:bottom-right-x="0.990" pm:bottom-right-y="6.463">
+                     <staff xml:id="m1s1" n="1">
+                        <layer xml:id="m1s1l1" n="1">
+                           <note xml:id="n12l70h9" dur="4" pname="g" oct="3" stem.dir="up" stem.len="4.5" beat="1.0000" pm:xy="0.735,6.436" idx="0" />
+                           <note xml:id="nsdv8xn" dur="4" pname="a" oct="5" stem.dir="down" stem.len="3.5" beat="2.0000" pm:xy="0.798,6.571" idx="0" />
+                           <note xml:id="n1hrtq3g" dur="4" pname="g" oct="4" stem.dir="up" stem.len="3.5" beat="3.0000" pm:xy="0.861,6.499" idx="0">
+                              <accid xml:id="a1ubbu37" accid="s" pm:xy="0.839,6.499" />
+                           </note>
+                           <note xml:id="ndd9dr5" dur="4" pname="d" oct="5" stem.dir="down" stem.len="3.5" beat="4.0000" pm:xy="0.924,6.535" idx="0">
+                              <accid xml:id="a1mn7y41" accid="f" pm:xy="0.905,6.535" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="mmnmswk" n="2" pm:top-left-x="0.990" pm:top-left-y="6.571" pm:bottom-right-x="1.268" pm:bottom-right-y="6.463">
+                     <staff xml:id="m6s1" n="1">
+                        <layer xml:id="m6s1l1" n="1">
+                           <note xml:id="nkg66k7" dur="4" pname="a" oct="4" stem.dir="up" stem.len="3.25" beat="1.0000" pm:xy="1.013,6.508" idx="0" />
+                           <note xml:id="n1pvinv0" dur="4" pname="g" oct="3" stem.dir="up" stem.len="4.5" beat="2.0000" pm:xy="1.076,6.436" idx="0">
+                              <accid xml:id="awoexeg" accid="f" pm:xy="1.052,6.436" />
+                           </note>
+                           <note xml:id="n1l97nt" dur="4" pname="g" oct="4" stem.dir="up" stem.len="3.5" beat="3.0000" pm:xy="1.139,6.499" idx="1">
+                              <accid xml:id="a1av3umb" accid="s" pm:xy="1.117,6.499" />
+                           </note>
+                           <note xml:id="ncl313f" dur="4" pname="d" oct="4" stem.dir="up" stem.len="3.5" beat="4.0000" pm:xy="1.202,6.472" idx="0" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m14lslmx" n="3" pm:top-left-x="1.268" pm:top-left-y="6.571" pm:bottom-right-x="1.546" pm:bottom-right-y="6.463">
+                     <staff xml:id="m11s1" n="1">
+                        <layer xml:id="m11s1l1" n="1">
+                           <note xml:id="n1jgkffs" dur="4" pname="g" oct="4" stem.dir="up" stem.len="3.5" beat="1.0000" pm:xy="1.291,6.499" idx="0" />
+                           <note xml:id="n1bl1vw" dur="4" pname="f" oct="2" stem.dir="up" stem.len="8.5" beat="2.0000" pm:xy="1.354,6.364" idx="0" />
+                           <note xml:id="n1ch40c5" dur="4" pname="b" oct="4" stem.dir="down" stem.len="3" beat="3.0000" pm:xy="1.417,6.517" idx="0" />
+                           <note xml:id="n1ybefit" dur="4" pname="b" oct="4" stem.dir="down" stem.len="3" beat="4.0000" pm:xy="1.480,6.517" idx="0">
+                              <accid xml:id="a20r0dr" accid="f" pm:xy="1.460,6.517" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m15cprg0" n="4" pm:top-left-x="1.546" pm:top-left-y="6.571" pm:bottom-right-x="1.824" pm:bottom-right-y="6.463">
+                     <staff xml:id="m16s1" n="1">
+                        <layer xml:id="m16s1l1" n="1">
+                           <note xml:id="nz4o70s" dots="1" dur="4" pname="g" oct="4" stem.dir="up" stem.len="3.5" beat="1.0000" pm:xy="1.568,6.499" idx="1" />
+                           <note xml:id="n1uw3wnu" dur="8" pname="a" oct="4" stem.dir="up" stem.len="3.25" beat="2.5000" pm:xy="1.648,6.508" idx="1" />
+                           <note xml:id="nyszdsr" dots="1" dur="4" pname="f" oct="4" stem.dir="up" stem.len="3.5" beat="3.0000" pm:xy="1.690,6.490" idx="0" />
+                           <note xml:id="nw5i32s" dur="8" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="4.5000" pm:xy="1.770,6.526" idx="1">
+                              <accid xml:id="a7sunkf" accid="s" pm:xy="1.748,6.526" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1yfd44t" n="5" pm:top-left-x="1.824" pm:top-left-y="6.571" pm:bottom-right-x="2.102" pm:bottom-right-y="6.463">
+                     <staff xml:id="m21s1" n="1">
+                        <layer xml:id="m21s1l1" n="1">
+                           <note xml:id="n1o7d47v" dots="1" dur="4" pname="g" oct="4" stem.dir="up" stem.len="3.5" beat="1.0000" pm:xy="1.846,6.499" idx="2" />
+                           <note xml:id="n27nw41" dur="8" pname="d" oct="5" stem.dir="down" stem.len="3.5" beat="2.5000" pm:xy="1.926,6.535" idx="0">
+                              <accid xml:id="a8use84" accid="ff" pm:xy="1.895,6.535" />
+                           </note>
+                           <note xml:id="nsvswm7" dots="1" dur="4" pname="g" oct="4" stem.dir="up" stem.len="3.5" beat="3.0000" pm:xy="1.968,6.499" idx="3" />
+                           <note xml:id="n1ajq6be" dur="8" pname="d" oct="5" stem.dir="down" stem.len="3.5" beat="4.5000" pm:xy="2.048,6.535" idx="2">
+                              <accid xml:id="aanj4aa" accid="f" pm:xy="2.029,6.535" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m7x94p3" right="end" n="6" pm:top-left-x="2.102" pm:top-left-y="6.571" pm:bottom-right-x="2.396" pm:bottom-right-y="6.463">
+                     <staff xml:id="m26s1" n="1">
+                        <layer xml:id="m26s1l1" n="1">
+                           <note xml:id="n12f13d8" dur="4" pname="g" oct="4" stem.dir="up" stem.len="3.5" beat="1.0000" pm:xy="2.124,6.499" idx="4" />
+                           <chord xml:id="c1tu8yxt" dur="4" stem.dir="up" stem.len="6" beat="2.0000" pm:xy="2.187,6.553">
+                              <note xml:id="nst1qt2" pname="c" oct="4" stem.dir="up" beat="2.0000" pm:xy="2.187,6.463" idx="0" />
+                              <note xml:id="nyf172v" pname="e" oct="4" stem.dir="up" beat="2.0000" pm:xy="2.187,6.481" idx="0" />
+                              <note xml:id="n1rvim65" pname="b" oct="4" stem.dir="up" beat="2.0000" pm:xy="2.187,6.517" idx="1" />
+                           </chord>
+                           <chord xml:id="c20sipg" dur="4" stem.dir="down" stem.len="5.5" beat="3.0000" pm:xy="2.250,6.553">
+                              <note xml:id="n1y1e42e" pname="g" oct="4" stem.dir="down" beat="3.0000" pm:xy="2.228,6.499" idx="5" />
+                              <note xml:id="nrvdj01" pname="a" oct="4" stem.dir="down" beat="3.0000" pm:xy="2.250,6.508" idx="2" />
+                              <note xml:id="n2hdeo6" pname="f" oct="5" stem.dir="down" beat="3.0000" pm:xy="2.250,6.553" idx="0" />
+                           </chord>
+                           <chord xml:id="c16s6n0d" dur="4" stem.dir="down" stem.len="7.5" beat="4.0000" pm:xy="2.313,6.553">
+                              <note xml:id="n4vn6ni" pname="g" oct="4" stem.dir="down" beat="4.0000" pm:xy="2.313,6.499" idx="6" />
+                              <note xml:id="nyjl286" pname="d" oct="5" stem.dir="down" beat="4.0000" pm:xy="2.313,6.535" idx="0" />
+                              <note xml:id="n1447sy3" pname="c" oct="6" stem.dir="down" beat="4.0000" pm:xy="2.313,6.589" idx="0" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

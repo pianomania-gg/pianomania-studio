@@ -1,0 +1,8982 @@
+format: 1
+division: 480
+isDivisionIsInTps: false
+tracks:
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: TimeSignature
+      numerator: 4
+      denominatorAsNegPowerOfTwo: 2
+      midiClocksPerClick: 24
+      num32ndNotesPerQuarterNote: 8
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SetTempo
+      usPerQuarterNote: 500000
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: AA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: AQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Ag==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Aw==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: BA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: BQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Bg==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Bw==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: CA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: CQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Cg==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Cw==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: DA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: DQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Dg==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Dw==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: EA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: EQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Eg==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Ew==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: FA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: FQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Fg==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Fw==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: GA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: GQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Gg==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Gw==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: HA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: HQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Hg==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Hw==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: IA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: IQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Ig==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Iw==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: JA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: JQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Jg==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Jw==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: KA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: KQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Kg==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Kw==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: LA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: LQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Lg==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Lw==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: MA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: MQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Mg==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Mw==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: NA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: NQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Ng==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Nw==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: OA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: OQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Og==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Ow==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: PA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: PQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Pg==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Pw==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: QA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: QQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Qg==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Qw==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: RA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: RQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Rg==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Rw==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: SA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: SQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Sg==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Sw==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: TA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: TQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Tg==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Tw==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: UA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: UQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Ug==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Uw==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: VA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: VQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Vg==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Vw==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: WA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: WQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Wg==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Ww==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: XA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: XQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Xg==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Xw==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: YA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: YQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Yg==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Yw==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: ZA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: ZQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Zg==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: Zw==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: aA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: aQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: ag==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: aw==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: bA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: bQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: bg==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: bw==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: cA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: cQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: cg==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: cw==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: dA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: dQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: dg==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: dw==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: eA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: eQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: eg==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: ew==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: fA==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: fQ==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: fg==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: fw==
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Drumset"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 9
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 9
+      control: 93
+      value: 0

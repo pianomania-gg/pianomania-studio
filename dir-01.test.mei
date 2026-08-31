@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:pm="http://pianomania.gg/ns/mei" meiversion="5.1+basic">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Untitled score</title>
+            <respStmt>
+               <persName role="composer">Composer / arranger</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2023-08-11T14:51:56" />
+         </pubStmt>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef pm:timesig-xy-top="1.231,6.381" pm:timesig-xy="1.231,6.381" pm:timesig-xy-bottom="1.231,5.949">
+                  <pgHead>
+                     <rend halign="center" valign="top">
+                        <rend type="title" fontsize="x-large" pm:xy="5.000,6.794">Untitled score</rend>
+                        <lb />
+                        <rend type="subtitle" fontsize="large" pm:xy="5.000,6.442">Subtitle</rend>
+                     </rend>
+                     <rend halign="right" valign="bottom">
+                        <rend type="composer" pm:xy="8.753,6.744">Composer / arranger</rend>
+                     </rend>
+                  </pgHead>
+                  <staffGrp>
+                     <staffGrp bar.thru="true" symbol="bracket">
+                        <staffDef n="1" lines="5" meter.count="4" meter.unit="4" pm:timesig-xy="1.231,6.381">
+                           <label>Oboe</label>
+                           <labelAbbr>Ob.</labelAbbr>
+                           <clef shape="G" line="2" />
+                        </staffDef>
+                        <staffDef n="2" lines="5" meter.count="4" meter.unit="4" pm:timesig-xy="1.231,5.949">
+                           <label>Bassoon</label>
+                           <labelAbbr>Bsn.</labelAbbr>
+                           <clef shape="F" line="4" />
+                        </staffDef>
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="s1">
+                  <pb />
+                  <sb pm:top-left-x="0.591" pm:top-left-y="6.909" pm:bottom-right-x="9.409" pm:bottom-right-y="6.679" />
+                  <sb type="mscore-manual" pm:top-left-x="0.591" pm:top-left-y="6.381" pm:bottom-right-x="9.409" pm:bottom-right-y="5.877" />
+                  <measure xml:id="m1jreum9" n="1" pm:top-left-x="1.149" pm:top-left-y="6.399" pm:bottom-right-x="1.444" pm:bottom-right-y="5.859">
+                     <staff xml:id="m1s1" n="1">
+                        <layer xml:id="m1s1l1" n="1">
+                           <mRest xml:id="mrkn6rf" beat="1.0000" yOffset="3.00" hand="left" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m1s2" n="2">
+                        <layer xml:id="m1s2l1" n="1">
+                           <mRest xml:id="muoflm6" beat="1.0000" yOffset="3.00" hand="left" />
+                        </layer>
+                     </staff>
+                     <dir xml:id="du9jefs" type="mscore-staff-text" startid="#mrkn6rf" yOffset="1.0" pm:xy="1.593,6.449">Staff text</dir>
+                     <dir xml:id="d1bz5iph" startid="#muoflm6" yOffset="-6.1" centerBetweenStaves="false" pm:xy="1.623,5.803">expression</dir>
+                  </measure>
+                  <measure xml:id="mou62ga" n="2" pm:top-left-x="1.444" pm:top-left-y="6.399" pm:bottom-right-x="1.611" pm:bottom-right-y="5.859">
+                     <staff xml:id="m2s1" n="1">
+                        <layer xml:id="m2s1l1" n="1">
+                           <mRest xml:id="m1g8qzk0" beat="1.0000" yOffset="3.00" hand="left" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m2s2" n="2">
+                        <layer xml:id="m2s2l1" n="1">
+                           <mRest xml:id="mogb023" beat="1.0000" yOffset="3.00" hand="left" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="mzoz4qx" n="3" pm:top-left-x="1.611" pm:top-left-y="6.399" pm:bottom-right-x="1.779" pm:bottom-right-y="5.859">
+                     <staff xml:id="m3s1" n="1">
+                        <layer xml:id="m3s1l1" n="1">
+                           <mRest xml:id="mwek1l9" beat="1.0000" yOffset="3.00" hand="left" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m3s2" n="2">
+                        <layer xml:id="m3s2l1" n="1">
+                           <mRest xml:id="mtzukeh" beat="1.0000" yOffset="3.00" hand="left" />
+                        </layer>
+                     </staff>
+                     <dir xml:id="d1ukq7ad" type="mscore-playtech-annotation" startid="#mwek1l9" place="below" yOffset="-6.3" pm:xy="1.876,6.247">tremolo</dir>
+                     <dir xml:id="d9jr1ki" type="mscore-playtech-annotation" startid="#mtzukeh" yOffset="2.2" pm:xy="1.823,6.025">legato</dir>
+                  </measure>
+                  <measure xml:id="mvrfsn6" right="end" n="4" pm:top-left-x="1.779" pm:top-left-y="6.399" pm:bottom-right-x="1.963" pm:bottom-right-y="5.859">
+                     <staff xml:id="m4s1" n="1">
+                        <layer xml:id="m4s1l1" n="1">
+                           <mRest xml:id="m1uxv1xq" beat="1.0000" yOffset="3.00" hand="left" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m4s2" n="2">
+                        <layer xml:id="m4s2l1" n="1">
+                           <mRest xml:id="m1bii3jk" beat="1.0000" yOffset="3.00" hand="left" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

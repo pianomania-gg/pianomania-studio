@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:pm="http://pianomania.gg/ns/mei" meiversion="5.1+basic">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Staff type properties</title>
+            <respStmt>
+               <persName role="composer">K. Rettinghaus</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2025-02-14T09:54:48" />
+         </pubStmt>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef pm:timesig-xy-top="1.076,6.495" pm:timesig-xy="1.076,6.495" pm:timesig-xy-bottom="1.076,6.257">
+                  <pgHead>
+                     <rend halign="center" valign="top">
+                        <rend type="title" fontsize="x-large" pm:xy="5.000,6.765">Staff type properties</rend>
+                     </rend>
+                     <rend halign="right" valign="bottom">
+                        <rend type="composer" pm:xy="8.926,6.687">K. Rettinghaus</rend>
+                     </rend>
+                  </pgHead>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" meter.count="4" meter.unit="4" scale="70%" pm:timesig-xy="1.076,6.495">
+                        <label>Violin</label>
+                        <labelAbbr>Vln.</labelAbbr>
+                        <instrDef midi.instrnum="40" />
+                        <clef shape="G" line="2" />
+                     </staffDef>
+                     <staffGrp bar.thru="true" symbol="brace">
+                        <label>Piano</label>
+                        <labelAbbr>Pno.</labelAbbr>
+                        <instrDef midi.instrnum="0" />
+                        <staffDef n="2" lines="5" meter.count="4" meter.unit="4" lines.visible="false" pm:timesig-xy="1.076,6.257">
+                           <clef shape="G" line="2" />
+                        </staffDef>
+                        <staffDef n="3" lines="5" meter.count="4" meter.unit="4" lines.color="#33FF00" pm:timesig-xy="1.076,6.068">
+                           <clef shape="F" line="4" />
+                        </staffDef>
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="s1">
+                  <pb />
+                  <sb pm:top-left-x="0.591" pm:top-left-y="6.909" pm:bottom-right-x="9.409" pm:bottom-right-y="6.621" />
+                  <sb type="mscore-manual" pm:top-left-x="0.591" pm:top-left-y="6.495" pm:bottom-right-x="9.409" pm:bottom-right-y="5.996" />
+                  <measure xml:id="m1iotjuy" n="1" pm:top-left-x="0.994" pm:top-left-y="6.513" pm:bottom-right-x="1.288" pm:bottom-right-y="5.978">
+                     <staff xml:id="m1s1" n="1">
+                        <layer xml:id="m1s1l1" n="1">
+                           <mRest xml:id="m1vhm9kh" beat="1.0000" yOffset="3.00" hand="left" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m1s2" n="2">
+                        <layer xml:id="m1s2l1" n="1">
+                           <mRest xml:id="ma48zn1" beat="1.0000" yOffset="3.00" hand="right" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m1s3" n="3">
+                        <layer xml:id="m1s3l1" n="1">
+                           <mRest xml:id="m7p5zla" beat="1.0000" yOffset="3.00" hand="left" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1ozw9x" n="2" pm:top-left-x="1.288" pm:top-left-y="6.513" pm:bottom-right-x="1.456" pm:bottom-right-y="5.978">
+                     <staff xml:id="m2s1" n="1">
+                        <layer xml:id="m2s1l1" n="1">
+                           <mRest xml:id="m1w85q53" beat="1.0000" yOffset="3.00" hand="left" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m2s2" n="2">
+                        <layer xml:id="m2s2l1" n="1">
+                           <mRest xml:id="m166h057" beat="1.0000" yOffset="3.00" hand="right" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m2s3" n="3">
+                        <layer xml:id="m2s3l1" n="1">
+                           <mRest xml:id="m1wxpjus" beat="1.0000" yOffset="3.00" hand="left" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1f6f83c" n="3" pm:top-left-x="1.456" pm:top-left-y="6.513" pm:bottom-right-x="1.623" pm:bottom-right-y="5.978">
+                     <staff xml:id="m3s1" n="1">
+                        <layer xml:id="m3s1l1" n="1">
+                           <mRest xml:id="mfbgs13" beat="1.0000" yOffset="3.00" hand="left" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m3s2" n="2">
+                        <layer xml:id="m3s2l1" n="1">
+                           <mRest xml:id="mmtxvnw" beat="1.0000" yOffset="3.00" hand="right" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m3s3" n="3">
+                        <layer xml:id="m3s3l1" n="1">
+                           <mRest xml:id="m1hqocxl" beat="1.0000" yOffset="3.00" hand="left" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1gqrau6" right="end" n="4" pm:top-left-x="1.623" pm:top-left-y="6.513" pm:bottom-right-x="1.808" pm:bottom-right-y="5.978">
+                     <staff xml:id="m4s1" n="1">
+                        <layer xml:id="m4s1l1" n="1">
+                           <mRest xml:id="mifqtzv" beat="1.0000" yOffset="3.00" hand="left" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m4s2" n="2">
+                        <layer xml:id="m4s2l1" n="1">
+                           <mRest xml:id="mly6oit" beat="1.0000" yOffset="3.00" hand="right" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m4s3" n="3">
+                        <layer xml:id="m4s3l1" n="1">
+                           <mRest xml:id="m1cwpsql" beat="1.0000" yOffset="3.00" hand="left" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

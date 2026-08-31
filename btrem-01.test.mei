@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:pm="http://pianomania.gg/ns/mei" meiversion="5.1+basic">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Single Tremolos</title>
+            <respStmt>
+               <persName role="composer">Klaus Rettinghaus</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2023-11-07T17:28:56" />
+         </pubStmt>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef pm:timesig-xy-top="0.667,6.495" pm:timesig-xy="0.667,6.495">
+                  <pgHead>
+                     <rend halign="center" valign="top">
+                        <rend type="title" fontsize="x-large" pm:xy="5.000,6.765">Single Tremolos</rend>
+                     </rend>
+                     <rend halign="right" valign="bottom">
+                        <rend type="composer" pm:xy="8.807,6.687">Klaus Rettinghaus</rend>
+                     </rend>
+                  </pgHead>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" meter.count="4" meter.unit="4" pm:timesig-xy="0.667,6.495">
+                        <label>Violine</label>
+                        <labelAbbr>Vl.</labelAbbr>
+                        <instrDef midi.instrnum="40" />
+                        <clef shape="G" line="2" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="s1">
+                  <pb />
+                  <sb pm:top-left-x="0.591" pm:top-left-y="6.909" pm:bottom-right-x="9.409" pm:bottom-right-y="6.621" />
+                  <sb type="mscore-manual" pm:top-left-x="0.591" pm:top-left-y="6.495" pm:bottom-right-x="9.409" pm:bottom-right-y="6.423" />
+                  <measure xml:id="mznsh0" n="1" pm:top-left-x="0.591" pm:top-left-y="6.513" pm:bottom-right-x="0.927" pm:bottom-right-y="6.405">
+                     <staff xml:id="m1s1" n="1">
+                        <layer xml:id="m1s1l1" n="1">
+                           <bTrem xml:id="boupxe7">
+                              <chord xml:id="ce9vqu2" dur="2" stem.dir="up" stem.len="5.25" stem.mod="1slash" beat="1.0000" pm:xy="0.735,6.495">
+                                 <note xml:id="n1480cba" pname="d" oct="4" stem.dir="up" stem.mod="1slash" beat="1.0000" pm:xy="0.735,6.414" idx="0" />
+                                 <note xml:id="nqvs36d" pname="a" oct="4" stem.dir="up" stem.mod="1slash" beat="1.0000" pm:xy="0.735,6.450" idx="0" />
+                              </chord>
+                           </bTrem>
+                           <bTrem xml:id="b6wpi1v">
+                              <chord xml:id="cjmsadd" dur="2" stem.dir="up" stem.len="5.25" stem.mod="2slash" beat="3.0000" pm:xy="0.830,6.495">
+                                 <note xml:id="n66ib5j" pname="d" oct="4" stem.dir="up" stem.mod="2slash" beat="3.0000" pm:xy="0.830,6.414" idx="1" />
+                                 <note xml:id="n49w2pq" pname="a" oct="4" stem.dir="up" stem.mod="2slash" beat="3.0000" pm:xy="0.830,6.450" idx="1" />
+                              </chord>
+                           </bTrem>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1imapuc" n="2" pm:top-left-x="0.927" pm:top-left-y="6.513" pm:bottom-right-x="1.142" pm:bottom-right-y="6.405">
+                     <staff xml:id="m6s1" n="1">
+                        <layer xml:id="m6s1l1" n="1">
+                           <bTrem xml:id="b1ungrqp">
+                              <chord xml:id="c1288j8w" dur="2" stem.dir="up" stem.len="6" stem.mod="3slash" beat="1.0000" pm:xy="0.950,6.495">
+                                 <note xml:id="n19ypux" pname="d" oct="4" stem.dir="up" stem.mod="3slash" beat="1.0000" pm:xy="0.950,6.414" idx="2" />
+                                 <note xml:id="n1jf85dh" pname="a" oct="4" stem.dir="up" stem.mod="3slash" beat="1.0000" pm:xy="0.950,6.450" idx="2" />
+                              </chord>
+                           </bTrem>
+                           <bTrem xml:id="bwsszy7">
+                              <chord xml:id="c1r6ltrr" dur="2" stem.dir="up" stem.len="6.75" stem.mod="4slash" beat="3.0000" pm:xy="1.044,6.495">
+                                 <note xml:id="najlljb" pname="d" oct="4" stem.dir="up" stem.mod="4slash" beat="3.0000" pm:xy="1.044,6.414" idx="3" />
+                                 <note xml:id="n1kapie7" pname="a" oct="4" stem.dir="up" stem.mod="4slash" beat="3.0000" pm:xy="1.044,6.450" idx="3" />
+                              </chord>
+                           </bTrem>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1t4yges" n="3" pm:top-left-x="1.142" pm:top-left-y="6.513" pm:bottom-right-x="1.420" pm:bottom-right-y="6.405">
+                     <staff xml:id="m11s1" n="1">
+                        <layer xml:id="m11s1l1" n="1">
+                           <bTrem xml:id="blra7a5">
+                              <chord xml:id="cxwk1rc" dur="4" stem.dir="up" stem.len="5.25" stem.mod="1slash" beat="1.0000" pm:xy="1.165,6.495">
+                                 <note xml:id="n1naisrs" pname="d" oct="4" stem.dir="up" stem.mod="1slash" beat="1.0000" pm:xy="1.165,6.414" idx="4" />
+                                 <note xml:id="n1r5e295" pname="a" oct="4" stem.dir="up" stem.mod="1slash" beat="1.0000" pm:xy="1.165,6.450" idx="4" />
+                              </chord>
+                           </bTrem>
+                           <bTrem xml:id="b1a4h0u">
+                              <chord xml:id="clvu8ef" dur="4" stem.dir="up" stem.len="5.25" stem.mod="2slash" beat="2.0000" pm:xy="1.228,6.495">
+                                 <note xml:id="n1oluogu" pname="d" oct="4" stem.dir="up" stem.mod="2slash" beat="2.0000" pm:xy="1.228,6.414" idx="5" />
+                                 <note xml:id="n1fujlpm" pname="a" oct="4" stem.dir="up" stem.mod="2slash" beat="2.0000" pm:xy="1.228,6.450" idx="5" />
+                              </chord>
+                           </bTrem>
+                           <bTrem xml:id="bqtu2c0">
+                              <chord xml:id="c1tsoh5c" dur="4" stem.dir="up" stem.len="6" stem.mod="3slash" beat="3.0000" pm:xy="1.291,6.495">
+                                 <note xml:id="n1pcg3qk" pname="d" oct="4" stem.dir="up" stem.mod="3slash" beat="3.0000" pm:xy="1.291,6.414" idx="6" />
+                                 <note xml:id="n1c45g7b" pname="a" oct="4" stem.dir="up" stem.mod="3slash" beat="3.0000" pm:xy="1.291,6.450" idx="6" />
+                              </chord>
+                           </bTrem>
+                           <bTrem xml:id="b6883ff">
+                              <chord xml:id="c7r6nc2" dur="4" stem.dir="up" stem.len="6.75" stem.mod="4slash" beat="4.0000" pm:xy="1.354,6.495">
+                                 <note xml:id="n1756sm5" pname="d" oct="4" stem.dir="up" stem.mod="4slash" beat="4.0000" pm:xy="1.354,6.414" idx="7" />
+                                 <note xml:id="n1spf66o" pname="a" oct="4" stem.dir="up" stem.mod="4slash" beat="4.0000" pm:xy="1.354,6.450" idx="7" />
+                              </chord>
+                           </bTrem>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m18jl03a" n="4" pm:top-left-x="1.420" pm:top-left-y="6.513" pm:bottom-right-x="1.790" pm:bottom-right-y="6.405">
+                     <staff xml:id="m20s1" n="1">
+                        <layer xml:id="m20s1l1" n="1">
+                           <beam>
+                              <bTrem xml:id="b198bzhe">
+                                 <chord xml:id="c1agcxus" dur="8" stem.dir="up" stem.len="5.75" stem.mod="1slash" beat="1.0000" pm:xy="1.442,6.495">
+                                    <note xml:id="n1k9p3u3" pname="d" oct="4" stem.dir="up" stem.mod="1slash" beat="1.0000" pm:xy="1.442,6.414" idx="8" />
+                                    <note xml:id="n10xm1z" pname="a" oct="4" stem.dir="up" stem.mod="1slash" beat="1.0000" pm:xy="1.442,6.450" idx="8" />
+                                 </chord>
+                              </bTrem>
+                              <bTrem xml:id="bjdakpq">
+                                 <chord xml:id="b1iegagm" dur="8" stem.dir="up" stem.len="5.75" stem.mod="1slash" beat="1.5000" pm:xy="1.484,6.495">
+                                    <note xml:id="nj68own" pname="d" oct="4" stem.dir="up" stem.mod="1slash" beat="1.5000" pm:xy="1.484,6.414" idx="9" />
+                                    <note xml:id="n5opgkt" pname="a" oct="4" stem.dir="up" stem.mod="1slash" beat="1.5000" pm:xy="1.484,6.450" idx="9" />
+                                 </chord>
+                              </bTrem>
+                              <bTrem xml:id="b1ye2phy">
+                                 <chord xml:id="cchxgx1" dur="8" stem.dir="up" stem.len="5.75" stem.mod="2slash" beat="2.0000" pm:xy="1.526,6.495">
+                                    <note xml:id="n1s769l8" pname="d" oct="4" stem.dir="up" stem.mod="2slash" beat="2.0000" pm:xy="1.526,6.414" idx="10" />
+                                    <note xml:id="n11h1w1m" pname="a" oct="4" stem.dir="up" stem.mod="2slash" beat="2.0000" pm:xy="1.526,6.450" idx="10" />
+                                 </chord>
+                              </bTrem>
+                              <bTrem xml:id="b8wg96c">
+                                 <chord xml:id="cywc7hv" dur="8" stem.dir="up" stem.len="5.75" stem.mod="2slash" beat="2.5000" pm:xy="1.568,6.495">
+                                    <note xml:id="nj5bptc" pname="d" oct="4" stem.dir="up" stem.mod="2slash" beat="2.5000" pm:xy="1.568,6.414" idx="11" />
+                                    <note xml:id="n1ejnl0h" pname="a" oct="4" stem.dir="up" stem.mod="2slash" beat="2.5000" pm:xy="1.568,6.450" idx="11" />
+                                 </chord>
+                              </bTrem>
+                           </beam>
+                           <beam>
+                              <bTrem xml:id="b1apodmb">
+                                 <chord xml:id="cm5hlp7" dur="8" stem.dir="up" stem.len="7.25" stem.mod="3slash" beat="3.0000" pm:xy="1.610,6.495">
+                                    <note xml:id="n1qx3wb5" pname="d" oct="4" stem.dir="up" stem.mod="3slash" beat="3.0000" pm:xy="1.610,6.414" idx="12" />
+                                    <note xml:id="np4s5qv" pname="a" oct="4" stem.dir="up" stem.mod="3slash" beat="3.0000" pm:xy="1.610,6.450" idx="12" />
+                                 </chord>
+                              </bTrem>
+                              <bTrem xml:id="b1ei6xux">
+                                 <chord xml:id="c44374v" dur="8" stem.dir="up" stem.len="7.25" stem.mod="3slash" beat="3.5000" pm:xy="1.652,6.495">
+                                    <note xml:id="n1yrbpqu" pname="d" oct="4" stem.dir="up" stem.mod="3slash" beat="3.5000" pm:xy="1.652,6.414" idx="13" />
+                                    <note xml:id="n181ov8u" pname="a" oct="4" stem.dir="up" stem.mod="3slash" beat="3.5000" pm:xy="1.652,6.450" idx="13" />
+                                 </chord>
+                              </bTrem>
+                              <bTrem xml:id="b1nay6ee">
+                                 <chord xml:id="c14ge9eg" dur="8" stem.dir="up" stem.len="7.25" stem.mod="4slash" beat="4.0000" pm:xy="1.694,6.495">
+                                    <note xml:id="n1b6cwv9" pname="d" oct="4" stem.dir="up" stem.mod="4slash" beat="4.0000" pm:xy="1.694,6.414" idx="14" />
+                                    <note xml:id="n165uy9r" pname="a" oct="4" stem.dir="up" stem.mod="4slash" beat="4.0000" pm:xy="1.694,6.450" idx="14" />
+                                 </chord>
+                              </bTrem>
+                              <bTrem xml:id="b1nitukm">
+                                 <chord xml:id="cqrn7ie" dur="8" stem.dir="up" stem.len="7.25" stem.mod="4slash" beat="4.5000" pm:xy="1.736,6.495">
+                                    <note xml:id="n1msb1m6" pname="d" oct="4" stem.dir="up" stem.mod="4slash" beat="4.5000" pm:xy="1.736,6.414" idx="15" />
+                                    <note xml:id="nm1425q" pname="a" oct="4" stem.dir="up" stem.mod="4slash" beat="4.5000" pm:xy="1.736,6.450" idx="15" />
+                                 </chord>
+                              </bTrem>
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1hgoo3l" n="5" pm:top-left-x="1.790" pm:top-left-y="6.513" pm:bottom-right-x="2.068" pm:bottom-right-y="6.405">
+                     <staff xml:id="m37s1" n="1">
+                        <layer xml:id="m37s1l1" n="1">
+                           <bTrem xml:id="be547jv">
+                              <note xml:id="n1cq33f4" dur="4" pname="a" oct="4" stem.dir="up" stem.len="3.25" stem.mod="1slash" beat="1.0000" pm:xy="1.812,6.450" idx="16" />
+                           </bTrem>
+                           <bTrem xml:id="b9psqqr">
+                              <note xml:id="n1stnvrz" dur="4" pname="a" oct="4" stem.dir="up" stem.len="3.25" stem.mod="2slash" beat="2.0000" pm:xy="1.875,6.450" idx="17" />
+                           </bTrem>
+                           <bTrem xml:id="b135nviw">
+                              <note xml:id="n1s99if" dur="4" pname="a" oct="4" stem.dir="up" stem.len="4" stem.mod="3slash" beat="3.0000" pm:xy="1.938,6.450" idx="18" />
+                           </bTrem>
+                           <bTrem xml:id="buh084k">
+                              <note xml:id="n825vjr" dur="4" pname="a" oct="4" stem.dir="up" stem.len="4.75" stem.mod="4slash" beat="4.0000" pm:xy="2.001,6.450" idx="19" />
+                           </bTrem>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m19vib7l" right="end" n="6" pm:top-left-x="2.068" pm:top-left-y="6.513" pm:bottom-right-x="2.362" pm:bottom-right-y="6.405">
+                     <staff xml:id="m42s1" n="1">
+                        <layer xml:id="m42s1l1" n="1">
+                           <note xml:id="n3fkmrz" dur="4" pname="a" oct="4" stem.dir="up" stem.len="3.25" beat="1.0000" pm:xy="2.090,6.450" idx="20" />
+                           <bTrem xml:id="b13k9dw3">
+                              <note xml:id="n181ll8i" dur="4" pname="a" oct="4" stem.dir="up" stem.len="3.25" stem.mod="z" beat="2.0000" pm:xy="2.153,6.450" idx="21" />
+                           </bTrem>
+                           <note xml:id="n16htm46" dur="4" pname="a" oct="4" stem.dir="up" stem.len="3.25" beat="3.0000" pm:xy="2.216,6.450" idx="22" />
+                           <bTrem xml:id="b11toay8">
+                              <note xml:id="n5qsjl1" dur="4" pname="a" oct="4" stem.dir="up" stem.len="3.25" stem.mod="z" beat="4.0000" pm:xy="2.279,6.450" idx="23" />
+                           </bTrem>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

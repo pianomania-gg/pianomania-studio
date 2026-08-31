@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:pm="http://pianomania.gg/ns/mei" meiversion="5.1+basic">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Untitled score</title>
+            <respStmt>
+               <persName role="composer">Composer / arranger</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2023-08-11T14:52:51" />
+         </pubStmt>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef pm:timesig-xy-top="1.651,6.553" pm:timesig-xy="1.651,6.553" pm:timesig-xy-bottom="1.651,6.293" pm:keysig-xy-top="1.597,6.553" pm:keysig-xy="1.597,6.553">
+                  <pgHead>
+                     <rend halign="center" valign="top">
+                        <rend type="title" fontsize="x-large" pm:xy="5.000,6.794">Untitled score</rend>
+                        <lb />
+                        <rend type="subtitle" fontsize="large" pm:xy="5.000,6.442">Subtitle</rend>
+                     </rend>
+                     <rend halign="right" valign="bottom">
+                        <rend type="composer" pm:xy="8.753,6.744">Composer / arranger</rend>
+                     </rend>
+                  </pgHead>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" keysig="2s" meter.count="4" meter.unit="4" trans.diat="-1" trans.semi="-2" pm:timesig-xy="1.651,6.553" pm:keysig-xy="1.597,6.553">
+                        <label>Clarinet in B♭</label>
+                        <labelAbbr>Cl. in B♭</labelAbbr>
+                        <clef shape="G" line="2" />
+                     </staffDef>
+                     <staffGrp bar.thru="true" symbol="brace">
+                        <label>Piano</label>
+                        <labelAbbr>Pno.</labelAbbr>
+                        <staffDef n="2" lines="5" meter.count="4" meter.unit="4" pm:timesig-xy="1.651,6.293">
+                           <clef shape="G" line="2" />
+                        </staffDef>
+                        <staffDef n="3" lines="5" meter.count="4" meter.unit="4" pm:timesig-xy="1.651,6.104">
+                           <clef shape="F" line="4" />
+                        </staffDef>
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="s1">
+                  <pb />
+                  <sb pm:top-left-x="0.591" pm:top-left-y="6.909" pm:bottom-right-x="9.409" pm:bottom-right-y="6.679" />
+                  <sb type="mscore-manual" pm:top-left-x="0.591" pm:top-left-y="6.553" pm:bottom-right-x="9.409" pm:bottom-right-y="6.032" />
+                  <measure xml:id="m1luku1g" n="1" pm:top-left-x="1.520" pm:top-left-y="6.571" pm:bottom-right-x="1.864" pm:bottom-right-y="6.014">
+                     <staff xml:id="m1s1" n="1">
+                        <layer xml:id="m1s1l1" n="1">
+                           <note xml:id="nmpms87" dur="1" pname="a" oct="4" stem.dir="up" beat="1.0000" pm:xy="1.717,6.508" idx="0" />
+                        </layer>
+                        <layer xml:id="m2s0l2" n="2">
+                           <note xml:id="nmn0j2x" dur="1" pname="d" oct="4" stem.dir="down" beat="1.0000" pm:xy="1.717,6.472" idx="0" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m3s1" n="2">
+                        <layer xml:id="m3s1l1" n="1">
+                           <mRest xml:id="m1nc2slx" beat="1.0000" yOffset="4.00" hand="right" />
+                        </layer>
+                        <layer xml:id="m3s1l2" n="2">
+                           <note xml:id="n9v4ms9" dur="1" pname="e" oct="4" stem.dir="down" beat="1.0000" pm:xy="1.717,6.221" idx="0" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m4s1" n="3">
+                        <layer xml:id="m4s1l1" n="1">
+                           <mRest xml:id="m138euud" beat="1.0000" yOffset="4.00" hand="left" />
+                        </layer>
+                        <layer xml:id="m4s1l2" n="2">
+                           <note xml:id="n1oxhgac" dur="1" pname="c" oct="3" stem.dir="down" beat="1.0000" pm:xy="1.717,6.059" idx="0" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <scoreDef>
+                     <staffGrp>
+                        <staffDef n="1" keysig="1f" pm:keysig-xy="1.873,6.553" />
+                        <staffDef n="2" keysig="3f" pm:keysig-xy="1.873,6.293" />
+                        <staffDef n="3" keysig="3f" pm:keysig-xy="1.873,6.104" />
+                     </staffGrp>
+                  </scoreDef>
+                  <measure xml:id="m1rg09ln" n="2" pm:top-left-x="1.864" pm:top-left-y="6.571" pm:bottom-right-x="2.106" pm:bottom-right-y="6.014">
+                     <staff xml:id="m6s1" n="1">
+                        <layer xml:id="m6s1l1" n="1">
+                           <note xml:id="n1n13czy" dur="1" pname="a" oct="4" stem.dir="up" beat="1.0000" pm:xy="1.959,6.508" idx="1" />
+                        </layer>
+                        <layer xml:id="m7s0l2" n="2">
+                           <note xml:id="n1yxfigg" dur="1" pname="d" oct="4" stem.dir="down" beat="1.0000" pm:xy="1.959,6.472" idx="1" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m8s1" n="2">
+                        <layer xml:id="m8s1l1" n="1">
+                           <mRest xml:id="m18vj4b5" beat="1.0000" yOffset="4.00" hand="right" />
+                        </layer>
+                        <layer xml:id="m8s1l2" n="2">
+                           <note xml:id="n124yf7q" dur="1" pname="e" oct="4" stem.dir="down" beat="1.0000" pm:xy="1.959,6.221" idx="0">
+                              <accid accid.ges="f" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff xml:id="m9s1" n="3">
+                        <layer xml:id="m9s1l1" n="1">
+                           <mRest xml:id="m1hy3itq" beat="1.0000" yOffset="4.00" hand="left" />
+                        </layer>
+                        <layer xml:id="m9s1l2" n="2">
+                           <note xml:id="nlkft73" dur="1" pname="c" oct="3" stem.dir="down" beat="1.0000" pm:xy="1.959,6.059" idx="1" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <scoreDef timeSig-x="2.184" meter.count="3" meter.unit="4" pm:timesig-xy-top="2.184,6.553" pm:timesig-xy="2.184,6.553" pm:timesig-xy-bottom="2.184,6.293">
+                     <staffGrp>
+                        <staffDef n="1" keysig="2s" pm:keysig-xy="2.115,6.553" />
+                        <staffDef n="2" keysig="0" pm:keysig-xy="2.115,6.293" />
+                        <staffDef n="3" keysig="0" pm:keysig-xy="2.115,6.104" />
+                     </staffGrp>
+                  </scoreDef>
+                  <measure xml:id="m514l6d" right="end" n="3" pm:top-left-x="2.106" pm:top-left-y="6.571" pm:bottom-right-x="2.379" pm:bottom-right-y="6.014">
+                     <staff xml:id="m11s1" n="1">
+                        <layer xml:id="m11s1l1" n="1">
+                           <note xml:id="n1evsei9" dots="1" dur="2" pname="a" oct="4" stem.dir="up" stem.len="3.25" beat="1.0000" pm:xy="2.239,6.508" idx="2" />
+                        </layer>
+                        <layer xml:id="m12s0l2" n="2">
+                           <note xml:id="n1x3wga" dots="1" dur="2" pname="d" oct="4" stem.dir="down" stem.len="2.5" beat="1.0000" pm:xy="2.239,6.472" idx="2" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m13s1" n="2">
+                        <layer xml:id="m13s1l1" n="1">
+                           <mRest xml:id="m1w9csg5" beat="1.0000" yOffset="6.00" hand="right" />
+                        </layer>
+                        <layer xml:id="m13s1l2" n="2">
+                           <note xml:id="n155ckkw" dots="1" dur="2" pname="e" oct="4" stem.dir="down" stem.len="2.5" beat="1.0000" pm:xy="2.239,6.221" idx="1" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m14s1" n="3">
+                        <layer xml:id="m14s1l1" n="1">
+                           <mRest xml:id="m1gkxhdn" beat="1.0000" yOffset="6.00" hand="left" />
+                        </layer>
+                        <layer xml:id="m14s1l2" n="2">
+                           <note xml:id="na7klj" dots="1" dur="2" pname="c" oct="3" stem.dir="down" stem.len="2.75" beat="1.0000" pm:xy="2.239,6.059" idx="2" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

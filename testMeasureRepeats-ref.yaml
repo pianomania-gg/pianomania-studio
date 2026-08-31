@@ -1,0 +1,1003 @@
+format: 1
+division: 480
+isDivisionIsInTps: false
+tracks:
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Piano"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: TimeSignature
+      numerator: 3
+      denominatorAsNegPowerOfTwo: 2
+      midiClocksPerClick: 24
+      num32ndNotesPerQuarterNote: 8
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SetTempo
+      usPerQuarterNote: 500000
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 100
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 101
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 6
+      value: 12
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 100
+      value: 127
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 101
+      value: 127
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 0
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: AA==
+  -
+    time: 0
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 71
+      velocity: 80
+  -
+    time: 455
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 71
+      velocity: 0
+  -
+    time: 480
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 67
+      velocity: 80
+  -
+    time: 935
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 67
+      velocity: 0
+  -
+    time: 960
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 69
+      velocity: 80
+  -
+    time: 1415
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 69
+      velocity: 0
+  -
+    time: 1440
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 71
+      velocity: 80
+  -
+    time: 1895
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 71
+      velocity: 0
+  -
+    time: 1920
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 67
+      velocity: 80
+  -
+    time: 2375
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 67
+      velocity: 0
+  -
+    time: 2400
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 69
+      velocity: 80
+  -
+    time: 2855
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 69
+      velocity: 0
+  -
+    time: 2880
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 71
+      velocity: 80
+  -
+    time: 3335
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 71
+      velocity: 0
+  -
+    time: 3360
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 67
+      velocity: 80
+  -
+    time: 3815
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 67
+      velocity: 0
+  -
+    time: 3840
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 69
+      velocity: 80
+  -
+    time: 4295
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 69
+      velocity: 0
+  -
+    time: 4320
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 71
+      velocity: 80
+  -
+    time: 4775
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 71
+      velocity: 0
+  -
+    time: 4800
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 67
+      velocity: 80
+  -
+    time: 5255
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 67
+      velocity: 0
+  -
+    time: 5280
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 69
+      velocity: 80
+  -
+    time: 5735
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 69
+      velocity: 0
+  -
+    time: 5760
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 71
+      velocity: 80
+  -
+    time: 6215
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 71
+      velocity: 0
+  -
+    time: 6240
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 72
+      velocity: 80
+  -
+    time: 6695
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 72
+      velocity: 0
+  -
+    time: 6720
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 74
+      velocity: 80
+  -
+    time: 7175
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 74
+      velocity: 0
+  -
+    time: 7200
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 76
+      velocity: 80
+  -
+    time: 7655
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 76
+      velocity: 0
+  -
+    time: 7680
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 74
+      velocity: 80
+  -
+    time: 8135
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 74
+      velocity: 0
+  -
+    time: 8160
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 72
+      velocity: 80
+  -
+    time: 8615
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 72
+      velocity: 0
+  -
+    time: 8640
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 71
+      velocity: 80
+  -
+    time: 9095
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 71
+      velocity: 0
+  -
+    time: 9120
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 72
+      velocity: 80
+  -
+    time: 9575
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 72
+      velocity: 0
+  -
+    time: 9600
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 74
+      velocity: 80
+  -
+    time: 10055
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 74
+      velocity: 0
+  -
+    time: 10080
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 76
+      velocity: 80
+  -
+    time: 10535
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 76
+      velocity: 0
+  -
+    time: 10560
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 74
+      velocity: 80
+  -
+    time: 11015
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 74
+      velocity: 0
+  -
+    time: 11040
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 72
+      velocity: 80
+  -
+    time: 11495
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 72
+      velocity: 0
+  -
+    time: 11520
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 71
+      velocity: 80
+  -
+    time: 11975
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 71
+      velocity: 0
+  -
+    time: 12000
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 72
+      velocity: 80
+  -
+    time: 12455
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 72
+      velocity: 0
+  -
+    time: 12480
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 74
+      velocity: 80
+  -
+    time: 12935
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 74
+      velocity: 0
+  -
+    time: 12960
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 76
+      velocity: 80
+  -
+    time: 13415
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 76
+      velocity: 0
+  -
+    time: 13440
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 74
+      velocity: 80
+  -
+    time: 13895
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 74
+      velocity: 0
+  -
+    time: 13920
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 72
+      velocity: 80
+  -
+    time: 14375
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 72
+      velocity: 0
+  -
+    time: 14400
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 71
+      velocity: 80
+  -
+    time: 15767
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 71
+      velocity: 0
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Piano"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: AA==
+  -
+    time: 0
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 55
+      velocity: 80
+  -
+    time: 455
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 55
+      velocity: 0
+  -
+    time: 480
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 52
+      velocity: 80
+  -
+    time: 935
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 52
+      velocity: 0
+  -
+    time: 960
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 50
+      velocity: 80
+  -
+    time: 1415
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 50
+      velocity: 0
+  -
+    time: 1440
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 48
+      velocity: 80
+  -
+    time: 1895
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 48
+      velocity: 0
+  -
+    time: 1920
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 47
+      velocity: 80
+  -
+    time: 2375
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 47
+      velocity: 0
+  -
+    time: 2400
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 45
+      velocity: 80
+  -
+    time: 2855
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 45
+      velocity: 0
+  -
+    time: 2880
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 43
+      velocity: 80
+  -
+    time: 3335
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 43
+      velocity: 0
+  -
+    time: 3360
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 45
+      velocity: 80
+  -
+    time: 3815
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 45
+      velocity: 0
+  -
+    time: 3840
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 47
+      velocity: 80
+  -
+    time: 4295
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 47
+      velocity: 0
+  -
+    time: 4320
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 48
+      velocity: 80
+  -
+    time: 4775
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 48
+      velocity: 0
+  -
+    time: 4800
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 50
+      velocity: 80
+  -
+    time: 5255
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 50
+      velocity: 0
+  -
+    time: 5280
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 52
+      velocity: 80
+  -
+    time: 5735
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 52
+      velocity: 0
+  -
+    time: 5760
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 55
+      velocity: 80
+  -
+    time: 6215
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 55
+      velocity: 0
+  -
+    time: 6240
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 52
+      velocity: 80
+  -
+    time: 6695
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 52
+      velocity: 0
+  -
+    time: 6720
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 50
+      velocity: 80
+  -
+    time: 7175
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 50
+      velocity: 0
+  -
+    time: 7200
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 48
+      velocity: 80
+  -
+    time: 7655
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 48
+      velocity: 0
+  -
+    time: 7680
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 47
+      velocity: 80
+  -
+    time: 8135
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 47
+      velocity: 0
+  -
+    time: 8160
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 45
+      velocity: 80
+  -
+    time: 8615
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 45
+      velocity: 0
+  -
+    time: 8640
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 43
+      velocity: 80
+  -
+    time: 9095
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 43
+      velocity: 0
+  -
+    time: 9120
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 45
+      velocity: 80
+  -
+    time: 9575
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 45
+      velocity: 0
+  -
+    time: 9600
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 47
+      velocity: 80
+  -
+    time: 10055
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 47
+      velocity: 0
+  -
+    time: 10080
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 48
+      velocity: 80
+  -
+    time: 10535
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 48
+      velocity: 0
+  -
+    time: 10560
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 50
+      velocity: 80
+  -
+    time: 11015
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 50
+      velocity: 0
+  -
+    time: 11040
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 52
+      velocity: 80
+  -
+    time: 11495
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 52
+      velocity: 0
+  -
+    time: 11520
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 55
+      velocity: 80
+  -
+    time: 11975
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 55
+      velocity: 0
+  -
+    time: 12000
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 54
+      velocity: 80
+  -
+    time: 12455
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 54
+      velocity: 0
+  -
+    time: 12480
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 55
+      velocity: 80
+  -
+    time: 12935
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 55
+      velocity: 0
+  -
+    time: 12960
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 55
+      velocity: 80
+  -
+    time: 13415
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 55
+      velocity: 0
+  -
+    time: 13440
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 54
+      velocity: 80
+  -
+    time: 13895
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 54
+      velocity: 0
+  -
+    time: 13920
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 55
+      velocity: 80
+  -
+    time: 14375
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 55
+      velocity: 0
+  -
+    time: 14400
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 55
+      velocity: 80
+  -
+    time: 15767
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 55
+      velocity: 0

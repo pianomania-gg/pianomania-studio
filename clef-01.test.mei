@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:pm="http://pianomania.gg/ns/mei" meiversion="5.1+basic">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Clefs</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2024-01-29T11:48:12" />
+         </pubStmt>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef pm:timesig-xy-top="0.667,6.489" pm:timesig-xy="0.667,6.489">
+                  <pgHead>
+                     <rend halign="center" valign="top">
+                        <rend type="title" fontsize="x-large" pm:xy="5.000,6.794">Clefs Test</rend>
+                     </rend>
+                  </pgHead>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" meter.count="4" meter.unit="4" pm:timesig-xy="0.667,6.489">
+                        <label>Orgel</label>
+                        <labelAbbr>Org.</labelAbbr>
+                        <clef shape="G" line="2" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="s1">
+                  <pb />
+                  <sb pm:top-left-x="0.591" pm:top-left-y="6.909" pm:bottom-right-x="9.409" pm:bottom-right-y="6.679" />
+                  <sb type="mscore-manual" pm:top-left-x="0.591" pm:top-left-y="6.489" pm:bottom-right-x="9.409" pm:bottom-right-y="6.417" />
+                  <measure xml:id="mrn0bxn" n="1" pm:top-left-x="0.591" pm:top-left-y="6.507" pm:bottom-right-x="1.000" pm:bottom-right-y="6.399">
+                     <staff xml:id="m1s1" n="1">
+                        <layer xml:id="m1s1l1" n="1">
+                           <note xml:id="nrhqgv9" dur="1" pname="c" oct="4" stem.dir="up" beat="1.0000" pm:xy="0.733,6.399" idx="0" />
+                           <clef xml:id="cawirqk" shape="G" line="2" dis="8" dis.place="above" beat="5.0000" staff="1" pm:x="0.952" pm:y="6.435" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1a2otf2" n="2" pm:top-left-x="1.000" pm:top-left-y="6.507" pm:bottom-right-x="1.290" pm:bottom-right-y="6.399">
+                     <staff xml:id="m3s1" n="1">
+                        <layer xml:id="m3s1l1" n="1">
+                           <note xml:id="n9hmw4r" dur="1" pname="c" oct="4" stem.dir="up" beat="1.0000" pm:xy="1.023,6.336" idx="1" />
+                           <clef xml:id="c1qgty5l" shape="G" line="2" dis="15" dis.place="above" beat="5.0000" staff="1" pm:x="1.241" pm:y="6.435" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="mvkuzqw" n="3" pm:top-left-x="1.290" pm:top-left-y="6.507" pm:bottom-right-x="1.579" pm:bottom-right-y="6.399">
+                     <staff xml:id="m5s1" n="1">
+                        <layer xml:id="m5s1l1" n="1">
+                           <note xml:id="nshvtqy" dur="1" pname="c" oct="4" stem.dir="up" beat="1.0000" pm:xy="1.312,6.273" idx="2" />
+                           <clef xml:id="c1ii4biw" shape="G" line="2" dis="8" dis.place="below" beat="5.0000" staff="1" pm:x="1.531" pm:y="6.435" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="mkbq9vc" n="4" pm:top-left-x="1.579" pm:top-left-y="6.507" pm:bottom-right-x="1.868" pm:bottom-right-y="6.399">
+                     <staff xml:id="m7s1" n="1">
+                        <layer xml:id="m7s1l1" n="1">
+                           <note xml:id="nutpfn6" dur="1" pname="c" oct="4" stem.dir="down" beat="1.0000" pm:xy="1.602,6.462" idx="3" />
+                           <clef xml:id="cxljv5m" shape="C" line="3" beat="5.0000" staff="1" pm:x="1.821" pm:y="6.453" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="mx7x539" n="5" pm:top-left-x="1.868" pm:top-left-y="6.507" pm:bottom-right-x="2.158" pm:bottom-right-y="6.399">
+                     <staff xml:id="m9s1" n="1">
+                        <layer xml:id="m9s1l1" n="1">
+                           <note xml:id="n100jm8" dur="1" pname="c" oct="4" stem.dir="down" beat="1.0000" pm:xy="1.891,6.453" idx="4" />
+                           <clef xml:id="c1mk1c66" shape="C" line="4" beat="5.0000" staff="1" pm:x="2.110" pm:y="6.471" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="mmglvgo" n="6" pm:top-left-x="2.158" pm:top-left-y="6.507" pm:bottom-right-x="2.447" pm:bottom-right-y="6.399">
+                     <staff xml:id="m11s1" n="1">
+                        <layer xml:id="m11s1l1" n="1">
+                           <note xml:id="nnzfihx" dur="1" pname="c" oct="4" stem.dir="down" beat="1.0000" pm:xy="2.180,6.471" idx="5" />
+                           <clef xml:id="c1ou2of7" shape="F" line="4" beat="5.0000" staff="1" pm:x="2.398" pm:y="6.471" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1fcysir" n="7" pm:top-left-x="2.447" pm:top-left-y="6.507" pm:bottom-right-x="2.737" pm:bottom-right-y="6.399">
+                     <staff xml:id="m13s1" n="1">
+                        <layer xml:id="m13s1l1" n="1">
+                           <note xml:id="n1w9aw67" dur="1" pname="c" oct="4" stem.dir="down" beat="1.0000" pm:xy="2.470,6.507" idx="6" />
+                           <clef xml:id="c7qd0zs" shape="F" line="4" dis="8" dis.place="above" beat="5.0000" staff="1" pm:x="2.687" pm:y="6.471" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1lwr0t5" n="8" pm:top-left-x="2.737" pm:top-left-y="6.507" pm:bottom-right-x="3.026" pm:bottom-right-y="6.399">
+                     <staff xml:id="m15s1" n="1">
+                        <layer xml:id="m15s1l1" n="1">
+                           <note xml:id="n170clh" dur="1" pname="c" oct="4" stem.dir="up" beat="1.0000" pm:xy="2.759,6.444" idx="7" />
+                           <clef xml:id="c17zugmc" shape="F" line="4" dis="8" dis.place="below" beat="5.0000" staff="1" pm:x="2.976" pm:y="6.471" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1d38g34" n="9" pm:top-left-x="3.026" pm:top-left-y="6.507" pm:bottom-right-x="3.315" pm:bottom-right-y="6.399">
+                     <staff xml:id="m17s1" n="1">
+                        <layer xml:id="m17s1l1" n="1">
+                           <note xml:id="n66zid5" dur="1" pname="c" oct="4" stem.dir="down" beat="1.0000" pm:xy="3.049,6.570" idx="8" />
+                           <clef xml:id="crrnvlk" shape="GG" line="2" beat="5.0000" staff="1" pm:x="3.244" pm:y="6.435" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1u69go5" n="10" pm:top-left-x="3.315" pm:top-left-y="6.507" pm:bottom-right-x="3.605" pm:bottom-right-y="6.399">
+                     <staff xml:id="m19s1" n="1">
+                        <layer xml:id="m19s1l1" n="1">
+                           <note xml:id="nqumjmw" dur="1" pname="c" oct="4" stem.dir="down" beat="1.0000" pm:xy="3.338,6.462" idx="9" />
+                           <clef xml:id="cho8wrr" shape="G" line="2" dis="15" dis.place="below" beat="5.0000" staff="1" pm:x="3.557" pm:y="6.435" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="mfgcxto" n="11" pm:top-left-x="3.605" pm:top-left-y="6.507" pm:bottom-right-x="3.894" pm:bottom-right-y="6.399">
+                     <staff xml:id="m21s1" n="1">
+                        <layer xml:id="m21s1l1" n="1">
+                           <note xml:id="nrhgft" dur="1" pname="c" oct="4" stem.dir="down" beat="1.0000" pm:xy="3.627,6.525" idx="10" />
+                           <clef xml:id="c1lxyfov" shape="G" line="1" beat="5.0000" staff="1" pm:x="3.846" pm:y="6.417" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1k4yiye" n="12" pm:top-left-x="3.894" pm:top-left-y="6.507" pm:bottom-right-x="4.184" pm:bottom-right-y="6.399">
+                     <staff xml:id="m23s1" n="1">
+                        <layer xml:id="m23s1l1" n="1">
+                           <note xml:id="n2o1pkm" dur="1" pname="c" oct="4" stem.dir="up" beat="1.0000" pm:xy="3.917,6.381" idx="11" />
+                           <clef xml:id="c1etnwls" shape="C" line="1" beat="5.0000" staff="1" pm:x="4.136" pm:y="6.417" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1awwge8" n="13" pm:top-left-x="4.184" pm:top-left-y="6.507" pm:bottom-right-x="4.473" pm:bottom-right-y="6.399">
+                     <staff xml:id="m25s1" n="1">
+                        <layer xml:id="m25s1l1" n="1">
+                           <note xml:id="n12caci1" dur="1" pname="c" oct="4" stem.dir="up" beat="1.0000" pm:xy="4.206,6.417" idx="12" />
+                           <clef xml:id="c631shn" shape="C" line="2" beat="5.0000" staff="1" pm:x="4.426" pm:y="6.435" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1gad8cx" n="14" pm:top-left-x="4.473" pm:top-left-y="6.507" pm:bottom-right-x="4.762" pm:bottom-right-y="6.399">
+                     <staff xml:id="m27s1" n="1">
+                        <layer xml:id="m27s1l1" n="1">
+                           <note xml:id="nc4xmc4" dur="1" pname="c" oct="4" stem.dir="up" beat="1.0000" pm:xy="4.496,6.435" idx="13" />
+                           <clef xml:id="cwzp6wq" shape="C" line="5" beat="5.0000" staff="1" pm:x="4.715" pm:y="6.489" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="mqnwp2v" n="15" pm:top-left-x="4.762" pm:top-left-y="6.507" pm:bottom-right-x="5.052" pm:bottom-right-y="6.399">
+                     <staff xml:id="m29s1" n="1">
+                        <layer xml:id="m29s1l1" n="1">
+                           <note xml:id="n11h3n2e" dur="1" pname="c" oct="4" stem.dir="down" beat="1.0000" pm:xy="4.785,6.489" idx="14" />
+                           <clef xml:id="c13ydckk" shape="C" line="2" glyph.auth="smufl" glyph.name="cClefSquare" beat="5.0000" staff="1" pm:x="5.007" pm:y="6.462" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m16p775v" n="16" pm:top-left-x="5.052" pm:top-left-y="6.507" pm:bottom-right-x="5.341" pm:bottom-right-y="6.399">
+                     <staff xml:id="m31s1" n="1">
+                        <layer xml:id="m31s1l1" n="1">
+                           <note xml:id="nwvdmq0" dur="1" pname="c" oct="4" stem.dir="up" beat="1.0000" pm:xy="5.074,6.399" idx="15" />
+                           <clef xml:id="cjcr71a" shape="C" line="1" glyph.auth="smufl" glyph.name="cClefFrench" beat="5.0000" staff="1" pm:x="5.280" pm:y="6.417" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="mgf3vis" n="17" pm:top-left-x="5.341" pm:top-left-y="6.507" pm:bottom-right-x="5.631" pm:bottom-right-y="6.399">
+                     <staff xml:id="m33s1" n="1">
+                        <layer xml:id="m33s1l1" n="1">
+                           <note xml:id="n1ifaj34" dur="1" pname="c" oct="4" stem.dir="up" beat="1.0000" pm:xy="5.364,6.417" idx="16" />
+                           <clef xml:id="c1os82a4" shape="C" line="3" glyph.auth="smufl" glyph.name="cClefFrench" beat="5.0000" staff="1" pm:x="5.570" pm:y="6.453" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="mca0q1m" n="18" pm:top-left-x="5.631" pm:top-left-y="6.507" pm:bottom-right-x="5.920" pm:bottom-right-y="6.399">
+                     <staff xml:id="m35s1" n="1">
+                        <layer xml:id="m35s1l1" n="1">
+                           <note xml:id="n1l22q35" dur="1" pname="c" oct="4" stem.dir="down" beat="1.0000" pm:xy="5.653,6.453" idx="17" />
+                           <clef xml:id="caqic8p" shape="C" line="4" glyph.auth="smufl" glyph.name="cClefFrench" beat="5.0000" staff="1" pm:x="5.859" pm:y="6.471" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1e7i443" n="19" pm:top-left-x="5.920" pm:top-left-y="6.507" pm:bottom-right-x="6.209" pm:bottom-right-y="6.399">
+                     <staff xml:id="m37s1" n="1">
+                        <layer xml:id="m37s1l1" n="1">
+                           <note xml:id="n1guclvv" dur="1" pname="c" oct="4" stem.dir="down" beat="1.0000" pm:xy="5.943,6.471" idx="18" />
+                           <clef xml:id="ctr4mez" shape="C" line="1" glyph.auth="smufl" glyph.name="cClefFrench20C" beat="5.0000" staff="1" pm:x="6.161" pm:y="6.417" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="md5kx46" n="20" pm:top-left-x="6.209" pm:top-left-y="6.507" pm:bottom-right-x="6.499" pm:bottom-right-y="6.399">
+                     <staff xml:id="m39s1" n="1">
+                        <layer xml:id="m39s1l1" n="1">
+                           <note xml:id="nr12im2" dur="1" pname="c" oct="4" stem.dir="up" beat="1.0000" pm:xy="6.232,6.417" idx="19" />
+                           <clef xml:id="c1t4gd03" shape="C" line="3" glyph.auth="smufl" glyph.name="cClefFrench20C" beat="5.0000" staff="1" pm:x="6.450" pm:y="6.453" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1fubgri" n="21" pm:top-left-x="6.499" pm:top-left-y="6.507" pm:bottom-right-x="6.788" pm:bottom-right-y="6.399">
+                     <staff xml:id="m41s1" n="1">
+                        <layer xml:id="m41s1l1" n="1">
+                           <note xml:id="ne72gcr" dur="1" pname="c" oct="4" stem.dir="down" beat="1.0000" pm:xy="6.521,6.453" idx="20" />
+                           <clef xml:id="cvz6h5h" shape="C" line="4" glyph.auth="smufl" glyph.name="cClefFrench20C" beat="5.0000" staff="1" pm:x="6.740" pm:y="6.471" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="mhjlgti" n="22" pm:top-left-x="6.788" pm:top-left-y="6.507" pm:bottom-right-x="7.078" pm:bottom-right-y="6.399">
+                     <staff xml:id="m43s1" n="1">
+                        <layer xml:id="m43s1l1" n="1">
+                           <note xml:id="nhhok45" dur="1" pname="c" oct="4" stem.dir="down" beat="1.0000" pm:xy="6.811,6.471" idx="21" />
+                           <clef xml:id="cvnsoz7" shape="F" line="4" dis="15" dis.place="above" beat="5.0000" staff="1" pm:x="7.028" pm:y="6.471" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1h58dqd" n="23" pm:top-left-x="7.078" pm:top-left-y="6.507" pm:bottom-right-x="7.367" pm:bottom-right-y="6.399">
+                     <staff xml:id="m45s1" n="1">
+                        <layer xml:id="m45s1l1" n="1">
+                           <note xml:id="ncv7rrw" dur="1" pname="c" oct="4" stem.dir="up" beat="1.0000" pm:xy="7.100,6.381" idx="22" />
+                           <clef xml:id="c1bwk4xy" shape="F" line="4" dis="15" dis.place="below" beat="5.0000" staff="1" pm:x="7.317" pm:y="6.471" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m18hmiwl" n="24" pm:top-left-x="7.367" pm:top-left-y="6.507" pm:bottom-right-x="7.656" pm:bottom-right-y="6.399">
+                     <staff xml:id="m47s1" n="1">
+                        <layer xml:id="m47s1l1" n="1">
+                           <note xml:id="nrqcssz" dur="1" pname="c" oct="4" stem.dir="down" beat="1.0000" pm:xy="7.390,6.633" idx="23" />
+                           <clef xml:id="c4w9ezn" shape="F" line="3" beat="5.0000" staff="1" pm:x="7.607" pm:y="6.453" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1w17ujg" n="25" pm:top-left-x="7.656" pm:top-left-y="6.507" pm:bottom-right-x="7.946" pm:bottom-right-y="6.399">
+                     <staff xml:id="m49s1" n="1">
+                        <layer xml:id="m49s1l1" n="1">
+                           <note xml:id="n1br7db0" dur="1" pname="c" oct="4" stem.dir="down" beat="1.0000" pm:xy="7.679,6.489" idx="24" />
+                           <clef xml:id="c9fylka" shape="F" line="5" beat="5.0000" staff="1" pm:x="7.896" pm:y="6.489" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="mqfzibe" n="26" pm:top-left-x="7.946" pm:top-left-y="6.507" pm:bottom-right-x="8.235" pm:bottom-right-y="6.399">
+                     <staff xml:id="m51s1" n="1">
+                        <layer xml:id="m51s1l1" n="1">
+                           <note xml:id="n6cujwe" dur="1" pname="c" oct="4" stem.dir="down" beat="1.0000" pm:xy="7.968,6.525" idx="25" />
+                           <clef xml:id="cg270lt" shape="F" line="4" glyph.auth="smufl" glyph.name="fClefFrench" beat="5.0000" staff="1" pm:x="8.175" pm:y="6.471" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="mhwkw17" n="27" pm:top-left-x="8.235" pm:top-left-y="6.507" pm:bottom-right-x="8.525" pm:bottom-right-y="6.399">
+                     <staff xml:id="m53s1" n="1">
+                        <layer xml:id="m53s1l1" n="1">
+                           <note xml:id="n1k7ckxf" dur="1" pname="c" oct="4" stem.dir="down" beat="1.0000" pm:xy="8.258,6.507" idx="26" />
+                           <clef xml:id="c4baf12" shape="F" line="4" glyph.auth="smufl" glyph.name="fClef19thCentury" beat="5.0000" staff="1" pm:x="8.453" pm:y="6.471" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m9u9bal" n="28" pm:top-left-x="8.525" pm:top-left-y="6.507" pm:bottom-right-x="8.814" pm:bottom-right-y="6.399">
+                     <staff xml:id="m55s1" n="1">
+                        <layer xml:id="m55s1l1" n="1">
+                           <note xml:id="n15g1gri" dur="1" pname="c" oct="4" stem.dir="down" beat="1.0000" pm:xy="8.547,6.507" idx="27" />
+                           <clef xml:id="cl0z3u1" shape="G" line="2" glyph.auth="smufl" glyph.name="gClef8vbParens" beat="5.0000" staff="1" pm:x="8.766" pm:y="6.435" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="mclye18" n="29" pm:top-left-x="8.814" pm:top-left-y="6.507" pm:bottom-right-x="9.103" pm:bottom-right-y="6.399">
+                     <staff xml:id="m57s1" n="1">
+                        <layer xml:id="m57s1l1" n="1">
+                           <note xml:id="nvn5jjj" dur="1" pname="c" oct="4" stem.dir="up" beat="1.0000" pm:xy="8.837,6.399" idx="28" />
+                           <clef xml:id="cczqpb4" shape="C" line="4" dis="8" dis.place="below" beat="5.0000" staff="1" pm:x="9.056" pm:y="6.471" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="mcwqdt6" right="end" n="30" pm:top-left-x="9.103" pm:top-left-y="6.507" pm:bottom-right-x="9.409" pm:bottom-right-y="6.399">
+                     <staff xml:id="m59s1" n="1">
+                        <layer xml:id="m59s1l1" n="1">
+                           <note xml:id="n7eyiel" dur="1" pname="c" oct="4" stem.dir="down" beat="1.0000" pm:xy="9.126,6.534" idx="29" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<museScore version="4.70">
+  <Score>
+    <Division>480</Division>
+    <metaTag name="composer">Inéz</metaTag>
+    <metaTag name="workTitle">Eyes Cut Deeper</metaTag>
+    <Part id="1">
+      <Staff id="1">
+        <StaffType group="pitched">
+          <name>stdNormal</name>
+          </StaffType>
+        </Staff>
+      <Instrument id="piano">
+        <instrumentId>keyboard.piano</instrumentId>
+        <Channel/>
+        </Instrument>
+      </Part>
+    <Staff id="1">
+      <Measure>
+        <voice>
+          <TimeSig>
+            <sigN>4</sigN>
+            <sigD>4</sigD>
+            </TimeSig>
+          <Rest>
+            <durationType>half</durationType>
+            </Rest>
+          <Chord>
+            <durationType>half</durationType>
+            <Note>
+              <Spanner type="Tie">
+                <Tie/>
+                <next><location><measures>1</measures><fractions>-1/2</fractions></location></next>
+                </Spanner>
+              <pianomaniaHeldNote>1</pianomaniaHeldNote>
+              <pianomaniaHeldNotePitchCurve version="3">
+                <point scoreTick="0" pitchCents="0" slopeCentsPerQuarter="0"/>
+                <point scoreTick="961" pitchCents="-300" slopeCentsPerQuarter="0"/>
+                <point scoreTick="2880" pitchCents="-300" slopeCentsPerQuarter="0"/>
+                </pianomaniaHeldNotePitchCurve>
+              <pitch>45</pitch><tpc>17</tpc>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Chord>
+            <dots>1</dots>
+            <durationType>half</durationType>
+            <Note>
+              <Spanner type="Tie"><prev><location><measures>-1</measures><fractions>1/2</fractions></location></prev></Spanner>
+              <pianomaniaHeldNote>1</pianomaniaHeldNote>
+              <pianomaniaHeldNotePitchCurve version="3">
+                <point scoreTick="0" pitchCents="0" slopeCentsPerQuarter="0"/>
+                <point scoreTick="961" pitchCents="-300" slopeCentsPerQuarter="0"/>
+                <point scoreTick="2880" pitchCents="-300" slopeCentsPerQuarter="0"/>
+                </pianomaniaHeldNotePitchCurve>
+              <pitch>45</pitch><tpc>17</tpc>
+              </Note>
+            </Chord>
+          <Rest>
+            <durationType>quarter</durationType>
+            </Rest>
+          </voice>
+        </Measure>
+      </Staff>
+    </Score>
+  </museScore>

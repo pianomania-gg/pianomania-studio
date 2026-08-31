@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:pm="http://pianomania.gg/ns/mei" meiversion="5.1+basic">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Untitled score</title>
+            <respStmt>
+               <persName role="composer">Composer / arranger</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2023-08-11T14:52:27" />
+         </pubStmt>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef pm:timesig-xy-top="0.667,6.553" pm:timesig-xy="0.667,6.553">
+                  <pgHead>
+                     <rend halign="center" valign="top">
+                        <rend type="title" fontsize="x-large" pm:xy="5.000,6.794">Untitled score</rend>
+                        <lb />
+                        <rend type="subtitle" fontsize="large" pm:xy="5.000,6.442">Subtitle</rend>
+                     </rend>
+                     <rend halign="right" valign="bottom">
+                        <rend type="composer" pm:xy="8.753,6.744">Composer / arranger</rend>
+                     </rend>
+                  </pgHead>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" meter.count="4" meter.unit="4" pm:timesig-xy="0.667,6.553">
+                        <label>Oboe</label>
+                        <labelAbbr>Ob.</labelAbbr>
+                        <clef shape="G" line="2" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="s1">
+                  <pb />
+                  <sb pm:top-left-x="0.591" pm:top-left-y="6.909" pm:bottom-right-x="9.409" pm:bottom-right-y="6.679" />
+                  <sb type="mscore-manual" pm:top-left-x="0.591" pm:top-left-y="6.553" pm:bottom-right-x="9.409" pm:bottom-right-y="6.481" />
+                  <measure xml:id="mtv536c" n="1" pm:top-left-x="0.591" pm:top-left-y="6.571" pm:bottom-right-x="1.098" pm:bottom-right-y="6.463">
+                     <staff xml:id="m1s1" n="1">
+                        <layer xml:id="m1s1l1" n="1">
+                           <graceGrp grace="unacc">
+                              <note xml:id="n13zrhtw" dur="8" pname="d" oct="5" stem.dir="up" stem.len="2.275" beat="0.5000" pm:xy="0.726,6.535" idx="0" />
+                           </graceGrp>
+                           <note xml:id="nxw7xq8" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="1.0000" pm:xy="0.761,6.526" idx="0" />
+                           <graceGrp attach="pre" grace="unknown">
+                              <beam>
+                                 <note xml:id="n37urfd" dur="8" pname="g" oct="4" stem.dir="up" stem.len="3.2535" beat="1.5000" pm:xy="0.793,6.499" idx="0" />
+                                 <note xml:id="n1t0pki2" dur="16" pname="a" oct="4" stem.dir="up" stem.len="2.875" beat="1.2500" pm:xy="0.814,6.508" idx="0" />
+                                 <note xml:id="nqtxwdg" dur="16" pname="b" oct="4" stem.dir="up" stem.len="2.4965" beat="1.2500" pm:xy="0.836,6.517" idx="0" />
+                              </beam>
+                           </graceGrp>
+                           <graceGrp grace="acc">
+                              <chord xml:id="c1mij8b2" dur="8" stem.dir="up" stem.len="4.275" beat="1.5000" pm:xy="0.874,6.553">
+                                 <note xml:id="n1wknz54" pname="d" oct="5" stem.dir="up" beat="1.5000" pm:xy="0.874,6.535" idx="1" />
+                                 <note xml:id="n16rcevi" pname="f" oct="5" stem.dir="up" beat="1.5000" pm:xy="0.874,6.553" idx="0">
+                                    <accid accid="s" pm:xy="0.857,6.553" />
+                                 </note>
+                                 <note xml:id="n5pzmb7" pname="a" oct="5" stem.dir="up" beat="1.5000" pm:xy="0.874,6.571" idx="0" />
+                              </chord>
+                           </graceGrp>
+                           <note xml:id="n1wpxhen" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="2.0000" pm:xy="0.903,6.526" idx="1" />
+                           <graceGrp grace="acc">
+                              <note xml:id="nb5ocjr" dur="4" pname="d" oct="5" stem.dir="up" stem.len="2.1" beat="2.0000" pm:xy="0.937,6.535" idx="2" />
+                           </graceGrp>
+                           <note xml:id="n1p7ssvq" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="3.0000" pm:xy="0.966,6.526" idx="2" />
+                           <graceGrp grace="acc">
+                              <note xml:id="n1dxtd69" dur="16" pname="b" oct="4" stem.dir="up" stem.len="2.45" beat="3.7500" pm:xy="0.997,6.517" idx="1" />
+                           </graceGrp>
+                           <note xml:id="n6w3jj7" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="4.0000" pm:xy="1.032,6.526" idx="3" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m15jwold" n="2" pm:top-left-x="1.098" pm:top-left-y="6.571" pm:bottom-right-x="1.334" pm:bottom-right-y="6.463">
+                     <staff xml:id="m15s1" n="1">
+                        <layer xml:id="m15s1l1" n="1">
+                           <chord xml:id="c11lpok2" dur="2" stem.dir="up" stem.len="3.5" beat="1.0000" pm:xy="1.142,6.553">
+                              <note xml:id="n1qw1hrx" pname="c" oct="5" stem.dir="up" beat="1.0000" pm:xy="1.142,6.526" idx="4" />
+                              <note xml:id="nuoo2ed" pname="e" oct="5" stem.dir="up" beat="1.0000" pm:xy="1.142,6.544" idx="0" />
+                           </chord>
+                           <graceGrp grace="acc">
+                              <chord xml:id="c1vthzc6" dur="8" stem.dir="up" stem.len="3.275" beat="2.5000" pm:xy="1.201,6.553">
+                                 <note xml:id="n1rwvk0l" pname="d" oct="5" stem.dir="up" beat="2.5000" pm:xy="1.201,6.535" idx="3" />
+                                 <note xml:id="ndann1h" pname="f" oct="5" stem.dir="up" beat="2.5000" pm:xy="1.201,6.553" idx="0" />
+                              </chord>
+                           </graceGrp>
+                           <chord xml:id="c1bjgjmi" dur="2" stem.dir="up" stem.len="3.5" beat="3.0000" pm:xy="1.236,6.553">
+                              <note xml:id="n1ibrbok" pname="c" oct="5" stem.dir="up" beat="3.0000" pm:xy="1.236,6.526" idx="5" />
+                              <note xml:id="n8le3x6" pname="e" oct="5" stem.dir="up" beat="3.0000" pm:xy="1.236,6.544" idx="1" />
+                           </chord>
+                        </layer>
+                        <layer xml:id="m21s0l2" n="2">
+                           <graceGrp grace="unacc">
+                              <chord xml:id="cc8fjz1" dur="8" stem.dir="down" stem.len="3.275" beat="0.5000" pm:xy="1.117,6.553">
+                                 <note xml:id="n12f58l1" pname="e" oct="4" stem.dir="down" beat="0.5000" pm:xy="1.117,6.481" idx="0" />
+                                 <note xml:id="n12xnq01" pname="g" oct="4" stem.dir="down" beat="0.5000" pm:xy="1.117,6.499" idx="1" />
+                              </chord>
+                           </graceGrp>
+                           <chord xml:id="c1bjkozp" dur="2" stem.dir="down" stem.len="3.5" beat="1.0000" pm:xy="1.142,6.553">
+                              <note xml:id="n1djsx93" pname="d" oct="4" stem.dir="down" beat="1.0000" pm:xy="1.142,6.472" idx="0" />
+                              <note xml:id="n1bbkxzf" pname="f" oct="4" stem.dir="down" beat="1.0000" pm:xy="1.142,6.490" idx="0" />
+                           </chord>
+                           <chord xml:id="cz318lj" dur="2" stem.dir="down" stem.len="3.5" beat="3.0000" pm:xy="1.236,6.553">
+                              <note xml:id="n1xp5d6o" pname="d" oct="4" stem.dir="down" beat="3.0000" pm:xy="1.236,6.472" idx="1" />
+                              <note xml:id="nldz3w6" pname="f" oct="4" stem.dir="down" beat="3.0000" pm:xy="1.236,6.490" idx="1" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1ml06sn" n="3" pm:top-left-x="1.334" pm:top-left-y="6.571" pm:bottom-right-x="1.679" pm:bottom-right-y="6.463">
+                     <staff xml:id="m28s1" n="1">
+                        <layer xml:id="m28s1l1" n="1">
+                           <graceGrp grace="acc">
+                              <beam>
+                                 <note xml:id="nu4i1da" dur="16" pname="e" oct="5" stem.dir="up" stem.len="2.2432" beat="0.5000" pm:xy="1.353,6.544" idx="2" />
+                                 <note xml:id="n1fs2g4d" dur="16" pname="d" oct="5" stem.dir="up" stem.len="2.5068" beat="0.7500" pm:xy="1.375,6.535" idx="4" />
+                              </beam>
+                           </graceGrp>
+                           <note xml:id="n299oie" dur="2" pname="c" oct="5" stem.dir="up" stem.len="2.75" beat="1.0000" pm:xy="1.400,6.526" idx="6" />
+                           <graceGrp grace="acc">
+                              <beam>
+                                 <note xml:id="ndz9qng" dur="32" pname="a" oct="5" stem.dir="up" stem.len="2.4957" beat="2.8750" pm:xy="1.447,6.571" idx="0">
+                                    <accid accid="s" pm:xy="1.428,6.571" />
+                                 </note>
+                                 <note xml:id="n1j1krav" dur="32" pname="g" oct="5" stem.dir="up" stem.len="2.7304" beat="2.8750" pm:xy="1.486,6.562" idx="0">
+                                    <accid accid="s" pm:xy="1.471,6.562" />
+                                 </note>
+                                 <note xml:id="nw2t371" dur="32" pname="f" oct="5" stem.dir="up" stem.len="2.9846" beat="2.8750" pm:xy="1.522,6.553" idx="1">
+                                    <accid accid="s" pm:xy="1.507,6.553" />
+                                 </note>
+                                 <note xml:id="ntexygr" dur="32" pname="d" oct="5" stem.dir="up" stem.len="3.7543" beat="2.8750" pm:xy="1.556,6.535" idx="0">
+                                    <accid accid="s" pm:xy="1.541,6.535" />
+                                 </note>
+                              </beam>
+                           </graceGrp>
+                           <note xml:id="n1l2ge9u" dur="2" pname="c" oct="5" stem.dir="up" stem.len="2.75" beat="3.0000" pm:xy="1.581,6.526" idx="7" />
+                        </layer>
+                        <layer xml:id="m36s0l2" n="2">
+                           <note xml:id="nsir2h3" dur="1" pname="f" oct="4" stem.dir="down" beat="1.0000" pm:xy="1.398,6.490" idx="2" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="mdh9u0f" n="4" pm:top-left-x="1.679" pm:top-left-y="6.571" pm:bottom-right-x="1.846" pm:bottom-right-y="6.463">
+                     <staff xml:id="m38s1" n="1">
+                        <layer xml:id="m38s1l1" n="1">
+                           <mRest xml:id="m1an2hah" beat="1.0000" yOffset="3.00" hand="left" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m14b1b31" right="end" n="5" pm:top-left-x="1.846" pm:top-left-y="6.571" pm:bottom-right-x="2.030" pm:bottom-right-y="6.463">
+                     <staff xml:id="m39s1" n="1">
+                        <layer xml:id="m39s1l1" n="1">
+                           <mRest xml:id="m1s6rcb5" beat="1.0000" yOffset="3.00" hand="left" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

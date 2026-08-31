@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:pm="http://pianomania.gg/ns/mei" meiversion="5.1+basic">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Untitled score</title>
+            <respStmt>
+               <persName role="composer">Composer / arranger</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2023-09-14T16:04:27" />
+         </pubStmt>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef pm:timesig-xy-top="0.667,6.553" pm:timesig-xy="0.667,6.553">
+                  <pgHead>
+                     <rend halign="center" valign="top">
+                        <rend type="title" fontsize="x-large" pm:xy="5.000,6.794">Untitled score</rend>
+                        <lb />
+                        <rend type="subtitle" fontsize="large" pm:xy="5.000,6.442">Subtitle</rend>
+                     </rend>
+                     <rend halign="right" valign="bottom">
+                        <rend type="composer" pm:xy="8.753,6.744">Composer / arranger</rend>
+                     </rend>
+                  </pgHead>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" meter.count="4" meter.unit="4" pm:timesig-xy="0.667,6.553">
+                        <label>Violin</label>
+                        <labelAbbr>Vln.</labelAbbr>
+                        <instrDef midi.instrnum="40" />
+                        <clef shape="G" line="2" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="s1">
+                  <pb />
+                  <sb pm:top-left-x="0.591" pm:top-left-y="6.909" pm:bottom-right-x="9.409" pm:bottom-right-y="6.679" />
+                  <sb type="mscore-manual" pm:top-left-x="0.591" pm:top-left-y="6.553" pm:bottom-right-x="9.409" pm:bottom-right-y="6.481" />
+                  <measure xml:id="msjrm4j" n="1" pm:top-left-x="0.591" pm:top-left-y="6.571" pm:bottom-right-x="1.553" pm:bottom-right-y="6.463">
+                     <staff xml:id="m1s1" n="1">
+                        <layer xml:id="m1s1l1" n="1">
+                           <note xml:id="n1m15f8m" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="1.0000" pm:xy="0.735,6.526" idx="0">
+                              <artic xml:id="a1drqlfe" artic="acc" place="above" yOffset="2.0" pm:xy="0.734,6.561" />
+                           </note>
+                           <note xml:id="n11x33xw" dur="4" pname="e" oct="4" stem.dir="up" stem.len="3.5" beat="2.0000" pm:xy="0.939,6.481" idx="0">
+                              <artic xml:id="a5mrdah" artic="acc" place="below" yOffset="-0.9" pm:xy="0.938,6.464" />
+                           </note>
+                           <note xml:id="nrf844i" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="3.0000" pm:xy="1.143,6.526" idx="1">
+                              <artic xml:id="a1u2pnyz" artic="acc" place="below" yOffset="-3.6" pm:xy="1.136,6.460" />
+                           </note>
+                           <note xml:id="nw0dss2" dur="4" pname="e" oct="4" stem.dir="up" stem.len="3.5" beat="4.0000" pm:xy="1.346,6.481" idx="1">
+                              <artic xml:id="apqclzi" artic="acc" place="below" yOffset="-0.9" pm:xy="1.345,6.464" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m16ihed9" n="2" pm:top-left-x="1.553" pm:top-left-y="6.571" pm:bottom-right-x="2.394" pm:bottom-right-y="6.463">
+                     <staff xml:id="m6s1" n="1">
+                        <layer xml:id="m6s1l1" n="1">
+                           <note xml:id="n1cy34gc" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="1.0000" pm:xy="1.576,6.526" idx="2">
+                              <artic xml:id="ah6yf6y" artic="stacc" place="above" yOffset="0.8" pm:xy="1.585,6.541" />
+                           </note>
+                           <note xml:id="nihgyqk" dur="4" pname="e" oct="4" stem.dir="up" stem.len="3.5" beat="2.0000" pm:xy="1.780,6.481" idx="2">
+                              <artic xml:id="a15t9m1t" artic="stacc" place="below" yOffset="-0.9" pm:xy="1.789,6.464" />
+                           </note>
+                           <note xml:id="nktbx7m" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="3.0000" pm:xy="1.983,6.526" idx="3">
+                              <artic xml:id="a1gco1ap" artic="stacciss" place="above" yOffset="2.0" pm:xy="1.991,6.561" />
+                           </note>
+                           <note xml:id="n1q92o4g" dur="4" pname="e" oct="4" stem.dir="up" stem.len="3.5" beat="4.0000" pm:xy="2.187,6.481" idx="3">
+                              <artic xml:id="akqsqci" artic="stacciss" place="below" yOffset="-0.9" pm:xy="2.194,6.464" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="mzkbqhf" n="3" pm:top-left-x="2.394" pm:top-left-y="6.571" pm:bottom-right-x="3.235" pm:bottom-right-y="6.463">
+                     <staff xml:id="m11s1" n="1">
+                        <layer xml:id="m11s1l1" n="1">
+                           <note xml:id="n1ylyh0f" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="1.0000" pm:xy="2.417,6.526" idx="4">
+                              <artic xml:id="a10e6c1l" artic="ten" place="above" yOffset="0.9" pm:xy="2.417,6.542" />
+                           </note>
+                           <note xml:id="n1iwv5yl" dur="4" pname="e" oct="4" stem.dir="up" stem.len="3.5" beat="2.0000" pm:xy="2.621,6.481" idx="4">
+                              <artic xml:id="a17zgf38" artic="ten" place="below" yOffset="-0.9" pm:xy="2.621,6.464" />
+                           </note>
+                           <note xml:id="n1nndizo" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="3.0000" pm:xy="2.824,6.526" idx="5">
+                              <artic xml:id="a1ixsbl5" artic="stacc ten" place="above" yOffset="2.0" pm:xy="2.825,6.561" />
+                           </note>
+                           <note xml:id="ngghq0b" dur="4" pname="e" oct="4" stem.dir="up" stem.len="3.5" beat="4.0000" pm:xy="3.028,6.481" idx="5">
+                              <artic xml:id="a92d9kz" artic="stacc ten" place="below" yOffset="-0.9" pm:xy="3.028,6.464" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1u0ahof" n="4" pm:top-left-x="3.235" pm:top-left-y="6.571" pm:bottom-right-x="4.076" pm:bottom-right-y="6.463">
+                     <staff xml:id="m16s1" n="1">
+                        <layer xml:id="m16s1l1" n="1">
+                           <note xml:id="n1w7l637" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="1.0000" pm:xy="3.258,6.526" idx="6">
+                              <artic xml:id="a1fz0gsc" artic="marc" place="above" yOffset="2.0" pm:xy="3.259,6.561" />
+                           </note>
+                           <note xml:id="n1s37tnj" dur="4" pname="e" oct="4" stem.dir="up" stem.len="3.5" beat="2.0000" pm:xy="3.461,6.481" idx="6">
+                              <artic xml:id="azi1hb4" artic="marc" place="above" yOffset="4.5" pm:xy="3.468,6.561" />
+                           </note>
+                           <note xml:id="n1mfvjz" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="3.0000" pm:xy="3.665,6.526" idx="7">
+                              <artic xml:id="a12tap0o" artic="stacc acc" place="above" yOffset="2.0" pm:xy="3.664,6.561" />
+                           </note>
+                           <note xml:id="n1y2vw0r" dur="4" pname="e" oct="4" stem.dir="up" stem.len="3.5" beat="4.0000" pm:xy="3.869,6.481" idx="7">
+                              <artic xml:id="a1q7pb0l" artic="stacc acc" place="below" yOffset="-0.9" pm:xy="3.868,6.464" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="mlhsfby" n="5" pm:top-left-x="4.076" pm:top-left-y="6.571" pm:bottom-right-x="4.917" pm:bottom-right-y="6.463">
+                     <staff xml:id="m21s1" n="1">
+                        <layer xml:id="m21s1l1" n="1">
+                           <note xml:id="n78e07e" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="1.0000" pm:xy="4.098,6.526" idx="8">
+                              <artic xml:id="aif30cu" artic="stacc marc" place="above" yOffset="2.0" pm:xy="4.100,6.561" />
+                           </note>
+                           <note xml:id="nl6knt3" dur="4" pname="e" oct="4" stem.dir="up" stem.len="3.5" beat="2.0000" pm:xy="4.302,6.481" idx="8">
+                              <artic xml:id="a1i73nqz" artic="stacc marc" place="above" yOffset="4.5" pm:xy="4.309,6.561" />
+                           </note>
+                           <note xml:id="n1vonh5l" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="3.0000" pm:xy="4.506,6.526" idx="9">
+                              <artic xml:id="a1kmv6ws" artic="ten marc" place="above" yOffset="2.0" pm:xy="4.506,6.561" />
+                           </note>
+                           <note xml:id="n1axs3md" dur="4" pname="e" oct="4" stem.dir="up" stem.len="3.5" beat="4.0000" pm:xy="4.710,6.481" idx="9">
+                              <artic xml:id="a1wewj5l" artic="ten marc" place="above" yOffset="4.5" pm:xy="4.716,6.561" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m13b2gjx" n="6" pm:top-left-x="4.917" pm:top-left-y="6.571" pm:bottom-right-x="5.758" pm:bottom-right-y="6.463">
+                     <staff xml:id="m26s1" n="1">
+                        <layer xml:id="m26s1l1" n="1">
+                           <note xml:id="n1wd9tl1" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="1.0000" pm:xy="4.939,6.526" idx="10">
+                              <artic xml:id="a11haugl" artic="stroke" place="above" yOffset="2.0" pm:xy="4.949,6.561" />
+                           </note>
+                           <note xml:id="nsscd8o" dur="4" pname="e" oct="4" stem.dir="up" stem.len="3.5" beat="2.0000" pm:xy="5.143,6.481" idx="10">
+                              <artic xml:id="a177w7k6" artic="stroke" place="below" yOffset="-0.9" pm:xy="5.153,6.464" />
+                           </note>
+                           <note xml:id="n105ynts" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="3.0000" pm:xy="5.347,6.526" idx="11">
+                              <artic xml:id="a14orzzy" artic="spicc" place="above" yOffset="2.0" pm:xy="5.354,6.561" />
+                           </note>
+                           <note xml:id="n1gqwn5" dur="4" pname="e" oct="4" stem.dir="up" stem.len="3.5" beat="4.0000" pm:xy="5.551,6.481" idx="11">
+                              <artic xml:id="a1vwzd65" artic="spicc" place="below" yOffset="-0.9" pm:xy="5.558,6.464" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1dlg3li" n="7" pm:top-left-x="5.758" pm:top-left-y="6.571" pm:bottom-right-x="6.599" pm:bottom-right-y="6.463">
+                     <staff xml:id="m31s1" n="1">
+                        <layer xml:id="m31s1l1" n="1">
+                           <note xml:id="n14uj2y2" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="1.0000" pm:xy="5.780,6.526" idx="12">
+                              <artic xml:id="a15fhkb8" artic="upbow" place="above" yOffset="2.0" pm:xy="5.782,6.561" />
+                           </note>
+                           <note xml:id="n1l40naa" dur="4" pname="e" oct="4" stem.dir="up" stem.len="3.5" beat="2.0000" pm:xy="5.984,6.481" idx="12">
+                              <artic xml:id="az966xr" artic="upbow" place="above" yOffset="4.5" pm:xy="5.986,6.561" />
+                           </note>
+                           <note xml:id="nj5x9yy" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="3.0000" pm:xy="6.188,6.526" idx="13">
+                              <artic xml:id="akbhubp" artic="dnbow" place="below" yOffset="-4.8" pm:xy="6.188,6.439" />
+                           </note>
+                           <note xml:id="n9hwqy4" dur="4" pname="e" oct="4" stem.dir="up" stem.len="3.5" beat="4.0000" pm:xy="6.392,6.481" idx="13">
+                              <artic xml:id="a1amh8zk" artic="dnbow" place="above" yOffset="4.5" pm:xy="6.392,6.561" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1pxt2nv" n="8" pm:top-left-x="6.599" pm:top-left-y="6.571" pm:bottom-right-x="7.439" pm:bottom-right-y="6.463">
+                     <staff xml:id="m36s1" n="1">
+                        <layer xml:id="m36s1l1" n="1">
+                           <note xml:id="np6rpcw" dur="4" pname="e" oct="5" stem.dir="up" stem.len="2.5" beat="1.0000" pm:xy="6.621,6.544" idx="0">
+                              <artic xml:id="a1mv8346" artic="acc" place="above" yOffset="2.9" pm:xy="6.625,6.596" />
+                           </note>
+                           <note xml:id="n1nx6oxn" dur="4" pname="g" oct="4" stem.dir="up" stem.len="3.5" beat="2.0000" pm:xy="6.825,6.499" idx="0">
+                              <artic xml:id="akgj938" artic="acc" place="above" yOffset="3.9" pm:xy="6.829,6.569" />
+                           </note>
+                           <note xml:id="n1iirssv" dur="4" pname="e" oct="5" stem.dir="up" stem.len="2.5" beat="3.0000" pm:xy="7.029,6.544" idx="1">
+                              <artic xml:id="a1r6kt2r" artic="acc" place="above" yOffset="2.9" pm:xy="7.033,6.596" />
+                           </note>
+                           <note xml:id="n1ynd61w" dur="4" pname="g" oct="4" stem.dir="up" stem.len="3.5" beat="4.0000" pm:xy="7.232,6.499" idx="1">
+                              <artic xml:id="agbnpuy" artic="acc" place="above" yOffset="3.9" pm:xy="7.237,6.569" />
+                           </note>
+                        </layer>
+                        <layer xml:id="m40s0l2" n="2">
+                           <note xml:id="n1ute5gt" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="1.0000" pm:xy="6.621,6.526" idx="14">
+                              <artic xml:id="a24kwge" artic="acc" place="below" yOffset="-3.6" pm:xy="6.614,6.460" />
+                           </note>
+                           <note xml:id="n1kfhkqk" dur="4" pname="e" oct="4" stem.dir="down" stem.len="2.5" beat="2.0000" pm:xy="6.825,6.481" idx="14">
+                              <artic xml:id="a1cxv1bb" artic="acc" place="below" yOffset="-2.9" pm:xy="6.818,6.428" />
+                           </note>
+                           <note xml:id="n4ycqts" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="3.0000" pm:xy="7.029,6.526" idx="15">
+                              <artic xml:id="a1xlobgj" artic="acc" place="below" yOffset="-3.6" pm:xy="7.022,6.460" />
+                           </note>
+                           <note xml:id="nc2148d" dur="4" pname="e" oct="4" stem.dir="down" stem.len="2.5" beat="4.0000" pm:xy="7.232,6.481" idx="15">
+                              <artic xml:id="az1us4n" artic="acc" place="below" yOffset="-2.9" pm:xy="7.226,6.428" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1nrjiwc" n="9" pm:top-left-x="7.439" pm:top-left-y="6.571" pm:bottom-right-x="8.280" pm:bottom-right-y="6.463">
+                     <staff xml:id="m45s1" n="1">
+                        <layer xml:id="m45s1l1" n="1">
+                           <chord xml:id="c1rbv3m0" dur="4" stem.dir="down" stem.len="4.25" beat="1.0000" pm:xy="7.462,6.553">
+                              <artic xml:id="a1g6jbqx" artic="acc" place="above" yOffset="2.0" pm:xy="7.461,6.561" />
+                              <note xml:id="n1p111k8" pname="c" oct="5" stem.dir="down" beat="1.0000" pm:xy="7.462,6.526" idx="16" />
+                              <note xml:id="n1goqqp" pname="e" oct="5" stem.dir="down" beat="1.0000" pm:xy="7.462,6.544" idx="2" />
+                           </chord>
+                           <chord xml:id="c1q4qsf4" dur="4" stem.dir="up" stem.len="4.5" beat="2.0000" pm:xy="7.666,6.553">
+                              <artic xml:id="aizi0vr" artic="acc" place="below" yOffset="-0.9" pm:xy="7.664,6.464" />
+                              <note xml:id="nl600fs" pname="e" oct="4" stem.dir="up" beat="2.0000" pm:xy="7.666,6.481" idx="16" />
+                              <note xml:id="n1vymtra" pname="g" oct="4" stem.dir="up" beat="2.0000" pm:xy="7.666,6.499" idx="2" />
+                           </chord>
+                           <chord xml:id="cq1afdi" dur="4" stem.dir="down" stem.len="4.25" beat="3.0000" pm:xy="7.870,6.553">
+                              <artic xml:id="a1gmz7mi" artic="acc" place="below" yOffset="-3.6" pm:xy="7.863,6.460" />
+                              <note xml:id="nru6qqu" pname="c" oct="5" stem.dir="down" beat="3.0000" pm:xy="7.870,6.526" idx="17" />
+                              <note xml:id="n10cghlm" pname="e" oct="5" stem.dir="down" beat="3.0000" pm:xy="7.870,6.544" idx="3" />
+                           </chord>
+                           <chord xml:id="c1uhpjfl" dur="4" stem.dir="up" stem.len="4.5" beat="4.0000" pm:xy="8.073,6.553">
+                              <artic xml:id="a1j1mncf" artic="acc" place="below" yOffset="-0.9" pm:xy="8.072,6.464" />
+                              <note xml:id="ny8xlwy" pname="e" oct="4" stem.dir="up" beat="4.0000" pm:xy="8.073,6.481" idx="17" />
+                              <note xml:id="n1hbgjsq" pname="g" oct="4" stem.dir="up" beat="4.0000" pm:xy="8.073,6.499" idx="3" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1h08zsp" right="end" n="10" pm:top-left-x="8.280" pm:top-left-y="6.571" pm:bottom-right-x="9.409" pm:bottom-right-y="6.463">
+                     <staff xml:id="m54s1" n="1">
+                        <layer xml:id="m54s1l1" n="1">
+                           <beam>
+                              <note xml:id="n9w7by0" dur="8" pname="c" oct="5" stem.dir="down" stem.len="3" beat="1.0000" pm:xy="8.303,6.526" idx="18">
+                                 <artic xml:id="aiiszn9" artic="open" place="above" yOffset="2.0" pm:xy="8.304,6.561" />
+                              </note>
+                              <note xml:id="nznodt3" dur="8" pname="c" oct="5" stem.dir="down" stem.len="3" beat="1.5000" pm:xy="8.439,6.526" idx="19">
+                                 <artic xml:id="a1r6i005" artic="stop" place="above" yOffset="2.0" pm:xy="8.439,6.561" />
+                              </note>
+                              <note xml:id="n1b139e" dur="8" pname="c" oct="5" stem.dir="down" stem.len="3" beat="2.0000" pm:xy="8.575,6.526" idx="20">
+                                 <artic xml:id="a15kggr2" artic="harm" place="above" yOffset="2.0" pm:xy="8.580,6.561" />
+                              </note>
+                              <note xml:id="n1tnoa2k" dur="8" pname="c" oct="5" stem.dir="down" stem.len="3" beat="2.5000" pm:xy="8.710,6.526" idx="21">
+                                 <artic xml:id="a162tjan" artic="snap" place="above" yOffset="2.0" pm:xy="8.712,6.561" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n3816m5" dur="8" pname="c" oct="5" stem.dir="down" stem.len="3" beat="3.0000" pm:xy="8.846,6.526" idx="22">
+                                 <artic xml:id="a94bwbz" artic="acc-soft" place="above" yOffset="2.0" pm:xy="8.832,6.561" />
+                              </note>
+                              <note xml:id="nzjzfef" dur="8" pname="c" oct="5" stem.dir="down" stem.len="3" beat="3.5000" pm:xy="8.982,6.526" idx="23">
+                                 <artic xml:id="a1o458gu" artic="stacc" place="above" yOffset="0.8" pm:xy="8.991,6.541" />
+                                 <artic xml:id="a1j234u9" artic="dnbow" place="below" yOffset="-4.6" pm:xy="8.982,6.443" />
+                              </note>
+                              <note xml:id="nd2j8pq" dur="8" pname="c" oct="5" stem.dir="down" stem.len="3" beat="4.0000" pm:xy="9.118,6.526" idx="24">
+                                 <artic xml:id="arj6x41" artic="acc" place="above" yOffset="2.0" pm:xy="9.117,6.561" />
+                                 <artic xml:id="avbi965" artic="dnbow" place="above" yOffset="3.2" pm:xy="9.118,6.584" />
+                              </note>
+                              <note xml:id="nzqurdz" dur="8" pname="c" oct="5" stem.dir="down" stem.len="3" beat="4.5000" pm:xy="9.254,6.526" idx="25">
+                                 <artic xml:id="a14x1vfu" artic="ten acc" place="below" yOffset="-3.4" pm:xy="9.247,6.464" />
+                                 <artic xml:id="a11myq3d" artic="upbow" place="above" yOffset="2.0" pm:xy="9.256,6.561" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

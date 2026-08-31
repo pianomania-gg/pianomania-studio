@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:pm="http://pianomania.gg/ns/mei" meiversion="5.1+basic">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Untitled score</title>
+            <respStmt>
+               <persName role="composer">Composer / arranger</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2023-08-11T14:50:34" />
+         </pubStmt>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef pm:timesig-xy-top="0.738,6.553" pm:timesig-xy="0.738,6.553" pm:keysig-xy-top="0.664,6.553" pm:keysig-xy="0.664,6.553">
+                  <pgHead>
+                     <rend halign="center" valign="top">
+                        <rend type="title" fontsize="x-large" pm:xy="5.000,6.794">Untitled score</rend>
+                        <lb />
+                        <rend type="subtitle" fontsize="large" pm:xy="5.000,6.442">Subtitle</rend>
+                     </rend>
+                     <rend halign="right" valign="bottom">
+                        <rend type="composer" pm:xy="8.753,6.744">Composer / arranger</rend>
+                     </rend>
+                  </pgHead>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" keysig="3s" meter.count="4" meter.unit="4" pm:timesig-xy="0.738,6.553" pm:keysig-xy="0.664,6.553">
+                        <label>Voice</label>
+                        <labelAbbr>Vo.</labelAbbr>
+                        <clef shape="G" line="2" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="s1">
+                  <pb />
+                  <sb pm:top-left-x="0.591" pm:top-left-y="6.909" pm:bottom-right-x="9.409" pm:bottom-right-y="6.679" />
+                  <sb type="mscore-manual" pm:top-left-x="0.591" pm:top-left-y="6.553" pm:bottom-right-x="9.409" pm:bottom-right-y="6.481" />
+                  <measure xml:id="m1qmvc7q" n="1" pm:top-left-x="0.591" pm:top-left-y="6.571" pm:bottom-right-x="1.071" pm:bottom-right-y="6.463">
+                     <staff xml:id="m1s1" n="1">
+                        <layer xml:id="m1s1l1" n="1">
+                           <note xml:id="nssxvo2" dur="4" pname="f" oct="4" stem.dir="up" stem.len="3.5" beat="1.0000" pm:xy="0.806,6.490" idx="0">
+                              <accid accid.ges="s" />
+                           </note>
+                           <note xml:id="ne4my69" dur="4" pname="f" oct="4" stem.dir="up" stem.len="3.5" beat="2.0000" pm:xy="0.869,6.490" idx="1">
+                              <accid accid="s" pm:xy="0.847,6.490" />
+                           </note>
+                           <note xml:id="nq96ye1" dur="4" pname="f" oct="4" stem.dir="up" stem.len="3.5" beat="3.0000" pm:xy="0.932,6.490" idx="0">
+                              <accid accid="ss" pm:xy="0.907,6.490" />
+                           </note>
+                           <note xml:id="nkrvj69" dur="4" pname="f" oct="4" stem.dir="up" stem.len="3.5" beat="4.0000" pm:xy="1.004,6.490" idx="1">
+                              <accid accid="ss" pm:xy="0.961,6.490" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1fdbhz6" right="end" n="2" pm:top-left-x="1.071" pm:top-left-y="6.571" pm:bottom-right-x="1.374" pm:bottom-right-y="6.463">
+                     <staff xml:id="m6s1" n="1">
+                        <layer xml:id="m6s1l1" n="1">
+                           <note xml:id="n1kv2xwk" dur="4" pname="a" oct="4" stem.dir="up" stem.len="3.25" beat="1.0000" pm:xy="1.099,6.508" idx="0">
+                              <accid accid="n" pm:xy="1.082,6.508" />
+                           </note>
+                           <note xml:id="n1ktkawl" dur="4" pname="a" oct="4" stem.dir="up" stem.len="3.25" beat="2.0000" pm:xy="1.162,6.508" idx="0">
+                              <accid accid="f" pm:xy="1.143,6.508" />
+                           </note>
+                           <note xml:id="nz6925q" dur="4" pname="a" oct="4" stem.dir="up" stem.len="3.25" beat="3.0000" pm:xy="1.228,6.508" idx="1">
+                              <accid accid="nf" pm:xy="1.192,6.508" />
+                           </note>
+                           <note xml:id="nlpi0gu" dur="4" pname="a" oct="4" stem.dir="up" stem.len="3.25" beat="4.0000" pm:xy="1.291,6.508" idx="2">
+                              <accid accid="ff" pm:xy="1.260,6.508" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

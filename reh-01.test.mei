@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:pm="http://pianomania.gg/ns/mei" meiversion="5.1+basic">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Rehearsal</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2024-05-27T09:30:00" />
+         </pubStmt>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef pm:timesig-xy-top="0.667,6.440" pm:timesig-xy="0.667,6.440">
+                  <pgHead>
+                     <rend halign="center" valign="top">
+                        <rend type="title" fontsize="x-large" pm:xy="5.000,6.794">Rehearsal</rend>
+                     </rend>
+                  </pgHead>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" meter.count="4" meter.unit="4" pm:timesig-xy="0.667,6.440">
+                        <clef shape="G" line="2" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="s1">
+                  <pb />
+                  <sb pm:top-left-x="0.591" pm:top-left-y="6.909" pm:bottom-right-x="9.409" pm:bottom-right-y="6.679" />
+                  <sb type="mscore-manual" pm:top-left-x="0.591" pm:top-left-y="6.440" pm:bottom-right-x="9.409" pm:bottom-right-y="6.368" />
+                  <measure xml:id="m15amo87" n="1" pm:top-left-x="0.591" pm:top-left-y="6.458" pm:bottom-right-x="0.990" pm:bottom-right-y="6.350">
+                     <staff xml:id="m1s1" n="1">
+                        <layer xml:id="m1s1l1" n="1">
+                           <note xml:id="nx9ob8k" dur="4" pname="a" oct="4" stem.dir="up" stem.len="3.25" beat="1.0000" pm:xy="0.735,6.395" idx="0" />
+                           <note xml:id="nzab2ju" dur="4" pname="f" oct="4" stem.dir="up" stem.len="3.5" beat="2.0000" pm:xy="0.798,6.377" idx="0" />
+                           <note xml:id="ni713gs" dur="4" pname="e" oct="4" stem.dir="up" stem.len="3.5" beat="3.0000" pm:xy="0.861,6.368" idx="0" />
+                           <note xml:id="nd750e3" dur="4" pname="g" oct="4" stem.dir="up" stem.len="3.5" beat="4.0000" pm:xy="0.924,6.386" idx="0" />
+                        </layer>
+                     </staff>
+                     <reh xml:id="r1o46ev9" startid="#nx9ob8k" pm:xy="0.699,6.559">A</reh>
+                     <reh xml:id="r11lxtmt" startid="#nd750e3" pm:xy="0.924,6.546">C</reh>
+                  </measure>
+                  <measure xml:id="m1u1yvxt" right="end" n="2" pm:top-left-x="0.990" pm:top-left-y="6.458" pm:bottom-right-x="1.296" pm:bottom-right-y="6.350">
+                     <staff xml:id="m6s1" n="1">
+                        <layer xml:id="m6s1l1" n="1">
+                           <note xml:id="niq4lzv" dur="4" pname="g" oct="4" stem.dir="up" stem.len="3.5" beat="1.0000" pm:xy="1.024,6.386" idx="0">
+                              <accid accid="s" pm:xy="1.002,6.386" />
+                           </note>
+                           <note xml:id="nccjqrh" dur="4" pname="a" oct="4" stem.dir="up" stem.len="3.25" beat="2.0000" pm:xy="1.087,6.395" idx="1" />
+                           <note xml:id="n1xd4o8v" dur="4" pname="d" oct="4" stem.dir="up" stem.len="3.5" beat="3.0000" pm:xy="1.150,6.359" idx="0" />
+                           <note xml:id="n1jretlh" dur="4" pname="d" oct="5" stem.dir="down" stem.len="3.5" beat="4.0000" pm:xy="1.213,6.422" idx="0" />
+                        </layer>
+                     </staff>
+                     <reh xml:id="r1t94gl5" startid="#n1xd4o8v" color="#33CC33" pm:xy="1.150,6.545">33</reh>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

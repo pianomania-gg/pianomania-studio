@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:pm="http://pianomania.gg/ns/mei" meiversion="5.1+basic">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Untitled score</title>
+            <respStmt>
+               <persName role="composer">Composer / arranger</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2023-08-11T14:51:50" />
+         </pubStmt>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef pm:timesig-xy-top="0.672,6.553" pm:timesig-xy="0.672,6.553" pm:timesig-xy-bottom="0.672,6.364">
+                  <pgHead>
+                     <rend halign="center" valign="top">
+                        <rend type="title" fontsize="x-large" pm:xy="5.000,6.794">Cross-staff</rend>
+                        <lb />
+                        <rend type="subtitle" fontsize="large" pm:xy="5.000,6.442">Subtitle</rend>
+                     </rend>
+                     <rend halign="right" valign="bottom">
+                        <rend type="composer" pm:xy="8.753,6.745">Composer / arranger</rend>
+                     </rend>
+                  </pgHead>
+                  <staffGrp>
+                     <staffGrp bar.thru="true" symbol="brace">
+                        <label>Piano</label>
+                        <labelAbbr>Pno.</labelAbbr>
+                        <staffDef n="1" lines="5" meter.count="4" meter.unit="4" pm:timesig-xy="0.672,6.553">
+                           <clef shape="G" line="2" />
+                        </staffDef>
+                        <staffDef n="2" lines="5" meter.count="4" meter.unit="4" pm:timesig-xy="0.672,6.364">
+                           <clef shape="F" line="4" />
+                        </staffDef>
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="s1">
+                  <pb />
+                  <sb pm:top-left-x="0.591" pm:top-left-y="6.909" pm:bottom-right-x="9.409" pm:bottom-right-y="6.679" />
+                  <sb type="mscore-manual" pm:top-left-x="0.591" pm:top-left-y="6.553" pm:bottom-right-x="9.409" pm:bottom-right-y="6.292" />
+                  <measure xml:id="m11ee0h6" n="1" pm:top-left-x="0.591" pm:top-left-y="6.571" pm:bottom-right-x="1.224" pm:bottom-right-y="6.274">
+                     <staff xml:id="m1s1" n="1">
+                        <layer xml:id="m1s1l1" n="1">
+                           <mRest xml:id="m1e641zh" beat="1.0000" yOffset="3.00" hand="right" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m1s2" n="2">
+                        <layer xml:id="m1s2l1" n="1">
+                           <beam>
+                              <note xml:id="n1p18dci" dur="16" staff="1" pname="b" oct="4" stem.dir="down" stem.len="7.625" beat="1.0000" pm:xy="0.740,6.517" idx="0" />
+                              <note xml:id="n187uhng" dur="16" pname="b" oct="2" stem.dir="up" stem.len="5.125" beat="1.2500" pm:xy="0.746,6.310" idx="0" />
+                              <note xml:id="nzcgtxp" dur="16" pname="b" oct="2" stem.dir="up" stem.len="5.125" beat="1.5000" pm:xy="0.776,6.310" idx="1" />
+                              <note xml:id="nk6ops8" dur="16" staff="1" pname="d" oct="4" stem.dir="down" stem.len="5.125" beat="1.7500" pm:xy="0.826,6.472" idx="0" />
+                           </beam>
+                           <beam>
+                              <note xml:id="ntcjc22" dur="16" staff="1" pname="b" oct="4" stem.dir="down" stem.len="7.625" beat="2.0000" pm:xy="0.855,6.517" idx="1" />
+                              <note xml:id="n1mngjsa" dur="16" pname="b" oct="2" stem.dir="up" stem.len="5.125" beat="2.2500" pm:xy="0.862,6.310" idx="2" />
+                              <note xml:id="n1jcv1hh" dur="16" pname="b" oct="2" stem.dir="up" stem.len="5.125" beat="2.5000" pm:xy="0.892,6.310" idx="3" />
+                              <note xml:id="n7q5lbi" dur="16" staff="1" pname="d" oct="4" stem.dir="down" stem.len="5.125" beat="2.7500" pm:xy="0.941,6.472" idx="1" />
+                           </beam>
+                           <beam>
+                              <note xml:id="nw10ccu" dur="16" staff="1" pname="b" oct="4" stem.dir="down" stem.len="7.3828" beat="3.0000" pm:xy="0.971,6.517" idx="2" />
+                              <note xml:id="n19gk865" dur="16" pname="b" oct="2" stem.dir="up" stem.len="5.1252" beat="3.2500" pm:xy="0.977,6.310" idx="4" />
+                              <note xml:id="n1272h95" dur="16" staff="1" pname="d" oct="4" stem.dir="down" stem.len="5.3672" beat="3.5000" pm:xy="1.027,6.472" idx="2" />
+                           </beam>
+                           <rest xml:id="rf4j9x2" type="mscore-beam-none" dur="16" staff="1" beat="3.7500" yOffset="2.00" hand="left" pm:xy="1.059,6.517" />
+                           <beam>
+                              <note xml:id="npacqi" dur="16" staff="1" pname="b" oct="4" stem.dir="down" stem.len="6.288" beat="4.0000" pm:xy="1.093,6.517" idx="3" />
+                              <note xml:id="nzntqhi" dur="16" pname="b" oct="2" stem.dir="up" stem.len="6.288" beat="4.2500" pm:xy="1.099,6.310" idx="5" />
+                           </beam>
+                           <rest xml:id="rnnqhfv" type="mscore-beam-none" dur="16" staff="1" beat="4.5000" yOffset="2.00" hand="left" pm:xy="1.127,6.517" />
+                           <chord xml:id="cddiqiv" dur="16" staff="1" stem.dir="up" stem.len="5.5" beat="4.7500" pm:xy="1.161,6.553">
+                              <note xml:id="n5jfee8" pname="g" oct="3" stem.dir="up" beat="4.7500" pm:xy="1.161,6.436" idx="0" />
+                              <note xml:id="nwpobph" pname="b" oct="3" stem.dir="up" beat="4.7500" pm:xy="1.161,6.454" idx="0" />
+                              <note xml:id="n1vmxjaz" pname="d" oct="4" stem.dir="up" beat="4.7500" pm:xy="1.161,6.472" idx="3" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="mm4bewe" right="end" n="2" pm:top-left-x="1.224" pm:top-left-y="6.571" pm:bottom-right-x="1.744" pm:bottom-right-y="6.274">
+                     <staff xml:id="m18s1" n="1">
+                        <layer xml:id="m18s1l1" n="1">
+                           <beam>
+                              <note xml:id="n2fzn9a" dur="16" pname="b" oct="4" stem.dir="down" stem.len="4.625" beat="1.0000" pm:xy="1.247,6.517" idx="4" />
+                              <note xml:id="nypnlzd" dur="16" staff="2" pname="b" oct="3" stem.dir="up" stem.len="4.625" beat="1.2500" pm:xy="1.253,6.373" idx="1" />
+                              <note xml:id="n1jw2hju" dur="16" pname="b" oct="4" stem.dir="down" stem.len="4.625" beat="1.5000" pm:xy="1.303,6.517" idx="5" />
+                              <note xml:id="noh701w" dur="16" staff="2" pname="b" oct="3" stem.dir="up" stem.len="4.625" beat="1.7500" pm:xy="1.309,6.373" idx="2" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n1z0w4uo" dur="16" staff="2" pname="b" oct="3" stem.dir="up" stem.len="4.625" beat="2.0000" pm:xy="1.339,6.373" idx="3" />
+                              <note xml:id="n6xgfx1" dur="16" pname="b" oct="4" stem.dir="down" stem.len="4.625" beat="2.2500" pm:xy="1.388,6.517" idx="6" />
+                              <note xml:id="nh9x4hc" dur="16" staff="2" pname="b" oct="3" stem.dir="up" stem.len="4.625" beat="2.5000" pm:xy="1.395,6.373" idx="4" />
+                              <note xml:id="n1cpwh79" dur="16" pname="b" oct="4" stem.dir="down" stem.len="4.625" beat="2.7500" pm:xy="1.444,6.517" idx="7" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n1wvsk9i" dur="16" pname="b" oct="4" stem.dir="down" stem.len="4.625" beat="3.0000" pm:xy="1.474,6.517" idx="8" />
+                              <note xml:id="n131u565" dur="16" staff="2" pname="b" oct="3" stem.dir="up" stem.len="4.625" beat="3.2500" pm:xy="1.481,6.373" idx="5" />
+                              <note xml:id="nopzsd1" dur="16" staff="2" pname="b" oct="3" stem.dir="up" stem.len="4.625" beat="3.5000" pm:xy="1.510,6.373" idx="6" />
+                              <note xml:id="n1y26qk1" dur="16" pname="b" oct="4" stem.dir="down" stem.len="4.625" beat="3.7500" pm:xy="1.560,6.517" idx="9" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n1o7whi1" dur="16" staff="2" pname="b" oct="3" stem.dir="up" stem.len="4.625" beat="4.0000" pm:xy="1.588,6.373" idx="7" />
+                              <note xml:id="neyzag0" dur="16" pname="b" oct="4" stem.dir="down" stem.len="4.625" beat="4.2500" pm:xy="1.637,6.517" idx="10" />
+                              <note xml:id="n1p8uc7d" dur="16" pname="b" oct="4" stem.dir="down" stem.len="4.625" beat="4.5000" pm:xy="1.667,6.517" idx="11" />
+                              <note xml:id="ni1ybvp" dur="16" staff="2" pname="b" oct="3" stem.dir="up" stem.len="4.625" beat="4.7500" pm:xy="1.674,6.373" idx="8" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff xml:id="m34s1" n="2">
+                        <layer xml:id="m34s1l1" n="1">
+                           <mRest xml:id="m17y66iu" beat="1.0000" yOffset="3.00" hand="left" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

@@ -1,0 +1,1121 @@
+format: 0
+division: 480
+isDivisionIsInTps: false
+tracks:
+-
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 100
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 101
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 6
+      value: 12
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 100
+      value: 127
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 101
+      value: 127
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 0
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: AA==
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 1
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 1
+      control: 100
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 1
+      control: 101
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 1
+      control: 6
+      value: 12
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 1
+      control: 100
+      value: 127
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 1
+      control: 101
+      value: 127
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 1
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 1
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 1
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 1
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 1
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: AA==
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 2
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 2
+      control: 100
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 2
+      control: 101
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 2
+      control: 6
+      value: 12
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 2
+      control: 100
+      value: 127
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 2
+      control: 101
+      value: 127
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 2
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 2
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 2
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 2
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 2
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: AA==
+  -
+    time: 0
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 69
+      velocity: 80
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Violin"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: TimeSignature
+      numerator: 3
+      denominatorAsNegPowerOfTwo: 2
+      midiClocksPerClick: 24
+      num32ndNotesPerQuarterNote: 8
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SetTempo
+      usPerQuarterNote: 500000
+  -
+    time: 239
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 69
+      velocity: 64
+  -
+    time: 240
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 240
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 71
+      velocity: 80
+  -
+    time: 479
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 71
+      velocity: 64
+  -
+    time: 480
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 480
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 72
+      velocity: 80
+  -
+    time: 719
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 72
+      velocity: 64
+  -
+    time: 720
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 720
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 74
+      velocity: 80
+  -
+    time: 720
+    event:
+      type: Meta
+      metaType: SetTempo
+      usPerQuarterNote: 333333
+  -
+    time: 959
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 74
+      velocity: 64
+  -
+    time: 960
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 960
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 76
+      velocity: 80
+  -
+    time: 1199
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 76
+      velocity: 64
+  -
+    time: 1200
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 1200
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 77
+      velocity: 80
+  -
+    time: 1439
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 77
+      velocity: 64
+  -
+    time: 1440
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 1440
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 69
+      velocity: 80
+  -
+    time: 1679
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 69
+      velocity: 64
+  -
+    time: 1680
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 1680
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 71
+      velocity: 80
+  -
+    time: 1919
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 71
+      velocity: 64
+  -
+    time: 1920
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 1920
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 72
+      velocity: 80
+  -
+    time: 2159
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 72
+      velocity: 64
+  -
+    time: 2160
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 2160
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 74
+      velocity: 80
+  -
+    time: 2160
+    event:
+      type: Meta
+      metaType: SetTempo
+      usPerQuarterNote: 1000000
+  -
+    time: 2399
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 74
+      velocity: 64
+  -
+    time: 2400
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 2400
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 76
+      velocity: 80
+  -
+    time: 2639
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 76
+      velocity: 64
+  -
+    time: 2640
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 2640
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 77
+      velocity: 80
+  -
+    time: 2879
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 77
+      velocity: 64
+  -
+    time: 2879
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 2879
+    event:
+      type: Meta
+      metaType: SetTempo
+      usPerQuarterNote: 333333
+  -
+    time: 2880
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 2880
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 69
+      velocity: 80
+  -
+    time: 2880
+    event:
+      type: Meta
+      metaType: TimeSignature
+      numerator: 3
+      denominatorAsNegPowerOfTwo: 2
+      midiClocksPerClick: 24
+      num32ndNotesPerQuarterNote: 8
+  -
+    time: 2880
+    event:
+      type: Meta
+      metaType: SetTempo
+      usPerQuarterNote: 500000
+  -
+    time: 3119
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 69
+      velocity: 64
+  -
+    time: 3120
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 3120
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 71
+      velocity: 80
+  -
+    time: 3359
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 71
+      velocity: 64
+  -
+    time: 3360
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 3360
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 72
+      velocity: 80
+  -
+    time: 3599
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 72
+      velocity: 64
+  -
+    time: 3600
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 3600
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 74
+      velocity: 80
+  -
+    time: 3600
+    event:
+      type: Meta
+      metaType: SetTempo
+      usPerQuarterNote: 333333
+  -
+    time: 3839
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 74
+      velocity: 64
+  -
+    time: 3840
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 3840
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 76
+      velocity: 80
+  -
+    time: 4079
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 76
+      velocity: 64
+  -
+    time: 4080
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 4080
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 77
+      velocity: 80
+  -
+    time: 4319
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 77
+      velocity: 64
+  -
+    time: 4320
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 4320
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 69
+      velocity: 80
+  -
+    time: 4559
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 69
+      velocity: 64
+  -
+    time: 4560
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 4560
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 71
+      velocity: 80
+  -
+    time: 4799
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 71
+      velocity: 64
+  -
+    time: 4800
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 4800
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 72
+      velocity: 80
+  -
+    time: 5039
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 72
+      velocity: 64
+  -
+    time: 5040
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 5040
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 74
+      velocity: 80
+  -
+    time: 5040
+    event:
+      type: Meta
+      metaType: SetTempo
+      usPerQuarterNote: 333333
+  -
+    time: 5279
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 74
+      velocity: 64
+  -
+    time: 5280
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 5280
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 76
+      velocity: 80
+  -
+    time: 5519
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 76
+      velocity: 64
+  -
+    time: 5520
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 5520
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 77
+      velocity: 80
+  -
+    time: 5759
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 77
+      velocity: 64
+  -
+    time: 5759
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 5759
+    event:
+      type: Meta
+      metaType: SetTempo
+      usPerQuarterNote: 333333
+  -
+    time: 5760
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 5760
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 69
+      velocity: 80
+  -
+    time: 5760
+    event:
+      type: Meta
+      metaType: TimeSignature
+      numerator: 3
+      denominatorAsNegPowerOfTwo: 2
+      midiClocksPerClick: 24
+      num32ndNotesPerQuarterNote: 8
+  -
+    time: 5760
+    event:
+      type: Meta
+      metaType: SetTempo
+      usPerQuarterNote: 500000
+  -
+    time: 5999
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 69
+      velocity: 64
+  -
+    time: 6000
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 6000
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 71
+      velocity: 80
+  -
+    time: 6239
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 71
+      velocity: 64
+  -
+    time: 6240
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 6240
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 72
+      velocity: 80
+  -
+    time: 6479
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 72
+      velocity: 64
+  -
+    time: 6480
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 6480
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 74
+      velocity: 80
+  -
+    time: 6480
+    event:
+      type: Meta
+      metaType: SetTempo
+      usPerQuarterNote: 333333
+  -
+    time: 6719
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 74
+      velocity: 64
+  -
+    time: 6720
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 6720
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 76
+      velocity: 80
+  -
+    time: 6959
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 76
+      velocity: 64
+  -
+    time: 6960
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 6960
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 77
+      velocity: 80
+  -
+    time: 7199
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 77
+      velocity: 64
+  -
+    time: 7200
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 7200
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 69
+      velocity: 80
+  -
+    time: 7439
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 69
+      velocity: 64
+  -
+    time: 7440
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 7440
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 71
+      velocity: 80
+  -
+    time: 7679
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 71
+      velocity: 64
+  -
+    time: 7680
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 7680
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 72
+      velocity: 80
+  -
+    time: 7919
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 72
+      velocity: 64
+  -
+    time: 7920
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 7920
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 74
+      velocity: 80
+  -
+    time: 8159
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 74
+      velocity: 64
+  -
+    time: 8160
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 8160
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 76
+      velocity: 80
+  -
+    time: 8399
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 76
+      velocity: 64
+  -
+    time: 8400
+    event:
+      type: ControlChange
+      channel: 0
+      control: 2
+      value: 80
+  -
+    time: 8400
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 77
+      velocity: 80
+  -
+    time: 8639
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 77
+      velocity: 64

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:pm="http://pianomania.gg/ns/mei" meiversion="5.1+basic">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Untitled score</title>
+            <respStmt>
+               <persName role="composer">Composer / arranger</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2023-08-11T14:52:02" />
+         </pubStmt>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef pm:timesig-xy-top="0.667,6.487" pm:timesig-xy="0.667,6.487">
+                  <pgHead>
+                     <rend halign="center" valign="top">
+                        <rend type="title" fontsize="x-large" pm:xy="5.000,6.768">Dynamics</rend>
+                        <lb />
+                        <rend type="subtitle" fontsize="large" pm:xy="5.000,6.442">Subtitle</rend>
+                     </rend>
+                     <rend halign="right" valign="bottom">
+                        <rend type="composer" pm:xy="8.753,6.691">Composer / arranger</rend>
+                     </rend>
+                  </pgHead>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" meter.count="4" meter.unit="4" pm:timesig-xy="0.667,6.487">
+                        <label>Oboe</label>
+                        <labelAbbr>Ob.</labelAbbr>
+                        <instrDef midi.instrnum="68" />
+                        <clef shape="G" line="2" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="s1">
+                  <pb />
+                  <sb pm:top-left-x="0.591" pm:top-left-y="6.909" pm:bottom-right-x="9.409" pm:bottom-right-y="6.626" />
+                  <sb type="mscore-manual" pm:top-left-x="0.591" pm:top-left-y="6.487" pm:bottom-right-x="9.409" pm:bottom-right-y="6.415" />
+                  <measure xml:id="m1uhe4sl" n="1" pm:top-left-x="0.591" pm:top-left-y="6.505" pm:bottom-right-x="1.009" pm:bottom-right-y="6.397">
+                     <staff xml:id="m1s1" n="1">
+                        <layer xml:id="m1s1l1" n="1">
+                           <note xml:id="nrgzdcj" dur="2" pname="c" oct="5" stem.dir="up" stem.len="2.75" beat="1.0000" pm:xy="0.735,6.460" idx="0" />
+                           <beam>
+                              <note xml:id="n6si3n7" dur="8" pname="d" oct="5" stem.dir="up" stem.len="3.75" beat="3.0000" pm:xy="0.830,6.469" idx="0" />
+                              <note xml:id="n7c44ti" dur="8" pname="e" oct="5" stem.dir="up" stem.len="3.25" beat="3.5000" pm:xy="0.872,6.478" idx="0" />
+                              <note xml:id="nvtsktx" dur="8" pname="f" oct="5" stem.dir="up" stem.len="2.75" beat="4.0000" pm:xy="0.914,6.487" idx="0" />
+                              <note xml:id="nbt46w7" dur="8" pname="e" oct="5" stem.dir="up" stem.len="3.25" beat="4.5000" pm:xy="0.956,6.478" idx="1" />
+                           </beam>
+                        </layer>
+                        <layer xml:id="m6s0l2" n="2">
+                           <note xml:id="ns8t4tw" dur="1" pname="c" oct="4" stem.dir="down" beat="1.0000" pm:xy="0.733,6.397" idx="0" />
+                        </layer>
+                     </staff>
+                     <dynam xml:id="dvuqhls" label="p" staff="1" startid="#nrgzdcj" place="above" yOffset="1.8" centerBetweenStaves="false" pm:x="0.741" pm:y="6.524" pm:xy="0.741,6.524">p</dynam>
+                     <dynam xml:id="d1hg5le3" label="mp" staff="1" startid="#n6si3n7" yOffset="-6.0" centerBetweenStaves="false" pm:x="0.839" pm:y="6.382" pm:xy="0.839,6.382">mp</dynam>
+                     <dynam xml:id="d1n0kf96" label="sffz" staff="1" startid="#n7c44ti" yOffset="-6.2" centerBetweenStaves="false" pm:x="0.882" pm:y="6.383" pm:xy="0.882,6.383">sffz</dynam>
+                     <dynam xml:id="d1btxom9" label="sfz" layer="1" staff="1" startid="#nvtsktx" yOffset="4.0" centerBetweenStaves="false" pm:x="0.924" pm:y="6.568" pm:xy="0.924,6.568">sfz</dynam>
+                     <dynam xml:id="d1rbma6l" label="pp" staff="1" startid="#ns8t4tw" place="below" yOffset="-7.1" centerBetweenStaves="false" pm:x="0.741" pm:y="6.363" pm:xy="0.741,6.363">pp</dynam>
+                  </measure>
+                  <measure xml:id="m428gem" right="end" n="2" pm:top-left-x="1.009" pm:top-left-y="6.505" pm:bottom-right-x="1.272" pm:bottom-right-y="6.397">
+                     <staff xml:id="m8s1" n="1">
+                        <layer xml:id="m8s1l1" n="1">
+                           <note xml:id="noxjpqs" dur="4" pname="d" oct="5" stem.dir="down" stem.len="3.5" beat="1.0000" pm:xy="1.032,6.469" idx="1" />
+                           <chord xml:id="c1bio1o2" dur="4" stem.dir="down" stem.len="6" beat="2.0000" pm:xy="1.095,6.487">
+                              <note xml:id="n1ypjje7" pname="f" oct="4" stem.dir="down" beat="2.0000" pm:xy="1.095,6.424" idx="0" />
+                              <note xml:id="nkuy9t" pname="c" oct="5" stem.dir="down" beat="2.0000" pm:xy="1.095,6.460" idx="1" />
+                              <note xml:id="n167vjzz" pname="f" oct="5" stem.dir="down" beat="2.0000" pm:xy="1.095,6.487" idx="1" />
+                           </chord>
+                           <chord xml:id="c19y1p0c" dur="2" stem.dir="down" stem.len="5" beat="3.0000" pm:xy="1.158,6.487">
+                              <note xml:id="n10rwr2q" pname="b" oct="4" stem.dir="down" beat="3.0000" pm:xy="1.158,6.451" idx="0" />
+                              <note xml:id="n5zaicj" pname="d" oct="5" stem.dir="down" beat="3.0000" pm:xy="1.158,6.469" idx="2" />
+                              <note xml:id="ni76au9" pname="f" oct="5" stem.dir="down" beat="3.0000" pm:xy="1.158,6.487" idx="2" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <dynam xml:id="d1pv19cd" label="mp" staff="1" startid="#noxjpqs" yOffset="-10.1" centerBetweenStaves="false" pm:x="0.850" pm:y="6.252" pm:xy="0.850,6.252">sempre mp e <lb />dolce</dynam>
+                     <dynam xml:id="da76h31" label="p" staff="1" startid="#c1bio1o2" yOffset="-9.1" centerBetweenStaves="false" pm:x="1.389" pm:y="6.270" pm:xy="1.389,6.270">p e sempre<lb />dolce</dynam>
+                     <dynam xml:id="dqa2pt" label="ff" staff="1" startid="#c19y1p0c" yOffset="-12.2" centerBetweenStaves="false" pm:x="0.971" pm:y="6.312" pm:xy="0.971,6.312">molto ff</dynam>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

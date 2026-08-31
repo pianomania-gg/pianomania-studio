@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:pm="http://pianomania.gg/ns/mei" meiversion="5.1+basic">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Untitled score</title>
+            <respStmt>
+               <persName role="composer">Composer / arranger</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2023-09-21T10:11:20" />
+         </pubStmt>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef pm:timesig-xy-top="0.667,6.525" pm:timesig-xy="0.667,6.525">
+                  <pgHead>
+                     <rend halign="center" valign="top">
+                        <rend type="title" fontsize="x-large" pm:xy="5.000,6.794">Untitled score</rend>
+                        <lb />
+                        <rend type="subtitle" fontsize="large" pm:xy="5.000,6.442">Subtitle</rend>
+                     </rend>
+                     <rend halign="right" valign="bottom">
+                        <rend type="composer" pm:xy="8.753,6.744">Composer / arranger</rend>
+                     </rend>
+                  </pgHead>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" meter.count="4" meter.unit="4" pm:timesig-xy="0.667,6.525">
+                        <label>Violin</label>
+                        <labelAbbr>Vln.</labelAbbr>
+                        <instrDef midi.instrnum="40" />
+                        <clef shape="G" line="2" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="s1">
+                  <pb />
+                  <sb pm:top-left-x="0.591" pm:top-left-y="6.909" pm:bottom-right-x="9.409" pm:bottom-right-y="6.679" />
+                  <sb type="mscore-manual" pm:top-left-x="0.591" pm:top-left-y="6.525" pm:bottom-right-x="9.409" pm:bottom-right-y="6.453" />
+                  <measure xml:id="m1w9ldle" n="1" pm:top-left-x="0.591" pm:top-left-y="6.543" pm:bottom-right-x="1.024" pm:bottom-right-y="6.435">
+                     <staff xml:id="m1s1" n="1">
+                        <layer xml:id="m1s1l1" n="1">
+                           <note xml:id="nb7kl3f" dur="4" pname="c" oct="5" color="#FF9300" stem.dir="down" stem.len="3.25" beat="1.0000" pm:xy="0.735,6.498" idx="0" />
+                           <chord xml:id="c1hiz2m8" dur="4" stem.dir="up" stem.len="5.25" beat="2.0000" pm:xy="0.798,6.525">
+                              <note xml:id="n8pc0fn" pname="e" oct="4" stem.dir="up" beat="2.0000" pm:xy="0.798,6.453" idx="0" />
+                              <note xml:id="nbr5upg" pname="c" oct="5" color="#FF9300" stem.dir="up" beat="2.0000" pm:xy="0.798,6.498" idx="1" />
+                           </chord>
+                           <chord xml:id="cudlbeq" dur="4" stem.dir="up" stem.len="5.25" beat="3.0000" pm:xy="0.871,6.525">
+                              <note xml:id="n1g2l2yn" pname="e" oct="4" color="#FF9300" stem.dir="up" beat="3.0000" pm:xy="0.871,6.453" idx="1" />
+                              <note xml:id="nciwij6" pname="c" oct="5" color="#FF9300" stem.dir="up" beat="3.0000" pm:xy="0.871,6.498" idx="2" />
+                           </chord>
+                           <rest xml:id="r1m4rqfb" dur="4" color="#FF9300" beat="4.0000" yOffset="2.00" hand="left" pm:xy="0.958,6.489" />
+                        </layer>
+                     </staff>
+                     <breath xml:id="bsncn1v" startid="#c1hiz2m8" color="#FF9300" />
+                     <caesura xml:id="c1ymhxka" startid="#cudlbeq" color="#FF9300" />
+                  </measure>
+                  <measure xml:id="m108kg2e" n="2" pm:top-left-x="1.024" pm:top-left-y="6.543" pm:bottom-right-x="1.598" pm:bottom-right-y="6.435">
+                     <staff xml:id="m7s1" n="1">
+                        <layer xml:id="m7s1l1" n="1">
+                           <note xml:id="n1no8a24" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="1.0000" pm:xy="1.047,6.498" idx="3">
+                              <verse xml:id="v1evccdg" color="#FF2600" n="1">
+                                 <syl>Hello</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="ng2mkjk" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="2.0000" pm:xy="1.406,6.498" idx="4">
+                              <verse xml:id="v17y1qo7" color="#FF2600" n="1">
+                                 <syl>World!</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="n12ozk2t" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="3.0000" pm:xy="1.469,6.498" idx="5" />
+                           <note xml:id="n1bd6i9v" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="4.0000" pm:xy="1.532,6.498" idx="6" />
+                        </layer>
+                     </staff>
+                     <turn xml:id="tmhobkr" form="lower" startid="#n1no8a24" color="#FF2600" yOffset="2.4" />
+                     <trill xml:id="td2usvk" startid="#ng2mkjk" color="#FF2600" yOffset="2.7" />
+                     <mordent xml:id="mf2m89a" form="upper" startid="#n12ozk2t" color="#FF2600" yOffset="2.5" />
+                     <fermata xml:id="fojev0z" startid="#n1bd6i9v" color="#FF2600" yOffset="2.5" pm:xy="1.521,6.534" />
+                  </measure>
+                  <measure xml:id="m1yzrkkj" n="3" pm:top-left-x="1.598" pm:top-left-y="6.543" pm:bottom-right-x="1.876" pm:bottom-right-y="6.435">
+                     <staff xml:id="m12s1" n="1">
+                        <layer xml:id="m12s1l1" n="1">
+                           <note xml:id="nx5z8ek" oct.ges="6" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="1.0000" pm:xy="1.621,6.498" idx="0" />
+                           <note xml:id="n1p30nx0" oct.ges="6" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="2.0000" pm:xy="1.684,6.498" idx="1" />
+                           <note xml:id="n56bk5e" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="3.0000" pm:xy="1.747,6.498" idx="7" />
+                           <note xml:id="n12667r3" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="4.0000" pm:xy="1.810,6.498" idx="8" />
+                        </layer>
+                     </staff>
+                     <octave xml:id="oggpsks" staff="1" dis="8" dis.place="above" startid="#nx5z8ek" color="#0433FF" yOffset="6.4" hook.len="1.0" pm:x1y1x2y2="1.621,6.568,1.724,6.568" pm:segments="1.621,6.568,1.724,6.568" endid="#n1p30nx0" />
+                     <hairpin xml:id="h1ofeby0" form="cres" staff="1" startid="#nx5z8ek" color="#0433FF" yOffset="-2.1" centerBetweenStaves="false" pm:x1y1x2y2="1.621,6.416,1.792,6.416" pm:segments="1.621,6.416,1.792,6.416" pm:hairpin-lines="0,1.621,6.416,1.792,6.405;0,1.621,6.416,1.792,6.426" pm:covered-id="n1p30nx0 n56bk5e" endid="#n12667r3" />
+                     <tie xml:id="t1cu6c7m" startid="#n12667r3" color="#0433FF" curvedir="above" pm:x1y1x2y2="1.824,6.511,1.910,6.511" pm:bezier="1.824,6.511,1.841,6.523,1.893,6.523,1.910,6.511" pm:post-terminal-ids="nl6vufl" endid="#n1oshtpn" />
+                  </measure>
+                  <measure xml:id="m1dsz34o" n="4" pm:top-left-x="1.876" pm:top-left-y="6.543" pm:bottom-right-x="2.314" pm:bottom-right-y="6.435">
+                     <staff xml:id="m17s1" n="1">
+                        <layer xml:id="m17s1l1" n="1">
+                           <note xml:id="n1oshtpn" dur="4" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="1.0000" pm:xy="1.898,6.498" idx="8" />
+                           <clef xml:id="cxmpika" shape="C" line="3" color="#00F900" beat="2.0000" staff="1" pm:x="1.935" pm:y="6.489" />
+                           <beam>
+                              <tuplet xml:id="tdwgadu" num="3" numbase="2" bracket.place="above" color="#00F900" num.place="above" pm:tuplet-geometry-version="1" pm:tuplet-placement="above" pm:tuplet-number-visible="true" pm:tuplet-bracket-visible="false" pm:tuplet-number-center="2.039,6.597">
+                                 <note xml:id="nl6vufl" dur="8" pname="c" oct="4" stem.dir="up" stem.len="3" beat="2.0000" pm:xy="1.984,6.489" idx="0" />
+                                 <note xml:id="n15aq1hi" dur="8" pname="g" oct="3" stem.dir="up" stem.len="4.5" beat="2.3333" pm:xy="2.017,6.462" idx="0" />
+                                 <note xml:id="ns1iuut" dur="8" pname="c" oct="4" stem.dir="up" stem.len="3" beat="2.6667" pm:xy="2.050,6.489" idx="1" />
+                              </tuplet>
+                           </beam>
+                           <tuplet xml:id="t5hlulh" num="3" numbase="2" bracket.place="above" color="#00F900" num.place="above" pm:tuplet-geometry-version="1" pm:tuplet-placement="above" pm:tuplet-number-visible="true" pm:tuplet-bracket-visible="true" pm:tuplet-number-center="2.126,6.580" pm:tuplet-bracket-segments="2.081,6.580,2.088,6.580;2.164,6.580,2.171,6.580" pm:tuplet-bracket-hooks="2.081,6.567,2.081,6.580;2.171,6.580,2.171,6.567">
+                              <rest xml:id="r16rtiw" type="mscore-beam-none" dur="8" beat="3.0000" yOffset="2.00" hand="left" pm:xy="2.083,6.489" />
+                              <rest xml:id="r13mu556" type="mscore-beam-none" dur="8" beat="3.3333" yOffset="2.00" hand="left" pm:xy="2.116,6.489" />
+                              <rest xml:id="r9bkfps" type="mscore-beam-none" dur="8" beat="3.6667" yOffset="2.00" hand="left" pm:xy="2.149,6.489" />
+                           </tuplet>
+                           <clef xml:id="c14ip5c8" shape="G" line="2" color="#00F900" beat="4.0000" staff="1" pm:x="2.182" pm:y="6.471" />
+                           <note xml:id="nyi0wv4" dur="4" pname="e" oct="4" stem.dir="up" stem.len="3.5" beat="4.0000" pm:xy="2.248,6.453" idx="0">
+                              <accid xml:id="a9iw28ka" accid="f" color="#D783FF" pm:xy="2.229,6.453" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <slur xml:id="srexdvh" startid="#nl6vufl" color="#00F900" curvedir="below" pm:x1y1x2y2="1.996,6.449,2.260,6.433" pm:bezier="1.996,6.449,2.033,6.408,2.211,6.393,2.260,6.433" pm:coveredUuids="nl6vufl n15aq1hi ns1iuut nyi0wv4" endid="#nyi0wv4" />
+                  </measure>
+                  <measure xml:id="mtp12q1" n="5" pm:top-left-x="2.314" pm:top-left-y="6.543" pm:bottom-right-x="2.482" pm:bottom-right-y="6.435">
+                     <staff xml:id="m23s1" n="1">
+                        <layer xml:id="m23s1l1" n="1">
+                           <mRest xml:id="m197vgrc" color="#FF40FF" beat="1.0000" yOffset="3.00" hand="left" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="msooeqb" right="end" n="6" pm:top-left-x="2.482" pm:top-left-y="6.543" pm:bottom-right-x="2.774" pm:bottom-right-y="6.435">
+                     <staff xml:id="m24s1" n="1">
+                        <layer xml:id="m24s1l1" n="1">
+                           <chord xml:id="cr34m7" dur="4" stem.dir="up" stem.len="5.25" beat="1.0000" pm:xy="2.513,6.525">
+                              <note xml:id="n1iy1v36" pname="e" oct="4" stem.dir="up" beat="1.0000" pm:xy="2.513,6.453" idx="2" />
+                              <note xml:id="n1gob7sl" pname="g" oct="4" stem.dir="up" beat="1.0000" pm:xy="2.513,6.471" idx="0" />
+                              <note xml:id="nh72f6q" pname="c" oct="5" stem.dir="up" beat="1.0000" pm:xy="2.513,6.498" idx="9" />
+                           </chord>
+                           <beam>
+                              <note xml:id="n9lyzka" dur="8" pname="c" oct="5" stem.dir="down" stem.len="3" beat="2.0000" pm:xy="2.576,6.498" idx="10">
+                                 <artic xml:id="a1kafck8" artic="acc" color="#942192" place="above" yOffset="2.0" pm:xy="2.574,6.533" />
+                              </note>
+                              <note xml:id="n16tp2od" dur="8" pname="c" oct="5" stem.dir="down" stem.len="3" beat="2.5000" pm:xy="2.618,6.498" idx="11">
+                                 <artic xml:id="a17uokpo" artic="acc" color="#942192" place="above" yOffset="2.0" pm:xy="2.616,6.533" />
+                              </note>
+                           </beam>
+                           <note xml:id="n1iw9jd5" dur="2" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="3.0000" pm:xy="2.660,6.498" idx="12" />
+                        </layer>
+                     </staff>
+                     <pedal xml:id="p1t8y8cf" dir="down" startid="#cr34m7" form="pedline" color="#942192" pm:x1y1x2y2="2.513,6.525,2.660,6.525" endid="#n1iw9jd5" />
+                     <arpeg xml:id="a1cqxnw1" startid="#cr34m7" color="#942192" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

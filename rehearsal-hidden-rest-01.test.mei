@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:pm="http://pianomania.gg/ns/mei" meiversion="5.1+basic">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Rehearsal mark on hidden rest</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2026-08-19T16:03:52" />
+         </pubStmt>
+      </fileDesc>
+      <facsimile>
+         <surface xml:id="pg1" upperLeftX="0" upperLeftY="7.500" lowerRightX="10.000" lowerRightY="0" pm:units="in" pm:dpi="360.000000" pm:spatium="0.070000" />
+      </facsimile>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef pm:timesig-xy-top="0.888,6.419" pm:timesig-xy="0.888,6.419">
+                  <staffGrp>
+                     <staffDef n="1" lines="5" meter.count="3" meter.unit="4" pm:timesig-xy="0.888,6.419">
+                        <label>Piano</label>
+                        <instrDef midi.instrnum="0" />
+                        <clef shape="G" line="2" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="s1">
+                  <pb />
+                  <sb pm:top-left-x="0.591" pm:top-left-y="6.419" pm:bottom-right-x="9.409" pm:bottom-right-y="6.139" />
+                  <measure xml:id="m55ouuc" right="end" n="1" pm:top-left-x="0.591" pm:top-left-y="6.489" pm:bottom-right-x="1.964" pm:bottom-right-y="6.069">
+                     <staff xml:id="m1s1" n="1">
+                        <layer xml:id="m1s1l1" n="1">
+                           <note xml:id="n12zxwkq" dur="4" pname="c" oct="4" stem.dir="up" stem.len="3.5" beat="2.0000" pm:xy="1.397,6.069" idx="0" hand="left" />
+                        </layer>
+                     </staff>
+                     <reh xml:id="r1u1ajt9" startid="#n12zxwkq" pm:xy="1.012,6.675">HiddenRestMark</reh>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

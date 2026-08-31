@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:pm="http://pianomania.gg/ns/mei" meiversion="5.1+basic">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Untitled score</title>
+            <respStmt>
+               <persName role="composer">Composer / arranger</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2023-08-11T14:54:09" />
+         </pubStmt>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef pm:timesig-xy-top="0.802,6.437" pm:timesig-xy="0.802,6.437" pm:timesig-xy-bottom="0.802,6.181" pm:keysig-xy-top="0.669,6.437" pm:keysig-xy="0.669,6.437" pm:keysig-xy-bottom="0.669,6.181">
+                  <pgHead>
+                     <rend halign="center" valign="top">
+                        <rend type="title" fontsize="x-large" pm:xy="5.000,6.765">Hypothetical slurs</rend>
+                        <lb />
+                        <rend type="subtitle" fontsize="large" pm:xy="5.000,6.442">Subtitle</rend>
+                     </rend>
+                     <rend halign="right" valign="bottom">
+                        <rend type="composer" pm:xy="8.753,6.687">Composer / arranger</rend>
+                     </rend>
+                  </pgHead>
+                  <staffGrp>
+                     <staffGrp bar.thru="true" symbol="brace">
+                        <label>Piano</label>
+                        <labelAbbr>Pno.</labelAbbr>
+                        <staffDef n="1" lines="5" keysig="6s" meter.count="4" meter.unit="4" pm:timesig-xy="0.802,6.437" pm:keysig-xy="0.669,6.437">
+                           <clef shape="G" line="2" />
+                        </staffDef>
+                        <staffDef n="2" lines="5" keysig="6s" meter.count="4" meter.unit="4" pm:timesig-xy="0.802,6.181" pm:keysig-xy="0.669,6.181">
+                           <clef shape="F" line="4" />
+                        </staffDef>
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="s1">
+                  <pb />
+                  <sb pm:top-left-x="0.591" pm:top-left-y="6.909" pm:bottom-right-x="9.409" pm:bottom-right-y="6.621" />
+                  <sb type="mscore-manual" pm:top-left-x="0.591" pm:top-left-y="6.437" pm:bottom-right-x="9.409" pm:bottom-right-y="6.109" />
+                  <measure xml:id="m1phsrbh" n="1" pm:top-left-x="0.591" pm:top-left-y="6.455" pm:bottom-right-x="2.182" pm:bottom-right-y="6.091">
+                     <staff xml:id="m1s1" n="1">
+                        <layer xml:id="m1s1l1" n="1">
+                           <beam>
+                              <note xml:id="nxnkach" type="mscore-beam-begin" dur="16" pname="g" oct="6" stem.dir="down" stem.len="7.0009" beat="1.0000" pm:xy="0.870,6.509" idx="0">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <tuplet xml:id="t1cf7bjb" num="3" numbase="2" bracket.place="below" num.place="below" pm:tuplet-geometry-version="1" pm:tuplet-placement="below" pm:tuplet-number-visible="true" pm:tuplet-bracket-visible="false" pm:tuplet-number-center="0.949,6.310">
+                                 <note xml:id="n5t82mu" type="mscore-beam-mid" dur="32" pname="f" oct="6" stem.dir="down" stem.len="6.542" beat="1.2500" pm:xy="0.910,6.500" idx="0">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n1gzbbkk" type="mscore-beam-mid" dur="32" pname="c" oct="6" stem.dir="down" stem.len="5.083" beat="1.3333" pm:xy="0.949,6.473" idx="0">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="nscbnac" dur="32" pname="a" oct="5" stem.dir="down" stem.len="4.1241" beat="1.4167" pm:xy="0.989,6.455" idx="0">
+                                    <accid accid.ges="s" />
+                                 </note>
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <note xml:id="n1oj99xm" type="mscore-beam-begin" dur="16" pname="d" oct="6" stem.dir="down" stem.len="7.251" beat="1.5000" pm:xy="1.029,6.482" idx="0">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <tuplet xml:id="th31g4c" num="3" numbase="2" bracket.place="below" num.place="below" pm:tuplet-geometry-version="1" pm:tuplet-placement="below" pm:tuplet-number-visible="true" pm:tuplet-bracket-visible="false" pm:tuplet-number-center="1.104,6.296">
+                                 <note xml:id="nior9z1" type="mscore-beam-mid" dur="32" pname="c" oct="6" stem.dir="down" stem.len="6.7958" beat="1.7500" pm:xy="1.069,6.473" idx="1">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n1iunlj7" type="mscore-beam-mid" dur="32" pname="a" oct="5" stem.dir="down" stem.len="5.8406" beat="1.8333" pm:xy="1.109,6.455" idx="1">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n1uqu85c" dur="32" pname="f" oct="5" stem.dir="down" stem.len="4.874" beat="1.9167" pm:xy="1.138,6.437" idx="0">
+                                    <accid accid.ges="s" />
+                                 </note>
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <note xml:id="n8tlcju" type="mscore-beam-begin" dur="16" pname="b" oct="5" stem.dir="down" stem.len="6.5067" beat="2.0000" pm:xy="1.174,6.464" idx="0" />
+                              <tuplet xml:id="t12k8j4r" num="3" numbase="2" bracket.place="below" num.place="below" pm:tuplet-geometry-version="1" pm:tuplet-placement="below" pm:tuplet-number-visible="true" pm:tuplet-bracket-visible="false" pm:tuplet-number-center="1.244,6.280">
+                                 <note xml:id="n13hp0eq" type="mscore-beam-mid" dur="32" pname="a" oct="5" stem.dir="down" stem.len="6.3021" beat="2.2500" pm:xy="1.214,6.455" idx="2">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="niqr6zt" type="mscore-beam-mid" dur="32" pname="f" oct="5" stem.dir="down" stem.len="5.5227" beat="2.3333" pm:xy="1.244,6.437" idx="1">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n12pzu31" dur="32" pname="c" oct="5" stem.dir="down" stem.len="4.2433" beat="2.4167" pm:xy="1.273,6.410" idx="0">
+                                    <accid accid.ges="s" />
+                                 </note>
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <note xml:id="n158ixas" type="mscore-beam-begin" dur="16" pname="g" oct="5" stem.dir="down" stem.len="6.5049" beat="2.5000" pm:xy="1.303,6.446" idx="0">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <tuplet xml:id="th5gsvw" num="3" numbase="2" bracket.place="below" num.place="below" pm:tuplet-geometry-version="1" pm:tuplet-placement="below" pm:tuplet-number-visible="true" pm:tuplet-bracket-visible="false" pm:tuplet-number-center="1.363,6.266">
+                                 <note xml:id="n113gg9z" type="mscore-beam-mid" dur="32" pname="f" oct="5" stem.dir="down" stem.len="6.1683" beat="2.7500" pm:xy="1.333,6.437" idx="2">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="nqcoqqj" type="mscore-beam-mid" dur="32" pname="c" oct="5" stem.dir="down" stem.len="4.8317" beat="2.8333" pm:xy="1.363,6.410" idx="1">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="ned4qpd" dur="32" pname="a" oct="4" stem.dir="down" stem.len="3.9951" beat="2.9167" pm:xy="1.392,6.392" idx="0">
+                                    <accid accid.ges="s" />
+                                 </note>
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet xml:id="tmljxn5" num="6" numbase="4" bracket.place="above" num.place="above" pm:tuplet-geometry-version="1" pm:tuplet-placement="above" pm:tuplet-number-visible="true" pm:tuplet-bracket-visible="false" pm:tuplet-number-center="1.513,6.540">
+                                 <note xml:id="n1hh0z9n" type="mscore-beam-begin" dur="32" pname="d" oct="5" stem.dir="up" stem.len="3.7485" beat="3.0000" pm:xy="1.417,6.419" idx="0">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n1lwbvb" type="mscore-beam-mid" dur="32" pname="c" oct="5" stem.dir="up" stem.len="4.1991" beat="3.0833" pm:xy="1.447,6.410" idx="2">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="nal6ylf" type="mscore-beam-mid" dur="32" pname="a" oct="4" stem.dir="up" stem.len="5.1497" beat="3.1667" pm:xy="1.477,6.392" idx="1">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n1twa8l" type="mscore-beam-mid" dur="32" pname="f" oct="4" stem.dir="up" stem.len="6.1003" beat="3.2500" pm:xy="1.507,6.374" idx="0">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="nqtky4a" type="mscore-beam-mid" dur="32" pname="b" oct="4" stem.dir="up" stem.len="4.5509" beat="3.3333" pm:xy="1.536,6.401" idx="0" />
+                                 <note xml:id="n1n47f99" dur="32" pname="a" oct="4" stem.dir="up" stem.len="5.0015" beat="3.4167" pm:xy="1.566,6.392" idx="2">
+                                    <accid accid.ges="s" />
+                                 </note>
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet xml:id="tnjht6f" num="6" numbase="4" bracket.place="above" num.place="above" pm:tuplet-geometry-version="1" pm:tuplet-placement="above" pm:tuplet-number-visible="true" pm:tuplet-bracket-visible="false" pm:tuplet-number-center="1.700,6.509">
+                                 <note xml:id="n13gg0nr" type="mscore-beam-begin" dur="32" pname="f" oct="4" stem.dir="up" stem.len="4.5" beat="3.5000" pm:xy="1.596,6.374" idx="1">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="nws4ncb" type="mscore-beam-mid" dur="32" pname="c" oct="4" stem.dir="up" stem.len="6" beat="3.5833" pm:xy="1.631,6.347" idx="1">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n174pn4z" type="mscore-beam-mid" dur="32" pname="g" oct="4" stem.dir="up" stem.len="4" beat="3.6667" pm:xy="1.661,6.383" idx="0">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n18go9e6" type="mscore-beam-mid" dur="32" pname="f" oct="4" stem.dir="up" stem.len="4.5" beat="3.7500" pm:xy="1.691,6.374" idx="2">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="ncx7dqc" type="mscore-beam-mid" dur="32" pname="c" oct="4" stem.dir="up" stem.len="6" beat="3.8333" pm:xy="1.721,6.347" idx="2">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="nwyqdnt" dur="32" pname="a" oct="3" stem.dir="up" stem.len="7" beat="3.9167" pm:xy="1.760,6.329" idx="7">
+                                    <accid accid.ges="s" />
+                                 </note>
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet xml:id="t18tp8e6" num="6" numbase="4" bracket.place="above" num.place="above" pm:tuplet-geometry-version="1" pm:tuplet-placement="above" pm:tuplet-number-visible="true" pm:tuplet-bracket-visible="false" pm:tuplet-number-center="1.877,6.292">
+                                 <note xml:id="n181jne1" type="mscore-beam-begin" dur="32" staff="2" pname="d" oct="4" stem.dir="up" stem.len="3.7458" beat="4.0000" pm:xy="1.776,6.208" idx="0">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n1g8i39z" type="mscore-beam-mid" dur="32" staff="2" pname="c" oct="4" stem.dir="up" stem.len="4.0597" beat="4.0833" pm:xy="1.816,6.199" idx="3">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="nofmkua" type="mscore-beam-mid" dur="32" staff="2" pname="a" oct="3" stem.dir="up" stem.len="4.9208" beat="4.1667" pm:xy="1.845,6.181" idx="8">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="njj7om4" type="mscore-beam-mid" dur="32" staff="2" pname="f" oct="3" stem.dir="up" stem.len="5.7818" beat="4.2500" pm:xy="1.875,6.163" idx="6">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n6vzthv" type="mscore-beam-mid" dur="32" staff="2" pname="c" oct="3" stem.dir="up" stem.len="7.143" beat="4.3333" pm:xy="1.905,6.136" idx="6">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n1k32dod" dur="32" staff="2" pname="a" oct="3" stem.dir="up" stem.len="4.5042" beat="4.4167" pm:xy="1.934,6.181" idx="9">
+                                    <accid accid.ges="s" />
+                                 </note>
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet xml:id="tyegdr2" num="6" numbase="4" bracket.place="above" num.place="above" pm:tuplet-geometry-version="1" pm:tuplet-placement="above" pm:tuplet-number-visible="true" pm:tuplet-bracket-visible="false" pm:tuplet-number-center="2.071,6.292">
+                                 <note xml:id="n1tzfb53" type="mscore-beam-begin" dur="32" staff="2" pname="d" oct="4" stem.dir="up" stem.len="3.7458" beat="4.5000" pm:xy="1.970,6.208" idx="1">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="nfajnu" type="mscore-beam-mid" dur="32" staff="2" pname="c" oct="4" stem.dir="up" stem.len="4.0597" beat="4.5833" pm:xy="2.010,6.199" idx="4">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="npsr3c0" type="mscore-beam-mid" dur="32" staff="2" pname="a" oct="3" stem.dir="up" stem.len="4.9208" beat="4.6667" pm:xy="2.040,6.181" idx="10">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n13g6wzh" type="mscore-beam-mid" dur="32" staff="2" pname="f" oct="3" stem.dir="up" stem.len="5.7818" beat="4.7500" pm:xy="2.069,6.163" idx="7">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n14c7eod" type="mscore-beam-mid" dur="32" staff="2" pname="c" oct="3" stem.dir="up" stem.len="7.143" beat="4.8333" pm:xy="2.099,6.136" idx="7">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n3xaoeq" dur="32" staff="2" pname="a" oct="3" stem.dir="up" stem.len="4.5042" beat="4.9167" pm:xy="2.129,6.181" idx="11">
+                                    <accid accid.ges="s" />
+                                 </note>
+                              </tuplet>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff xml:id="m41s1" n="2">
+                        <layer xml:id="m41s1l1" n="1">
+                           <note xml:id="n1q79ura" type="mscore-beam-none" dur="8" pname="f" oct="2" stem.dir="up" stem.len="3.5" beat="1.0000" pm:xy="0.870,6.100" idx="0">
+                              <accid accid.ges="s" />
+                           </note>
+                           <beam>
+                              <chord xml:id="c33kuiq" type="mscore-beam-begin" dur="16" stem.dir="down" stem.len="6.5" beat="1.5000" pm:xy="1.029,6.181">
+                                 <note xml:id="nzp7z2z" pname="c" oct="3" stem.dir="down" beat="1.5000" pm:xy="1.029,6.136" idx="0">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="no4aojx" pname="f" oct="3" stem.dir="down" beat="1.5000" pm:xy="1.029,6.163" idx="0">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n6ded74" pname="a" oct="3" stem.dir="down" beat="1.5000" pm:xy="1.029,6.181" idx="0">
+                                    <accid accid.ges="s" />
+                                 </note>
+                              </chord>
+                              <tuplet xml:id="t1sesr97" num="3" numbase="2" bracket.place="below" num.place="below" pm:tuplet-geometry-version="1" pm:tuplet-placement="below" pm:tuplet-number-visible="true" pm:tuplet-bracket-visible="false" pm:tuplet-number-center="1.104,6.010">
+                                 <chord xml:id="ctn1316" type="mscore-beam-mid" dur="32" stem.dir="down" stem.len="6.5" beat="1.7500" pm:xy="1.069,6.181">
+                                    <note xml:id="n1xzdfbq" pname="c" oct="3" stem.dir="down" beat="1.7500" pm:xy="1.069,6.136" idx="1">
+                                       <accid accid.ges="s" />
+                                    </note>
+                                    <note xml:id="n1h6bm64" pname="f" oct="3" stem.dir="down" beat="1.7500" pm:xy="1.069,6.163" idx="1">
+                                       <accid accid.ges="s" />
+                                    </note>
+                                    <note xml:id="np9tmzl" pname="a" oct="3" stem.dir="down" beat="1.7500" pm:xy="1.069,6.181" idx="1">
+                                       <accid accid.ges="s" />
+                                    </note>
+                                 </chord>
+                                 <chord xml:id="cnqov6u" type="mscore-beam-mid" dur="32" stem.dir="down" stem.len="6.5" beat="1.8333" pm:xy="1.109,6.181">
+                                    <note xml:id="nkmnzya" pname="c" oct="3" stem.dir="down" beat="1.8333" pm:xy="1.109,6.136" idx="2">
+                                       <accid accid.ges="s" />
+                                    </note>
+                                    <note xml:id="n1qy7z64" pname="f" oct="3" stem.dir="down" beat="1.8333" pm:xy="1.109,6.163" idx="2">
+                                       <accid accid.ges="s" />
+                                    </note>
+                                    <note xml:id="n1aog6d2" pname="a" oct="3" stem.dir="down" beat="1.8333" pm:xy="1.109,6.181" idx="2">
+                                       <accid accid.ges="s" />
+                                    </note>
+                                 </chord>
+                                 <chord xml:id="co4efjx" dur="32" stem.dir="down" stem.len="6.5" beat="1.9167" pm:xy="1.138,6.181">
+                                    <note xml:id="n1ottd9r" pname="c" oct="3" stem.dir="down" beat="1.9167" pm:xy="1.138,6.136" idx="3">
+                                       <accid accid.ges="s" />
+                                    </note>
+                                    <note xml:id="n3h7unv" pname="f" oct="3" stem.dir="down" beat="1.9167" pm:xy="1.138,6.163" idx="3">
+                                       <accid accid.ges="s" />
+                                    </note>
+                                    <note xml:id="n19vwqkr" pname="a" oct="3" stem.dir="down" beat="1.9167" pm:xy="1.138,6.181" idx="3">
+                                       <accid accid.ges="s" />
+                                    </note>
+                                 </chord>
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <chord xml:id="c1fzyq3j" type="mscore-beam-begin" dur="8" stem.dir="down" stem.len="5.7552" beat="2.0000" pm:xy="1.174,6.181">
+                                 <note xml:id="nafnl79" pname="f" oct="3" stem.dir="down" beat="2.0000" pm:xy="1.174,6.163" idx="4">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n15g60wb" pname="a" oct="3" stem.dir="down" beat="2.0000" pm:xy="1.174,6.181" idx="4">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n1fr4uxr" pname="c" oct="4" stem.dir="down" beat="2.0000" pm:xy="1.174,6.199" idx="0">
+                                    <accid accid.ges="s" />
+                                 </note>
+                              </chord>
+                              <chord xml:id="c1yyiui3" dur="8" stem.dir="down" stem.len="5.4948" beat="2.5000" pm:xy="1.303,6.181">
+                                 <note xml:id="n1j2nrki" pname="c" oct="3" stem.dir="down" beat="2.5000" pm:xy="1.303,6.136" idx="4">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n9sxmfy" pname="f" oct="3" stem.dir="down" beat="2.5000" pm:xy="1.303,6.163" idx="5">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="nlodio6" pname="a" oct="3" stem.dir="down" beat="2.5000" pm:xy="1.303,6.181" idx="5">
+                                    <accid accid.ges="s" />
+                                 </note>
+                              </chord>
+                           </beam>
+                           <chord xml:id="cd1tped" type="mscore-beam-none" dur="8" stem.dir="down" stem.len="7.75" beat="3.0000" pm:xy="1.417,6.181">
+                              <note xml:id="nx2d9rm" pname="f" oct="2" stem.dir="down" beat="3.0000" pm:xy="1.417,6.100" idx="1">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="n1kc4ws4" pname="c" oct="3" stem.dir="down" beat="3.0000" pm:xy="1.417,6.136" idx="5">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note xml:id="ntku1me" pname="a" oct="3" stem.dir="down" beat="3.0000" pm:xy="1.417,6.181" idx="6">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </chord>
+                           <rest xml:id="r1smqhmc" type="mscore-beam-none" dur="8" beat="3.5000" yOffset="2.00" hand="left" pm:xy="1.596,6.145" />
+                           <rest xml:id="rjpaj8g" type="mscore-beam-none" dur="8" beat="4.0000" yOffset="2.00" hand="left" pm:xy="1.776,6.145" />
+                           <note xml:id="n1nvcscz" type="mscore-beam-none" dur="8" pname="c" oct="2" stem.dir="up" stem.len="4" beat="4.5000" pm:xy="1.970,6.073" idx="0">
+                              <accid accid.ges="s" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <slur xml:id="sxpu2fs" startid="#nxnkach" curvedir="above" pm:x1y1x2y2="0.882,6.526,1.001,6.472" pm:bezier="0.882,6.526,0.921,6.534,0.981,6.507,1.001,6.472" pm:coveredUuids="nxnkach n5t82mu n1gzbbkk nscbnac" endid="#nscbnac" />
+                     <slur xml:id="s88jkbp" startid="#nxnkach" curvedir="above" pm:x1y1x2y2="0.882,6.537,1.404,6.441" pm:bezier="0.882,6.537,0.969,6.571,1.334,6.504,1.404,6.441" pm:coveredUuids="nxnkach n5t82mu n1gzbbkk nscbnac n1oj99xm nior9z1 n1iunlj7 n1uqu85c n8tlcju n13hp0eq niqr6zt n12pzu31 n158ixas n113gg9z nqcoqqj ned4qpd" endid="#ned4qpd" />
+                     <slur xml:id="s1vdkvoo" startid="#n1oj99xm" curvedir="above" lform="dotted" pm:x1y1x2y2="1.041,6.499,1.150,6.456" pm:bezier="1.041,6.499,1.076,6.510,1.134,6.489,1.150,6.456" pm:coveredUuids="n1oj99xm nior9z1 n1iunlj7 n1uqu85c" endid="#n1uqu85c" />
+                     <slur xml:id="s1hbyb6l" startid="#n8tlcju" curvedir="above" lform="dotted" pm:x1y1x2y2="1.186,6.483,1.285,6.431" pm:bezier="1.186,6.483,1.222,6.495,1.277,6.468,1.285,6.431" pm:coveredUuids="n8tlcju n13hp0eq niqr6zt n12pzu31" endid="#n12pzu31" />
+                     <slur xml:id="s1pk9agb" startid="#n158ixas" curvedir="above" lform="dotted" pm:x1y1x2y2="1.315,6.463,1.404,6.409" pm:bezier="1.315,6.463,1.350,6.470,1.395,6.443,1.404,6.409" pm:coveredUuids="n158ixas n113gg9z nqcoqqj ned4qpd" endid="#ned4qpd" />
+                     <slur xml:id="s1f6nwhp" startid="#n1hh0z9n" curvedir="below" lform="dashed" pm:x1y1x2y2="1.429,6.390,1.578,6.372" pm:bezier="1.429,6.390,1.459,6.348,1.540,6.336,1.578,6.372" pm:coveredUuids="n1hh0z9n n1lwbvb nal6ylf n1twa8l nqtky4a n1n47f99" endid="#n1n47f99" />
+                     <slur xml:id="sdbs90" startid="#n1hh0z9n" curvedir="above" pm:x1y1x2y2="1.443,6.493,2.983,6.278" pm:bezier="1.443,6.493,1.682,6.523,2.761,6.372,2.983,6.278" pm:coveredUuids="n1hh0z9n n1lwbvb nal6ylf n1twa8l nqtky4a n1n47f99 n13gg0nr nws4ncb n174pn4z n18go9e6 ncx7dqc nwyqdnt n181jne1 n1g8i39z nofmkua njj7om4 n6vzthv n1k32dod n1tzfb53 nfajnu npsr3c0 n13g6wzh n14c7eod n3xaoeq n19i31e0 n1v5kaja n6dp973 noff6es n148w7yy n13v77kd n436pug n1wemq0r ntmuvq0 nbgttkw n12rscwf n1s160e4 n1n9vex1 n14cveu6 n10qs215 nbav1wo n13bhyvq nac7nlb nsixsde nnvdz5l n1r21xcg n1ezsnpi n86rjey n1gymv66" endid="#n1gymv66" />
+                     <slur xml:id="sdw14vy" startid="#n1twa8l" curvedir="above" lform="dashed" pm:x1y1x2y2="1.532,6.491,1.681,6.462" pm:bezier="1.532,6.491,1.573,6.503,1.647,6.488,1.681,6.462" pm:coveredUuids="n1twa8l nqtky4a n1n47f99 n13gg0nr nws4ncb n174pn4z" endid="#n174pn4z" />
+                     <slur xml:id="sedvjdg" startid="#n13gg0nr" curvedir="below" lform="dashed" pm:x1y1x2y2="1.608,6.349,1.772,6.313" pm:bezier="1.608,6.349,1.633,6.306,1.725,6.288,1.772,6.313" pm:coveredUuids="n13gg0nr nws4ncb n174pn4z n18go9e6 ncx7dqc nwyqdnt" endid="#nwyqdnt" />
+                     <slur xml:id="s1nmagch" startid="#n18go9e6" curvedir="above" lform="dashed" pm:x1y1x2y2="1.716,6.465,1.865,6.331" pm:bezier="1.716,6.465,1.801,6.499,1.865,6.399,1.865,6.331" pm:coveredUuids="n18go9e6 ncx7dqc nwyqdnt n181jne1 n1g8i39z nofmkua" endid="#nofmkua" />
+                     <slur xml:id="s1888lec" startid="#n181jne1" curvedir="below" lform="dashed" pm:x1y1x2y2="1.787,6.190,1.946,6.157" pm:bezier="1.787,6.190,1.799,6.126,1.929,6.081,1.946,6.157" pm:coveredUuids="n181jne1 n1g8i39z nofmkua njj7om4 n6vzthv n1k32dod" endid="#n1k32dod" />
+                     <slur xml:id="s8nf2uh" startid="#njj7om4" curvedir="above" lform="dashed" pm:x1y1x2y2="1.900,6.274,2.059,6.276" pm:bezier="1.900,6.274,1.940,6.295,2.019,6.296,2.059,6.276" pm:coveredUuids="njj7om4 n6vzthv n1k32dod n1tzfb53 nfajnu npsr3c0" endid="#npsr3c0" />
+                     <slur xml:id="s6wd36" startid="#n1tzfb53" curvedir="below" lform="dashed" pm:x1y1x2y2="1.982,6.190,2.140,6.157" pm:bezier="1.982,6.190,1.993,6.126,2.124,6.081,2.140,6.157" pm:coveredUuids="n1tzfb53 nfajnu npsr3c0 n13g6wzh n14c7eod n3xaoeq" endid="#n3xaoeq" />
+                     <slur xml:id="sm5ep9t" startid="#n1q79ura" curvedir="below" lform="dashed" pm:x1y1x2y2="0.882,6.084,1.137,6.058" pm:bezier="0.882,6.084,0.929,6.045,1.082,6.029,1.137,6.058" pm:coveredUuids="n1q79ura nzp7z2z no4aojx n6ded74 n1xzdfbq n1h6bm64 np9tmzl nkmnzya n1qy7z64 n1aog6d2 n1ottd9r n3h7unv n19vwqkr" endid="#co4efjx" />
+                     <slur xml:id="s4vjjwf" startid="#c33kuiq" curvedir="above" pm:x1y1x2y2="1.041,6.198,1.315,6.198" pm:bezier="1.041,6.198,1.096,6.233,1.260,6.233,1.315,6.198" pm:coveredUuids="nzp7z2z no4aojx n6ded74 n1xzdfbq n1h6bm64 np9tmzl nkmnzya n1qy7z64 n1aog6d2 n1ottd9r n3h7unv n19vwqkr nafnl79 n15g60wb n1fr4uxr n1j2nrki n9sxmfy nlodio6" endid="#c1yyiui3" />
+                     <slur xml:id="smbrt4d" startid="#c1fzyq3j" curvedir="below" lform="dashed" pm:x1y1x2y2="1.178,6.089,1.301,6.076" pm:bezier="1.178,6.089,1.206,6.062,1.268,6.056,1.301,6.076" pm:coveredUuids="nafnl79 n15g60wb n1fr4uxr n1j2nrki n9sxmfy nlodio6" endid="#c1yyiui3" />
+                  </measure>
+                  <measure xml:id="m1d9g788" right="end" n="2" pm:top-left-x="2.182" pm:top-left-y="6.455" pm:bottom-right-x="3.134" pm:bottom-right-y="6.091">
+                     <staff xml:id="m65s1" n="1">
+                        <layer xml:id="m65s1l1" n="1">
+                           <beam>
+                              <tuplet xml:id="t1fb1luu" num="6" numbase="4" bracket.place="above" num.place="above" pm:tuplet-geometry-version="1" pm:tuplet-placement="above" pm:tuplet-number-visible="true" pm:tuplet-bracket-visible="false" pm:tuplet-number-center="2.316,6.292">
+                                 <note xml:id="n19i31e0" type="mscore-beam-begin" dur="32" staff="2" pname="d" oct="4" stem.dir="up" stem.len="3.7458" beat="1.0000" pm:xy="2.216,6.208" idx="2">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n1v5kaja" type="mscore-beam-mid" dur="32" staff="2" pname="c" oct="4" stem.dir="up" stem.len="4.0597" beat="1.0833" pm:xy="2.255,6.199" idx="5">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n6dp973" type="mscore-beam-mid" dur="32" staff="2" pname="a" oct="3" stem.dir="up" stem.len="4.9208" beat="1.1667" pm:xy="2.285,6.181" idx="12">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="noff6es" type="mscore-beam-mid" dur="32" staff="2" pname="f" oct="3" stem.dir="up" stem.len="5.7818" beat="1.2500" pm:xy="2.315,6.163" idx="8">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n148w7yy" type="mscore-beam-mid" dur="32" staff="2" pname="c" oct="3" stem.dir="up" stem.len="7.143" beat="1.3333" pm:xy="2.345,6.136" idx="8">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n13v77kd" dur="32" staff="2" pname="a" oct="3" stem.dir="up" stem.len="4.5042" beat="1.4167" pm:xy="2.374,6.181" idx="13">
+                                    <accid accid.ges="s" />
+                                 </note>
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet xml:id="t3xknwy" num="6" numbase="4" bracket.place="above" num.place="above" pm:tuplet-geometry-version="1" pm:tuplet-placement="above" pm:tuplet-number-visible="true" pm:tuplet-bracket-visible="false" pm:tuplet-number-center="2.511,6.292">
+                                 <note xml:id="n436pug" type="mscore-beam-begin" dur="32" staff="2" pname="d" oct="4" stem.dir="up" stem.len="3.7458" beat="1.5000" pm:xy="2.410,6.208" idx="3">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n1wemq0r" type="mscore-beam-mid" dur="32" staff="2" pname="c" oct="4" stem.dir="up" stem.len="4.0597" beat="1.5833" pm:xy="2.450,6.199" idx="6">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="ntmuvq0" type="mscore-beam-mid" dur="32" staff="2" pname="a" oct="3" stem.dir="up" stem.len="4.9208" beat="1.6667" pm:xy="2.479,6.181" idx="14">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="nbgttkw" type="mscore-beam-mid" dur="32" staff="2" pname="f" oct="3" stem.dir="up" stem.len="5.7818" beat="1.7500" pm:xy="2.509,6.163" idx="9">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n12rscwf" type="mscore-beam-mid" dur="32" staff="2" pname="c" oct="3" stem.dir="up" stem.len="7.143" beat="1.8333" pm:xy="2.539,6.136" idx="9">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n1s160e4" dur="32" staff="2" pname="a" oct="3" stem.dir="up" stem.len="4.5042" beat="1.9167" pm:xy="2.569,6.181" idx="15">
+                                    <accid accid.ges="s" />
+                                 </note>
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet xml:id="toqa1b0" num="6" numbase="4" bracket.place="above" num.place="above" pm:tuplet-geometry-version="1" pm:tuplet-placement="above" pm:tuplet-number-visible="true" pm:tuplet-bracket-visible="false" pm:tuplet-number-center="2.705,6.292">
+                                 <note xml:id="n1n9vex1" type="mscore-beam-begin" dur="32" staff="2" pname="d" oct="4" stem.dir="up" stem.len="3.7458" beat="2.0000" pm:xy="2.604,6.208" idx="4">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n14cveu6" type="mscore-beam-mid" dur="32" staff="2" pname="c" oct="4" stem.dir="up" stem.len="4.0597" beat="2.0833" pm:xy="2.644,6.199" idx="7">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n10qs215" type="mscore-beam-mid" dur="32" staff="2" pname="a" oct="3" stem.dir="up" stem.len="4.9208" beat="2.1667" pm:xy="2.674,6.181" idx="16">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="nbav1wo" type="mscore-beam-mid" dur="32" staff="2" pname="f" oct="3" stem.dir="up" stem.len="5.7818" beat="2.2500" pm:xy="2.703,6.163" idx="10">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n13bhyvq" type="mscore-beam-mid" dur="32" staff="2" pname="c" oct="3" stem.dir="up" stem.len="7.143" beat="2.3333" pm:xy="2.733,6.136" idx="10">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="nac7nlb" dur="32" staff="2" pname="a" oct="3" stem.dir="up" stem.len="4.5042" beat="2.4167" pm:xy="2.763,6.181" idx="17">
+                                    <accid accid.ges="s" />
+                                 </note>
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet xml:id="t1fk1j91" num="6" numbase="4" bracket.place="above" num.place="above" pm:tuplet-geometry-version="1" pm:tuplet-placement="above" pm:tuplet-number-visible="true" pm:tuplet-bracket-visible="false" pm:tuplet-number-center="2.902,6.296">
+                                 <note xml:id="nsixsde" type="mscore-beam-begin" dur="32" staff="2" pname="d" oct="4" stem.dir="up" stem.len="3.7486" beat="2.5000" pm:xy="2.798,6.208" idx="5">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="nnvdz5l" type="mscore-beam-mid" dur="32" staff="2" pname="c" oct="4" stem.dir="up" stem.len="4.1888" beat="2.5833" pm:xy="2.838,6.199" idx="8">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n1r21xcg" type="mscore-beam-mid" dur="32" staff="2" pname="a" oct="3" stem.dir="up" stem.len="5.1442" beat="2.6667" pm:xy="2.868,6.181" idx="18">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n1ezsnpi" type="mscore-beam-mid" dur="32" staff="2" pname="f" oct="3" stem.dir="up" stem.len="6.0995" beat="2.7500" pm:xy="2.898,6.163" idx="11">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n86rjey" type="mscore-beam-mid" dur="32" staff="2" pname="c" oct="3" stem.dir="up" stem.len="7.5549" beat="2.8333" pm:xy="2.927,6.136" idx="11">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note xml:id="n1gymv66" dur="32" staff="2" pname="c" oct="4" stem.dir="up" stem.len="4.0014" beat="2.9167" pm:xy="2.963,6.199" idx="9">
+                                    <accid accid.ges="s" />
+                                 </note>
+                              </tuplet>
+                           </beam>
+                           <note xml:id="n3oguuq" dur="2" pname="a" oct="4" stem.dir="up" stem.len="3.25" beat="3.0000" pm:xy="3.020,6.392" idx="3">
+                              <accid accid.ges="s" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff xml:id="m90s1" n="2">
+                        <layer xml:id="m90s1l1" n="1">
+                           <chord xml:id="ccdpven" dots="1" dur="4" stem.dir="up" stem.len="7" beat="1.0000" pm:xy="2.216,6.181">
+                              <note xml:id="n1gm7lg4" pname="f" oct="1" stem.dir="up" beat="1.0000" pm:xy="2.216,6.037" idx="0">
+                                 <accid accid="n" pm:xy="2.194,6.037" />
+                              </note>
+                              <note xml:id="n1ktajnp" pname="f" oct="2" stem.dir="up" beat="1.0000" pm:xy="2.216,6.100" idx="2">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </chord>
+                           <note xml:id="nuvrdzy" type="mscore-beam-none" dur="8" pname="c" oct="2" stem.dir="up" stem.len="4" beat="2.5000" pm:xy="2.798,6.073" idx="1">
+                              <accid accid.ges="s" />
+                           </note>
+                           <note xml:id="n1112hvr" dur="2" pname="f" oct="1" stem.dir="up" stem.len="6" beat="3.0000" pm:xy="3.020,6.037" idx="0">
+                              <accid accid="s" pm:xy="2.993,6.037" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <slur xml:id="s1fr9h9o" startid="#n19i31e0" curvedir="below" lform="dashed" pm:x1y1x2y2="2.227,6.190,2.386,6.157" pm:bezier="2.227,6.190,2.239,6.126,2.369,6.081,2.386,6.157" pm:coveredUuids="n19i31e0 n1v5kaja n6dp973 noff6es n148w7yy n13v77kd" endid="#n13v77kd" />
+                     <slur xml:id="skn562w" startid="#n436pug" curvedir="below" lform="dashed" pm:x1y1x2y2="2.422,6.190,2.580,6.157" pm:bezier="2.422,6.190,2.433,6.126,2.563,6.081,2.580,6.157" pm:coveredUuids="n436pug n1wemq0r ntmuvq0 nbgttkw n12rscwf n1s160e4" endid="#n1s160e4" />
+                     <slur xml:id="s1wk4te5" startid="#n1n9vex1" curvedir="below" lform="dashed" pm:x1y1x2y2="2.616,6.190,2.775,6.157" pm:bezier="2.616,6.190,2.628,6.126,2.758,6.081,2.775,6.157" pm:coveredUuids="n1n9vex1 n14cveu6 n10qs215 nbav1wo n13bhyvq nac7nlb" endid="#nac7nlb" />
+                     <slur xml:id="sbphd9l" startid="#nsixsde" curvedir="below" lform="dashed" pm:x1y1x2y2="2.810,6.190,2.975,6.175" pm:bezier="2.810,6.190,2.827,6.116,2.966,6.087,2.975,6.175" pm:coveredUuids="nsixsde nnvdz5l n1r21xcg n1ezsnpi n86rjey n1gymv66" endid="#n1gymv66" />
+                     <fermata xml:id="focr7cp" startid="#n3oguuq" yOffset="4.2" pm:xy="3.009,6.458" />
+                     <fermata xml:id="f510p5p" startid="#n1112hvr" place="below" yOffset="-1.5" pm:xy="3.009,6.019" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:pm="http://pianomania.gg/ns/mei" meiversion="5.1+basic">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Untitled score</title>
+            <respStmt>
+               <persName role="composer">Composer / arranger</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2023-10-10T15:24:01" />
+         </pubStmt>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef pm:timesig-xy-top="0.669,6.422" pm:timesig-xy="0.669,6.422">
+                  <pgHead>
+                     <rend halign="center" valign="top">
+                        <rend type="title" fontsize="x-large" pm:xy="5.000,6.794">Absolute chord labels</rend>
+                        <lb />
+                        <rend type="subtitle" fontsize="large" pm:xy="5.000,6.442">Subtitle</rend>
+                     </rend>
+                     <rend halign="right" valign="bottom">
+                        <rend type="composer" pm:xy="8.753,6.745">Composer / arranger</rend>
+                     </rend>
+                  </pgHead>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" meter.count="4" meter.unit="4" pm:timesig-xy="0.669,6.422">
+                        <label>Trombone</label>
+                        <labelAbbr>Tbn.</labelAbbr>
+                        <clef shape="F" line="4" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="s1">
+                  <pb />
+                  <sb pm:top-left-x="0.591" pm:top-left-y="6.909" pm:bottom-right-x="9.409" pm:bottom-right-y="6.679" />
+                  <sb type="mscore-manual" pm:top-left-x="0.591" pm:top-left-y="6.422" pm:bottom-right-x="9.409" pm:bottom-right-y="6.350" />
+                  <measure xml:id="m14hbvpm" n="1" pm:top-left-x="0.591" pm:top-left-y="6.440" pm:bottom-right-x="2.731" pm:bottom-right-y="6.332">
+                     <staff xml:id="m1s1" n="1">
+                        <layer xml:id="m1s1l1" n="1">
+                           <chord xml:id="c16epnbl" dur="2" stem.dir="up" stem.len="7" beat="1.0000" pm:xy="0.772,6.422">
+                              <note xml:id="nb216ll" pname="e" oct="2" stem.dir="up" beat="1.0000" pm:xy="0.772,6.332" idx="0" />
+                              <note xml:id="ndxal72" pname="b" oct="2" stem.dir="up" beat="1.0000" pm:xy="0.772,6.368" idx="0" />
+                              <note xml:id="njhlysk" pname="d" oct="3" stem.dir="up" beat="1.0000" pm:xy="0.772,6.386" idx="0">
+                                 <accid accid="s" pm:xy="0.728,6.386" />
+                              </note>
+                              <note xml:id="n1hh8705" pname="g" oct="3" stem.dir="up" beat="1.0000" pm:xy="0.772,6.413" idx="0">
+                                 <accid accid="s" pm:xy="0.750,6.413" />
+                              </note>
+                           </chord>
+                           <chord xml:id="c4pb0j8" dur="2" stem.dir="up" stem.len="7" beat="3.0000" pm:xy="1.750,6.422">
+                              <note xml:id="n13whnao" pname="d" oct="2" stem.dir="up" beat="3.0000" pm:xy="1.750,6.323" idx="0" />
+                              <note xml:id="nsu6pfz" pname="b" oct="2" stem.dir="up" beat="3.0000" pm:xy="1.750,6.368" idx="0">
+                                 <accid accid="f" pm:xy="1.724,6.368" />
+                              </note>
+                              <note xml:id="ntxktyc" pname="d" oct="3" stem.dir="up" beat="3.0000" pm:xy="1.750,6.386" idx="0">
+                                 <accid accid="n" pm:xy="1.705,6.386" />
+                              </note>
+                              <note xml:id="n1hrjl6g" pname="f" oct="3" stem.dir="up" beat="3.0000" pm:xy="1.750,6.404" idx="0">
+                                 <accid accid="n" pm:xy="1.733,6.404" />
+                              </note>
+                           </chord>
+                        </layer>
+                     </staff>
+                     <harm xml:id="h1bgzmmn" staff="1" startid="#c16epnbl" pm:xy="0.784,6.589">E^7</harm>
+                     <harm xml:id="h1fslw0p" staff="1" startid="#c4pb0j8" pm:xy="1.773,6.590">Bb/D</harm>
+                  </measure>
+                  <measure xml:id="m17w9yor" n="2" pm:top-left-x="2.731" pm:top-left-y="6.440" pm:bottom-right-x="5.038" pm:bottom-right-y="6.332">
+                     <staff xml:id="m10s1" n="1">
+                        <layer xml:id="m10s1l1" n="1">
+                           <rest xml:id="rezq8rc" dur="4" beat="1.0000" yOffset="2.00" hand="left" pm:xy="2.753,6.386" />
+                           <chord xml:id="c15hduaw" dur="4" stem.dir="up" stem.len="7" beat="2.0000" pm:xy="3.405,6.422">
+                              <note xml:id="n1r3fnqf" pname="e" oct="2" stem.dir="up" beat="2.0000" pm:xy="3.405,6.332" idx="1" />
+                              <note xml:id="nhg6uqb" pname="b" oct="2" stem.dir="up" beat="2.0000" pm:xy="3.405,6.368" idx="1" />
+                              <note xml:id="n1yyoqx3" pname="d" oct="3" stem.dir="up" beat="2.0000" pm:xy="3.405,6.386" idx="1" />
+                              <note xml:id="n1qqclbc" pname="g" oct="3" stem.dir="up" beat="2.0000" pm:xy="3.405,6.413" idx="1">
+                                 <accid accid="s" pm:xy="3.383,6.413" />
+                              </note>
+                           </chord>
+                           <chord xml:id="cccssun" dur="2" stem.dir="up" stem.len="8" beat="3.0000" pm:xy="4.057,6.422">
+                              <note xml:id="no1dkmg" pname="d" oct="2" stem.dir="up" beat="3.0000" pm:xy="4.057,6.323" idx="0">
+                                 <accid accid="f" pm:xy="4.019,6.323" />
+                              </note>
+                              <note xml:id="n179ea53" pname="a" oct="2" stem.dir="up" beat="3.0000" pm:xy="4.057,6.359" idx="0">
+                                 <accid accid="f" pm:xy="4.038,6.359" />
+                              </note>
+                              <note xml:id="nbwoy73" pname="d" oct="3" stem.dir="up" beat="3.0000" pm:xy="4.057,6.386" idx="0">
+                                 <accid accid="f" pm:xy="4.019,6.386" />
+                              </note>
+                              <note xml:id="n13eoll1" pname="f" oct="3" stem.dir="up" beat="3.0000" pm:xy="4.057,6.404" idx="1" />
+                              <note xml:id="n1u9nz21" pname="a" oct="3" stem.dir="up" beat="3.0000" pm:xy="4.057,6.422" idx="2">
+                                 <accid accid="f" pm:xy="4.038,6.422" />
+                              </note>
+                           </chord>
+                        </layer>
+                     </staff>
+                     <harm xml:id="h5dj6v7" staff="1" startid="#rezq8rc" pm:xy="2.765,6.590">EM</harm>
+                     <harm xml:id="hnjtfvy" staff="1" startid="#c15hduaw" pm:xy="3.417,6.588">E7</harm>
+                     <harm xml:id="hg8bgbi" staff="1" startid="#cccssun" pm:xy="4.069,6.590">not a chord</harm>
+                  </measure>
+                  <measure xml:id="m9o8nmk" n="3" pm:top-left-x="5.038" pm:top-left-y="6.440" pm:bottom-right-x="7.385" pm:bottom-right-y="6.332">
+                     <staff xml:id="m20s1" n="1">
+                        <layer xml:id="m20s1l1" n="1">
+                           <chord xml:id="c944xvj" dur="2" stem.dir="up" stem.len="6" beat="1.0000" pm:xy="5.126,6.422">
+                              <note xml:id="n1waubv9" pname="b" oct="2" stem.dir="up" beat="1.0000" pm:xy="5.126,6.368" idx="0">
+                                 <accid accid="ff" pm:xy="5.069,6.368" />
+                              </note>
+                              <note xml:id="n1u5zr50" pname="d" oct="3" stem.dir="up" beat="1.0000" pm:xy="5.126,6.386" idx="1">
+                                 <accid accid="f" pm:xy="5.050,6.386" />
+                              </note>
+                              <note xml:id="n1matj30" pname="f" oct="3" stem.dir="up" beat="1.0000" pm:xy="5.126,6.404" idx="0">
+                                 <accid accid="f" pm:xy="5.100,6.404" />
+                              </note>
+                              <note xml:id="n1iny47k" pname="b" oct="3" stem.dir="up" beat="1.0000" pm:xy="5.126,6.431" idx="0">
+                                 <accid accid="ff" pm:xy="5.069,6.431" />
+                              </note>
+                           </chord>
+                           <chord xml:id="c1lo3mzp" dur="2" stem.dir="up" stem.len="7" beat="3.0000" pm:xy="6.085,6.422">
+                              <note xml:id="niw26lr" pname="g" oct="2" stem.dir="up" beat="3.0000" pm:xy="6.085,6.350" idx="0">
+                                 <accid accid="f" pm:xy="6.059,6.350" />
+                              </note>
+                              <note xml:id="n1lgnx5h" pname="g" oct="3" stem.dir="up" beat="3.0000" pm:xy="6.085,6.413" idx="0">
+                                 <accid accid="f" pm:xy="6.035,6.413" />
+                              </note>
+                              <note xml:id="nr54z2p" pname="b" oct="3" stem.dir="up" beat="3.0000" pm:xy="6.085,6.431" idx="1">
+                                 <accid accid="ff" pm:xy="6.054,6.431" />
+                              </note>
+                           </chord>
+                        </layer>
+                        <layer xml:id="m27s0l2" n="2">
+                           <note xml:id="n1im2iyf" dur="2" pname="c" oct="3" stem.dir="down" stem.len="2.75" beat="1.0000" pm:xy="5.100,6.377" idx="0" />
+                           <note xml:id="n1nfs6d8" dur="4" pname="d" oct="3" stem.dir="down" stem.len="3" beat="3.0000" pm:xy="6.078,6.386" idx="2">
+                              <accid accid="f" pm:xy="6.023,6.386" />
+                           </note>
+                           <note xml:id="n6az5co" dur="4" pname="e" oct="3" stem.dir="down" stem.len="3.25" beat="4.0000" pm:xy="6.730,6.395" idx="1">
+                              <accid accid="f" pm:xy="6.710,6.395" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <harm xml:id="h1dlo6v9" staff="1" startid="#c944xvj" pm:xy="5.123,6.591">Bbb</harm>
+                     <harm xml:id="h1uvdsty" staff="1" startid="#c1lo3mzp" pm:xy="6.089,6.560">Gb-</harm>
+                     <harm xml:id="h1e83rhs" staff="1" startid="#n6az5co" place="below" pm:xy="6.741,6.264">Eb0</harm>
+                  </measure>
+                  <measure xml:id="mjnwqx9" right="end" n="4" pm:top-left-x="7.385" pm:top-left-y="6.440" pm:bottom-right-x="9.409" pm:bottom-right-y="6.332">
+                     <staff xml:id="m31s1" n="1">
+                        <layer xml:id="m31s1l1" n="1">
+                           <chord xml:id="c1dl6j78" dur="1" stem.dir="up" beat="1.0000" pm:xy="7.445,6.422">
+                              <note xml:id="n1c5h7ly" pname="d" oct="2" stem.dir="up" beat="1.0000" pm:xy="7.441,6.323" idx="1">
+                                 <accid accid="f" pm:xy="7.415,6.323" />
+                              </note>
+                              <note xml:id="n12xzre6" pname="f" oct="3" stem.dir="up" beat="1.0000" pm:xy="7.441,6.404" idx="2">
+                                 <accid accid="n" pm:xy="7.415,6.404" />
+                              </note>
+                           </chord>
+                        </layer>
+                        <layer xml:id="m33s0l2" n="2">
+                           <note xml:id="n1xqhqzd" dur="2" pname="c" oct="3" stem.dir="down" stem.len="2.75" beat="1.0000" pm:xy="7.434,6.377" idx="1" />
+                           <note xml:id="n11s8pxj" dur="2" pname="b" oct="2" stem.dir="down" stem.len="2.5" beat="3.0000" pm:xy="8.412,6.368" idx="1">
+                              <accid accid="f" pm:xy="8.391,6.368" />
+                           </note>
+                        </layer>
+                        <layer xml:id="m35s0l3" n="3">
+                           <note xml:id="nhj7l0q" dur="2" pname="e" oct="4" stem.dir="up" stem.len="2.5" beat="1.0000" pm:xy="7.445,6.458" idx="0">
+                              <accid accid="f" pm:xy="7.415,6.458" />
+                           </note>
+                           <note xml:id="ne3ul77" dur="2" pname="d" oct="4" stem.dir="up" stem.len="2.5" beat="3.0000" pm:xy="8.412,6.449" idx="0">
+                              <accid accid="f" pm:xy="8.391,6.449" />
+                           </note>
+                        </layer>
+                        <layer xml:id="m37s0l4" n="4">
+                           <note xml:id="ngtdc6s" dur="2" pname="a" oct="3" stem.dir="down" stem.len="3.5" beat="1.0000" pm:xy="7.434,6.422" idx="3">
+                              <accid accid="f" pm:xy="7.396,6.422" />
+                           </note>
+                           <note xml:id="nj8l4lr" dur="2" pname="a" oct="3" stem.dir="down" stem.len="3.5" beat="3.0000" pm:xy="8.412,6.422" idx="2">
+                              <accid accid="n" pm:xy="8.374,6.422" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <harm xml:id="h1jmd9aa" staff="1" startid="#c1dl6j78" pm:xy="7.446,6.576">Db9Maj7</harm>
+                     <harm xml:id="htlcc69" staff="1" startid="#n11s8pxj" place="below" pm:xy="8.424,6.264">Bbono5ma7</harm>
+                     <harm xml:id="hp721hh" staff="1" startid="#nj8l4lr" pm:xy="8.424,6.567">Bb-Maj7/Db</harm>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

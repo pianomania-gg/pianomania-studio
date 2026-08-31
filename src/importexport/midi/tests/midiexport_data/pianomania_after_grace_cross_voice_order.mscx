@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<museScore version="3.01">
+  <Score>
+    <Division>480</Division>
+    <Style>
+      <Spatium>1.76389</Spatium>
+      </Style>
+    <Part>
+      <Staff id="1">
+        <StaffType group="pitched"><name>stdNormal</name></StaffType>
+        </Staff>
+      <trackName>Piano</trackName>
+      <Instrument>
+        <trackName>Piano</trackName>
+        <instrumentId>keyboard.piano</instrumentId>
+        <Channel><program value="0"/></Channel>
+        </Instrument>
+      </Part>
+    <Staff id="1">
+      <Measure>
+        <voice>
+          <TimeSig><sigN>4</sigN><sigD>4</sigD></TimeSig>
+          <Chord>
+            <durationType>16th</durationType>
+            <grace16after/>
+            <Note><pitch>68</pitch><tpc>22</tpc><play>0</play></Note>
+            </Chord>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <Events>
+                <Event><pitch>0</pitch><ontime>1000</ontime><len>250</len></Event>
+                </Events>
+              <pitch>68</pitch>
+              <tpc>22</tpc>
+              </Note>
+            </Chord>
+          </voice>
+        <voice>
+          <Rest><durationType>32nd</durationType></Rest>
+          <Chord><durationType>16th</durationType><Note><pitch>68</pitch><tpc>22</tpc></Note></Chord>
+          <Chord><durationType>16th</durationType><Note><pitch>68</pitch><tpc>22</tpc></Note></Chord>
+          <Chord><durationType>16th</durationType><Note><pitch>68</pitch><tpc>22</tpc></Note></Chord>
+          <Chord><durationType>16th</durationType><Note><pitch>68</pitch><tpc>22</tpc></Note></Chord>
+          <Chord><durationType>16th</durationType><Note><pitch>68</pitch><tpc>22</tpc></Note></Chord>
+          <Chord><durationType>16th</durationType><Note><pitch>68</pitch><tpc>22</tpc></Note></Chord>
+          <Rest><durationType>half</durationType></Rest>
+          <Rest><durationType>16th</durationType><dots>1</dots></Rest>
+          </voice>
+        </Measure>
+      </Staff>
+    </Score>
+  </museScore>

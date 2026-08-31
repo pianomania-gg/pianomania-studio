@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:pm="http://pianomania.gg/ns/mei" meiversion="5.1+basic">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Untitled score</title>
+            <respStmt>
+               <persName role="composer">Composer / arranger</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2023-08-11T14:52:15" />
+         </pubStmt>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef pm:timesig-xy-top="1.400,6.557" pm:timesig-xy="1.400,6.557" pm:timesig-xy-bottom="1.400,6.314">
+                  <pgHead>
+                     <rend halign="center" valign="top">
+                        <rend type="title" fontsize="x-large" pm:xy="5.000,6.796">Fermatas </rend>
+                        <lb />
+                        <rend type="subtitle" fontsize="large" pm:xy="5.000,6.442">Subtitle</rend>
+                     </rend>
+                     <rend halign="right" valign="bottom">
+                        <rend type="composer" pm:xy="8.753,6.749">Composer / arranger</rend>
+                     </rend>
+                  </pgHead>
+                  <staffGrp>
+                     <staffGrp bar.thru="true" symbol="bracket">
+                        <staffDef n="1" lines="5" meter.count="4" meter.unit="4" pm:timesig-xy="1.400,6.557">
+                           <label>Viola</label>
+                           <labelAbbr>Vla.</labelAbbr>
+                           <instrDef midi.instrnum="41" />
+                           <clef shape="C" line="3" />
+                        </staffDef>
+                        <staffDef n="2" lines="5" meter.count="4" meter.unit="4" pm:timesig-xy="1.400,6.314">
+                           <label>Violoncello</label>
+                           <labelAbbr>Vc.</labelAbbr>
+                           <instrDef midi.instrnum="42" />
+                           <clef shape="F" line="4" />
+                        </staffDef>
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="s1">
+                  <pb />
+                  <sb pm:top-left-x="0.591" pm:top-left-y="6.909" pm:bottom-right-x="9.409" pm:bottom-right-y="6.683" />
+                  <sb type="mscore-manual" pm:top-left-x="0.591" pm:top-left-y="6.557" pm:bottom-right-x="9.409" pm:bottom-right-y="6.242" />
+                  <measure xml:id="m110s9yb" metcon="false" n="1" pm:top-left-x="1.318" pm:top-left-y="6.575" pm:bottom-right-x="1.714" pm:bottom-right-y="6.224">
+                     <staff xml:id="m1s1" n="1">
+                        <layer xml:id="m1s1l1" n="1">
+                           <rest xml:id="r16fphgk" dur="4" beat="1.0000" yOffset="2.00" hand="left" pm:xy="1.468,6.521" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m1s2" n="2">
+                        <layer xml:id="m1s2l1" n="1">
+                           <rest xml:id="r18d58nb" dur="4" beat="1.0000" yOffset="2.00" hand="left" pm:xy="1.468,6.278" />
+                        </layer>
+                     </staff>
+                     <fermata xml:id="fzo78nu" staff="1" tstamp="2" yOffset="0.0" pm:xy="1.690,6.566" />
+                  </measure>
+                  <measure xml:id="m1qulie6" n="2" pm:top-left-x="1.714" pm:top-left-y="6.575" pm:bottom-right-x="2.709" pm:bottom-right-y="6.224">
+                     <staff xml:id="m2s1" n="1">
+                        <layer xml:id="m2s1l1" n="1">
+                           <note xml:id="n1h0rvw1" dur="4" pname="c" oct="4" stem.dir="down" stem.len="3" beat="1.0000" pm:xy="1.736,6.521" idx="0" />
+                           <note xml:id="n9r8ty2" dur="4" pname="e" oct="4" stem.dir="down" stem.len="3.5" beat="2.0000" pm:xy="1.978,6.539" idx="0" />
+                           <note xml:id="nfkjs2e" dur="4" pname="g" oct="4" stem.dir="down" stem.len="3.5" beat="3.0000" pm:xy="2.221,6.557" idx="0" />
+                           <note xml:id="nqskwva" dur="4" pname="b" oct="3" stem.dir="up" stem.len="3.25" beat="4.0000" pm:xy="2.463,6.512" idx="0" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m6s1" n="2">
+                        <layer xml:id="m6s1l1" n="1">
+                           <note xml:id="nk5ue42" dur="2" pname="c" oct="3" stem.dir="up" stem.len="3.25" beat="1.0000" pm:xy="1.736,6.269" idx="0" />
+                           <note xml:id="n1wnv9wo" dur="2" pname="g" oct="2" stem.dir="up" stem.len="3.5" beat="3.0000" pm:xy="2.221,6.242" idx="0" />
+                        </layer>
+                     </staff>
+                     <fermata xml:id="fi33eun" startid="#n9r8ty2" yOffset="2.0" pm:xy="1.968,6.566" />
+                     <fermata xml:id="f4h0gm8" startid="#n1wnv9wo" yOffset="5.0" pm:xy="2.210,6.323" />
+                  </measure>
+                  <measure xml:id="maprncz" n="3" pm:top-left-x="2.709" pm:top-left-y="6.575" pm:bottom-right-x="3.704" pm:bottom-right-y="6.224">
+                     <staff xml:id="m9s1" n="1">
+                        <layer xml:id="m9s1l1" n="1">
+                           <note xml:id="n7p3ne0" dur="4" pname="c" oct="4" stem.dir="down" stem.len="3" beat="1.0000" pm:xy="2.731,6.521" idx="1" />
+                           <note xml:id="n1iesm4e" dur="4" pname="e" oct="4" stem.dir="down" stem.len="3.5" beat="2.0000" pm:xy="2.974,6.539" idx="1" />
+                           <note xml:id="n8uuoi3" dur="4" pname="g" oct="4" stem.dir="down" stem.len="3.5" beat="3.0000" pm:xy="3.216,6.557" idx="1" />
+                           <note xml:id="nyodxzh" dur="4" pname="b" oct="3" stem.dir="up" stem.len="3.25" beat="4.0000" pm:xy="3.458,6.512" idx="1" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m13s1" n="2">
+                        <layer xml:id="m13s1l1" n="1">
+                           <note xml:id="n1nqzcfb" dur="2" pname="c" oct="3" stem.dir="up" stem.len="3.25" beat="1.0000" pm:xy="2.731,6.269" idx="1" />
+                           <note xml:id="n1ljfreg" dur="2" pname="g" oct="2" stem.dir="up" stem.len="3.5" beat="3.0000" pm:xy="3.216,6.242" idx="1" />
+                        </layer>
+                     </staff>
+                     <fermata xml:id="f1ezejmd" startid="#n7p3ne0" shape="angular" yOffset="3.0" pm:xy="2.720,6.566" />
+                     <fermata xml:id="f1htovas" startid="#n1iesm4e" shape="square" yOffset="2.0" pm:xy="2.963,6.566" />
+                  </measure>
+                  <measure xml:id="m1m2ebbc" n="4" pm:top-left-x="3.704" pm:top-left-y="6.575" pm:bottom-right-x="4.699" pm:bottom-right-y="6.224">
+                     <staff xml:id="m16s1" n="1">
+                        <layer xml:id="m16s1l1" n="1">
+                           <note xml:id="n1nsneqs" dur="4" pname="c" oct="4" stem.dir="down" stem.len="3" beat="1.0000" pm:xy="3.727,6.521" idx="2" />
+                           <note xml:id="n82ze2g" dur="4" pname="e" oct="4" stem.dir="down" stem.len="3.5" beat="2.0000" pm:xy="3.969,6.539" idx="2" />
+                           <note xml:id="n1jifwyj" dur="4" pname="g" oct="4" stem.dir="down" stem.len="3.5" beat="3.0000" pm:xy="4.211,6.557" idx="2" />
+                           <note xml:id="nsbpefc" dur="4" pname="b" oct="3" stem.dir="up" stem.len="3.25" beat="4.0000" pm:xy="4.454,6.512" idx="2" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m20s1" n="2">
+                        <layer xml:id="m20s1l1" n="1">
+                           <note xml:id="n12ttdf3" dur="2" pname="c" oct="3" stem.dir="up" stem.len="3.25" beat="1.0000" pm:xy="3.727,6.269" idx="2" />
+                           <note xml:id="n1dce1yl" dur="2" pname="g" oct="2" stem.dir="up" stem.len="3.5" beat="3.0000" pm:xy="4.211,6.242" idx="2" />
+                        </layer>
+                     </staff>
+                     <fermata xml:id="f1ukl3lu" startid="#n1nsneqs" yOffset="3.0" pm:xy="3.716,6.566" />
+                     <fermata xml:id="fxn3fec" startid="#n82ze2g" yOffset="2.0" pm:xy="3.958,6.566" />
+                     <fermata xml:id="fkgq0pg" startid="#n1jifwyj" place="below" yOffset="-5.0" pm:xy="4.201,6.476" />
+                     <fermata xml:id="f1jt3as0" startid="#nsbpefc" place="below" yOffset="-2.5" pm:xy="4.443,6.476" />
+                  </measure>
+                  <measure xml:id="mrpg72a" n="5" pm:top-left-x="4.699" pm:top-left-y="6.575" pm:bottom-right-x="5.695" pm:bottom-right-y="6.224">
+                     <staff xml:id="m23s1" n="1">
+                        <layer xml:id="m23s1l1" n="1">
+                           <note xml:id="n1jlxl91" dur="4" pname="c" oct="4" stem.dir="down" stem.len="3" beat="1.0000" pm:xy="4.722,6.521" idx="3" />
+                           <note xml:id="n1jv0zjm" dur="4" pname="e" oct="4" stem.dir="down" stem.len="3.5" beat="2.0000" pm:xy="4.964,6.539" idx="3" />
+                           <note xml:id="n1u2ixab" dur="4" pname="g" oct="4" stem.dir="down" stem.len="3.5" beat="3.0000" pm:xy="5.207,6.557" idx="3" />
+                           <note xml:id="nk81tmp" dur="4" pname="b" oct="3" stem.dir="up" stem.len="3.25" beat="4.0000" pm:xy="5.449,6.512" idx="3" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m27s1" n="2">
+                        <layer xml:id="m27s1l1" n="1">
+                           <note xml:id="n16pd7st" dur="2" pname="c" oct="3" stem.dir="up" stem.len="3.25" beat="1.0000" pm:xy="4.722,6.269" idx="3" />
+                           <note xml:id="n1moi55d" dur="2" pname="g" oct="2" stem.dir="up" stem.len="3.5" beat="3.0000" pm:xy="5.207,6.242" idx="3" />
+                        </layer>
+                     </staff>
+                     <fermata xml:id="fwm1z9u" startid="#n16pd7st" shape="angular" place="below" yOffset="-2.5" pm:xy="4.710,6.233" />
+                  </measure>
+                  <measure xml:id="ma58sa4" n="6" pm:top-left-x="5.695" pm:top-left-y="6.575" pm:bottom-right-x="6.690" pm:bottom-right-y="6.224">
+                     <staff xml:id="m30s1" n="1">
+                        <layer xml:id="m30s1l1" n="1">
+                           <note xml:id="nns2a8o" dur="4" pname="c" oct="4" stem.dir="down" stem.len="3" beat="1.0000" pm:xy="5.717,6.521" idx="4" />
+                           <note xml:id="n1blhh1z" dur="4" pname="e" oct="4" stem.dir="down" stem.len="3.5" beat="2.0000" pm:xy="5.959,6.539" idx="4" />
+                           <note xml:id="ng6v427" dur="4" pname="g" oct="4" stem.dir="down" stem.len="3.5" beat="3.0000" pm:xy="6.202,6.557" idx="4" />
+                           <note xml:id="nr31gvo" dur="4" pname="b" oct="3" stem.dir="up" stem.len="3.25" beat="4.0000" pm:xy="6.444,6.512" idx="4" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m34s1" n="2">
+                        <layer xml:id="m34s1l1" n="1">
+                           <note xml:id="n17rbcoc" dur="2" pname="c" oct="3" stem.dir="up" stem.len="3.25" beat="1.0000" pm:xy="5.717,6.269" idx="4" />
+                           <note xml:id="n1n0uak2" dur="2" pname="g" oct="2" stem.dir="up" stem.len="3.5" beat="3.0000" pm:xy="6.202,6.242" idx="4" />
+                        </layer>
+                     </staff>
+                     <fermata xml:id="ffflrtn" startid="#n1blhh1z" glyph.auth="smufl" glyph.name="fermataLongHenzeAbove" yOffset="2.0" pm:xy="5.945,6.566" />
+                     <fermata xml:id="f1guncru" startid="#ng6v427" glyph.auth="smufl" glyph.name="fermataShortHenzeAbove" yOffset="1.4" pm:xy="6.198,6.574" />
+                     <fermata xml:id="fp4mpiu" startid="#n1n0uak2" glyph.auth="smufl" glyph.name="fermataShortHenzeAbove" yOffset="5.0" pm:xy="6.198,6.323" />
+                     <fermata xml:id="fkv7j99" staff="1" tstamp="5" shape="angular" yOffset="0.0" pm:xy="6.665,6.566" />
+                  </measure>
+                  <measure xml:id="m13kw3nr" n="7" pm:top-left-x="6.690" pm:top-left-y="6.575" pm:bottom-right-x="7.685" pm:bottom-right-y="6.224">
+                     <staff xml:id="m37s1" n="1">
+                        <layer xml:id="m37s1l1" n="1">
+                           <note xml:id="n1b74ywh" dur="4" pname="c" oct="4" stem.dir="down" stem.len="3" beat="1.0000" pm:xy="6.712,6.521" idx="5" />
+                           <note xml:id="n19spk43" dur="4" pname="e" oct="4" stem.dir="down" stem.len="3.5" beat="2.0000" pm:xy="6.955,6.539" idx="5" />
+                           <note xml:id="ntvxsq0" dur="4" pname="g" oct="4" stem.dir="down" stem.len="3.5" beat="3.0000" pm:xy="7.197,6.557" idx="5" />
+                           <note xml:id="n1ygwjwy" dur="4" pname="b" oct="3" stem.dir="up" stem.len="3.25" beat="4.0000" pm:xy="7.440,6.512" idx="5" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m41s1" n="2">
+                        <layer xml:id="m41s1l1" n="1">
+                           <note xml:id="n18gwl56" dur="2" pname="c" oct="3" stem.dir="up" stem.len="3.25" beat="1.0000" pm:xy="6.712,6.269" idx="5" />
+                           <note xml:id="n1ix144u" dur="2" pname="g" oct="2" stem.dir="up" stem.len="3.5" beat="3.0000" pm:xy="7.197,6.242" idx="5" />
+                        </layer>
+                     </staff>
+                     <fermata xml:id="f1dqs1if" startid="#n19spk43" glyph.auth="smufl" glyph.name="fermataVeryShortAbove" yOffset="2.0" pm:xy="6.940,6.566" />
+                     <fermata xml:id="f9edv42" staff="1" tstamp="5" yOffset="0.0" pm:xy="7.661,6.566" />
+                     <fermata xml:id="fu09pdz" staff="2" tstamp="5" place="below" yOffset="0.0" pm:xy="7.661,6.233" />
+                  </measure>
+                  <scoreDef timeSig-x="7.696" meter.count="6" meter.unit="8" pm:timesig-xy-top="7.696,6.557" pm:timesig-xy="7.696,6.557" pm:timesig-xy-bottom="7.696,6.314" />
+                  <measure xml:id="m1a4wupt" n="8" pm:top-left-x="7.685" pm:top-left-y="6.575" pm:bottom-right-x="8.559" pm:bottom-right-y="6.224">
+                     <staff xml:id="m44s1" n="1">
+                        <layer xml:id="m44s1l1" n="1">
+                           <note xml:id="n1crbjtg" dur="4" pname="c" oct="4" stem.dir="down" stem.len="3" beat="1.0000" pm:xy="7.748,6.521" idx="6" />
+                           <note xml:id="n1ypjqfq" dur="8" pname="e" oct="4" stem.dir="down" stem.len="3.5" beat="3.0000" pm:xy="7.990,6.539" idx="6" />
+                           <note xml:id="nm9xjje" dur="4" pname="g" oct="4" stem.dir="down" stem.len="3.5" beat="4.0000" pm:xy="8.152,6.557" idx="6" />
+                           <note xml:id="n1g9iiax" dur="8" pname="g" oct="3" stem.dir="up" stem.len="3.5" beat="6.0000" pm:xy="8.394,6.494" idx="0" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m48s1" n="2">
+                        <layer xml:id="m48s1l1" n="1">
+                           <note xml:id="n16araw5" dots="1" dur="4" pname="c" oct="3" stem.dir="up" stem.len="3.25" beat="1.0000" pm:xy="7.748,6.269" idx="6" />
+                           <note xml:id="n130j8q7" dots="1" dur="4" pname="g" oct="2" stem.dir="up" stem.len="3.5" beat="4.0000" pm:xy="8.152,6.242" idx="6" />
+                        </layer>
+                     </staff>
+                     <fermata xml:id="fpgie99" startid="#n1ypjqfq" yOffset="2.0" pm:xy="7.980,6.566" />
+                     <fermata xml:id="fy27rdt" staff="1" tstamp="7" shape="square" yOffset="0.0" pm:xy="8.535,6.566" />
+                  </measure>
+                  <measure xml:id="mzfndk8" right="end" n="9" pm:top-left-x="8.559" pm:top-left-y="6.575" pm:bottom-right-x="9.409" pm:bottom-right-y="6.224">
+                     <staff xml:id="m51s1" n="1">
+                        <layer xml:id="m51s1l1" n="1">
+                           <note xml:id="ntxc3nk" dur="4" pname="c" oct="4" stem.dir="down" stem.len="3" beat="1.0000" pm:xy="8.582,6.521" idx="7" />
+                           <note xml:id="n14f18vf" dur="8" pname="e" oct="4" stem.dir="down" stem.len="3.5" beat="3.0000" pm:xy="8.824,6.539" idx="7" />
+                           <note xml:id="n9x3rkx" dur="4" pname="g" oct="4" stem.dir="down" stem.len="3.5" beat="4.0000" pm:xy="8.986,6.557" idx="7" />
+                           <note xml:id="ngvopyg" dur="8" pname="g" oct="3" stem.dir="up" stem.len="3.5" beat="6.0000" pm:xy="9.228,6.494" idx="1" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m55s1" n="2">
+                        <layer xml:id="m55s1l1" n="1">
+                           <note xml:id="n1yw1061" dots="1" dur="4" pname="c" oct="3" stem.dir="up" stem.len="3.25" beat="1.0000" pm:xy="8.582,6.269" idx="7" />
+                           <note xml:id="ns98aqt" dots="1" dur="4" pname="g" oct="2" stem.dir="up" stem.len="3.5" beat="4.0000" pm:xy="8.986,6.242" idx="7" />
+                        </layer>
+                     </staff>
+                     <fermata xml:id="feb84zc" startid="#n14f18vf" yOffset="2.0" pm:xy="8.813,6.566" />
+                     <fermata xml:id="f103qszv" staff="1" tstamp="7" yOffset="0.0" pm:xy="9.377,6.566" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

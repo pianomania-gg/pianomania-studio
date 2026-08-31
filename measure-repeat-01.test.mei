@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:pm="http://pianomania.gg/ns/mei" meiversion="5.1+basic">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Bar repeats</title>
+            <respStmt>
+               <persName role="composer">Klaus Rettinghaus</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2024-05-02T10:22:55" />
+         </pubStmt>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef pm:timesig-xy-top="0.667,6.500" pm:timesig-xy="0.667,6.500">
+                  <pgHead>
+                     <rend halign="center" valign="top">
+                        <rend type="title" fontsize="x-large" pm:xy="5.000,6.768">Bar repeats</rend>
+                     </rend>
+                     <rend halign="right" valign="bottom">
+                        <rend type="composer" pm:xy="8.807,6.692">Klaus Rettinghaus</rend>
+                     </rend>
+                  </pgHead>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" meter.count="4" meter.unit="4" pm:timesig-xy="0.667,6.500">
+                        <label>Classical Guitar</label>
+                        <labelAbbr>Guit.</labelAbbr>
+                        <instrDef midi.instrnum="52" />
+                        <clef shape="G" line="2" dis="8" dis.place="below" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="s1">
+                  <pb />
+                  <sb pm:top-left-x="0.591" pm:top-left-y="6.909" pm:bottom-right-x="9.409" pm:bottom-right-y="6.626" />
+                  <sb type="mscore-manual" pm:top-left-x="0.591" pm:top-left-y="6.500" pm:bottom-right-x="9.409" pm:bottom-right-y="6.428" />
+                  <measure xml:id="m1pq04az" n="1" pm:top-left-x="0.591" pm:top-left-y="6.518" pm:bottom-right-x="0.990" pm:bottom-right-y="6.410">
+                     <staff xml:id="m1s1" n="1">
+                        <layer xml:id="m1s1l1" n="1">
+                           <note xml:id="n2lk9iq" dur="4" pname="b" oct="2" stem.dir="up" stem.len="3.5" beat="1.0000" pm:xy="0.735,6.401" idx="0" />
+                           <note xml:id="n1tvb6dt" dur="4" pname="g" oct="3" stem.dir="up" stem.len="3.5" beat="2.0000" pm:xy="0.798,6.446" idx="0" />
+                           <note xml:id="n9cslqf" dur="4" pname="d" oct="4" stem.dir="down" stem.len="3.5" beat="3.0000" pm:xy="0.861,6.482" idx="0" />
+                           <note xml:id="n1va1raa" dur="4" pname="e" oct="3" stem.dir="up" stem.len="3.5" beat="4.0000" pm:xy="0.924,6.428" idx="0" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1r0nyul" n="2" pm:top-left-x="0.990" pm:top-left-y="6.518" pm:bottom-right-x="1.268" pm:bottom-right-y="6.410">
+                     <staff xml:id="m6s1" n="1">
+                        <layer xml:id="m6s1l1" n="1">
+                           <note xml:id="nsrphgf" dur="4" pname="b" oct="2" stem.dir="up" stem.len="3.5" beat="1.0000" pm:xy="1.013,6.401" idx="1" />
+                           <note xml:id="n11o9630" dur="4" pname="g" oct="3" stem.dir="up" stem.len="3.5" beat="2.0000" pm:xy="1.076,6.446" idx="1" />
+                           <note xml:id="n1wz6w4m" dur="4" pname="d" oct="4" stem.dir="down" stem.len="3.5" beat="3.0000" pm:xy="1.139,6.482" idx="1" />
+                           <note xml:id="n1xrcgln" dur="4" pname="e" oct="3" stem.dir="up" stem.len="3.5" beat="4.0000" pm:xy="1.202,6.428" idx="1" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m5j6f22" n="3" pm:top-left-x="1.268" pm:top-left-y="6.518" pm:bottom-right-x="1.436" pm:bottom-right-y="6.410">
+                     <staff xml:id="m11s1" n="1">
+                        <layer xml:id="m11s1l1" n="1">
+                           <mRpt xml:id="m1arid13" expand="false" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m182l9m2" n="4" pm:top-left-x="1.436" pm:top-left-y="6.518" pm:bottom-right-x="1.603" pm:bottom-right-y="6.410">
+                     <staff xml:id="m12s1" n="1">
+                        <layer xml:id="m12s1l1" n="1">
+                           <mRpt xml:id="ms3niss" color="#FF2600" expand="false" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

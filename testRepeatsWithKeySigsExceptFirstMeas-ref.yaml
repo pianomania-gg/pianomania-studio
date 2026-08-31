@@ -1,0 +1,367 @@
+format: 1
+division: 480
+isDivisionIsInTps: false
+tracks:
+-
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Piano"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: TimeSignature
+      numerator: 4
+      denominatorAsNegPowerOfTwo: 2
+      midiClocksPerClick: 24
+      num32ndNotesPerQuarterNote: 8
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SetTempo
+      usPerQuarterNote: 500000
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 100
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 101
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 6
+      value: 12
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 100
+      value: 127
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 101
+      value: 127
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 0
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: AA==
+  -
+    time: 0
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 72
+      velocity: 80
+  -
+    time: 0
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 77
+      velocity: 80
+  -
+    time: 1823
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 72
+      velocity: 0
+  -
+    time: 1823
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 77
+      velocity: 0
+  -
+    time: 1920
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 1
+      majorOrMinor: 0
+  -
+    time: 1920
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 78
+      velocity: 80
+  -
+    time: 3743
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 78
+      velocity: 0
+  -
+    time: 3840
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: -1
+      majorOrMinor: 0
+  -
+    time: 3840
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 70
+      velocity: 80
+  -
+    time: 3840
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 77
+      velocity: 80
+  -
+    time: 5663
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 70
+      velocity: 0
+  -
+    time: 5663
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 77
+      velocity: 0
+  -
+    time: 5760
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 2
+      majorOrMinor: 0
+  -
+    time: 5760
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 71
+      velocity: 80
+  -
+    time: 5760
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 73
+      velocity: 80
+  -
+    time: 5760
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 78
+      velocity: 80
+  -
+    time: 7583
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 71
+      velocity: 0
+  -
+    time: 7583
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 73
+      velocity: 0
+  -
+    time: 7583
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 78
+      velocity: 0
+  -
+    time: 7680
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: -1
+      majorOrMinor: 0
+  -
+    time: 7680
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 70
+      velocity: 80
+  -
+    time: 7680
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 77
+      velocity: 80
+  -
+    time: 9503
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 70
+      velocity: 0
+  -
+    time: 9503
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 77
+      velocity: 0
+  -
+    time: 9600
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 2
+      majorOrMinor: 0
+  -
+    time: 9600
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 71
+      velocity: 80
+  -
+    time: 9600
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 73
+      velocity: 80
+  -
+    time: 9600
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 78
+      velocity: 80
+  -
+    time: 11423
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 71
+      velocity: 0
+  -
+    time: 11423
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 73
+      velocity: 0
+  -
+    time: 11423
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 78
+      velocity: 0
+  -
+    time: 11520
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 11520
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 72
+      velocity: 80
+  -
+    time: 11520
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 77
+      velocity: 80
+  -
+    time: 13343
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 72
+      velocity: 0
+  -
+    time: 13343
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 77
+      velocity: 0

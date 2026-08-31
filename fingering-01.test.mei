@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:pm="http://pianomania.gg/ns/mei" meiversion="5.1+basic">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Le Pianiste virtuose (excerpt)</title>
+            <respStmt>
+               <persName role="composer">Charles-Louis Hanon</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2024-11-27T16:14:07" />
+            <availability>Public Domain</availability>
+         </pubStmt>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef pm:timesig-xy-top="0.673,6.496" pm:timesig-xy="0.673,6.496" pm:timesig-xy-bottom="0.673,6.307">
+                  <pgHead>
+                     <rend halign="center" valign="top">
+                        <rend type="title" fontsize="x-large" pm:xy="5.000,6.766">Le Pianiste virtuose (excerpt)</rend>
+                     </rend>
+                     <rend halign="right" valign="bottom">
+                        <rend type="composer" pm:xy="8.726,6.675">Charles-Louis Hanon</rend>
+                     </rend>
+                  </pgHead>
+                  <staffGrp>
+                     <staffGrp bar.thru="true" symbol="brace">
+                        <label>Piano</label>
+                        <labelAbbr>Pno.</labelAbbr>
+                        <staffDef n="1" lines="5" meter.sym="common" pm:timesig-xy="0.673,6.496">
+                           <clef shape="G" line="2" />
+                        </staffDef>
+                        <staffDef n="2" lines="5" meter.sym="common" pm:timesig-xy="0.673,6.307">
+                           <clef shape="F" line="4" />
+                        </staffDef>
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="s1">
+                  <pb />
+                  <sb pm:top-left-x="0.591" pm:top-left-y="6.909" pm:bottom-right-x="9.409" pm:bottom-right-y="6.622" />
+                  <sb type="mscore-manual" pm:top-left-x="0.591" pm:top-left-y="6.496" pm:bottom-right-x="9.409" pm:bottom-right-y="6.235" />
+                  <measure xml:id="m1al1yat" n="1" pm:top-left-x="0.591" pm:top-left-y="6.514" pm:bottom-right-x="1.304" pm:bottom-right-y="6.217">
+                     <staff xml:id="m1s1" n="1">
+                        <layer xml:id="m1s1l1" n="1">
+                           <beam>
+                              <note xml:id="n5lskos" dur="16" staff="2" pname="c" oct="3" stem.dir="up" stem.len="4.2534" beat="1.0000" pm:xy="0.743,6.262" idx="0" />
+                              <note xml:id="nb8nxtf" dur="16" staff="2" pname="d" oct="3" stem.dir="up" stem.len="3.9029" beat="1.2500" pm:xy="0.782,6.271" idx="0" />
+                              <note xml:id="n1va9l6g" dur="16" staff="2" pname="e" oct="3" stem.dir="up" stem.len="3.5524" beat="1.5000" pm:xy="0.822,6.280" idx="0" />
+                              <note xml:id="ne8t7nl" type="mscore-beam-mid" dur="16" staff="2" pname="d" oct="3" stem.dir="up" stem.len="4.2019" beat="1.7500" pm:xy="0.862,6.271" idx="1" breaksec="1" />
+                              <note xml:id="nknvqyo" dur="16" staff="2" pname="c" oct="3" stem.dir="up" stem.len="4.8515" beat="2.0000" pm:xy="0.902,6.262" idx="1" />
+                              <note xml:id="n1qbriam" dur="16" staff="2" pname="e" oct="3" stem.dir="up" stem.len="4.001" beat="2.2500" pm:xy="0.942,6.280" idx="1" />
+                              <note xml:id="ng1xe16" dur="16" staff="2" pname="f" oct="3" stem.dir="up" stem.len="3.635" beat="2.5000" pm:xy="0.977,6.289" idx="0" />
+                              <note xml:id="n1donxvz" dur="16" staff="2" pname="g" oct="3" stem.dir="up" stem.len="3.2466" beat="2.7500" pm:xy="1.007,6.298" idx="0" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n3sfath" dur="16" staff="2" pname="a" oct="3" stem.dir="up" stem.len="3.25" beat="3.0000" pm:xy="1.037,6.307" idx="0" />
+                              <note xml:id="nlu3p47" dur="16" staff="2" pname="g" oct="3" stem.dir="up" stem.len="3.75" beat="3.2500" pm:xy="1.066,6.298" idx="1" />
+                              <note xml:id="n1gco6xo" dur="16" staff="2" pname="f" oct="3" stem.dir="up" stem.len="4.25" beat="3.5000" pm:xy="1.096,6.289" idx="1" />
+                              <note xml:id="n79sa4l" dur="16" staff="2" pname="g" oct="3" stem.dir="up" stem.len="3.75" beat="3.7500" pm:xy="1.126,6.298" idx="2" breaksec="1" />
+                              <note xml:id="n1gd1ndc" dur="16" staff="2" pname="a" oct="3" stem.dir="up" stem.len="3.25" beat="4.0000" pm:xy="1.156,6.307" idx="1" />
+                              <note xml:id="n11795yr" dur="16" staff="2" pname="g" oct="3" stem.dir="up" stem.len="3.75" beat="4.2500" pm:xy="1.185,6.298" idx="3" />
+                              <note xml:id="nru8mha" dur="16" staff="2" pname="f" oct="3" stem.dir="up" stem.len="4.25" beat="4.5000" pm:xy="1.215,6.289" idx="2" />
+                              <note xml:id="n1nzkdx8" dur="16" staff="2" pname="e" oct="3" stem.dir="up" stem.len="4.75" beat="4.7500" pm:xy="1.251,6.280" idx="2" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff xml:id="m17s1" n="2">
+                        <layer xml:id="m17s1l1" n="1">
+                           <beam>
+                              <note xml:id="n144bdf4" dur="16" pname="c" oct="2" stem.dir="up" stem.len="5.0008" beat="1.0000" pm:xy="0.743,6.199" idx="0" />
+                              <note xml:id="n1gwy317" dur="16" pname="d" oct="2" stem.dir="up" stem.len="4.5382" beat="1.2500" pm:xy="0.782,6.208" idx="0" />
+                              <note xml:id="n1hcxxq1" dur="16" pname="e" oct="2" stem.dir="up" stem.len="4.0756" beat="1.5000" pm:xy="0.822,6.217" idx="0" />
+                              <note xml:id="n1v28s23" type="mscore-beam-mid" dur="16" pname="d" oct="2" stem.dir="up" stem.len="4.613" beat="1.7500" pm:xy="0.862,6.208" idx="1" breaksec="1" />
+                              <note xml:id="n169wzhz" dur="16" pname="c" oct="2" stem.dir="up" stem.len="5.1504" beat="2.0000" pm:xy="0.902,6.199" idx="1" />
+                              <note xml:id="n1sghqxu" dur="16" pname="e" oct="2" stem.dir="up" stem.len="4.1877" beat="2.2500" pm:xy="0.942,6.217" idx="1" />
+                              <note xml:id="nl28frr" dur="16" pname="f" oct="2" stem.dir="up" stem.len="3.7212" beat="2.5000" pm:xy="0.977,6.226" idx="0" />
+                              <note xml:id="nk3age1" dur="16" pname="g" oct="2" stem.dir="up" stem.len="3.2492" beat="2.7500" pm:xy="1.007,6.235" idx="0" />
+                           </beam>
+                           <beam>
+                              <note xml:id="nxrougr" dur="16" pname="a" oct="2" stem.dir="up" stem.len="3.5" beat="3.0000" pm:xy="1.037,6.244" idx="0" />
+                              <note xml:id="nblbzng" dur="16" pname="g" oct="2" stem.dir="up" stem.len="4" beat="3.2500" pm:xy="1.066,6.235" idx="1" />
+                              <note xml:id="noglxh8" dur="16" pname="f" oct="2" stem.dir="up" stem.len="4.5" beat="3.5000" pm:xy="1.096,6.226" idx="1" />
+                              <note xml:id="n6woqh3" dur="16" pname="g" oct="2" stem.dir="up" stem.len="4" beat="3.7500" pm:xy="1.126,6.235" idx="2" breaksec="1" />
+                              <note xml:id="n162isiu" dur="16" pname="a" oct="2" stem.dir="up" stem.len="3.5" beat="4.0000" pm:xy="1.156,6.244" idx="1" />
+                              <note xml:id="n1ybaoxg" dur="16" pname="g" oct="2" stem.dir="up" stem.len="4" beat="4.2500" pm:xy="1.185,6.235" idx="3" />
+                              <note xml:id="n1nag8ft" dur="16" pname="f" oct="2" stem.dir="up" stem.len="4.5" beat="4.5000" pm:xy="1.215,6.226" idx="2" />
+                              <note xml:id="nunw1ze" dur="16" pname="e" oct="2" stem.dir="up" stem.len="5" beat="4.7500" pm:xy="1.251,6.217" idx="2" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <fing xml:id="f1ibk4xg" startid="#n5lskos" xOffset="0.7" yOffset="7.5" pm:xy="0.754,6.398">1</fing>
+                     <fing xml:id="ffo5iha" startid="#nb8nxtf" xOffset="0.7" yOffset="12.5" pm:xy="0.794,6.496">2</fing>
+                     <fing xml:id="fu47mvr" startid="#n1va9l6g" xOffset="0.7" yOffset="17.5" pm:xy="0.834,6.596">3</fing>
+                     <fing xml:id="fno4mqs" startid="#ne8t7nl" xOffset="0.7" yOffset="23.5" pm:xy="0.874,6.695">2</fing>
+                     <fing xml:id="fiuo731" startid="#nknvqyo" xOffset="0.7" yOffset="29.5" pm:xy="0.913,6.793">1</fing>
+                     <fing xml:id="fs2wiun" startid="#n1qbriam" xOffset="0.7" yOffset="34.0" pm:xy="0.953,6.892">2</fing>
+                     <fing xml:id="f1q4ped" startid="#ng1xe16" xOffset="0.7" yOffset="39.0" pm:xy="0.989,6.991">3</fing>
+                     <fing xml:id="fj9luju" startid="#n1donxvz" xOffset="0.7" yOffset="44.0" pm:xy="1.019,7.091">4</fing>
+                     <fing xml:id="fqethmh" startid="#n3sfath" xOffset="0.7" yOffset="49.1" pm:xy="1.048,7.190">5</fing>
+                     <fing xml:id="forkepk" startid="#nlu3p47" xOffset="0.7" yOffset="55.1" pm:xy="1.078,7.290">4</fing>
+                     <fing xml:id="frycp38" startid="#n1gco6xo" xOffset="0.7" yOffset="61.1" pm:xy="1.108,7.389">3</fing>
+                     <fing xml:id="f1t3cpj1" startid="#n79sa4l" xOffset="0.7" yOffset="66.1" pm:xy="1.138,7.488">4</fing>
+                     <fing xml:id="f1tnnn62" startid="#n1gd1ndc" xOffset="0.7" yOffset="71.2" pm:xy="1.167,7.588">5</fing>
+                     <fing xml:id="f1cumicz" startid="#n144bdf4" xOffset="0.7" yOffset="-3.9" pm:xy="0.754,6.129">5</fing>
+                     <fing xml:id="f1nxxeot" startid="#n1gwy317" xOffset="0.7" yOffset="-9.9" pm:xy="0.794,6.030">4</fing>
+                     <fing xml:id="f115ehfz" startid="#n1hcxxq1" xOffset="0.7" yOffset="-15.9" pm:xy="0.834,5.930">3</fing>
+                     <fing xml:id="f147kl1r" startid="#n1v28s23" xOffset="0.7" yOffset="-21.0" pm:xy="0.874,5.831">4</fing>
+                     <fing xml:id="fud3k0c" startid="#n169wzhz" xOffset="0.7" yOffset="-26.0" pm:xy="0.913,5.731">5</fing>
+                     <fing xml:id="f1fil9dt" startid="#n1sghqxu" xOffset="0.7" yOffset="-32.5" pm:xy="0.953,5.632">4</fing>
+                     <fing xml:id="f1onefuz" startid="#nl28frr" xOffset="0.7" yOffset="-38.6" pm:xy="0.989,5.532">3</fing>
+                     <fing xml:id="fizsx7f" startid="#nk3age1" xOffset="0.7" yOffset="-44.6" pm:xy="1.019,5.433">2</fing>
+                     <fing xml:id="fz4jhxt" startid="#nxrougr" xOffset="0.7" yOffset="-50.5" pm:xy="1.048,5.335">1</fing>
+                     <fing xml:id="fwbrq55" startid="#nblbzng" xOffset="0.7" yOffset="-55.5" pm:xy="1.078,5.236">2</fing>
+                     <fing xml:id="fb1j940" startid="#noglxh8" xOffset="0.7" yOffset="-60.5" pm:xy="1.108,5.137">3</fing>
+                     <fing xml:id="f59am1k" startid="#n6woqh3" xOffset="0.7" yOffset="-66.5" pm:xy="1.138,5.037">2</fing>
+                     <fing xml:id="f1mqf0dt" startid="#n162isiu" xOffset="0.7" yOffset="-72.5" pm:xy="1.167,4.939">1</fing>
+                  </measure>
+                  <measure xml:id="m1r45rpd" n="2" pm:top-left-x="1.304" pm:top-left-y="6.514" pm:bottom-right-x="1.864" pm:bottom-right-y="6.217">
+                     <staff xml:id="m34s1" n="1">
+                        <layer xml:id="m34s1l1" n="1">
+                           <beam>
+                              <note xml:id="n19lcjbr" dur="16" staff="2" pname="d" oct="3" stem.dir="up" stem.len="4.2536" beat="1.0000" pm:xy="1.327,6.271" idx="2" />
+                              <note xml:id="nz8phr2" dur="16" staff="2" pname="e" oct="3" stem.dir="up" stem.len="3.9142" beat="1.2500" pm:xy="1.367,6.280" idx="3" />
+                              <note xml:id="n1a1pcz3" dur="16" staff="2" pname="f" oct="3" stem.dir="up" stem.len="3.5581" beat="1.5000" pm:xy="1.402,6.289" idx="3" />
+                              <note xml:id="nr3zmdj" dur="16" staff="2" pname="e" oct="3" stem.dir="up" stem.len="4.202" beat="1.7500" pm:xy="1.438,6.280" idx="4" breaksec="1" />
+                              <note xml:id="n73k7h9" dur="16" staff="2" pname="d" oct="3" stem.dir="up" stem.len="4.8626" beat="2.0000" pm:xy="1.478,6.271" idx="3" />
+                              <note xml:id="n12oau1p" dur="16" staff="2" pname="f" oct="3" stem.dir="up" stem.len="4.0065" beat="2.2500" pm:xy="1.513,6.289" idx="4" />
+                              <note xml:id="n18sussv" dur="16" staff="2" pname="g" oct="3" stem.dir="up" stem.len="3.6264" beat="2.5000" pm:xy="1.543,6.298" idx="4" />
+                              <note xml:id="nyxsqn" dur="16" staff="2" pname="a" oct="3" stem.dir="up" stem.len="3.2464" beat="2.7500" pm:xy="1.573,6.307" idx="2" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n1feww03" dur="16" staff="2" pname="b" oct="3" stem.dir="up" stem.len="3.25" beat="3.0000" pm:xy="1.603,6.316" idx="0" />
+                              <note xml:id="n1xh99ax" dur="16" staff="2" pname="a" oct="3" stem.dir="up" stem.len="3.75" beat="3.2500" pm:xy="1.632,6.307" idx="3" />
+                              <note xml:id="n14j8dq8" dur="16" staff="2" pname="g" oct="3" stem.dir="up" stem.len="4.25" beat="3.5000" pm:xy="1.662,6.298" idx="5" />
+                              <note xml:id="ndrx1x7" dur="16" staff="2" pname="a" oct="3" stem.dir="up" stem.len="3.75" beat="3.7500" pm:xy="1.692,6.307" idx="4" breaksec="1" />
+                              <note xml:id="nmvbcug" dur="16" staff="2" pname="b" oct="3" stem.dir="up" stem.len="3.25" beat="4.0000" pm:xy="1.722,6.316" idx="1" />
+                              <note xml:id="n1b0vz3d" dur="16" staff="2" pname="a" oct="3" stem.dir="up" stem.len="3.75" beat="4.2500" pm:xy="1.751,6.307" idx="5" />
+                              <note xml:id="n8ute0m" dur="16" staff="2" pname="g" oct="3" stem.dir="up" stem.len="4.25" beat="4.5000" pm:xy="1.781,6.298" idx="6" />
+                              <note xml:id="n4jf2so" dur="16" staff="2" pname="f" oct="3" stem.dir="up" stem.len="4.75" beat="4.7500" pm:xy="1.811,6.289" idx="5" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff xml:id="m50s1" n="2">
+                        <layer xml:id="m50s1l1" n="1">
+                           <beam>
+                              <note xml:id="nzrtrby" dur="16" pname="d" oct="2" stem.dir="up" stem.len="5.5009" beat="1.0000" pm:xy="1.327,6.208" idx="2" />
+                              <note xml:id="n1jmhivx" dur="16" pname="e" oct="2" stem.dir="up" stem.len="5.0411" beat="1.2500" pm:xy="1.367,6.217" idx="3" />
+                              <note xml:id="n121m7da" dur="16" pname="f" oct="2" stem.dir="up" stem.len="4.577" beat="1.5000" pm:xy="1.402,6.226" idx="3" />
+                              <note xml:id="nym436" dur="16" pname="e" oct="2" stem.dir="up" stem.len="5.113" beat="1.7500" pm:xy="1.438,6.217" idx="4" breaksec="1" />
+                              <note xml:id="np85fs7" dur="16" pname="d" oct="2" stem.dir="up" stem.len="5.6532" beat="2.0000" pm:xy="1.478,6.208" idx="3" />
+                              <note xml:id="n1b2inxu" dur="16" pname="f" oct="2" stem.dir="up" stem.len="4.6891" beat="2.2500" pm:xy="1.513,6.226" idx="4" />
+                              <note xml:id="n9yuu8s" dur="16" pname="g" oct="2" stem.dir="up" stem.len="4.2191" beat="2.5000" pm:xy="1.543,6.235" idx="4" />
+                              <note xml:id="n1li1s8u" dur="16" pname="a" oct="2" stem.dir="up" stem.len="3.7491" beat="2.7500" pm:xy="1.573,6.244" idx="2" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n14owv2c" dur="16" pname="b" oct="2" stem.dir="up" stem.len="3.25" beat="3.0000" pm:xy="1.603,6.253" idx="0" />
+                              <note xml:id="n1l2xr4a" dur="16" pname="a" oct="2" stem.dir="up" stem.len="3.75" beat="3.2500" pm:xy="1.632,6.244" idx="3" />
+                              <note xml:id="n65g3lb" dur="16" pname="g" oct="2" stem.dir="up" stem.len="4.25" beat="3.5000" pm:xy="1.662,6.235" idx="5" />
+                              <note xml:id="n128vj8b" dur="16" pname="a" oct="2" stem.dir="up" stem.len="3.75" beat="3.7500" pm:xy="1.692,6.244" idx="4" breaksec="1" />
+                              <note xml:id="nld7qm4" dur="16" pname="b" oct="2" stem.dir="up" stem.len="3.25" beat="4.0000" pm:xy="1.722,6.253" idx="1" />
+                              <note xml:id="nbmdrvz" dur="16" pname="a" oct="2" stem.dir="up" stem.len="3.75" beat="4.2500" pm:xy="1.751,6.244" idx="5" />
+                              <note xml:id="nar7ct5" dur="16" pname="g" oct="2" stem.dir="up" stem.len="4.25" beat="4.5000" pm:xy="1.781,6.235" idx="6" />
+                              <note xml:id="n3br5yn" dur="16" pname="f" oct="2" stem.dir="up" stem.len="4.75" beat="4.7500" pm:xy="1.811,6.226" idx="5" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <fing xml:id="f1kbvnnl" startid="#n19lcjbr" xOffset="0.7" yOffset="7.5" pm:xy="1.339,6.407">1</fing>
+                     <fing xml:id="f1v8aa5" startid="#n73k7h9" xOffset="0.7" yOffset="8.1" pm:xy="1.490,6.418">1</fing>
+                     <fing xml:id="f11xwwda" startid="#n12oau1p" xOffset="0.7" yOffset="12.6" pm:xy="1.525,6.516">2</fing>
+                     <fing xml:id="fw4mno8" startid="#n18sussv" xOffset="0.7" yOffset="17.6" pm:xy="1.555,6.616">3</fing>
+                     <fing xml:id="fs2cj61" startid="#nyxsqn" xOffset="0.7" yOffset="22.7" pm:xy="1.585,6.715">4</fing>
+                     <fing xml:id="fzs8omo" startid="#n1feww03" xOffset="0.7" yOffset="27.7" pm:xy="1.614,6.815">5</fing>
+                     <fing xml:id="f18jn398" startid="#nzrtrby" xOffset="0.7" yOffset="-3.9" pm:xy="1.339,6.138">5</fing>
+                     <fing xml:id="f1cr5rlz" startid="#np85fs7" xOffset="0.7" yOffset="-3.9" pm:xy="1.490,6.138">5</fing>
+                     <fing xml:id="fa9n4pr" startid="#n1b2inxu" xOffset="0.7" yOffset="-10.4" pm:xy="1.525,6.039">4</fing>
+                     <fing xml:id="fiq0csf" startid="#n9yuu8s" xOffset="0.7" yOffset="-16.4" pm:xy="1.555,5.939">3</fing>
+                     <fing xml:id="f1hmludm" startid="#n1li1s8u" xOffset="0.7" yOffset="-22.5" pm:xy="1.585,5.840">2</fing>
+                     <fing xml:id="f1jf69s4" startid="#n14owv2c" xOffset="0.7" yOffset="-28.4" pm:xy="1.614,5.742">1</fing>
+                  </measure>
+                  <measure xml:id="musi4cp" n="3" pm:top-left-x="1.864" pm:top-left-y="6.514" pm:bottom-right-x="2.428" pm:bottom-right-y="6.217">
+                     <staff xml:id="m67s1" n="1">
+                        <layer xml:id="m67s1l1" n="1">
+                           <beam>
+                              <note xml:id="nvhbs4a" dur="16" staff="2" pname="e" oct="3" stem.dir="up" stem.len="4.254" beat="1.0000" pm:xy="1.887,6.280" idx="5" />
+                              <note xml:id="n1s5xwap" dur="16" staff="2" pname="f" oct="3" stem.dir="up" stem.len="3.9106" beat="1.2500" pm:xy="1.923,6.289" idx="6" />
+                              <note xml:id="n3nsy6h" dur="16" staff="2" pname="g" oct="3" stem.dir="up" stem.len="3.5411" beat="1.5000" pm:xy="1.952,6.298" idx="7" />
+                              <note xml:id="n1cyqm8u" dur="16" staff="2" pname="f" oct="3" stem.dir="up" stem.len="4.1717" beat="1.7500" pm:xy="1.982,6.289" idx="7" breaksec="1" />
+                              <note xml:id="n1r8h79r" dur="16" staff="2" pname="e" oct="3" stem.dir="up" stem.len="4.8283" beat="2.0000" pm:xy="2.018,6.280" idx="6" />
+                              <note xml:id="n1ut56pj" dur="16" staff="2" pname="g" oct="3" stem.dir="up" stem.len="3.985" beat="2.2500" pm:xy="2.053,6.298" idx="8" />
+                              <note xml:id="n1yhkd0a" dur="16" staff="2" pname="a" oct="3" stem.dir="up" stem.len="3.6155" beat="2.5000" pm:xy="2.083,6.307" idx="6" />
+                              <note xml:id="n9hnpbx" dur="16" staff="2" pname="b" oct="3" stem.dir="up" stem.len="3.246" beat="2.7500" pm:xy="2.113,6.316" idx="2" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n1v21q2n" dur="16" staff="2" pname="c" oct="4" stem.dir="up" stem.len="3.25" beat="3.0000" pm:xy="2.149,6.325" idx="0" />
+                              <note xml:id="nwbjywp" dur="16" staff="2" pname="b" oct="3" stem.dir="up" stem.len="3.75" beat="3.2500" pm:xy="2.184,6.316" idx="3" />
+                              <note xml:id="nqhs1zf" dur="16" staff="2" pname="a" oct="3" stem.dir="up" stem.len="4.25" beat="3.5000" pm:xy="2.214,6.307" idx="7" />
+                              <note xml:id="n1sozks9" dur="16" staff="2" pname="b" oct="3" stem.dir="up" stem.len="3.75" beat="3.7500" pm:xy="2.244,6.316" idx="4" breaksec="1" />
+                              <note xml:id="nnz1001" dur="16" staff="2" pname="c" oct="4" stem.dir="up" stem.len="3.25" beat="4.0000" pm:xy="2.279,6.325" idx="1" />
+                              <note xml:id="n1h5zax2" dur="16" staff="2" pname="b" oct="3" stem.dir="up" stem.len="3.75" beat="4.2500" pm:xy="2.315,6.316" idx="5" />
+                              <note xml:id="n1aswv6u" dur="16" staff="2" pname="a" oct="3" stem.dir="up" stem.len="4.25" beat="4.5000" pm:xy="2.345,6.307" idx="8" />
+                              <note xml:id="n1xydih1" dur="16" staff="2" pname="g" oct="3" stem.dir="up" stem.len="4.75" beat="4.7500" pm:xy="2.374,6.298" idx="9" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff xml:id="m83s1" n="2">
+                        <layer xml:id="m83s1l1" n="1">
+                           <beam>
+                              <note xml:id="n1l63yte" dur="16" pname="e" oct="2" stem.dir="down" stem.len="3.25" beat="1.0000" pm:xy="1.887,6.217" idx="5" />
+                              <note xml:id="npnshnp" dur="16" pname="f" oct="2" stem.dir="down" stem.len="3.75" beat="1.2500" pm:xy="1.923,6.226" idx="6" />
+                              <note xml:id="n10r50e8" dur="16" pname="g" oct="2" stem.dir="down" stem.len="4.25" beat="1.5000" pm:xy="1.952,6.235" idx="7" />
+                              <note xml:id="n1muf3b1" dur="16" pname="f" oct="2" stem.dir="down" stem.len="3.75" beat="1.7500" pm:xy="1.982,6.226" idx="7" breaksec="1" />
+                              <note xml:id="n1u570u1" dur="16" pname="e" oct="2" stem.dir="down" stem.len="3.25" beat="2.0000" pm:xy="2.018,6.217" idx="6" />
+                              <note xml:id="n1j0q6c7" dur="16" pname="g" oct="2" stem.dir="down" stem.len="4.25" beat="2.2500" pm:xy="2.053,6.235" idx="8" />
+                              <note xml:id="n1pn2094" dur="16" pname="a" oct="2" stem.dir="down" stem.len="4.75" beat="2.5000" pm:xy="2.083,6.244" idx="6" />
+                              <note xml:id="n16wwqg1" dur="16" pname="b" oct="2" stem.dir="down" stem.len="5.25" beat="2.7500" pm:xy="2.113,6.253" idx="2" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n1mcsgz8" dur="16" pname="c" oct="3" stem.dir="down" stem.len="4.003" beat="3.0000" pm:xy="2.149,6.262" idx="2" />
+                              <note xml:id="n1opvtbi" dur="16" pname="b" oct="2" stem.dir="down" stem.len="3.6204" beat="3.2500" pm:xy="2.184,6.253" idx="3" />
+                              <note xml:id="n4waehv" dur="16" pname="a" oct="2" stem.dir="down" stem.len="3.2184" beat="3.5000" pm:xy="2.214,6.244" idx="7" />
+                              <note xml:id="nl5uaw7" dur="16" pname="b" oct="2" stem.dir="down" stem.len="3.8163" beat="3.7500" pm:xy="2.244,6.253" idx="4" breaksec="1" />
+                              <note xml:id="n1hpy32d" dur="16" pname="c" oct="3" stem.dir="down" stem.len="4.4337" beat="4.0000" pm:xy="2.279,6.262" idx="3" />
+                              <note xml:id="nqt6s0u" dur="16" pname="b" oct="2" stem.dir="down" stem.len="4.0512" beat="4.2500" pm:xy="2.315,6.253" idx="5" />
+                              <note xml:id="n1lvcqb8" dur="16" pname="a" oct="2" stem.dir="down" stem.len="3.6491" beat="4.5000" pm:xy="2.345,6.244" idx="8" />
+                              <note xml:id="n1suk8ys" dur="16" pname="g" oct="2" stem.dir="down" stem.len="3.247" beat="4.7500" pm:xy="2.374,6.235" idx="9" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <fing xml:id="f1vjxlx1" startid="#nvhbs4a" xOffset="0.7" yOffset="7.5" pm:xy="1.899,6.416">1</fing>
+                     <fing xml:id="ffjdjdg" startid="#n1r8h79r" xOffset="0.7" yOffset="8.1" pm:xy="2.029,6.426">1</fing>
+                     <fing xml:id="f12lf3bp" startid="#n1ut56pj" xOffset="0.7" yOffset="12.6" pm:xy="2.065,6.525">2</fing>
+                     <fing xml:id="f1vb0x2g" startid="#n1yhkd0a" xOffset="0.7" yOffset="17.6" pm:xy="2.095,6.624">3</fing>
+                     <fing xml:id="f103ggbv" startid="#n9hnpbx" xOffset="0.7" yOffset="22.6" pm:xy="2.125,6.723">4</fing>
+                     <fing xml:id="f1bryaxn" startid="#n1v21q2n" xOffset="0.7" yOffset="27.7" pm:xy="2.160,6.823">5</fing>
+                     <fing xml:id="fgype8u" startid="#n1l63yte" xOffset="0.7" yOffset="-6.6" pm:xy="1.899,6.098">5</fing>
+                     <fing xml:id="f12pell6" startid="#n1u570u1" xOffset="0.7" yOffset="-6.6" pm:xy="2.029,6.098">5</fing>
+                     <fing xml:id="f5eq16f" startid="#n1j0q6c7" xOffset="0.7" yOffset="-13.1" pm:xy="2.065,5.999">4</fing>
+                     <fing xml:id="f15bk439" startid="#n1pn2094" xOffset="0.7" yOffset="-19.2" pm:xy="2.095,5.899">3</fing>
+                     <fing xml:id="fap7n4r" startid="#n16wwqg1" xOffset="0.7" yOffset="-25.2" pm:xy="2.125,5.800">2</fing>
+                     <fing xml:id="fkyzigh" startid="#n1mcsgz8" xOffset="0.7" yOffset="-31.1" pm:xy="2.160,5.702">1</fing>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

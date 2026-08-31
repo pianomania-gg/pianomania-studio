@@ -1,0 +1,20 @@
+if(NOT DEFINED PIANOMANIA_TEST_SOURCE_ROOT)
+    message(FATAL_ERROR "PIANOMANIA_TEST_SOURCE_ROOT is required.")
+endif()
+
+include("${PIANOMANIA_TEST_SOURCE_ROOT}/version.cmake")
+
+if(NOT PIANOMANIA_MUSESCORE_PRODUCT_VERSION STREQUAL PIANOMANIA_EXPECTED_PRODUCT_VERSION)
+    message(FATAL_ERROR
+        "Product version '${PIANOMANIA_MUSESCORE_PRODUCT_VERSION}' differs from "
+        "'${PIANOMANIA_EXPECTED_PRODUCT_VERSION}'.")
+endif()
+
+if(NOT MUSE_APP_TITLE STREQUAL PIANOMANIA_EXPECTED_APP_TITLE)
+    message(FATAL_ERROR
+        "Application title '${MUSE_APP_TITLE}' differs from '${PIANOMANIA_EXPECTED_APP_TITLE}'.")
+endif()
+
+if(NOT MUSE_APP_VERSION STREQUAL "4.7.4")
+    message(FATAL_ERROR "MuseScore engine version '${MUSE_APP_VERSION}' differs from '4.7.4'.")
+endif()

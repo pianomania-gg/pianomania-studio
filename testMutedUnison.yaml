@@ -1,0 +1,157 @@
+format: 0
+division: 480
+isDivisionIsInTps: false
+tracks:
+-
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 121
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 100
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 101
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 6
+      value: 12
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 100
+      value: 127
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 101
+      value: 127
+  -
+    time: 0
+    event:
+      type: ProgramChange
+      channel: 0
+      program: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 7
+      value: 100
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 10
+      value: 64
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 91
+      value: 0
+  -
+    time: 0
+    event:
+      type: ControlChange
+      channel: 0
+      control: 93
+      value: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: 33
+      data: AA==
+  -
+    time: 0
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 64
+      velocity: 80
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SequenceOrTrackName
+      name: "Piano"
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: TimeSignature
+      numerator: 4
+      denominatorAsNegPowerOfTwo: 2
+      midiClocksPerClick: 24
+      num32ndNotesPerQuarterNote: 8
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: KeySignature
+      numSharpsOrFlats: 0
+      majorOrMinor: 0
+  -
+    time: 0
+    event:
+      type: Meta
+      metaType: SetTempo
+      usPerQuarterNote: 500000
+  -
+    time: 480
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 64
+      velocity: 64
+  -
+    time: 480
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 64
+      velocity: 80
+  -
+    time: 935
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 64
+      velocity: 64
+  -
+    time: 1920
+    event:
+      type: NoteOn
+      channel: 0
+      pitch: 64
+      velocity: 80
+  -
+    time: 2375
+    event:
+      type: NoteOff
+      channel: 0
+      pitch: 64
+      velocity: 64

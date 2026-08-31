@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:pm="http://pianomania.gg/ns/mei" meiversion="5.1+basic">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">The Art of Trill</title>
+            <respStmt>
+               <persName role="composer">Klaus Rettinghaus</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2024-12-09T15:18:31" />
+         </pubStmt>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef pm:timesig-xy-top="0.667,6.553" pm:timesig-xy="0.667,6.553">
+                  <pgHead>
+                     <rend halign="center" valign="top">
+                        <rend type="title" fontsize="x-large" pm:xy="5.000,6.794">The Art of Trill</rend>
+                     </rend>
+                  </pgHead>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" meter.count="2" meter.unit="4" trans.diat="7" trans.semi="12" pm:timesig-xy="0.667,6.553">
+                        <label>Piccolo</label>
+                        <labelAbbr>Picc.</labelAbbr>
+                        <clef shape="G" line="2" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="s1">
+                  <pb />
+                  <sb pm:top-left-x="0.591" pm:top-left-y="6.909" pm:bottom-right-x="9.409" pm:bottom-right-y="6.679" />
+                  <sb type="mscore-manual" pm:top-left-x="0.591" pm:top-left-y="6.553" pm:bottom-right-x="9.409" pm:bottom-right-y="6.481" />
+                  <measure xml:id="msrr467" n="1" pm:top-left-x="0.591" pm:top-left-y="6.571" pm:bottom-right-x="0.857" pm:bottom-right-y="6.463">
+                     <staff xml:id="m1s1" n="1">
+                        <layer xml:id="m1s1l1" n="1">
+                           <note xml:id="n17i18e9" dur="2" pname="b" oct="4" stem.dir="down" stem.len="3" beat="1.0000" pm:xy="0.735,6.517" idx="0" />
+                        </layer>
+                     </staff>
+                     <trill xml:id="t1kauqmr" startid="#n17i18e9" extender="true" yOffset="2.8" endid="#n1bf8c8b" />
+                     <tie xml:id="t1kei3qd" startid="#n17i18e9" curvedir="above" pm:x1y1x2y2="0.750,6.530,0.889,6.530" pm:bezier="0.750,6.530,0.778,6.549,0.861,6.549,0.889,6.530" endid="#nrugdj0" />
+                  </measure>
+                  <measure xml:id="mb72cse" n="2" pm:top-left-x="0.857" pm:top-left-y="6.571" pm:bottom-right-x="1.001" pm:bottom-right-y="6.463">
+                     <staff xml:id="m3s1" n="1">
+                        <layer xml:id="m3s1l1" n="1">
+                           <note xml:id="nrugdj0" dur="2" pname="b" oct="4" stem.dir="down" stem.len="3" beat="1.0000" pm:xy="0.879,6.517" idx="0" />
+                        </layer>
+                     </staff>
+                     <tie xml:id="t1a0vvqz" startid="#nrugdj0" curvedir="above" pm:x1y1x2y2="0.896,6.530,1.033,6.530" pm:bezier="0.896,6.530,0.923,6.549,1.005,6.549,1.033,6.530" endid="#n1zovi6" />
+                  </measure>
+                  <measure xml:id="mir06ev" n="3" pm:top-left-x="1.001" pm:top-left-y="6.571" pm:bottom-right-x="1.145" pm:bottom-right-y="6.463">
+                     <staff xml:id="m5s1" n="1">
+                        <layer xml:id="m5s1l1" n="1">
+                           <note xml:id="n1zovi6" dur="2" pname="b" oct="4" stem.dir="down" stem.len="3" beat="1.0000" pm:xy="1.023,6.517" idx="0" />
+                        </layer>
+                     </staff>
+                     <tie xml:id="tkb1m8a" startid="#n1zovi6" curvedir="above" pm:x1y1x2y2="1.040,6.530,1.178,6.530" pm:bezier="1.040,6.530,1.067,6.549,1.151,6.549,1.178,6.530" pm:post-terminal-ids="n7uxaq5" endid="#n1bf8c8b" />
+                  </measure>
+                  <measure xml:id="mk49vq8" n="4" pm:top-left-x="1.145" pm:top-left-y="6.571" pm:bottom-right-x="1.289" pm:bottom-right-y="6.463">
+                     <staff xml:id="m7s1" n="1">
+                        <layer xml:id="m7s1l1" n="1">
+                           <note xml:id="n1bf8c8b" dur="2" pname="b" oct="4" stem.dir="down" stem.len="3" beat="1.0000" pm:xy="1.167,6.517" idx="0" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1hz5uj3" n="5" pm:top-left-x="1.289" pm:top-left-y="6.571" pm:bottom-right-x="1.433" pm:bottom-right-y="6.463">
+                     <staff xml:id="m9s1" n="1">
+                        <layer xml:id="m9s1l1" n="1">
+                           <note xml:id="n7uxaq5" dur="2" pname="b" oct="4" stem.dir="down" stem.len="3" beat="1.0000" pm:xy="1.311,6.517" idx="1" />
+                        </layer>
+                     </staff>
+                     <trill xml:id="t193bus8" type="mscore-above-second:major" accidupper="s" startid="#n7uxaq5" extender="true" yOffset="2.8" endid="#n1rz933n" />
+                     <tie xml:id="t1o6a0p8" startid="#n7uxaq5" curvedir="above" pm:x1y1x2y2="1.326,6.530,1.465,6.530" pm:bezier="1.326,6.530,1.354,6.549,1.437,6.549,1.465,6.530" endid="#naeqhp4" />
+                  </measure>
+                  <measure xml:id="mcwv6cu" n="6" pm:top-left-x="1.433" pm:top-left-y="6.571" pm:bottom-right-x="1.577" pm:bottom-right-y="6.463">
+                     <staff xml:id="m11s1" n="1">
+                        <layer xml:id="m11s1l1" n="1">
+                           <note xml:id="naeqhp4" dur="2" pname="b" oct="4" stem.dir="down" stem.len="3" beat="1.0000" pm:xy="1.455,6.517" idx="1" />
+                        </layer>
+                     </staff>
+                     <tie xml:id="ttrj1wl" startid="#naeqhp4" curvedir="above" pm:x1y1x2y2="1.472,6.530,1.609,6.530" pm:bezier="1.472,6.530,1.499,6.549,1.581,6.549,1.609,6.530" endid="#n1ekqfjo" />
+                  </measure>
+                  <measure xml:id="m1wmz5xo" n="7" pm:top-left-x="1.577" pm:top-left-y="6.571" pm:bottom-right-x="1.721" pm:bottom-right-y="6.463">
+                     <staff xml:id="m13s1" n="1">
+                        <layer xml:id="m13s1l1" n="1">
+                           <note xml:id="n1ekqfjo" dur="2" pname="b" oct="4" stem.dir="down" stem.len="3" beat="1.0000" pm:xy="1.599,6.517" idx="1" />
+                        </layer>
+                     </staff>
+                     <tie xml:id="tozvyfe" startid="#n1ekqfjo" curvedir="above" pm:x1y1x2y2="1.616,6.530,1.754,6.530" pm:bezier="1.616,6.530,1.643,6.549,1.727,6.549,1.754,6.530" pm:post-terminal-ids="n4lgjur" endid="#n1rz933n" />
+                  </measure>
+                  <measure xml:id="m1cwbxwe" n="8" pm:top-left-x="1.721" pm:top-left-y="6.571" pm:bottom-right-x="1.865" pm:bottom-right-y="6.463">
+                     <staff xml:id="m15s1" n="1">
+                        <layer xml:id="m15s1l1" n="1">
+                           <note xml:id="n1rz933n" dur="2" pname="b" oct="4" stem.dir="down" stem.len="3" beat="1.0000" pm:xy="1.743,6.517" idx="1" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m4jclcr" n="9" pm:top-left-x="1.865" pm:top-left-y="6.571" pm:bottom-right-x="2.009" pm:bottom-right-y="6.463">
+                     <staff xml:id="m17s1" n="1">
+                        <layer xml:id="m17s1l1" n="1">
+                           <note xml:id="n4lgjur" dur="2" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="1.0000" pm:xy="1.887,6.526" idx="0" />
+                        </layer>
+                     </staff>
+                     <trill xml:id="t1l4ocqa" type="mscore-above-second:minor" accidupper="f" startid="#n4lgjur" color="#FF2600" extender="true" place="below" yOffset="2.3" endid="#n1g1qo7n" />
+                     <tie xml:id="t1utpc8k" startid="#n4lgjur" curvedir="above" pm:x1y1x2y2="1.902,6.539,2.041,6.539" pm:bezier="1.902,6.539,1.930,6.564,2.013,6.564,2.041,6.539" endid="#n1t5d015" />
+                  </measure>
+                  <measure xml:id="m162jsy4" n="10" pm:top-left-x="2.009" pm:top-left-y="6.571" pm:bottom-right-x="2.153" pm:bottom-right-y="6.463">
+                     <staff xml:id="m19s1" n="1">
+                        <layer xml:id="m19s1l1" n="1">
+                           <note xml:id="n1t5d015" dur="2" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="1.0000" pm:xy="2.031,6.526" idx="0" />
+                        </layer>
+                     </staff>
+                     <tie xml:id="tg9si3f" startid="#n1t5d015" curvedir="above" pm:x1y1x2y2="2.048,6.539,2.185,6.539" pm:bezier="2.048,6.539,2.075,6.564,2.157,6.564,2.185,6.539" endid="#n1ijnalw" />
+                  </measure>
+                  <measure xml:id="m8i8pot" n="11" pm:top-left-x="2.153" pm:top-left-y="6.571" pm:bottom-right-x="2.297" pm:bottom-right-y="6.463">
+                     <staff xml:id="m21s1" n="1">
+                        <layer xml:id="m21s1l1" n="1">
+                           <note xml:id="n1ijnalw" dur="2" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="1.0000" pm:xy="2.175,6.526" idx="0" />
+                        </layer>
+                     </staff>
+                     <tie xml:id="t1kjvex7" startid="#n1ijnalw" curvedir="above" pm:x1y1x2y2="2.192,6.539,2.330,6.539" pm:bezier="2.192,6.539,2.219,6.564,2.303,6.564,2.330,6.539" pm:post-terminal-ids="nf0myb" endid="#n1g1qo7n" />
+                  </measure>
+                  <measure xml:id="m1vrswm4" n="12" pm:top-left-x="2.297" pm:top-left-y="6.571" pm:bottom-right-x="2.441" pm:bottom-right-y="6.463">
+                     <staff xml:id="m23s1" n="1">
+                        <layer xml:id="m23s1l1" n="1">
+                           <note xml:id="n1g1qo7n" dur="2" pname="c" oct="5" stem.dir="down" stem.len="3.25" beat="1.0000" pm:xy="2.319,6.526" idx="0" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="mzrv1i6" n="13" pm:top-left-x="2.441" pm:top-left-y="6.571" pm:bottom-right-x="2.585" pm:bottom-right-y="6.463">
+                     <staff xml:id="m25s1" n="1">
+                        <layer xml:id="m25s1l1" n="1">
+                           <note xml:id="nf0myb" dur="2" pname="b" oct="4" stem.dir="down" stem.len="3" beat="1.0000" pm:xy="2.463,6.517" idx="2" />
+                        </layer>
+                     </staff>
+                     <trill xml:id="t347uzv" type="mscore-above-second:minor" startid="#nf0myb" extender="true" place="above" yOffset="2.8" endid="#ntdh2f7" />
+                     <tie xml:id="t1w7cmo4" startid="#nf0myb" curvedir="above" pm:x1y1x2y2="2.478,6.530,2.617,6.530" pm:bezier="2.478,6.530,2.506,6.549,2.589,6.549,2.617,6.530" endid="#ncch6k6" />
+                  </measure>
+                  <measure xml:id="mejqda1" n="14" pm:top-left-x="2.585" pm:top-left-y="6.571" pm:bottom-right-x="2.729" pm:bottom-right-y="6.463">
+                     <staff xml:id="m27s1" n="1">
+                        <layer xml:id="m27s1l1" n="1">
+                           <note xml:id="ncch6k6" dur="2" pname="b" oct="4" stem.dir="down" stem.len="3" beat="1.0000" pm:xy="2.607,6.517" idx="2" />
+                        </layer>
+                     </staff>
+                     <tie xml:id="t1hb6lac" startid="#ncch6k6" curvedir="above" pm:x1y1x2y2="2.624,6.530,2.761,6.530" pm:bezier="2.624,6.530,2.651,6.549,2.733,6.549,2.761,6.530" endid="#n17an8bs" />
+                  </measure>
+                  <measure xml:id="m1fmomlt" n="15" pm:top-left-x="2.729" pm:top-left-y="6.571" pm:bottom-right-x="2.873" pm:bottom-right-y="6.463">
+                     <staff xml:id="m29s1" n="1">
+                        <layer xml:id="m29s1l1" n="1">
+                           <note xml:id="n17an8bs" dur="2" pname="b" oct="4" stem.dir="down" stem.len="3" beat="1.0000" pm:xy="2.751,6.517" idx="2" />
+                        </layer>
+                     </staff>
+                     <tie xml:id="td695gg" startid="#n17an8bs" curvedir="above" pm:x1y1x2y2="2.768,6.530,2.906,6.530" pm:bezier="2.768,6.530,2.795,6.549,2.879,6.549,2.906,6.530" endid="#ntdh2f7" />
+                  </measure>
+                  <measure xml:id="mv4ch4x" right="end" n="16" pm:top-left-x="2.873" pm:top-left-y="6.571" pm:bottom-right-x="3.017" pm:bottom-right-y="6.463">
+                     <staff xml:id="m31s1" n="1">
+                        <layer xml:id="m31s1l1" n="1">
+                           <note xml:id="ntdh2f7" dur="2" pname="b" oct="4" stem.dir="down" stem.len="3" beat="1.0000" pm:xy="2.895,6.517" idx="2" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

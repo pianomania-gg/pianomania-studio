@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<museScore version="4.70">
+  <Score>
+    <Division>480</Division>
+    <Part id="1">
+      <Staff id="1">
+        <StaffType group="pitched">
+          <name>stdNormal</name>
+          </StaffType>
+        </Staff>
+      <Instrument id="piano">
+        <instrumentId>keyboard.piano</instrumentId>
+        <Channel/>
+        </Instrument>
+      </Part>
+    <Staff id="1">
+      <Measure>
+        <voice>
+          <TimeSig>
+            <sigN>4</sigN>
+            <sigD>4</sigD>
+            </TimeSig>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <Spanner type="Tie">
+                <Tie/>
+                <next><location><measures>1</measures></location></next>
+                </Spanner>
+              <pianomaniaHeldNote>1</pianomaniaHeldNote>
+              <pianomaniaHeldNotePitchCurve version="2">
+                <point time="0" pitch="0" slope="0"/>
+                <point time="40000" pitch="30" slope="128"/>
+                <point time="42000" pitch="430" slope="0"/>
+                <point time="45000" pitch="30" slope="-301"/>
+                <point time="60000" pitch="0" slope="0"/>
+                </pianomaniaHeldNotePitchCurve>
+              <pitch>60</pitch><tpc>14</tpc>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <Spanner type="Tie">
+                <Tie/>
+                <next><location><measures>1</measures></location></next>
+                </Spanner>
+              <Spanner type="Tie"><prev><location><measures>-1</measures></location></prev></Spanner>
+              <pianomaniaHeldNote>1</pianomaniaHeldNote>
+              <pianomaniaHeldNotePitchCurve version="2">
+                <point time="0" pitch="0" slope="0"/>
+                <point time="40000" pitch="30" slope="128"/>
+                <point time="42000" pitch="430" slope="0"/>
+                <point time="45000" pitch="30" slope="-301"/>
+                <point time="60000" pitch="0" slope="0"/>
+                </pianomaniaHeldNotePitchCurve>
+              <pitch>60</pitch><tpc>14</tpc>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <Spanner type="Tie"><prev><location><measures>-1</measures></location></prev></Spanner>
+              <pianomaniaHeldNote>1</pianomaniaHeldNote>
+              <pianomaniaHeldNotePitchCurve version="2">
+                <point time="0" pitch="0" slope="0"/>
+                <point time="40000" pitch="30" slope="128"/>
+                <point time="42000" pitch="430" slope="0"/>
+                <point time="45000" pitch="30" slope="-301"/>
+                <point time="60000" pitch="0" slope="0"/>
+                </pianomaniaHeldNotePitchCurve>
+              <pitch>60</pitch><tpc>14</tpc>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Chord>
+            <durationType>half</durationType>
+            <Note>
+              <Spanner type="Tie"><Tie/><next><location><fractions>1/2</fractions></location></next></Spanner>
+              <pianomaniaHeldNote>1</pianomaniaHeldNote>
+              <pianomaniaHeldNotePitchCurve version="2">
+                <point time="0" pitch="0" slope="0"/>
+                <point time="8000" pitch="0" slope="0"/>
+                <point time="30000" pitch="-1210" slope="-3273"/>
+                <point time="52000" pitch="-2400" slope="0"/>
+                <point time="60000" pitch="-2400" slope="0"/>
+                </pianomaniaHeldNotePitchCurve>
+              <pitch>64</pitch><tpc>18</tpc>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>half</durationType>
+            <Note>
+              <Spanner type="Tie"><prev><location><fractions>-1/2</fractions></location></prev></Spanner>
+              <pianomaniaHeldNote>1</pianomaniaHeldNote>
+              <pianomaniaHeldNotePitchCurve version="2">
+                <point time="0" pitch="0" slope="0"/>
+                <point time="8000" pitch="0" slope="0"/>
+                <point time="30000" pitch="-1210" slope="-3273"/>
+                <point time="52000" pitch="-2400" slope="0"/>
+                <point time="60000" pitch="-2400" slope="0"/>
+                </pianomaniaHeldNotePitchCurve>
+              <pitch>64</pitch><tpc>18</tpc>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Chord>
+            <durationType>whole</durationType>
+            <Note>
+              <pianomaniaHeldNote>1</pianomaniaHeldNote>
+              <pianomaniaHeldNotePitchCurve version="2">
+                <point time="0" pitch="0" slope="0"/>
+                <point time="30000" pitch="200" slope="100"/>
+                <point time="60000" pitch="0" slope="0"/>
+                </pianomaniaHeldNotePitchCurve>
+              <pitch>67</pitch><tpc>15</tpc>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      </Staff>
+    </Score>
+  </museScore>

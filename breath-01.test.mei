@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:pm="http://pianomania.gg/ns/mei" meiversion="5.1+basic">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Untitled score</title>
+            <respStmt>
+               <persName role="composer">Composer / arranger</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2023-08-11T14:51:19" />
+         </pubStmt>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef pm:timesig-xy-top="1.400,6.553" pm:timesig-xy="1.400,6.553" pm:timesig-xy-bottom="1.400,6.310">
+                  <pgHead>
+                     <rend halign="center" valign="top">
+                        <rend type="title" fontsize="x-large" pm:xy="5.000,6.794">Breaths and caesuras</rend>
+                        <lb />
+                        <rend type="subtitle" fontsize="large" pm:xy="5.000,6.442">Subtitle</rend>
+                     </rend>
+                     <rend halign="right" valign="bottom">
+                        <rend type="composer" pm:xy="8.753,6.745">Composer / arranger</rend>
+                     </rend>
+                  </pgHead>
+                  <staffGrp>
+                     <staffGrp bar.thru="true" symbol="bracket">
+                        <staffDef n="1" lines="5" meter.count="4" meter.unit="4" pm:timesig-xy="1.400,6.553">
+                           <label>Viola</label>
+                           <labelAbbr>Vla.</labelAbbr>
+                           <clef shape="C" line="3" />
+                        </staffDef>
+                        <staffDef n="2" lines="5" meter.count="4" meter.unit="4" pm:timesig-xy="1.400,6.310">
+                           <label>Violoncello</label>
+                           <labelAbbr>Vc.</labelAbbr>
+                           <clef shape="F" line="4" />
+                        </staffDef>
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="s1">
+                  <pb />
+                  <sb pm:top-left-x="0.591" pm:top-left-y="6.909" pm:bottom-right-x="9.409" pm:bottom-right-y="6.679" />
+                  <sb type="mscore-manual" pm:top-left-x="0.591" pm:top-left-y="6.553" pm:bottom-right-x="9.409" pm:bottom-right-y="6.238" />
+                  <measure xml:id="mzf2odj" metcon="false" n="1" pm:top-left-x="1.318" pm:top-left-y="6.571" pm:bottom-right-x="1.534" pm:bottom-right-y="6.220">
+                     <staff xml:id="m1s1" n="1">
+                        <layer xml:id="m1s1l1" n="1">
+                           <rest xml:id="rp7gcn" dur="4" beat="1.0000" yOffset="2.00" hand="left" pm:xy="1.468,6.517" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m1s2" n="2">
+                        <layer xml:id="m1s2l1" n="1">
+                           <rest xml:id="r1soe0n0" dur="4" beat="1.0000" yOffset="2.00" hand="left" pm:xy="1.468,6.274" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="mv0cui5" n="2" pm:top-left-x="1.534" pm:top-left-y="6.571" pm:bottom-right-x="1.836" pm:bottom-right-y="6.220">
+                     <staff xml:id="m2s1" n="1">
+                        <layer xml:id="m2s1l1" n="1">
+                           <note xml:id="n1x0czh2" dur="4" pname="c" oct="4" stem.dir="down" stem.len="3" beat="1.0000" pm:xy="1.557,6.517" idx="0" />
+                           <note xml:id="n1t2hxkc" dur="4" pname="e" oct="4" stem.dir="down" stem.len="3.5" beat="2.0000" pm:xy="1.630,6.535" idx="0" />
+                           <note xml:id="n19gmhps" dur="4" pname="g" oct="4" stem.dir="down" stem.len="3.5" beat="3.0000" pm:xy="1.693,6.553" idx="0" />
+                           <note xml:id="ncsync" dur="4" pname="b" oct="3" stem.dir="up" stem.len="3.25" beat="4.0000" pm:xy="1.756,6.508" idx="0" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m6s1" n="2">
+                        <layer xml:id="m6s1l1" n="1">
+                           <note xml:id="n16smjdq" dur="2" pname="c" oct="3" stem.dir="up" stem.len="3.25" beat="1.0000" pm:xy="1.557,6.265" idx="0" />
+                           <note xml:id="n1dsn2tl" dur="2" pname="g" oct="2" stem.dir="up" stem.len="3.5" beat="3.0000" pm:xy="1.693,6.238" idx="0" />
+                        </layer>
+                     </staff>
+                     <breath xml:id="bkfjn7f" startid="#n1x0czh2" />
+                     <breath xml:id="bb93j7i" startid="#ncsync" glyph.auth="smufl" glyph.name="breathMarkUpbow" />
+                     <breath xml:id="bt93nqa" startid="#n16smjdq" />
+                  </measure>
+                  <measure xml:id="mthvh9f" n="3" pm:top-left-x="1.836" pm:top-left-y="6.571" pm:bottom-right-x="2.171" pm:bottom-right-y="6.220">
+                     <staff xml:id="m9s1" n="1">
+                        <layer xml:id="m9s1l1" n="1">
+                           <note xml:id="n78o72a" dur="4" pname="c" oct="4" stem.dir="down" stem.len="3" beat="1.0000" pm:xy="1.859,6.517" idx="1" />
+                           <note xml:id="n1q3bgmi" dur="4" pname="e" oct="4" stem.dir="down" stem.len="3.5" beat="2.0000" pm:xy="1.945,6.535" idx="1" />
+                           <note xml:id="n11rk39v" dur="4" pname="g" oct="4" stem.dir="down" stem.len="3.5" beat="3.0000" pm:xy="2.032,6.553" idx="1" />
+                           <note xml:id="n1xi704l" dur="4" pname="b" oct="3" stem.dir="up" stem.len="3.25" beat="4.0000" pm:xy="2.095,6.508" idx="1" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m13s1" n="2">
+                        <layer xml:id="m13s1l1" n="1">
+                           <note xml:id="n1y8fxxo" dur="2" pname="c" oct="3" stem.dir="up" stem.len="3.25" beat="1.0000" pm:xy="1.859,6.265" idx="1" />
+                           <note xml:id="nfa3a4t" dur="2" pname="g" oct="2" stem.dir="up" stem.len="3.5" beat="3.0000" pm:xy="2.032,6.238" idx="1" />
+                        </layer>
+                     </staff>
+                     <caesura xml:id="csoibna" startid="#n78o72a" glyph.auth="smufl" glyph.name="caesuraCurved" />
+                     <caesura xml:id="c1sbyhff" startid="#n1q3bgmi" />
+                     <caesura xml:id="cmbip06" startid="#n1xi704l" glyph.auth="smufl" glyph.name="caesuraShort" />
+                     <caesura xml:id="c1d2aebh" startid="#n1y8fxxo" />
+                  </measure>
+                  <measure xml:id="mp4731w" n="4" pm:top-left-x="2.171" pm:top-left-y="6.571" pm:bottom-right-x="2.455" pm:bottom-right-y="6.220">
+                     <staff xml:id="m16s1" n="1">
+                        <layer xml:id="m16s1l1" n="1">
+                           <note xml:id="nze48jy" dur="4" pname="c" oct="4" stem.dir="down" stem.len="3" beat="1.0000" pm:xy="2.193,6.517" idx="2" />
+                           <note xml:id="n11akada" dur="4" pname="e" oct="4" stem.dir="down" stem.len="3.5" beat="2.0000" pm:xy="2.256,6.535" idx="2" />
+                           <note xml:id="nkyy2ca" dur="4" pname="g" oct="4" stem.dir="down" stem.len="3.5" beat="3.0000" pm:xy="2.326,6.553" idx="2" />
+                           <note xml:id="n1urqw50" dur="4" pname="b" oct="3" stem.dir="up" stem.len="3.25" beat="4.0000" pm:xy="2.389,6.508" idx="2" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m20s1" n="2">
+                        <layer xml:id="m20s1l1" n="1">
+                           <note xml:id="n10n7j8" dur="2" pname="c" oct="3" stem.dir="up" stem.len="3.25" beat="1.0000" pm:xy="2.193,6.265" idx="2" />
+                           <note xml:id="nrpzau9" dur="2" pname="g" oct="2" stem.dir="up" stem.len="3.5" beat="3.0000" pm:xy="2.326,6.238" idx="2" />
+                        </layer>
+                     </staff>
+                     <caesura xml:id="c1j4wn46" startid="#n11akada" glyph.auth="smufl" glyph.name="chantCaesura" />
+                  </measure>
+                  <scoreDef timeSig-x="2.466" meter.count="6" meter.unit="8" pm:timesig-xy-top="2.466,6.553" pm:timesig-xy="2.466,6.553" pm:timesig-xy-bottom="2.466,6.310" />
+                  <measure xml:id="mnijfsd" right="end" n="5" pm:top-left-x="2.455" pm:top-left-y="6.571" pm:bottom-right-x="2.948" pm:bottom-right-y="6.220">
+                     <staff xml:id="m23s1" n="1">
+                        <layer xml:id="m23s1l1" n="1">
+                           <note xml:id="n133n6rf" dur="4" pname="c" oct="4" stem.dir="down" stem.len="3" beat="1.0000" pm:xy="2.518,6.517" idx="3" />
+                           <note xml:id="n1z0gafg" dur="8" pname="e" oct="4" stem.dir="down" stem.len="3.5" beat="3.0000" pm:xy="2.588,6.535" idx="3" />
+                           <note xml:id="n1tylffb" dur="4" pname="g" oct="4" stem.dir="down" stem.len="3.5" beat="4.0000" pm:xy="2.695,6.553" idx="3" />
+                           <note xml:id="n1k5df3b" dur="8" pname="g" oct="3" stem.dir="up" stem.len="3.5" beat="6.0000" pm:xy="2.802,6.490" idx="0" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="m27s1" n="2">
+                        <layer xml:id="m27s1l1" n="1">
+                           <note xml:id="n105osyq" dots="1" dur="4" pname="c" oct="3" stem.dir="up" stem.len="3.25" beat="1.0000" pm:xy="2.518,6.265" idx="3" />
+                           <note xml:id="nz5si71" dots="1" dur="4" pname="g" oct="2" stem.dir="up" stem.len="3.5" beat="4.0000" pm:xy="2.695,6.238" idx="3" />
+                        </layer>
+                     </staff>
+                     <caesura xml:id="c1xlsqgr" startid="#n133n6rf" glyph.auth="smufl" glyph.name="chantCaesura" />
+                     <caesura xml:id="cfvwysy" startid="#n1z0gafg" glyph.auth="smufl" glyph.name="caesuraThick" />
+                     <caesura xml:id="c13mj4gz" startid="#n1tylffb" glyph.auth="smufl" glyph.name="caesuraThick" />
+                     <caesura xml:id="clqaqjx" startid="#n1k5df3b" glyph.auth="smufl" glyph.name="caesuraThick" />
+                     <caesura xml:id="c16kirlk" startid="#n105osyq" glyph.auth="smufl" glyph.name="caesuraThick" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-basic.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:pm="http://pianomania.gg/ns/mei" meiversion="5.1+basic">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Spanners on hidden rests</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2026-08-19T16:03:52" />
+         </pubStmt>
+      </fileDesc>
+      <facsimile>
+         <surface xml:id="pg1" upperLeftX="0" upperLeftY="7.500" lowerRightX="10.000" lowerRightY="0" pm:units="in" pm:dpi="360.000000" pm:spatium="0.070000" />
+      </facsimile>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef pm:timesig-xy-top="0.888,6.419" pm:timesig-xy="0.888,6.419">
+                  <staffGrp>
+                     <staffDef n="1" lines="5" meter.count="4" meter.unit="4" pm:timesig-xy="0.888,6.419">
+                        <label>Piano</label>
+                        <instrDef midi.instrnum="0" />
+                        <clef shape="G" line="2" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="s1">
+                  <pb />
+                  <sb pm:top-left-x="0.591" pm:top-left-y="6.419" pm:bottom-right-x="9.409" pm:bottom-right-y="6.139" />
+                  <measure xml:id="m1s38cwl" n="1" pm:top-left-x="0.591" pm:top-left-y="6.489" pm:bottom-right-x="1.716" pm:bottom-right-y="6.069">
+                     <staff xml:id="m1s1" n="1">
+                        <layer xml:id="m1s1l1" n="1" />
+                        <layer xml:id="m1s1l2" n="2">
+                           <note xml:id="n12zxwkq" oct.ges="6" dur="1" pname="c" oct="5" stem.dir="down" beat="1.0000" pm:xy="1.145,6.314" idx="0" hand="left" />
+                        </layer>
+                        <layer xml:id="m2s0l4" n="4">
+                           <note xml:id="n1d85eek" oct.ges="5" dur="1" pname="c" oct="4" stem.dir="down" beat="1.0000" pm:xy="1.145,6.069" idx="0" hand="left" />
+                        </layer>
+                     </staff>
+                     <hairpin xml:id="hwrut0t" form="cres" staff="1" startid="#n12zxwkq" yOffset="-2.9" centerBetweenStaves="false" pm:x1y1x2y2="1.152,5.938,1.633,5.938" pm:segments="1.152,5.938,1.633,5.938" pm:hairpin-lines="0,1.152,5.938,1.633,5.898;0,1.152,5.938,1.633,5.979" endid="#nrspxsd" />
+                     <octave xml:id="oqsy3ie" staff="1" dis="8" dis.place="above" startid="#n12zxwkq" yOffset="6.4" hook.len="1.0" pm:x1y1x2y2="1.152,6.584,1.339,6.584" pm:segments="1.152,6.584,1.339,6.584" endid="#n1d85eek" />
+                  </measure>
+                  <measure xml:id="mi1vn97" right="end" n="2" pm:top-left-x="1.716" pm:top-left-y="6.489" pm:bottom-right-x="2.438" pm:bottom-right-y="6.069">
+                     <staff xml:id="m4s1" n="1">
+                        <layer xml:id="m4s1l1" n="1" />
+                        <layer xml:id="m4s1l2" n="2">
+                           <note xml:id="nrspxsd" dur="1" pname="d" oct="5" stem.dir="down" beat="1.0000" pm:xy="1.803,6.349" idx="0" hand="left" />
+                        </layer>
+                        <layer xml:id="m5s0l4" n="4">
+                           <note xml:id="n7n4tee" dur="1" pname="d" oct="4" stem.dir="down" beat="1.0000" pm:xy="1.803,6.104" idx="0" hand="left" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
