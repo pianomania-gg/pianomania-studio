@@ -381,10 +381,6 @@
     <seq>Ctrl+Shift+E</seq>
     </SC>
   <SC>
-    <key>file-export-pianomania-all</key>
-    <seq>Ctrl+Shift+A</seq>
-    </SC>
-  <SC>
     <key>rest</key>
     <seq>0</seq>
     <seq>À</seq> <!-- AZERTY for 0 -->

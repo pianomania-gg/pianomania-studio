@@ -27,6 +27,7 @@
 #include <QDialogButtonBox>
 #include <QEventLoop>
 #include <QFileInfo>
+#include <QRadioButton>
 #include <QTemporaryFile>
 #include <QUrl>
 #include <QUrlQuery>
@@ -98,7 +99,6 @@ void ProjectActionsController::init()
 
     dispatcher()->reg(this, "file-export", this, &ProjectActionsController::exportScore);
     dispatcher()->reg(this, "file-export-pianomania", this, &ProjectActionsController::exportPianomania);
-    dispatcher()->reg(this, "file-export-pianomania-all", this, &ProjectActionsController::exportPianomaniaAll);
     dispatcher()->reg(this, "file-import-pdf", this, &ProjectActionsController::importPdf);
     dispatcher()->reg(this, "file-import-audio-to-score", this, &ProjectActionsController::importAudioToScore);
 
@@ -1941,36 +1941,38 @@ void ProjectActionsController::exportPianomaniaAssets(const INotationPtr& notati
 
 void ProjectActionsController::exportPianomania()
 {
-    INotationPtr notation = currentNotation();
-    if (!notation) {
-        return;
-    }
+    // One command covers both scopes: the open score, or every score in a folder
+    // tree. The same output choices apply either way, so a batch re-export
+    // produces the same file set as exporting each score on its own.
+    INotationPtr currentScore = currentNotation();
 
-    muse::io::path_t dir = interactive()->selectDirectory(muse::trc("project/export", "Select export folder"), "");
-    if (dir.empty()) {
-        return;
-    }
-
-    muse::io::path_t base = muse::io::escapeFileName(notation->name());
-    muse::io::path_t basePath = dir + "/" + base;
-
-    exportPianomaniaAssets(notation, basePath, true, true, true);
-}
-
-void ProjectActionsController::exportPianomaniaAll()
-{
     QDialog dlg;
-    dlg.setWindowTitle(muse::qtrc("project/export", "Export Pianomania All"));
+    dlg.setWindowTitle(muse::qtrc("project/export", "Pianomania Export"));
 
     QVBoxLayout layout(&dlg);
 
-    QCheckBox meiCheck(muse::qtrc("project/export", "Export all MEI"));
-    meiCheck.setChecked(true);
-    layout.addWidget(&meiCheck);
+    QRadioButton currentScoreRadio(muse::qtrc("project/export", "Current score"));
+    currentScoreRadio.setEnabled(currentScore != nullptr);
+    layout.addWidget(&currentScoreRadio);
 
-    QCheckBox midiCheck(muse::qtrc("project/export", "Export all MIDI"));
+    QRadioButton folderRadio(muse::qtrc("project/export", "Every score in a folder"));
+    layout.addWidget(&folderRadio);
+
+    // Without an open score the folder scope is the only thing that can run.
+    currentScoreRadio.setChecked(currentScore != nullptr);
+    folderRadio.setChecked(currentScore == nullptr);
+
+    QCheckBox pdfCheck(muse::qtrc("project/export", "PDF"));
+    pdfCheck.setChecked(true);
+    layout.addWidget(&pdfCheck);
+
+    QCheckBox midiCheck(muse::qtrc("project/export", "MIDI"));
     midiCheck.setChecked(true);
     layout.addWidget(&midiCheck);
+
+    QCheckBox meiCheck(muse::qtrc("project/export", "MEI"));
+    meiCheck.setChecked(true);
+    layout.addWidget(&meiCheck);
 
     QDialogButtonBox buttons(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
     layout.addWidget(&buttons);
@@ -1982,10 +1984,26 @@ void ProjectActionsController::exportPianomaniaAll()
         return;
     }
 
-    bool exportMei = meiCheck.isChecked();
-    bool exportMidi = midiCheck.isChecked();
+    const bool exportPdf = pdfCheck.isChecked();
+    const bool exportMidi = midiCheck.isChecked();
+    const bool exportMei = meiCheck.isChecked();
 
-    if (!exportMei && !exportMidi) {
+    if (!exportPdf && !exportMidi && !exportMei) {
+        return;
+    }
+
+    if (currentScoreRadio.isChecked()) {
+        if (!currentScore) {
+            return;
+        }
+
+        muse::io::path_t dir = interactive()->selectDirectory(muse::trc("project/export", "Select export folder"), "");
+        if (dir.empty()) {
+            return;
+        }
+
+        muse::io::path_t basePath = dir + "/" + muse::io::escapeFileName(currentScore->name());
+        exportPianomaniaAssets(currentScore, basePath, exportPdf, exportMidi, exportMei);
         return;
     }
 
@@ -1999,6 +2017,7 @@ void ProjectActionsController::exportPianomaniaAll()
         return;
     }
 
+    // Each score's output lands beside its own file so a tree keeps its shape.
     for (const muse::io::path_t& file : files.val) {
         RetVal<INotationProjectPtr> projRv = loadProject(file);
         if (!projRv.ret) {
@@ -2006,11 +2025,9 @@ void ProjectActionsController::exportPianomaniaAll()
         }
 
         INotationPtr notation = projRv.val->masterNotation()->notation();
-        muse::io::path_t base = muse::io::escapeFileName(notation->name());
-        muse::io::path_t dir = muse::io::dirpath(file);
-        muse::io::path_t basePath = dir + "/" + base;
+        muse::io::path_t basePath = muse::io::dirpath(file) + "/" + muse::io::escapeFileName(notation->name());
 
-        exportPianomaniaAssets(notation, basePath, false, exportMidi, exportMei);
+        exportPianomaniaAssets(notation, basePath, exportPdf, exportMidi, exportMei);
     }
 }
 
