@@ -248,6 +248,12 @@ ENTITLEMENTS_PATH="$REPO_ROOT/buildscripts/packaging/macOS/entitlements.plist"
 echo "Staging app bundle..."
 ditto "$SOURCE_APP" "$STAGED_APP"
 
+# Pianomania: drop local symbol tables from the executable before signing.
+# This is a ~30MB saving with no functional change; crash symbolication uses
+# the build tree, not the shipped binary.
+echo "Stripping executable symbols..."
+strip -x "$STAGED_APP/Contents/MacOS/mscore"
+
 echo "Running macdeployqt..."
 "$MACDEPLOYQT_BIN" "$STAGED_APP" -qmldir="$REPO_ROOT" -verbose=1
 

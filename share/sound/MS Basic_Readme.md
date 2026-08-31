@@ -1,3 +1,8 @@
+> **Pianomania note:** the `MS Basic.sf3` shipped from this tree is a
+> piano-only subset (Grand Piano preset 000:000) of upstream MS Basic,
+> produced by `scripts/musescore-refork/make-piano-soundfont.py`.
+> Upstream authorship and license (MS Basic_License.md) apply unchanged.
+
 # MuseScore_General.sf2
 
 **Version 0.2**

@@ -29,20 +29,20 @@ muse_module_add_qrc(engraving
 )
 
 # TODO: convert to target-based variant of qt_add_resources
+# Pianomania: piano-only slim build embeds just Leland (default score font),
+# Bravura (SMuFL fallback), Edwin/Academico (text), Campania (Roman numeral
+# analysis), the figured-bass/tab utility fonts in fonts_MScore.qrc, and the
+# Tabulature metadata. The alternate score fonts (Emmentaler, Gonville,
+# MuseJazz, Petaluma, Finale compat) and the FreeSerif/FreeSans families are
+# dropped; scores that request them fall back via the substitutions in
+# engravingmodule.cpp.
 muse_module_add_qrc(engraving BIG_RESOURCES
     data/fonts/fonts_Academico.qrc
     data/fonts/fonts_Bravura.qrc
     data/fonts/fonts_Campania.qrc
     data/fonts/fonts_Edwin.qrc
-    data/fonts/fonts_FreeSans.qrc
-    data/fonts/fonts_FreeSerif.qrc
-    data/fonts/fonts_Gootville.qrc
     data/fonts/fonts_Leland.qrc
     data/fonts/fonts_MScore.qrc
-    data/fonts/fonts_MuseJazz.qrc
-    data/fonts/fonts_Petaluma.qrc
-    data/fonts/fonts_FinaleMaestro.qrc
-    data/fonts/fonts_FinaleBroadway.qrc
     data/fonts/fonts_Tabulature.qrc
 )
 

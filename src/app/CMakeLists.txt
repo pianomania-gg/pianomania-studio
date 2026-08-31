@@ -430,6 +430,8 @@ elseif(OS_IS_FBSD)
 # macOS
 ###########################################
 elseif(OS_IS_MAC)
+    # Pianomania: piano-only slim build — install only the font families the
+    # slim engraving module embeds (see src/engraving/CMakeLists.txt).
     install(FILES
             ${PROJECT_SOURCE_DIR}/fonts/academico/AcademicoBold.otf
             ${PROJECT_SOURCE_DIR}/fonts/bravura/BravuraText.otf
@@ -438,22 +440,10 @@ elseif(OS_IS_MAC)
             ${PROJECT_SOURCE_DIR}/fonts/edwin/Edwin-Bold.otf
             ${PROJECT_SOURCE_DIR}/fonts/edwin/Edwin-Italic.otf
             ${PROJECT_SOURCE_DIR}/fonts/edwin/Edwin-Roman.otf
-            ${PROJECT_SOURCE_DIR}/fonts/gootville/GootvilleText.otf
-            ${PROJECT_SOURCE_DIR}/fonts/FreeSans.ttf
-            ${PROJECT_SOURCE_DIR}/fonts/FreeSerif.ttf
-            ${PROJECT_SOURCE_DIR}/fonts/FreeSerifBold.ttf
-            ${PROJECT_SOURCE_DIR}/fonts/FreeSerifItalic.ttf
-            ${PROJECT_SOURCE_DIR}/fonts/FreeSerifBoldItalic.ttf
             ${PROJECT_SOURCE_DIR}/fonts/leland/Leland.otf
             ${PROJECT_SOURCE_DIR}/fonts/leland/LelandText.otf
             ${PROJECT_SOURCE_DIR}/fonts/mscore-BC.ttf
             ${PROJECT_SOURCE_DIR}/fonts/mscoreTab.ttf
-            ${PROJECT_SOURCE_DIR}/fonts/mscore/MScoreText.otf
-            ${PROJECT_SOURCE_DIR}/fonts/musejazz/MuseJazzText.otf
-            ${PROJECT_SOURCE_DIR}/fonts/petaluma/PetalumaScript.otf
-            ${PROJECT_SOURCE_DIR}/fonts/petaluma/PetalumaText.otf
-            ${PROJECT_SOURCE_DIR}/fonts/finalemaestro/FinaleMaestroText-Regular.otf
-            ${PROJECT_SOURCE_DIR}/fonts/finalebroadway/FinaleBroadwayText.otf
             DESTINATION ${Mscore_SHARE_NAME}${Mscore_INSTALL_NAME}fonts
     )
 

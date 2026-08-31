@@ -911,7 +911,7 @@ const std::array<StyleDef::StyleValue, size_t(Sid::STYLES)> StyleDef::styleValue
     styleDef(fingeringOffset,                            PointF()),
     styleDef(fingeringPosition,                          AlignH::HCENTER),
 
-    styleDef(tabFretNumberFontFace,                      "FreeSans"),
+    styleDef(tabFretNumberFontFace,                      "Edwin"), // Pianomania: FreeSans not shipped
     styleDef(tabFretNumberFontSize,                      9.0),
     styleDef(tabFretNumberLineSpacing,                   1.0),
     styleDef(tabFretNumberFontSpatiumDependent,          true),
@@ -1331,7 +1331,7 @@ const std::array<StyleDef::StyleValue, size_t(Sid::STYLES)> StyleDef::styleValue
     styleDef(staffTextFrameBgColor,                      PropertyValue::fromValue(Color::transparent)),
     styleDef(staffTextPosition,                          AlignH::LEFT),
 
-    styleDef(fretDiagramFingeringFontFace,               "FreeSans"),
+    styleDef(fretDiagramFingeringFontFace,               "Edwin"), // Pianomania: FreeSans not shipped
     styleDef(fretDiagramFingeringFontSize,               6.0),
     styleDef(fretDiagramFingeringLineSpacing,            1.0),
     styleDef(fretDiagramFingeringFontSpatiumDependent,   true),
@@ -1347,7 +1347,7 @@ const std::array<StyleDef::StyleValue, size_t(Sid::STYLES)> StyleDef::styleValue
     styleDef(fretDiagramFingeringFrameBgColor,           PropertyValue::fromValue(Color::transparent)),
     styleDef(fretDiagramFingeringPosition,               AlignH::LEFT),
 
-    styleDef(fretDiagramFretNumberFontFace,              "FreeSans"),
+    styleDef(fretDiagramFretNumberFontFace,              "Edwin"), // Pianomania: FreeSans not shipped
     styleDef(fretDiagramFretNumberFontSize,              6.0),
     styleDef(fretDiagramFretNumberLineSpacing,           1.0),
     styleDef(fretDiagramFretNumberFontSpatiumDependent,  true),

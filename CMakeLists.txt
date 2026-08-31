@@ -72,6 +72,36 @@ set(MUSE_APP_BUILD_MODE "dev" CACHE STRING "Build mode")
 
 set(MUSESCORE_REVISION "" CACHE STRING "Build revision")
 
+# Pianomania: piano-only slim build. These cache defaults land before the
+# option() declarations below and in MuseDeclareOptions.cmake, so they become
+# the effective defaults for every fresh build directory (dev and release).
+# Each disabled module has an upstream stub or ifdef guard. Override any of
+# them on the cmake command line to get the full upstream feature back.
+set(MUE_BUILD_BRAILLE_MODULE OFF CACHE BOOL "Build braille module")
+# NotationView.qml imports MuseScore.Braille, so the stub's QML module must
+# still be built even with the real module (and its 13MB of tables) off.
+set(MUE_BUILD_BRAILLE_QML ON CACHE BOOL "Build braille QML")
+set(MUE_BUILD_IMPEXP_BB_MODULE OFF CACHE BOOL "Build importexport bb module")
+set(MUE_BUILD_IMPEXP_BWW_MODULE OFF CACHE BOOL "Build importexport bww module")
+set(MUE_BUILD_IMPEXP_CAPELLA_MODULE OFF CACHE BOOL "Build importexport capella module")
+set(MUE_BUILD_IMPEXP_GUITARPRO_MODULE OFF CACHE BOOL "Build importexport guitarpro module")
+set(MUE_BUILD_IMPEXP_MNX_MODULE OFF CACHE BOOL "Build importexport mnx module")
+set(MUE_BUILD_IMPEXP_MUSEDATA_MODULE OFF CACHE BOOL "Build importexport musedata module")
+set(MUE_BUILD_IMPEXP_OVE_MODULE OFF CACHE BOOL "Build importexport ove module")
+set(MUE_BUILD_IMPEXP_TABLEDIT_MODULE OFF CACHE BOOL "Build importexport tabledit module")
+set(MUE_BUILD_IMPEXP_VIDEOEXPORT_MODULE OFF CACHE BOOL "Build importexport videoexport module")
+set(MUE_BUILD_MUSESOUNDS_MODULE OFF CACHE BOOL "Build MuseSounds module")
+# The appshell QML module depends on the musesounds_qml target, so the stub's
+# QML module must still be built even with the real module off.
+set(MUE_BUILD_MUSESOUNDS_QML ON CACHE BOOL "Build musesounds QML")
+set(MUE_BUILD_MACOS_INTEGRATION OFF CACHE BOOL "Build macOS integration module")
+set(MUE_DOWNLOAD_SOUNDFONT OFF CACHE BOOL "Download the latest soundfont version as part of the build process")
+set(MUSE_MODULE_AUTOBOT OFF CACHE BOOL "Build AUTOBOT module")
+set(MUSE_MODULE_LEARN OFF CACHE BOOL "Build LEARN module")
+set(MUSE_MODULE_UPDATE OFF CACHE BOOL "Build UPDATE module")
+set(MUSE_MODULE_MUSESAMPLER OFF CACHE BOOL "Build MUSESAMPLER module")
+set(MUSE_MODULE_CLOUD_MUSESCORECOM OFF CACHE BOOL "Enable MuseScore.com account")
+
 include(${MUSE_FRAMEWORK_SRC_PATH}/cmake/MuseDeclareOptions.cmake)
 
 # Modules (alphabetical order please)

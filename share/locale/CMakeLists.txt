@@ -18,7 +18,12 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-file(GLOB TS_FILES CONFIGURE_DEPENDS ${CMAKE_CURRENT_LIST_DIR}/*.ts)
+# Pianomania: English-only distribution. The full upstream set is 210 .qm
+# files (~46MB installed); English alone is what our users see.
+file(GLOB TS_FILES CONFIGURE_DEPENDS
+    ${CMAKE_CURRENT_LIST_DIR}/*_en.ts
+    ${CMAKE_CURRENT_LIST_DIR}/*_en_??.ts
+)
 
 if (MUE_RUN_LRELEASE)
     add_custom_target(translations ALL
@@ -34,10 +39,5 @@ install(FILES
     DESTINATION ${Mscore_SHARE_NAME}${Mscore_INSTALL_NAME}locale
 )
 
-install(DIRECTORY ${QT_INSTALL_PREFIX}/translations/
-    DESTINATION ${Mscore_SHARE_NAME}${Mscore_INSTALL_NAME}locale
-    FILES_MATCHING
-    REGEX "qt_.*\\.qm"
-    REGEX "qt_help_.*\\.qm" EXCLUDE
-    REGEX "qtbase_.*\\.qm"
-    REGEX "qt*_en\\.qm" EXCLUDE)
+# Pianomania: Qt's own translations are only needed for non-English UI
+# languages, which this distribution does not ship.

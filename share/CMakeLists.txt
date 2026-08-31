@@ -18,7 +18,12 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-subdirs(autobotscripts icons templates wallpapers locale styles sound manual instruments)
+# Pianomania: autobot UI-test scripts are only useful when the autobot module
+# itself is in the build.
+if (MUSE_MODULE_AUTOBOT)
+    subdirs(autobotscripts)
+endif()
+subdirs(icons templates wallpapers locale styles sound manual instruments)
 
 install (DIRECTORY
     plugins

@@ -80,20 +80,14 @@ static void engraving_init_qrc()
 #ifndef NO_QT_SUPPORT
     Q_INIT_RESOURCE(engraving);
 
+    // Pianomania: slim build — only the fonts embedded in src/engraving/CMakeLists.txt
     Q_INIT_RESOURCE(fonts_Academico);
     Q_INIT_RESOURCE(fonts_Leland);
     Q_INIT_RESOURCE(fonts_Bravura);
     Q_INIT_RESOURCE(fonts_Campania);
     Q_INIT_RESOURCE(fonts_Edwin);
-    Q_INIT_RESOURCE(fonts_FreeSans);
-    Q_INIT_RESOURCE(fonts_FreeSerif);
-    Q_INIT_RESOURCE(fonts_Gootville);
     Q_INIT_RESOURCE(fonts_MScore);
-    Q_INIT_RESOURCE(fonts_MuseJazz);
     Q_INIT_RESOURCE(fonts_Smufl);
-    Q_INIT_RESOURCE(fonts_Petaluma);
-    Q_INIT_RESOURCE(fonts_FinaleMaestro);
-    Q_INIT_RESOURCE(fonts_FinaleBroadway);
     Q_INIT_RESOURCE(fonts_Tabulature);
 #endif
 }
@@ -186,29 +180,16 @@ void EngravingModule::onInit(const IApplication::RunMode&)
             m_engravingfonts->addInternalFont(name, fontDataKey.family().id().toStdString(), filePath);
         };
 
+        // Pianomania: slim build — the alternate score fonts (Emmentaler,
+        // Gonville, MuseJazz, Petaluma, Finale compat) and the
+        // FreeSerif/FreeSans families are not embedded. Scores that request
+        // them are mapped to the remaining fonts by the substitutions below.
         addMusicFont("Bravura", FontDataKey(u"Bravura"), ":/fonts/bravura/Bravura.otf");
         fdb->addFont(FontDataKey(u"Bravura Text"), ":/fonts/bravura/BravuraText.otf");
         addMusicFont("Leland", FontDataKey(u"Leland"), ":/fonts/leland/Leland.otf");
         fdb->addFont(FontDataKey(u"Leland Text"), ":/fonts/leland/LelandText.otf");
-        addMusicFont("Emmentaler", FontDataKey(u"MScore"), ":/fonts/mscore/MScore.otf");
-        fdb->addFont(FontDataKey(u"MScore Text"), ":/fonts/mscore/MScoreText.otf");
-        addMusicFont("Gonville", FontDataKey(u"Gootville"), ":/fonts/gootville/Gootville.otf");
-        fdb->addFont(FontDataKey(u"Gootville Text"), ":/fonts/gootville/GootvilleText.otf");
-        addMusicFont("MuseJazz", FontDataKey(u"MuseJazz"), ":/fonts/musejazz/MuseJazz.otf");
-        fdb->addFont(FontDataKey(u"MuseJazz Text"), ":/fonts/musejazz/MuseJazzText.otf");
-        addMusicFont("Petaluma", FontDataKey(u"Petaluma"),    ":/fonts/petaluma/Petaluma.otf");
-        fdb->addFont(FontDataKey(u"Petaluma Text"), ":/fonts/petaluma/PetalumaText.otf");
-        addMusicFont("Finale Maestro", FontDataKey(u"Finale Maestro"), ":/fonts/finalemaestro/FinaleMaestro.otf");
-        fdb->addFont(FontDataKey(u"Finale Maestro Text"), ":/fonts/finalemaestro/FinaleMaestroText.otf");
-        addMusicFont("Finale Broadway", FontDataKey(u"Finale Broadway"), ":/fonts/finalebroadway/FinaleBroadway.otf");
-        fdb->addFont(FontDataKey(u"Finale Broadway Text"), ":/fonts/finalebroadway/FinaleBroadwayText.otf");
 
         // Tabulature
-        fdb->addFont(FontDataKey(u"FreeSerif"), ":/fonts/FreeSerif.ttf");
-        fdb->addFont(FontDataKey(u"FreeSerif", true, false), ":/fonts/FreeSerifBold.ttf");
-        fdb->addFont(FontDataKey(u"FreeSerif", false, true), ":/fonts/FreeSerifItalic.ttf");
-        fdb->addFont(FontDataKey(u"FreeSerif", true, true), ":/fonts/FreeSerifBoldItalic.ttf");
-        fdb->addFont(FontDataKey(u"FreeSans"), ":/fonts/FreeSans.ttf");
         fdb->addFont(FontDataKey(u"MScoreTabulature"), ":/fonts/mscoreTab.ttf");
 
         // Figured Bass
@@ -220,7 +201,8 @@ void EngravingModule::onInit(const IApplication::RunMode&)
         // Defaults
         fdb->setDefaultFont(Font::Type::Unknown, FontDataKey(u"Edwin"));
         fdb->setDefaultFont(Font::Type::Text, FontDataKey(u"Edwin"));
-        fdb->setDefaultFont(Font::Type::Tablature, FontDataKey(u"FreeSerif"));
+        // Pianomania: FreeSerif is not embedded; Edwin is the tablature text default.
+        fdb->setDefaultFont(Font::Type::Tablature, FontDataKey(u"Edwin"));
         fdb->setDefaultFont(Font::Type::MusicSymbolText, FontDataKey(u"Bravura Text"));
         fdb->setDefaultFont(Font::Type::MusicSymbol, FontDataKey(u"Bravura"));
         m_engravingfonts->setFallbackFont("Bravura");
@@ -228,12 +210,16 @@ void EngravingModule::onInit(const IApplication::RunMode&)
         //! NOTE Used for Qt font provider
         fdb->insertSubstitution(u"Leland Text",    u"Bravura Text");
         fdb->insertSubstitution(u"Bravura Text",   u"Leland Text");
+        // Pianomania: map the families this slim build no longer embeds onto
+        // the fonts that remain, so older scores still render sanely.
         fdb->insertSubstitution(u"MScore Text",    u"Leland Text");
         fdb->insertSubstitution(u"Gootville Text", u"Leland Text");
         fdb->insertSubstitution(u"MuseJazz Text",  u"Leland Text");
-        fdb->insertSubstitution(u"Petaluma Text",  u"MuseJazz Text");
+        fdb->insertSubstitution(u"Petaluma Text",  u"Leland Text");
         fdb->insertSubstitution(u"Finale Maestro Text", u"Leland Text");
-        fdb->insertSubstitution(u"Finale Broadway Text", u"MuseJazz Text");
+        fdb->insertSubstitution(u"Finale Broadway Text", u"Leland Text");
+        fdb->insertSubstitution(u"FreeSerif",      u"Edwin");
+        fdb->insertSubstitution(u"FreeSans",       u"Edwin");
         fdb->insertSubstitution(u"ScoreFont",      u"Leland Text");// alias for current Musical Text Font
 
         // Symbols
