@@ -1015,7 +1015,7 @@ void CompatUtils::resetHookHeightSign(TextLineBase* tl)
     }
 }
 
-void compat::CompatUtils::setMusicSymbolSize470(MStyle* style)
+void mu::engraving::compat::CompatUtils::setMusicSymbolSize470(MStyle* style)
 {
     // Music symbols have their own point size in 4.7
     // Initialize this to the text type's default font size
