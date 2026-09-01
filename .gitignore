@@ -92,3 +92,7 @@ compile_commands.json
 # QML language server
 **/.qmlls.ini
 /build.refork
+
+# Vendored crashpad source lives in a directory named "build"; the bare
+# "build" rule above would drop it from the fork.
+!/src/framework/diagnostics/thirdparty/**/build/
