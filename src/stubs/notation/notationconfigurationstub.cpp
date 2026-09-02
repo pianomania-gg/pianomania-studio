@@ -432,20 +432,6 @@ muse::async::Notification NotationConfigurationStub::isAutomaticallyPanEnabledCh
     return {};
 }
 
-bool NotationConfigurationStub::isSmoothPanning() const
-{
-    return false;
-}
-
-void NotationConfigurationStub::setIsSmoothPanning(bool)
-{
-}
-
-muse::async::Notification isSmoothPanningChanged() const
-{
-    return {};
-}
-
 bool NotationConfigurationStub::isPlayRepeatsEnabled() const
 {
     return false;
@@ -547,21 +533,6 @@ muse::ValCh<muse::Orientation> NotationConfigurationStub::canvasOrientation() co
 
 void NotationConfigurationStub::setCanvasOrientation(muse::Orientation)
 {
-}
-
-bool NotationConfigurationStub::isLimitCanvasScrollArea() const
-{
-    return true;
-}
-
-void NotationConfigurationStub::setIsLimitCanvasScrollArea(bool)
-{
-}
-
-muse::async::Notification NotationConfigurationStub::isLimitCanvasScrollAreaChanged() const
-{
-    static muse::async::Notification n;
-    return n;
 }
 
 bool NotationConfigurationStub::colorNotesOutsideOfUsablePitchRange() const
@@ -699,49 +670,12 @@ void NotationConfigurationStub::setGridSize(muse::Orientation, int)
 {
 }
 
-bool NotationConfigurationStub::needToShowAddTextErrorMessage() const
-{
-    return false;
-}
-
-void NotationConfigurationStub::setNeedToShowAddTextErrorMessage(bool)
-{
-}
-
-bool NotationConfigurationStub::needToShowAddFiguredBassErrorMessage() const
-{
-    return false;
-}
-
-void NotationConfigurationStub::setNeedToShowAddFiguredBassErrorMessage(bool)
-{
-}
-
-bool NotationConfigurationStub::needToShowAddGuitarBendErrorMessage() const
-{
-    return false;
-}
-
-void NotationConfigurationStub::setNeedToShowAddGuitarBendErrorMessage(bool)
-{
-}
-
 bool NotationConfigurationStub::needToShowMScoreError(const std::string&) const
 {
     return false;
 }
 
 void NotationConfigurationStub::setNeedToShowMScoreError(const std::string&, bool)
-{
-}
-
-muse::ValCh<int> NotationConfigurationStub::pianoKeyboardNumberOfKeys() const
-{
-    static muse::ValCh<int> vch;
-    return vch;
-}
-
-void NotationConfigurationStub::setPianoKeyboardNumberOfKeys(int)
 {
 }
 
@@ -753,96 +687,6 @@ muse::ValCh<bool> NotationConfigurationStub::midiUseWrittenPitch() const
 
 void NotationConfigurationStub::setMidiUseWrittenPitch(bool)
 {
-}
-
-bool NotationConfigurationStub::useNewPercussionPanel() const
-{
-    return false;
-}
-
-void NotationConfigurationStub::setUseNewPercussionPanel(bool)
-{
-}
-
-muse::async::Notification NotationConfigurationStub::useNewPercussionPanelChanged() const
-{
-    static muse::async::Notification n;
-    return n;
-}
-
-bool NotationConfigurationStub::percussionPanelUseNotationPreview() const
-{
-    return false;
-}
-
-void NotationConfigurationStub::setPercussionPanelUseNotationPreview(bool)
-{
-}
-
-muse::async::Notification NotationConfigurationStub::percussionPanelUseNotationPreviewChanged() const
-{
-    static muse::async::Notification n;
-    return n;
-}
-
-PercussionPanelAutoShowMode NotationConfigurationStub::percussionPanelAutoShowMode() const
-{
-    return PercussionPanelAutoShowMode::UNPITCHED_STAFF;
-}
-
-void NotationConfigurationStub::setPercussionPanelAutoShowMode(PercussionPanelAutoShowMode)
-{
-}
-
-muse::async::Notification NotationConfigurationStub::percussionPanelAutoShowModeChanged() const
-{
-    static muse::async::Notification n;
-    return n;
-}
-
-bool NotationConfigurationStub::autoClosePercussionPanel() const
-{
-    return false;
-}
-
-void NotationConfigurationStub::setAutoClosePercussionPanel(bool)
-{
-}
-
-muse::async::Notification NotationConfigurationStub::autoClosePercussionPanelChanged() const
-{
-    static muse::async::Notification n;
-    return n;
-}
-
-bool NotationConfigurationStub::showPercussionPanelPadSwapDialog() const
-{
-    return true;
-}
-
-void NotationConfigurationStub::setShowPercussionPanelPadSwapDialog(bool)
-{
-}
-
-muse::async::Notification NotationConfigurationStub::showPercussionPanelPadSwapDialogChanged() const
-{
-    static muse::async::Notification n;
-    return n;
-}
-
-bool NotationConfigurationStub::percussionPanelMoveMidiNotesAndShortcuts() const
-{
-    return true;
-}
-
-void NotationConfigurationStub::setPercussionPanelMoveMidiNotesAndShortcuts(bool)
-{
-}
-
-muse::async::Notification NotationConfigurationStub::percussionPanelMoveMidiNotesAndShortcutsChanged() const
-{
-    static muse::async::Notification n;
-    return n;
 }
 
 muse::io::path_t NotationConfigurationStub::styleFileImportPath() const
@@ -858,26 +702,4 @@ muse::async::Channel<std::string> NotationConfigurationStub::styleFileImportPath
 {
     static muse::async::Channel<std::string> ch;
     return ch;
-}
-
-int NotationConfigurationStub::styleDialogLastPageIndex() const
-{
-    return 0;
-}
-
-void NotationConfigurationStub::setStyleDialogLastPageIndex(int)
-{
-}
-
-int NotationConfigurationStub::styleDialogLastSubPageIndex() const
-{
-    return 0;
-}
-
-void NotationConfigurationStub::setStyleDialogLastSubPageIndex(int)
-{
-}
-
-void NotationConfigurationStub::resetStyleDialogPageIndices()
-{
 }
