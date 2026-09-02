@@ -61,11 +61,7 @@
 #endif
 #endif
 
-#ifdef Q_OS_WASM
-#include "io/internal/memfilesystem.h"
-#else
 #include "io/internal/filesystem.h"
-#endif
 
 #ifdef Q_OS_WIN
 #include "platform/win/waitabletimer.h"
@@ -119,11 +115,13 @@ void GlobalModule::registerExports()
     ioc()->registerExport<ITickerProvider>(moduleName(), m_tickerProvider);
     ioc()->registerExport<api::IApiRegister>(moduleName(), new api::ApiRegister());
 
-#ifdef Q_OS_WASM
-    ioc()->registerExport<IFileSystem>(moduleName(), new MemFileSystem());
-#else
+    //! NOTE One filesystem everywhere, wasm included. The converter writes its
+    //! input and reads its results back with ordinary file calls, so a
+    //! filesystem that keeps its own private map cannot see them. FileSystem
+    //! goes through Qt, which reads and writes the same files those calls use,
+    //! and it already redirects the engraving font resources to their embedded
+    //! copies on wasm.
     ioc()->registerExport<IFileSystem>(moduleName(), new FileSystem());
-#endif
 
 #ifdef MUSE_MODULE_UI
 #ifdef Q_OS_WASM

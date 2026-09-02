@@ -182,13 +182,10 @@ muse::Ret MemFileSystem::readFile(const muse::io::path_t& path, muse::ByteArray&
         }
 
         const qint64 size = file.size();
-        LOGI() << "read resource: " << path << ", size: " << size;
-
         data.resize(static_cast<size_t>(size));
         file.read(reinterpret_cast<char*>(data.data()), size);
     } else {
         data = m_files.at(path);
-        LOGI() << "read in-memory file: " << path << ", size: " << data.size();
     }
 
     return muse::make_ok();
