@@ -47,6 +47,8 @@ include(SetupGTest)
 # GTest exits 0 when a filter or build change silently removes tests. Require the
 # exact expected count so the pianomania coordinated-export suite cannot vanish
 # without failing this gate. Update the count when tests are added deliberately.
+# runutests.sh sets GTEST_COLOR=1, so a colour escape sits between the tag and the
+# count. Skip whatever separates them instead of assuming a single space.
 set_tests_properties(project_test PROPERTIES
-    PASS_REGULAR_EXPRESSION "\\[  PASSED  \\] 37 tests"
+    PASS_REGULAR_EXPRESSION "\\[  PASSED  \\][^0-9]*37 tests"
 )
