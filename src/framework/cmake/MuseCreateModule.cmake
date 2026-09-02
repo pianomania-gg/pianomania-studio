@@ -194,7 +194,16 @@ function(muse_module_add_qrc target_name)
     set(options BIG_RESOURCES)
     cmake_parse_arguments(PARSE_ARGV 1 arg "${options}" "" "")
 
-    if (arg_BIG_RESOURCES)
+    # qt_add_big_resources compiles a .qrc into a binary blob object instead of
+    # generated C++, which keeps build times down for multi-megabyte fonts. That
+    # object does not survive the WebAssembly link: the resources register, but
+    # their recorded sizes are wrong, and the first read of one asks for a
+    # nonsense number of bytes. Bravura.otf, 512924 bytes on disk, came back as
+    # 1364345695 and took the process down with it, while a font registered the
+    # ordinary way in the same build read correctly.
+    #
+    # Generated C++ is slower to compile and correct everywhere, so wasm uses it.
+    if (arg_BIG_RESOURCES AND NOT OS_IS_WASM)
         qt_add_big_resources(QRC_SOURCES ${arg_UNPARSED_ARGUMENTS})
     else()
         qt_add_resources(QRC_SOURCES ${arg_UNPARSED_ARGUMENTS})

@@ -348,13 +348,15 @@ else()
         endif()
     endforeach()
 
-    # engraving's fonts are MODULE_BIG_QRC -> separate rcc_object_fonts_* OBJECT
-    # targets that define qInitResources_fonts_*() (called by engravingmodule.cpp).
-    # Nested TARGET_OBJECTS don't compose through $<TARGET_OBJECTS:engraving>, so
-    # embed each one directly. The piano-only slim build declares only some of
-    # these families (see src/engraving/CMakeLists.txt), so take the ones that
-    # exist rather than assuming the full set, and name the ones left out. Naming
-    # a family engraving never declared stops the generate step outright.
+    # A font registered through qt_add_big_resources becomes its own
+    # rcc_object_fonts_* OBJECT target, and those do not compose through
+    # $<TARGET_OBJECTS:engraving>, so they have to be embedded one by one.
+    #
+    # wasm does not use big resources any more (see muse_module_add_qrc: the blob
+    # objects register with wrong sizes there), so engraving carries its fonts in
+    # its own objects and none of these targets exist. The loop then finds
+    # nothing, which is correct rather than a problem, so it only reports missing
+    # families when some of them did turn up.
     foreach(font Academico Bravura Campania Edwin FreeSans FreeSerif Gootville Leland MScore
                  MuseJazz Petaluma FinaleMaestro FinaleBroadway Tabulature)
         if (TARGET rcc_object_fonts_${font})
@@ -363,7 +365,7 @@ else()
             list(APPEND MSCORE_WASM_FONTS_SKIPPED ${font})
         endif()
     endforeach()
-    if (MSCORE_WASM_FONTS_SKIPPED)
+    if (MSCORE_WASM_FONTS_SKIPPED AND MSCORE_WASM_OBJ_SRC MATCHES "rcc_object_fonts_")
         message(STATUS "wasm: fonts not embedded, not declared by engraving: ${MSCORE_WASM_FONTS_SKIPPED}")
     endif()
 
