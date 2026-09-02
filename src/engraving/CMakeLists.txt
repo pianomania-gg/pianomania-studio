@@ -343,7 +343,16 @@ endif()
 if (ENGRAVING_NO_INTERNAL)
     target_compile_definitions(engraving PUBLIC ENGRAVING_NO_INTERNAL ENGRAVING_NO_INTERACTIVE ENGRAVING_NO_API)
 else()
-    include(${CMAKE_CURRENT_LIST_DIR}/api/v1/api_v1.cmake)
+    if (OS_IS_WASM)
+        # The v1 plugin API exists to expose engraving to QML plugins, and one of
+        # the things it exposes is QProcess, which Qt for WebAssembly does not
+        # have. A headless converter runs no plugins either way. Only the API
+        # goes: layout still needs the fonts provider and the engraving
+        # configuration below, so ENGRAVING_NO_INTERNAL would take too much.
+        target_compile_definitions(engraving PUBLIC ENGRAVING_NO_API)
+    else()
+        include(${CMAKE_CURRENT_LIST_DIR}/api/v1/api_v1.cmake)
+    endif()
     target_sources(engraving PRIVATE
         internal/engravingconfiguration.cpp
         internal/engravingconfiguration.h
