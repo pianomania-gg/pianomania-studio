@@ -1,7 +1,10 @@
 name: 'Check: Codestyle'
 
+# This check downloads its checker from musescore/framework_tmp, which is no
+# longer publicly readable, so it cannot pass from this fork. It no longer runs
+# on pull requests. Run it by hand once the checker is vendored or the source
+# repository is reachable again.
 on:
-  pull_request:
   workflow_dispatch:
 
 jobs:
