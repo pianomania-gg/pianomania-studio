@@ -66,6 +66,10 @@ set(MUSE_MODULE_DOCKWINDOW     OFF CACHE BOOL "" FORCE)
 set(MUSE_MODULE_LANGUAGES      OFF CACHE BOOL "" FORCE)
 set(MUSE_MODULE_LEARN          OFF CACHE BOOL "" FORCE)
 set(MUSE_MODULE_MULTIINSTANCES OFF CACHE BOOL "" FORCE)
+# Manages a second window by starting a second process, through QProcess, which
+# Qt for WebAssembly does not have. A converter has one window at most and does
+# not start anything. APP-WEB switches it off too.
+set(MUSE_MODULE_MULTIWINDOWS   OFF CACHE BOOL "" FORCE)
 set(MUSE_MODULE_MUSESAMPLER    OFF CACHE BOOL "" FORCE)
 set(MUSE_MODULE_SHORTCUTS      OFF CACHE BOOL "" FORCE)
 set(MUSE_MODULE_TOURS          OFF CACHE BOOL "" FORCE)
