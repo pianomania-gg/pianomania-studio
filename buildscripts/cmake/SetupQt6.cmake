@@ -67,6 +67,16 @@ if(OS_IS_LIN)
     list(APPEND QT_LIBRARIES Qt::DBus)
 endif()
 
+if (OS_IS_WASM)
+    # Qt for WebAssembly ships no QtConcurrent in the single-threaded build that
+    # the converter needs, so requiring the component fails configuration before
+    # anything compiles. Nothing built for wasm uses it either: concurrent.h is
+    # only compiled with MUSE_THREADS_SUPPORT, and its only consumers are the
+    # project and videoexport modules, which every wasm profile switches off.
+    # The APP-WEB configuration already turns this off for the same reason.
+    set(QT_ADD_CONCURRENT OFF)
+endif()
+
 if (QT_ADD_CONCURRENT)
     list(APPEND qt_components Concurrent)
     list(APPEND QT_LIBRARIES Qt::Concurrent)
