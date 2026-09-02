@@ -227,6 +227,14 @@ set(QT_QPROCESS_SUPPORTED ON)
 set(QT_CONCURRENT_SUPPORTED ON)
 set(QT_NO_PRIVATE_MODULE_WARNING ON)
 
+# Qt for WebAssembly has no QProcess, so the code behind this flag cannot compile
+# there. SetupConfigure writes muse_framework_config.h, so the value has to be
+# right before that runs, which is well before GetPlatformInfo sets OS_IS_WASM.
+# These are the same toolchain markers GetPlatformInfo itself trusts first.
+if (EMSCRIPTEN OR CMAKE_SYSTEM_NAME STREQUAL "Emscripten")
+    set(QT_QPROCESS_SUPPORTED OFF)
+endif()
+
 if(EXISTS "${CMAKE_CURRENT_LIST_DIR}/SetupConfigure.local.cmake")
     include(${CMAKE_CURRENT_LIST_DIR}/SetupConfigure.local.cmake)
 else()
@@ -242,14 +250,6 @@ set(THIRDPARTY_DIR ${PROJECT_SOURCE_DIR}/thirdparty)
 
 include(SetupBuildEnvironment)
 include(GetPlatformInfo)
-
-# Qt for WebAssembly has no QProcess, so the code behind this flag does not
-# compile there. SetupConfigure cannot decide this because it runs before
-# GetPlatformInfo, which is why the APP-WEB configuration has to key off the
-# build configuration name instead of the platform.
-if (OS_IS_WASM)
-    set(QT_QPROCESS_SUPPORTED OFF)
-endif()
 
 if (MUSE_COMPILE_USE_COMPILER_CACHE)
     include(SetupCompilerCache)
