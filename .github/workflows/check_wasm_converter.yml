@@ -83,6 +83,20 @@ jobs:
     - name: Register gcc problem matcher
       run: echo "::add-matcher::.github/problem_matchers/gcc.json"
 
+    # The converter is normally built against a Qt installed by Qt's own
+    # installer. CI uses aqt, which does not always lay out the same set of
+    # packages, so record what this kit actually provides before configuring.
+    - name: Show what the Qt wasm kit provides
+      env:
+        QT_WASM_DIR: ${{ github.workspace }}/qt-wasm/Qt/${{ env.QT_VERSION }}/wasm_singlethread
+      run: |
+        echo "--- lib/cmake packages ---"
+        ls "$QT_WASM_DIR/lib/cmake" || true
+        echo "--- anything zlib ---"
+        find "$QT_WASM_DIR" -iname '*zlib*' -maxdepth 5 || true
+        echo "--- bundled archives ---"
+        ls "$QT_WASM_DIR/lib" | grep -i -E 'bundled|zlib' || true
+
     - name: Build the converter
       env:
         QT_WASM_DIR: ${{ github.workspace }}/qt-wasm/Qt/${{ env.QT_VERSION }}/wasm_singlethread
