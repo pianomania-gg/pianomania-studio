@@ -243,6 +243,14 @@ set(THIRDPARTY_DIR ${PROJECT_SOURCE_DIR}/thirdparty)
 include(SetupBuildEnvironment)
 include(GetPlatformInfo)
 
+# Qt for WebAssembly has no QProcess, so the code behind this flag does not
+# compile there. SetupConfigure cannot decide this because it runs before
+# GetPlatformInfo, which is why the APP-WEB configuration has to key off the
+# build configuration name instead of the platform.
+if (OS_IS_WASM)
+    set(QT_QPROCESS_SUPPORTED OFF)
+endif()
+
 if (MUSE_COMPILE_USE_COMPILER_CACHE)
     include(SetupCompilerCache)
 endif(MUSE_COMPILE_USE_COMPILER_CACHE)
