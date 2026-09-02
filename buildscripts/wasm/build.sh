@@ -85,5 +85,21 @@ if [ "$found" -ne 1 ]; then
     exit 1
 fi
 
+# The converter is a GPL binary, so whoever runs it must be able to get the
+# source it was built from. Print the commit and the tag that has to be
+# published alongside it; see WebApp/wwwroot/wasm/README.md in the monorepo.
+WASM_SHA256="$(shasum -a 256 "$WEBAPP_WASM_DIR/pm-converter.wasm" | cut -d' ' -f1)"
+SOURCE_COMMIT="$(git -C "$(dirname "${BASH_SOURCE[0]}")" rev-parse HEAD 2>/dev/null || echo unknown)"
+SOURCE_DIRTY=""
+if ! git -C "$(dirname "${BASH_SOURCE[0]}")" diff --quiet 2>/dev/null; then
+    SOURCE_DIRTY=" (working tree has uncommitted changes)"
+fi
+
 echo "==> Done. Artifacts in $WEBAPP_WASM_DIR"
 ls -lh "$WEBAPP_WASM_DIR"
+echo
+echo "==> Corresponding source"
+echo "    expanded WASM SHA-256: $WASM_SHA256"
+echo "    source commit:         $SOURCE_COMMIT$SOURCE_DIRTY"
+echo "    publish this source as: composer-wasm-${WASM_SHA256:0:8}"
+echo "    then record the tag in WebApp/wwwroot/wasm/README.md and on the Composer page."
