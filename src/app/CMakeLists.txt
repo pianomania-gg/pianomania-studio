@@ -79,7 +79,10 @@ elseif(OS_IS_MAC)
 
 elseif(OS_IS_WASM)
 
-    set(EXECUTABLE_NAME MuseScoreStudio)
+    # Emit the name the artifact is actually shipped under. Emscripten writes the
+    # wasm filename into the generated .js, so renaming the pair afterwards leaves
+    # the loader asking for a file that is no longer there.
+    set(EXECUTABLE_NAME pm-converter)
 
     # Headless Pianomania converter link flags. The substantive flags (MODULARIZE,
     # EXPORT_NAME, FORCE_FILESYSTEM, INITIAL/MAXIMUM_MEMORY, ALLOW_MEMORY_GROWTH,
