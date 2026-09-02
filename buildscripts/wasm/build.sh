@@ -63,8 +63,18 @@ cmake -S "$MUSESCORE_ROOT" -B "$BUILD_DIR" \
     -DEMCC_EMBED_FONTS_DIR="$MUSESCORE_ROOT/fonts" \
     -DCMAKE_BUILD_TYPE=Release
 
+# engraving's generated moc translation unit is large enough that Emscripten's
+# clang can exhaust a build machine's memory when several compiles share it, and
+# the build is then killed with no diagnostic. Set PM_WASM_BUILD_JOBS to cap the
+# concurrency on a machine where that happens; the default stays unrestricted.
+BUILD_PARALLEL="--parallel"
+if [ -n "${PM_WASM_BUILD_JOBS:-}" ]; then
+    BUILD_PARALLEL="--parallel ${PM_WASM_BUILD_JOBS}"
+    echo "NOTE: limiting the build to ${PM_WASM_BUILD_JOBS} parallel jobs (PM_WASM_BUILD_JOBS)." >&2
+fi
+
 echo "==> Building"
-cmake --build "$BUILD_DIR" --parallel --target \
+cmake --build "$BUILD_DIR" $BUILD_PARALLEL --target \
     muse_global muse_draw muse_network muse_diagnostics \
     muse_actions muse_accessibility muse_midi muse_mpe \
     engraving context commonscene beatroot iex_mei iex_midi pmwasm \

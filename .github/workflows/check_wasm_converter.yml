@@ -102,9 +102,15 @@ jobs:
         QT_WASM_DIR: ${{ github.workspace }}/qt-wasm/Qt/${{ env.QT_VERSION }}/wasm_singlethread
         QT_HOST_DIR: ${{ github.workspace }}/qt-host/Qt/${{ env.QT_VERSION }}/gcc_64
         PM_WASM_OUTPUT_DIR: ${{ github.workspace }}/build.artifacts/wasm
+        # At full concurrency the runner is killed compiling engraving's generated
+        # moc unit, with no diagnostic beyond the signal. ccache carries most of
+        # the cost after the first green run, so the cap is cheap to keep.
+        PM_WASM_BUILD_JOBS: 2
       run: |
         echo "emcc:  $(emcc --version | head -1)"
         echo "EMSDK: ${EMSDK}"
+        echo "cores: $(nproc)  memory:"
+        free -h || true
         bash ./buildscripts/wasm/build.sh
 
     - name: Show ccache stats
