@@ -336,11 +336,21 @@ else()
     # engraving's fonts are MODULE_BIG_QRC -> separate rcc_object_fonts_* OBJECT
     # targets that define qInitResources_fonts_*() (called by engravingmodule.cpp).
     # Nested TARGET_OBJECTS don't compose through $<TARGET_OBJECTS:engraving>, so
-    # embed each one directly.
+    # embed each one directly. The piano-only slim build declares only some of
+    # these families (see src/engraving/CMakeLists.txt), so take the ones that
+    # exist rather than assuming the full set, and name the ones left out. Naming
+    # a family engraving never declared stops the generate step outright.
     foreach(font Academico Bravura Campania Edwin FreeSans FreeSerif Gootville Leland MScore
                  MuseJazz Petaluma FinaleMaestro FinaleBroadway Tabulature)
-        list(APPEND MSCORE_WASM_OBJ_SRC $<TARGET_OBJECTS:rcc_object_fonts_${font}>)
+        if (TARGET rcc_object_fonts_${font})
+            list(APPEND MSCORE_WASM_OBJ_SRC $<TARGET_OBJECTS:rcc_object_fonts_${font}>)
+        else()
+            list(APPEND MSCORE_WASM_FONTS_SKIPPED ${font})
+        endif()
     endforeach()
+    if (MSCORE_WASM_FONTS_SKIPPED)
+        message(STATUS "wasm: fonts not embedded, not declared by engraving: ${MSCORE_WASM_FONTS_SKIPPED}")
+    endif()
 
     target_sources(MuseScoreStudio PRIVATE ${MSCORE_WASM_OBJ_SRC})
 
