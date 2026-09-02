@@ -40,7 +40,16 @@ const factory = require(path.resolve(jsPath));
             console.error('[wasm:abort]', what);
             console.error(new Error('stack at abort').stack);
         },
-        print: (t) => console.log('[wasm]', t),
+        // The converter can finish and still report ok while its own log says it
+        // could not read something it needed. Glyph metadata is the example that
+        // matters: without it the score still exports, with the wrong geometry.
+        // An error in the log is a failed run.
+        print: (t) => {
+            console.log('[wasm]', t);
+            if (/\|\s*ERROR\s*\|/.test(String(t))) {
+                sawError = true;
+            }
+        },
         printErr: (t) => {
             console.error('[wasm:err]', t);
             // A fatal abort is reported here; it does not reject the init promise
