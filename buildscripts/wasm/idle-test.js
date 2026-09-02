@@ -32,6 +32,14 @@ const factory = require(path.resolve(jsPath));
 
 (async () => {
     const mod = await factory({
+        // Called before the abort is thrown, and the throw is swallowed inside
+        // initialisation, so this is the only place the frames can be captured.
+        // They carry names when the build sets PM_WASM_ASSERTIONS.
+        onAbort: (what) => {
+            sawError = true;
+            console.error('[wasm:abort]', what);
+            console.error(new Error('stack at abort').stack);
+        },
         print: (t) => console.log('[wasm]', t),
         printErr: (t) => {
             console.error('[wasm:err]', t);
