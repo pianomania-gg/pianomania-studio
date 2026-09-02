@@ -87,13 +87,19 @@ mkdir -p "$WEBAPP_WASM_DIR"
 found=0
 while IFS= read -r -d '' js; do
     base="${js%.js}"
+    # Qt writes its own loader shim into public_html beside the app. It has no
+    # .wasm of its own and is not what we ship, so the pair is what identifies
+    # the real output.
+    if [ ! -f "$base.wasm" ]; then
+        continue
+    fi
     cp -f "$js" "$WEBAPP_WASM_DIR/pm-converter.js"
     cp -f "$base.wasm" "$WEBAPP_WASM_DIR/pm-converter.wasm"
-    found=1
+    found=$((found + 1))
 done < <(find "$BUILD_DIR" -name '*.js' -path '*public_html*' -print0)
 
 if [ "$found" -ne 1 ]; then
-    echo "ERROR: could not find the emitted .js/.wasm in $BUILD_DIR. Check the app target output." >&2
+    echo "ERROR: expected exactly one emitted .js/.wasm pair in $BUILD_DIR, found ${found}." >&2
     exit 1
 fi
 
