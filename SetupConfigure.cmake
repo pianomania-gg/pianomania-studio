@@ -245,7 +245,9 @@ if(BUILD_CONFIGURATION STREQUAL "VTEST")
     set(MUE_BUILD_IMPEXP_BB_MODULE OFF)
     set(MUE_BUILD_IMPEXP_BWW_MODULE OFF)
     set(MUE_BUILD_IMPEXP_CAPELLA_MODULE OFF)
-    set(MUE_BUILD_IMPEXP_MIDI_MODULE OFF)
+    # The project module carries Pianomania's coordinated export, which calls the
+    # MIDI and MEI exporters directly, so both stay on wherever project is built.
+    set(MUE_BUILD_IMPEXP_MIDI_MODULE ON)
     set(MUE_BUILD_IMPEXP_MNX_MODULE OFF)
     set(MUE_BUILD_IMPEXP_MUSEDATA_MODULE OFF)
     set(MUE_BUILD_IMPEXP_MUSICXML_MODULE OFF)
@@ -253,7 +255,7 @@ if(BUILD_CONFIGURATION STREQUAL "VTEST")
     set(MUE_BUILD_IMPEXP_AUDIOEXPORT_MODULE OFF)
     set(MUE_BUILD_IMPEXP_IMAGESEXPORT_MODULE ON)
     set(MUE_BUILD_IMPEXP_GUITARPRO_MODULE ON)
-    set(MUE_BUILD_IMPEXP_MEI_MODULE OFF)
+    set(MUE_BUILD_IMPEXP_MEI_MODULE ON)
     set(MUE_BUILD_IMPEXP_VIDEOEXPORT_MODULE OFF)
     set(MUE_BUILD_IMPEXP_TABLEDIT_MODULE OFF)
     set(MUE_BUILD_IMPEXP_LYRICS_MODULE OFF)
@@ -339,65 +341,3 @@ endif()
 if (NOT MUSE_MODULE_UI)
     set(MUE_BUILD_APPSHELL_MODULE OFF) # hard dependency
 endif()
-
-if (NOT MUSE_MODULE_UI_QML)
-    set(MUE_BUILD_APPSHELL_QML OFF) # hard dependency
-    set(MUE_BUILD_BRAILLE_QML OFF) # hard dependency
-    set(MUE_BUILD_ENGRAVING_QML OFF) # hard dependency
-    set(MUE_BUILD_INSPECTOR_QML OFF) # hard dependency
-    set(MUE_BUILD_INSTRUMENTSSCENE_QML OFF) # hard dependency
-    set(MUE_BUILD_MUSESOUNDS_QML OFF) # hard dependency
-    set(MUE_BUILD_NOTATIONSCENE_QML OFF) # hard dependency
-    set(MUE_BUILD_PALETTE_QML OFF) # hard dependency
-    set(MUE_BUILD_PLAYBACK_QML OFF) # hard dependency
-    set(MUE_BUILD_PREFERENCES OFF) # hard dependency
-    set(MUE_BUILD_PROJECT_QML OFF) # hard dependency
-endif()
-
-if (NOT MUE_BUILD_APPSHELL_MODULE)
-    set(MUE_BUILD_APPSHELL_QML OFF) # stub does not have QML
-endif()
-
-if (NOT MUE_BUILD_INSTRUMENTSSCENE_MODULE)
-    set(MUE_BUILD_INSTRUMENTSSCENE_QML OFF) # stub does not have QML
-endif()
-
-if (NOT QT_ADD_LINGUISTTOOLS)
-    set(MUE_RUN_LRELEASE OFF) # hard dependency
-endif()
-
-if (MUSE_MODULE_NETWORK_WEBSOCKET)
-    set(QT_ADD_WEBSOCKET ON)
-endif()
-
-###########################################
-# Unit tests
-###########################################
-if (NOT MUSE_ENABLE_UNIT_TESTS)
-
-    set(MUE_BUILD_BRAILLE_TESTS OFF)
-    set(MUE_BUILD_ENGRAVING_TESTS OFF)
-    set(MUE_BUILD_IMPORTEXPORT_TESTS OFF)
-    set(MUE_BUILD_NOTATION_TESTS OFF)
-    set(MUE_BUILD_NOTATIONSCENE_TESTS OFF)
-    set(MUE_BUILD_PLAYBACK_TESTS OFF)
-    set(MUE_BUILD_PROJECT_TESTS OFF)
-    set(MUE_BUILD_CONVERTER_TESTS OFF)
-
-endif()
-
-if (MUE_GENERAL_APP)
-    if (BUILD_IS_DEBUG)
-        set(MUSE_MODULE_GLOBAL_LOGGER_DEBUGLEVEL ON)
-    else()
-        set(MUSE_MODULE_GLOBAL_LOGGER_DEBUGLEVEL OFF)
-    endif()
-endif()
-
-add_compile_definitions(KORS_PROFILER_ENABLED)
-
-if (MUE_ENABLE_LOAD_QML_FROM_SOURCE)
-    add_compile_definitions(MUE_ENABLE_LOAD_QML_FROM_SOURCE)
-endif()
-
-configure_file(${CMAKE_CURRENT_LIST_DIR}/src/app/app_config.h.in app_config.h )
