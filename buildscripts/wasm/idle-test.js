@@ -33,7 +33,15 @@ const factory = require(path.resolve(jsPath));
 (async () => {
     const mod = await factory({
         print: (t) => console.log('[wasm]', t),
-        printErr: (t) => console.error('[wasm:err]', t),
+        printErr: (t) => {
+            console.error('[wasm:err]', t);
+            // A fatal abort is reported here; it does not reject the init promise
+            // and does not raise an uncaught exception. Without this the harness
+            // reports success for a module that has already died.
+            if (String(t).includes('Aborted(')) {
+                sawError = true;
+            }
+        },
     });
     console.log(`Module initialized. Idling ${idleMs} ms to let deferred callbacks fire...`);
 

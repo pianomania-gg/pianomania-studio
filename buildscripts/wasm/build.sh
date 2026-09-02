@@ -61,6 +61,7 @@ cmake -S "$MUSESCORE_ROOT" -B "$BUILD_DIR" \
     -DQT_QMAKE_EXECUTABLE="$QT_QMAKE" \
     -DEMCC_CMAKE_TOOLCHAIN="$EMSCRIPTEN_TOOLCHAIN" \
     -DEMCC_EMBED_FONTS_DIR="$MUSESCORE_ROOT/fonts" \
+    -DPM_WASM_ASSERTIONS="${PM_WASM_ASSERTIONS:-OFF}" \
     -DCMAKE_BUILD_TYPE=Release
 
 # engraving's generated moc translation unit is large enough that Emscripten's

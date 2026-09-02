@@ -106,6 +106,10 @@ jobs:
         # moc unit, with no diagnostic beyond the signal. ccache carries most of
         # the cost after the first green run, so the cap is cheap to keep.
         PM_WASM_BUILD_JOBS: 2
+        # A check is only useful if its failures can be read. Without this an
+        # abort prints "Aborted()" and an unnamed stack. The shipped artifact is
+        # built without it.
+        PM_WASM_ASSERTIONS: 'ON'
       run: |
         echo "emcc:  $(emcc --version | head -1)"
         echo "EMSDK: ${EMSDK}"

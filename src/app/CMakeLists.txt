@@ -89,11 +89,23 @@ elseif(OS_IS_WASM)
     # --embed-file, --bind) are owned by SetupBuildEnvironment.cmake. Here we only
     # set optimization and keep the zlib the .mscz reader needs. Deliberately NO
     # -g / ASSERTIONS / DEMANGLE_SUPPORT (debug info is the dominant size cost).
+    #
+    # Without assertions an abort prints "Aborted()" and an unnamed stack, which
+    # says nothing about what failed. PM_WASM_ASSERTIONS builds a diagnosable
+    # converter instead: the abort carries a reason and the frames carry names.
+    # Off by default, so the shipped artifact keeps its size and speed.
+    if (PM_WASM_ASSERTIONS)
+        message(STATUS "wasm: building with assertions and named stack frames (PM_WASM_ASSERTIONS)")
+        set(EMCC_DIAGNOSTIC_FLAGS "-s ASSERTIONS=1 --profiling-funcs")
+    else()
+        set(EMCC_DIAGNOSTIC_FLAGS "-s ASSERTIONS=0")
+    endif()
+
     set(EMCC_LINKER_FLAGS "\
         -O3 \
         -s USE_ZLIB=1 \
         -s EXIT_RUNTIME=0 \
-        -s ASSERTIONS=0 \
+        ${EMCC_DIAGNOSTIC_FLAGS} \
         -s ALLOW_MEMORY_GROWTH=1 \
         -s ERROR_ON_UNDEFINED_SYMBOLS=0 \
         --bind \
