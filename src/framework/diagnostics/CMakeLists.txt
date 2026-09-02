@@ -119,4 +119,9 @@ endif()
 
 if (MUSE_MODULE_DIAGNOSTICS_QML)
     add_subdirectory(qml/Muse/Diagnostics)
+else()
+    # The actions controller registers an accessible-tree dump backed by a model
+    # that lives in the QML half of this module. Without the QML half the module
+    # compiles and then fails to link against a model nothing built.
+    target_compile_definitions(muse_diagnostics PRIVATE MUSE_MODULE_DIAGNOSTICS_NO_QML)
 endif()

@@ -366,6 +366,15 @@ else()
     )
 
     set_target_properties(MuseScoreStudio PROPERTIES LINK_FLAGS "${EMCC_LINKER_FLAGS}")
+
+    # Qt puts its own -sINITIAL_MEMORY on the link line through Qt6::Platform, and
+    # it lands after ours, so the 128MB in SetupBuildEnvironment never took effect
+    # and the link failed asking for more than Qt's 50MB default. Qt honours these
+    # target properties, so set the same numbers where Qt will not overwrite them.
+    set_target_properties(MuseScoreStudio PROPERTIES
+        QT_WASM_INITIAL_MEMORY "134217728"
+        QT_WASM_MAXIMUM_MEMORY "2147483648"
+    )
 endif()
 
 

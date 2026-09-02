@@ -23,7 +23,9 @@
 
 #include "types/uri.h"
 
+#ifndef MUSE_MODULE_DIAGNOSTICS_NO_QML
 #include "qml/Muse/Diagnostics/diagnosticaccessiblemodel.h"
+#endif
 
 #include "log.h"
 
@@ -49,7 +51,11 @@ void DiagnosticsActionsController::init()
     dispatcher()->reg(this, "diagnostic-show-profiler", [this]() { openUri(PROFILER_URI); });
     dispatcher()->reg(this, "diagnostic-show-navigation-tree", [this]() { openUri(NAVIGATION_TREE_URI); });
     dispatcher()->reg(this, "diagnostic-show-accessible-tree", [this]() { openUri(ACCESSIBLE_TREE_URI); });
+#ifndef MUSE_MODULE_DIAGNOSTICS_NO_QML
+    // The model that backs this lives in the module's QML half, so the action is
+    // only available when that half is built.
     dispatcher()->reg(this, "diagnostic-accessible-tree-dump", []() { DiagnosticAccessibleModel().dumpTree(); });
+#endif
     dispatcher()->reg(this, "diagnostic-show-engraving-elements", [this]() { openUri(ENGRAVING_ELEMENTS_URI, false); });
     dispatcher()->reg(this, "diagnostic-show-engraving-undostack", [this]() { openUri(ENGRAVING_UNDOSTACK_URI, false); });
     dispatcher()->reg(this, "diagnostic-show-engraving-style", [this]() { openUri(ENGRAVING_STYLE_URI, false); });
