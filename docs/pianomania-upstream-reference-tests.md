@@ -63,17 +63,31 @@ material is there after one run.
 4. Remove `UPSTREAM_REFERENCE_TESTS` from `runutests.sh` so a single `ctest -V`
    decides the gate again.
 
-## Check this first
+## All three changes are deliberate
 
-Confirm that the 1.778 spatium is intentional before re-recording anything.
-Upstream defaults a new score to 1.75 mm, and a spatium change moves every
-staff, every note spacing, and every page break in every score this fork
-creates. If it was meant, re-recording captures it. If it was not, re-recording
-freezes a layout bug into 800 reference files and the suites will then defend
-it.
+Re-recording a reference file makes the behaviour it captures permanent, so each
+change was traced back to the code that produces it before this document
+recommended re-recording anything.
 
-The other two changes are plainly deliberate: the hand assignment and the MEI
-geometry attributes are what this fork exists to produce.
+The spatium is the one that looks most like drift, and it is not.
+`src/engraving/style/styledef.cpp` takes it from
+`pm::PmPageGeometry::spatiumLayoutUnits` where upstream hardcodes
+`1.75 /*mm*/ * DPMM`. That constant is 0.07 inches, which is 1.778 mm, and it
+sits in `src/engraving/pm/pmstyle.h` beside the rest of a page format designed
+for a screen rather than for paper:
+
+```cpp
+static constexpr double pageWidthIn  = 10.0;   // 10 x 7.5 in, landscape
+static constexpr double pageHeightIn = 7.5;
+static constexpr double pageMarginIn = 0.591;
+static constexpr double spatiumIn    = 0.07;
+```
+
+The same block hides headers, footers, and instrument names. Matt confirmed the
+page format is intended.
+
+The other two changes are what this fork exists to produce: the hand assignment
+on every note and rest, and the geometry attributes on exported MEI.
 
 ## What still gates
 
