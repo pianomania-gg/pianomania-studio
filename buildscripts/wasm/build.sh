@@ -77,7 +77,7 @@ echo "==> Building"
 cmake --build "$BUILD_DIR" $BUILD_PARALLEL --target \
     muse_global muse_draw muse_network muse_diagnostics \
     muse_actions muse_accessibility muse_midi muse_mpe \
-    engraving context commonscene beatroot iex_mei iex_midi pmwasm \
+    engraving context beatroot iex_mei iex_midi pmwasm \
     MuseScoreStudio
 
 echo "==> Collecting artifacts"
