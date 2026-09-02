@@ -1,0 +1,130 @@
+name: 'Check: Wasm Converter'
+
+# Builds the headless Pianomania converter — the artifact the beta-portal
+# Converter tab loads — and checks that it starts and converts a score.
+#
+# This is not 'Build: Wasm'. That workflow builds upstream's web app under the
+# APP-WEB configuration. The converter is a different build: buildscripts/wasm/
+# build.sh with the wasm-headless profile, which drops every GUI and QML module
+# and links only engraving plus the MEI and MIDI exporters behind pmwasm.
+#
+# The toolchain versions are pinned together. Qt 6.8.3 for WebAssembly is built
+# against Emscripten 3.1.56, and version skew between the two is the usual cause
+# of link failures. The desktop build uses Qt 6.10.2; this one does not follow it.
+
+on:
+  pull_request:
+    paths:
+      - 'src/**'
+      - 'buildscripts/wasm/**'
+      - 'buildscripts/cmake/**'
+      - 'CMakeLists.txt'
+      - 'SetupConfigure.cmake'
+      - '.github/workflows/check_wasm_converter.yml'
+  workflow_dispatch:
+
+env:
+  QT_VERSION: 6.8.3
+  EMSDK_VERSION: 3.1.56
+
+jobs:
+  build_converter:
+    runs-on: ubuntu-22.04
+    steps:
+    - name: Cancel Previous Runs
+      uses: styfle/cancel-workflow-action@0.13.0
+      with:
+        access_token: ${{ github.token }}
+
+    - name: Clone repository
+      uses: actions/checkout@v6
+
+    - name: Restore ccache files
+      id: restore-ccache
+      uses: actions/cache/restore@v5
+      with:
+        path: ${{ github.workspace }}/.ccache
+        key: wasm-converter-ccache-
+        restore-keys: wasm-converter-ccache-
+
+    - name: Setup ccache
+      run: |
+        sudo apt-get update && sudo apt-get install -y ccache
+        bash ./buildscripts/ci/tools/setup_ccache_config.sh
+
+    - name: Install Emscripten
+      uses: mymindstorm/setup-emsdk@v14
+      with:
+        version: ${{ env.EMSDK_VERSION }}
+        actions-cache-folder: emsdk-cache
+
+    - name: Install Qt host tools
+      uses: jurplel/install-qt-action@v4
+      with:
+        version: ${{ env.QT_VERSION }}
+        host: linux
+        target: desktop
+        arch: linux_gcc_64
+        modules: 'qt5compat qtshadertools'
+        dir: ${{ github.workspace }}/qt-host
+        cache: true
+
+    - name: Install Qt for WebAssembly
+      uses: jurplel/install-qt-action@v4
+      with:
+        version: ${{ env.QT_VERSION }}
+        host: all_os
+        target: wasm
+        arch: wasm_singlethread
+        modules: 'qt5compat qtshadertools'
+        dir: ${{ github.workspace }}/qt-wasm
+        cache: true
+
+    - name: Register gcc problem matcher
+      run: echo "::add-matcher::.github/problem_matchers/gcc.json"
+
+    - name: Build the converter
+      env:
+        QT_WASM_DIR: ${{ github.workspace }}/qt-wasm/Qt/${{ env.QT_VERSION }}/wasm_singlethread
+        QT_HOST_DIR: ${{ github.workspace }}/qt-host/Qt/${{ env.QT_VERSION }}/gcc_64
+        PM_WASM_OUTPUT_DIR: ${{ github.workspace }}/build.artifacts/wasm
+      run: |
+        echo "emcc:  $(emcc --version | head -1)"
+        echo "EMSDK: ${EMSDK}"
+        bash ./buildscripts/wasm/build.sh
+
+    - name: Show ccache stats
+      run: ccache -sv
+
+    - name: Check the module starts
+      run: |
+        node ./buildscripts/wasm/idle-test.js \
+          ./build.artifacts/wasm/pm-converter.js 5000
+
+    - name: Check the module converts a score
+      run: |
+        node ./buildscripts/wasm/idle-test.js \
+          ./build.artifacts/wasm/pm-converter.js 5000 \
+          ./vtest/scores/accidental-24.mscz
+
+    - name: Upload the converter
+      if: always()
+      uses: actions/upload-artifact@v6
+      with:
+        name: pm-converter
+        path: ./build.artifacts/wasm/
+        if-no-files-found: warn
+
+    - name: Prepare ccache files for saving
+      id: prepare-save-ccache
+      if: always()
+      run: |
+        ccache --recompress 10
+        echo "CCACHE_TIMESTAMP=$(date -u +"%F-%T")" | tee -a $GITHUB_OUTPUT
+
+    - name: Save ccache files
+      if: always()
+      uses: actions/cache/save@v5
+      with:
+        key: ${{ steps.restore-ccache.outputs.cache-primary-key }}${{ steps.prepare-save-ccache.outputs.CCACHE_TIMESTAMP }}
+        path: ${{ github.workspace }}/.ccache

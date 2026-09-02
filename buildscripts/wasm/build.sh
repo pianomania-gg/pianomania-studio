@@ -24,7 +24,9 @@ HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 MUSESCORE_ROOT="$(cd "$HERE/../.." && pwd)"
 REPO_ROOT="$(cd "$MUSESCORE_ROOT/.." && pwd)"
 BUILD_DIR="$MUSESCORE_ROOT/build.wasm"
-WEBAPP_WASM_DIR="$REPO_ROOT/WebApp/wwwroot/wasm"
+# Defaults to the WebApp beside a monorepo checkout. Set PM_WASM_OUTPUT_DIR when
+# this repository stands on its own, as it does on CI, where there is no WebApp.
+WEBAPP_WASM_DIR="${PM_WASM_OUTPUT_DIR:-$REPO_ROOT/WebApp/wwwroot/wasm}"
 
 if ! command -v emcmake >/dev/null 2>&1; then
     echo "ERROR: emcmake not found. Did you 'source <emsdk>/emsdk_env.sh'?" >&2

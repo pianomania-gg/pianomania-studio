@@ -40,11 +40,17 @@ const factory = require(path.resolve(jsPath));
     if (msczPath) {
         const bytes = new Uint8Array(fs.readFileSync(msczPath));
         const res = mod.pmConvert(bytes);
-        console.log('pmConvert:', res && res.ok ? 'OK' : `FAILED: ${res && res.error}`);
+        if (res && res.ok) {
+            console.log('pmConvert: OK');
+        } else {
+            // A refused conversion has to fail the run, or CI reports success on it.
+            sawError = true;
+            console.error(`pmConvert: FAILED: ${res && res.error}`);
+        }
     }
 
     setTimeout(() => {
-        console.log(sawError ? 'RESULT: deferred-callback ERROR fired' : 'RESULT: clean — no deferred-callback error');
+        console.log(sawError ? 'RESULT: FAILED' : 'RESULT: clean — module initialized, no deferred-callback error');
         process.exit(sawError ? 1 : 0);
     }, idleMs);
 })().catch((e) => {
