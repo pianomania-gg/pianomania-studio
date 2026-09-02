@@ -55,6 +55,10 @@ set(MUE_RUN_LRELEASE                 OFF CACHE BOOL "" FORCE)
 set(MUSE_MODULE_AUDIO          OFF CACHE BOOL "" FORCE)
 set(MUSE_MODULE_AUDIOPLUGINS   OFF CACHE BOOL "" FORCE)
 set(MUSE_MODULE_CLOUD          OFF CACHE BOOL "" FORCE)
+# Docking windows are desktop chrome, and the module needs Qt's private Gui
+# headers, which the WebAssembly kit does not ship. It was building only because
+# a macOS kit happens to carry them. APP-WEB switches it off for the same reason.
+set(MUSE_MODULE_DOCKWINDOW     OFF CACHE BOOL "" FORCE)
 set(MUSE_MODULE_LANGUAGES      OFF CACHE BOOL "" FORCE)
 set(MUSE_MODULE_LEARN          OFF CACHE BOOL "" FORCE)
 set(MUSE_MODULE_MULTIINSTANCES OFF CACHE BOOL "" FORCE)
