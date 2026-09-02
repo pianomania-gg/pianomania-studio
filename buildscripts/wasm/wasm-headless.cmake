@@ -16,6 +16,10 @@ set(MUE_BUILD_PALETTE_MODULE         OFF CACHE BOOL "" FORCE)
 set(MUE_BUILD_INSPECTOR_MODULE       OFF CACHE BOOL "" FORCE)
 set(MUE_BUILD_INSTRUMENTSSCENE_MODULE OFF CACHE BOOL "" FORCE)
 set(MUE_BUILD_PLAYBACK_MODULE        OFF CACHE BOOL "" FORCE)
+# The preferences QML module declares a dependency on muse_ui_qml, which does not
+# exist once the UI module is off, so configuration stops there. A converter has
+# no preferences dialog to show.
+set(MUE_BUILD_PREFERENCES_MODULE     OFF CACHE BOOL "" FORCE)
 set(MUE_BUILD_MUSESOUNDS_MODULE      OFF CACHE BOOL "" FORCE)
 set(MUE_BUILD_BRAILLE_MODULE         OFF CACHE BOOL "" FORCE)
 set(MUE_BUILD_VIDEOEXPORT_MODULE     OFF CACHE BOOL "" FORCE)
