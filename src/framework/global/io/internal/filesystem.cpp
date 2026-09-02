@@ -36,24 +36,19 @@
 using namespace muse;
 using namespace muse::io;
 
-#ifdef Q_OS_WASM
-// Qt "big resource" qrc entries (the embedded engraving fonts) are unreadable in
-// Qt for WebAssembly — QFile::size()/read() return garbage multi-GB values. Those
-// font files are instead embedded into MEMFS at "/fonts" (--embed-file), so
-// redirect ":/fonts/..." accesses there. Other ":/..." qrc resources (small,
-// regular) are read normally via Qt.
-static io::path_t pmwasmRemap(const io::path_t& p)
-{
-    const std::string s = p.toStdString();
-    if (s.rfind(":/fonts/", 0) == 0) {
-        return io::path_t(s.substr(1)); // ":/fonts/X" -> "/fonts/X"
-    }
-    return p;
-}
-#define PM_REMAP(p) pmwasmRemap(p)
-#else
+// Resource paths are read as they are given, on every platform.
+//
+// This used to redirect ":/fonts/..." to copies embedded at "/fonts" on wasm,
+// because Qt "big resource" qrc entries return garbage multi-gigabyte sizes
+// there. That is true, and it is now handled where it starts: wasm registers
+// those fonts as ordinary resources instead (see muse_module_add_qrc), and they
+// read back at their real sizes.
+//
+// The redirect could not have worked in full anyway. A qrc entry names its
+// contents with an alias, and the aliases do not all match the files on disk —
+// ":/fonts/bravura/metadata.json" is bravura_metadata.json there — so every
+// renamed file failed to open while the rest appeared to work.
 #define PM_REMAP(p) (p)
-#endif
 
 FileSystem::~FileSystem()
 {

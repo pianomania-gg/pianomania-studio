@@ -25,7 +25,10 @@
 #include <QApplication>
 #include <QStyleHints>
 #include <QQuickWindow>
+#ifndef Q_OS_WASM
+// Qt for WebAssembly ships no SSL backend, so QSslSocket does not exist there.
 #include <QSslSocket>
+#endif
 
 #include "appfactory.h"
 #include "internal/commandlineparser.h"
@@ -203,12 +206,14 @@ int main(int argc, char** argv)
     return 0;
 #endif
 
+#ifndef Q_OS_WASM
     LOGI() << QString("SSL Info: supported: %1, build: %2, runtime: %3, active backend: %4, available backends: %5")
         .arg(QSslSocket::supportsSsl())
         .arg(QSslSocket::sslLibraryBuildVersionString())
         .arg(QSslSocket::sslLibraryVersionString())
         .arg(QSslSocket::activeBackend())
         .arg(QSslSocket::availableBackends().join(", "));
+#endif
 
     // ====================================================
     // Run main loop

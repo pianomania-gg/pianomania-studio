@@ -235,17 +235,15 @@ else()
 
     include(GetPlatformInfo)
 
+    target_sources(muse_global PRIVATE
+        io/internal/filesystem.cpp
+        io/internal/filesystem.h
+    )
+
     if (OS_IS_WASM)
         target_sources(muse_global PRIVATE
-            io/internal/memfilesystem.cpp
-            io/internal/memfilesystem.h
             internal/platform/web/webinteractive.cpp
             internal/platform/web/webinteractive.h
-        )
-    else()
-        target_sources(muse_global PRIVATE
-            io/internal/filesystem.cpp
-            io/internal/filesystem.h
         )
     endif()
 
@@ -286,7 +284,10 @@ elseif (CC_IS_EMCC)
     # Qt's WebAssembly kit ships the matching cross-compiled zlib archive and
     # public headers. Bind them explicitly; the Emscripten sysroot does not
     # expose zlib.h unless its separate port is enabled.
-    find_package(Qt6BundledZlib CONFIG REQUIRED)
+    # The package is Qt6BundledZLIB, spelled the way the target below is. Asking
+    # for Qt6BundledZlib resolves on a case-insensitive filesystem and fails on
+    # Linux, where the config file's name has to match exactly.
+    find_package(Qt6BundledZLIB CONFIG REQUIRED)
     get_filename_component(QT_WASM_PREFIX "${Qt6_DIR}/../../.." ABSOLUTE)
     target_link_libraries(muse_global PRIVATE Qt6::BundledZLIB)
     target_include_directories(muse_global PRIVATE "${QT_WASM_PREFIX}/include/QtZlib")

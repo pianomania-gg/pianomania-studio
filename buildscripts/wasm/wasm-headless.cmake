@@ -16,6 +16,10 @@ set(MUE_BUILD_PALETTE_MODULE         OFF CACHE BOOL "" FORCE)
 set(MUE_BUILD_INSPECTOR_MODULE       OFF CACHE BOOL "" FORCE)
 set(MUE_BUILD_INSTRUMENTSSCENE_MODULE OFF CACHE BOOL "" FORCE)
 set(MUE_BUILD_PLAYBACK_MODULE        OFF CACHE BOOL "" FORCE)
+# The preferences QML module declares a dependency on muse_ui_qml, which does not
+# exist once the UI module is off, so configuration stops there. A converter has
+# no preferences dialog to show.
+set(MUE_BUILD_PREFERENCES_MODULE     OFF CACHE BOOL "" FORCE)
 set(MUE_BUILD_MUSESOUNDS_MODULE      OFF CACHE BOOL "" FORCE)
 set(MUE_BUILD_BRAILLE_MODULE         OFF CACHE BOOL "" FORCE)
 set(MUE_BUILD_VIDEOEXPORT_MODULE     OFF CACHE BOOL "" FORCE)
@@ -55,9 +59,17 @@ set(MUE_RUN_LRELEASE                 OFF CACHE BOOL "" FORCE)
 set(MUSE_MODULE_AUDIO          OFF CACHE BOOL "" FORCE)
 set(MUSE_MODULE_AUDIOPLUGINS   OFF CACHE BOOL "" FORCE)
 set(MUSE_MODULE_CLOUD          OFF CACHE BOOL "" FORCE)
+# Docking windows are desktop chrome, and the module needs Qt's private Gui
+# headers, which the WebAssembly kit does not ship. It was building only because
+# a macOS kit happens to carry them. APP-WEB switches it off for the same reason.
+set(MUSE_MODULE_DOCKWINDOW     OFF CACHE BOOL "" FORCE)
 set(MUSE_MODULE_LANGUAGES      OFF CACHE BOOL "" FORCE)
 set(MUSE_MODULE_LEARN          OFF CACHE BOOL "" FORCE)
 set(MUSE_MODULE_MULTIINSTANCES OFF CACHE BOOL "" FORCE)
+# Manages a second window by starting a second process, through QProcess, which
+# Qt for WebAssembly does not have. A converter has one window at most and does
+# not start anything. APP-WEB switches it off too.
+set(MUSE_MODULE_MULTIWINDOWS   OFF CACHE BOOL "" FORCE)
 set(MUSE_MODULE_MUSESAMPLER    OFF CACHE BOOL "" FORCE)
 set(MUSE_MODULE_SHORTCUTS      OFF CACHE BOOL "" FORCE)
 set(MUSE_MODULE_TOURS          OFF CACHE BOOL "" FORCE)

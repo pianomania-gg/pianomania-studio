@@ -176,8 +176,12 @@ muse::Ret MemFileSystem::readFile(const muse::io::path_t& path, muse::ByteArray&
 
     if (isRC(path)) {
         QFile file(path.toQString());
-        file.open(QIODevice::ReadOnly);
-        qint64 size = file.size();
+        if (!file.open(QIODevice::ReadOnly)) {
+            LOGE() << "failed open resource: " << path;
+            return muse::make_ret(Ret::Code::UnknownError);
+        }
+
+        const qint64 size = file.size();
         data.resize(static_cast<size_t>(size));
         file.read(reinterpret_cast<char*>(data.data()), size);
     } else {

@@ -102,10 +102,12 @@ if(CC_IS_EMCC)
     set(EMCC_CMAKE_TOOLCHAIN "" CACHE FILEPATH "Path to EMCC CMake Emscripten.cmake")
     set(EMCC_INCLUDE_PATH "." CACHE PATH "Path to EMCC include dir")
 
-    # Path (in the build tree / source) to the fonts the engraving layout needs so
-    # MEI coordinate export (pm:xy, beziers, bounding boxes) is geometrically
-    # correct. Embedded into the wasm via --embed-file. Override per build.
-    set(EMCC_EMBED_FONTS_DIR "${CMAKE_SOURCE_DIR}/fonts" CACHE PATH "Fonts dir embedded into the wasm")
+    # NOTE The fonts are no longer embedded here. Engraving carries them as qrc
+    # resources and reads them from there, so a second copy on the filesystem was
+    # 34MB of the download doing nothing — 18MB of it FontForge .sfd sources that
+    # no runtime reads. The copy existed to work around Qt big resources
+    # returning garbage sizes on wasm, which is now fixed at the registration
+    # (see muse_module_add_qrc), so nothing looks the fonts up by path.
 
     # Chord-description / style files. The engraving resolves them at runtime from
     # appDataPath()+"/styles" (= "/files/share/styles" in this headless build), e.g.
@@ -127,7 +129,6 @@ if(CC_IS_EMCC)
         "-sMAXIMUM_MEMORY=2147483648"
         "-sEXPORTED_RUNTIME_METHODS=['FS']"
         "-sENVIRONMENT=web,worker,node"  # node enables a headless smoke test
-        "--embed-file" "${EMCC_EMBED_FONTS_DIR}@/fonts"
         "--embed-file" "${EMCC_EMBED_STYLES_DIR}@/files/share/styles"
     )
     string(JOIN " " EMCC_LINK_FLAGS_STR ${EMCC_LINK_FLAGS})

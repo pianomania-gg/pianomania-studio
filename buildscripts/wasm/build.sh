@@ -24,7 +24,9 @@ HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 MUSESCORE_ROOT="$(cd "$HERE/../.." && pwd)"
 REPO_ROOT="$(cd "$MUSESCORE_ROOT/.." && pwd)"
 BUILD_DIR="$MUSESCORE_ROOT/build.wasm"
-WEBAPP_WASM_DIR="$REPO_ROOT/WebApp/wwwroot/wasm"
+# Defaults to the WebApp beside a monorepo checkout. Set PM_WASM_OUTPUT_DIR when
+# this repository stands on its own, as it does on CI, where there is no WebApp.
+WEBAPP_WASM_DIR="${PM_WASM_OUTPUT_DIR:-$REPO_ROOT/WebApp/wwwroot/wasm}"
 
 if ! command -v emcmake >/dev/null 2>&1; then
     echo "ERROR: emcmake not found. Did you 'source <emsdk>/emsdk_env.sh'?" >&2
@@ -58,14 +60,24 @@ cmake -S "$MUSESCORE_ROOT" -B "$BUILD_DIR" \
     -DQMAKE="$QT_QMAKE" \
     -DQT_QMAKE_EXECUTABLE="$QT_QMAKE" \
     -DEMCC_CMAKE_TOOLCHAIN="$EMSCRIPTEN_TOOLCHAIN" \
-    -DEMCC_EMBED_FONTS_DIR="$MUSESCORE_ROOT/fonts" \
+    -DPM_WASM_ASSERTIONS="${PM_WASM_ASSERTIONS:-OFF}" \
     -DCMAKE_BUILD_TYPE=Release
 
+# engraving's generated moc translation unit is large enough that Emscripten's
+# clang can exhaust a build machine's memory when several compiles share it, and
+# the build is then killed with no diagnostic. Set PM_WASM_BUILD_JOBS to cap the
+# concurrency on a machine where that happens; the default stays unrestricted.
+BUILD_PARALLEL="--parallel"
+if [ -n "${PM_WASM_BUILD_JOBS:-}" ]; then
+    BUILD_PARALLEL="--parallel ${PM_WASM_BUILD_JOBS}"
+    echo "NOTE: limiting the build to ${PM_WASM_BUILD_JOBS} parallel jobs (PM_WASM_BUILD_JOBS)." >&2
+fi
+
 echo "==> Building"
-cmake --build "$BUILD_DIR" --parallel --target \
+cmake --build "$BUILD_DIR" $BUILD_PARALLEL --target \
     muse_global muse_draw muse_network muse_diagnostics \
     muse_actions muse_accessibility muse_midi muse_mpe \
-    engraving context commonscene beatroot iex_mei iex_midi pmwasm \
+    engraving context beatroot iex_mei iex_midi pmwasm \
     MuseScoreStudio
 
 echo "==> Collecting artifacts"
@@ -75,13 +87,19 @@ mkdir -p "$WEBAPP_WASM_DIR"
 found=0
 while IFS= read -r -d '' js; do
     base="${js%.js}"
+    # Qt writes its own loader shim into public_html beside the app. It has no
+    # .wasm of its own and is not what we ship, so the pair is what identifies
+    # the real output.
+    if [ ! -f "$base.wasm" ]; then
+        continue
+    fi
     cp -f "$js" "$WEBAPP_WASM_DIR/pm-converter.js"
     cp -f "$base.wasm" "$WEBAPP_WASM_DIR/pm-converter.wasm"
-    found=1
+    found=$((found + 1))
 done < <(find "$BUILD_DIR" -name '*.js' -path '*public_html*' -print0)
 
 if [ "$found" -ne 1 ]; then
-    echo "ERROR: could not find the emitted .js/.wasm in $BUILD_DIR. Check the app target output." >&2
+    echo "ERROR: expected exactly one emitted .js/.wasm pair in $BUILD_DIR, found ${found}." >&2
     exit 1
 fi
 

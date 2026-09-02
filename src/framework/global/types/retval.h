@@ -30,7 +30,11 @@ namespace muse {
 template<typename T>
 struct RetVal {
     Ret ret;
-    T val;
+    //! NOTE Value-initialised on purpose. A failed call returns without touching
+    //! val, and for a built-in type an uninitialised member leaves whatever was
+    //! on the stack. A caller that reads val without checking ret then acts on a
+    //! junk number rather than on nothing.
+    T val = {};
 
     RetVal() = default;
     RetVal(const Ret& r)
@@ -67,8 +71,9 @@ struct RetVal {
 template<typename T1, typename T2>
 struct RetVal2 {
     Ret ret;
-    T1 val1;
-    T2 val2;
+    //! NOTE Value-initialised for the same reason as RetVal::val above.
+    T1 val1 = {};
+    T2 val2 = {};
 
     static RetVal2<T1, T2> make_ok(const T1& v1, const T2& v2)
     {

@@ -32,19 +32,50 @@ const factory = require(path.resolve(jsPath));
 
 (async () => {
     const mod = await factory({
-        print: (t) => console.log('[wasm]', t),
-        printErr: (t) => console.error('[wasm:err]', t),
+        // Called before the abort is thrown, and the throw is swallowed inside
+        // initialisation, so this is the only place the frames can be captured.
+        // They carry names when the build sets PM_WASM_ASSERTIONS.
+        onAbort: (what) => {
+            sawError = true;
+            console.error('[wasm:abort]', what);
+            console.error(new Error('stack at abort').stack);
+        },
+        // The converter can finish and still report ok while its own log says it
+        // could not read something it needed. Glyph metadata is the example that
+        // matters: without it the score still exports, with the wrong geometry.
+        // An error in the log is a failed run.
+        print: (t) => {
+            console.log('[wasm]', t);
+            if (/\|\s*ERROR\s*\|/.test(String(t))) {
+                sawError = true;
+            }
+        },
+        printErr: (t) => {
+            console.error('[wasm:err]', t);
+            // A fatal abort is reported here; it does not reject the init promise
+            // and does not raise an uncaught exception. Without this the harness
+            // reports success for a module that has already died.
+            if (String(t).includes('Aborted(')) {
+                sawError = true;
+            }
+        },
     });
     console.log(`Module initialized. Idling ${idleMs} ms to let deferred callbacks fire...`);
 
     if (msczPath) {
         const bytes = new Uint8Array(fs.readFileSync(msczPath));
         const res = mod.pmConvert(bytes);
-        console.log('pmConvert:', res && res.ok ? 'OK' : `FAILED: ${res && res.error}`);
+        if (res && res.ok) {
+            console.log('pmConvert: OK');
+        } else {
+            // A refused conversion has to fail the run, or CI reports success on it.
+            sawError = true;
+            console.error(`pmConvert: FAILED: ${res && res.error}`);
+        }
     }
 
     setTimeout(() => {
-        console.log(sawError ? 'RESULT: deferred-callback ERROR fired' : 'RESULT: clean — no deferred-callback error');
+        console.log(sawError ? 'RESULT: FAILED' : 'RESULT: clean — module initialized, no deferred-callback error');
         process.exit(sawError ? 1 : 0);
     }, idleMs);
 })().catch((e) => {

@@ -36,6 +36,7 @@
 #include "engraving/engravingproject.h"
 #include "engraving/infrastructure/mscreader.h"
 #include "engraving/infrastructure/ifileinfoprovider.h"
+#include "engraving/rw/inoutdata.h"
 #include "engraving/dom/factory.h"
 #include "engraving/dom/masterscore.h"
 #include "engraving/dom/part.h"
@@ -207,6 +208,13 @@ public:
     muse::String displayName() const override { return muse::String(u"in"); }
     muse::DateTime birthTime() const override { return muse::DateTime(); }
     muse::DateTime lastModified() const override { return muse::DateTime(); }
+
+    // Only headers and footers read these, to choose between a real timestamp
+    // and a placeholder, and the Pianomania page style turns both off. The
+    // answers match LocalFileInfoProvider, the other provider that wraps a plain
+    // file rather than an open project.
+    bool saved() const override { return false; }
+    bool isNewlyCreated() const override { return true; }
 };
 
 }
@@ -250,8 +258,10 @@ static emscripten::val pmConvert(const emscripten::val& input)
         return errorResult("Could not open the file (not a valid MuseScore .mscz?).");
     }
 
-    mu::engraving::SettingsCompat settingsCompat;
-    muse::Ret ret = engravingProject->loadMscz(reader, settingsCompat, /*ignoreVersionError*/ false);
+    // loadMscz takes the whole read in/out record now, and SettingsCompat is one
+    // of its members. Nothing here reads the results back, so a local will do.
+    mu::engraving::rw::ReadInOutData readData;
+    muse::Ret ret = engravingProject->loadMscz(reader, &readData, /*ignoreVersionError*/ false);
     reader.close();
     if (!ret) {
         return errorResult("Failed to read score: " + ret.toString());

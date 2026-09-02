@@ -102,6 +102,18 @@ if (MUE_BUILD_APPSHELL_MODULE)
     endif()
 endif()
 
+if (OS_IS_WASM)
+    # Headless in-browser converter (Embind pmConvert). Replaces the old wasmtest
+    # stub. The GUI/audio modules are turned off for the wasm headless profile in
+    # buildscripts/wasm/wasm-headless.cmake, so only the conversion path is linked.
+    #
+    # Declared before the app: the app collects the objects of everything it links
+    # by testing each name with if(TARGET), and a target that does not exist yet
+    # fails that test silently. pmwasm's objects were being left out and the
+    # module's symbols came up undefined at link.
+    add_subdirectory(pmwasm)
+endif()
+
 # App (main)
 add_subdirectory(app)
 if (MUE_CONFIGURATION_IS_APPWEB)
@@ -110,11 +122,4 @@ endif()
 
 if (MUE_BUILD_MACOS_INTEGRATION AND OS_IS_MAC)
     add_subdirectory(macos_integration)
-endif()
-
-if (OS_IS_WASM)
-    # Headless in-browser converter (Embind pmConvert). Replaces the old wasmtest
-    # stub. The GUI/audio modules are turned off for the wasm headless profile in
-    # buildscripts/wasm/wasm-headless.cmake, so only the conversion path is linked.
-    add_subdirectory(pmwasm)
 endif()

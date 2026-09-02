@@ -79,18 +79,33 @@ elseif(OS_IS_MAC)
 
 elseif(OS_IS_WASM)
 
-    set(EXECUTABLE_NAME MuseScoreStudio)
+    # Emit the name the artifact is actually shipped under. Emscripten writes the
+    # wasm filename into the generated .js, so renaming the pair afterwards leaves
+    # the loader asking for a file that is no longer there.
+    set(EXECUTABLE_NAME pm-converter)
 
     # Headless Pianomania converter link flags. The substantive flags (MODULARIZE,
     # EXPORT_NAME, FORCE_FILESYSTEM, INITIAL/MAXIMUM_MEMORY, ALLOW_MEMORY_GROWTH,
     # --embed-file, --bind) are owned by SetupBuildEnvironment.cmake. Here we only
     # set optimization and keep the zlib the .mscz reader needs. Deliberately NO
     # -g / ASSERTIONS / DEMANGLE_SUPPORT (debug info is the dominant size cost).
+    #
+    # Without assertions an abort prints "Aborted()" and an unnamed stack, which
+    # says nothing about what failed. PM_WASM_ASSERTIONS builds a diagnosable
+    # converter instead: the abort carries a reason and the frames carry names.
+    # Off by default, so the shipped artifact keeps its size and speed.
+    if (PM_WASM_ASSERTIONS)
+        message(STATUS "wasm: building with assertions and named stack frames (PM_WASM_ASSERTIONS)")
+        set(EMCC_DIAGNOSTIC_FLAGS "-s ASSERTIONS=1 --profiling-funcs")
+    else()
+        set(EMCC_DIAGNOSTIC_FLAGS "-s ASSERTIONS=0")
+    endif()
+
     set(EMCC_LINKER_FLAGS "\
         -O3 \
         -s USE_ZLIB=1 \
         -s EXIT_RUNTIME=0 \
-        -s ASSERTIONS=0 \
+        ${EMCC_DIAGNOSTIC_FLAGS} \
         -s ALLOW_MEMORY_GROWTH=1 \
         -s ERROR_ON_UNDEFINED_SYMBOLS=0 \
         --bind \
@@ -333,14 +348,26 @@ else()
         endif()
     endforeach()
 
-    # engraving's fonts are MODULE_BIG_QRC -> separate rcc_object_fonts_* OBJECT
-    # targets that define qInitResources_fonts_*() (called by engravingmodule.cpp).
-    # Nested TARGET_OBJECTS don't compose through $<TARGET_OBJECTS:engraving>, so
-    # embed each one directly.
+    # A font registered through qt_add_big_resources becomes its own
+    # rcc_object_fonts_* OBJECT target, and those do not compose through
+    # $<TARGET_OBJECTS:engraving>, so they have to be embedded one by one.
+    #
+    # wasm does not use big resources any more (see muse_module_add_qrc: the blob
+    # objects register with wrong sizes there), so engraving carries its fonts in
+    # its own objects and none of these targets exist. The loop then finds
+    # nothing, which is correct rather than a problem, so it only reports missing
+    # families when some of them did turn up.
     foreach(font Academico Bravura Campania Edwin FreeSans FreeSerif Gootville Leland MScore
                  MuseJazz Petaluma FinaleMaestro FinaleBroadway Tabulature)
-        list(APPEND MSCORE_WASM_OBJ_SRC $<TARGET_OBJECTS:rcc_object_fonts_${font}>)
+        if (TARGET rcc_object_fonts_${font})
+            list(APPEND MSCORE_WASM_OBJ_SRC $<TARGET_OBJECTS:rcc_object_fonts_${font}>)
+        else()
+            list(APPEND MSCORE_WASM_FONTS_SKIPPED ${font})
+        endif()
     endforeach()
+    if (MSCORE_WASM_FONTS_SKIPPED AND MSCORE_WASM_OBJ_SRC MATCHES "rcc_object_fonts_")
+        message(STATUS "wasm: fonts not embedded, not declared by engraving: ${MSCORE_WASM_FONTS_SKIPPED}")
+    endif()
 
     target_sources(MuseScoreStudio PRIVATE ${MSCORE_WASM_OBJ_SRC})
 
@@ -356,6 +383,15 @@ else()
     )
 
     set_target_properties(MuseScoreStudio PROPERTIES LINK_FLAGS "${EMCC_LINKER_FLAGS}")
+
+    # Qt puts its own -sINITIAL_MEMORY on the link line through Qt6::Platform, and
+    # it lands after ours, so the 128MB in SetupBuildEnvironment never took effect
+    # and the link failed asking for more than Qt's 50MB default. Qt honours these
+    # target properties, so set the same numbers where Qt will not overwrite them.
+    set_target_properties(MuseScoreStudio PROPERTIES
+        QT_WASM_INITIAL_MEMORY "134217728"
+        QT_WASM_MAXIMUM_MEMORY "2147483648"
+    )
 endif()
 
 

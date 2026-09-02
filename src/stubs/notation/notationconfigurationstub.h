@@ -152,10 +152,6 @@ public:
     void setIsAutomaticallyPanEnabled(bool enabled)  override;
     muse::async::Notification isAutomaticallyPanEnabledChanged() const override;
 
-    bool isSmoothPanning() const override;
-    void setIsSmoothPanning(bool value) override;
-    muse::async::Notification isSmoothPanningChanged() const override;
-
     bool isPlayRepeatsEnabled() const override;
     void setIsPlayRepeatsEnabled(bool enabled)  override;
     muse::async::Notification isPlayRepeatsChanged() const override;
@@ -184,10 +180,6 @@ public:
 
     muse::ValCh<muse::Orientation> canvasOrientation() const override;
     void setCanvasOrientation(muse::Orientation orientation)  override;
-
-    bool isLimitCanvasScrollArea() const override;
-    void setIsLimitCanvasScrollArea(bool limited)  override;
-    muse::async::Notification isLimitCanvasScrollAreaChanged() const override;
 
     bool colorNotesOutsideOfUsablePitchRange() const override;
     void setColorNotesOutsideOfUsablePitchRange(bool value)  override;
@@ -228,58 +220,15 @@ public:
     int gridSizeSpatium(muse::Orientation gridOrientation) const override;
     void setGridSize(muse::Orientation gridOrientation, int sizeSpatium)  override;
 
-    bool needToShowAddTextErrorMessage() const override;
-    void setNeedToShowAddTextErrorMessage(bool show)  override;
-
-    bool needToShowAddFiguredBassErrorMessage() const override;
-    void setNeedToShowAddFiguredBassErrorMessage(bool show)  override;
-
-    bool needToShowAddGuitarBendErrorMessage() const override;
-    void setNeedToShowAddGuitarBendErrorMessage(bool show) override;
-
     bool needToShowMScoreError(const std::string& errorKey) const override;
     void setNeedToShowMScoreError(const std::string& errorKey, bool show)  override;
 
-    muse::ValCh<int> pianoKeyboardNumberOfKeys() const override;
-    void setPianoKeyboardNumberOfKeys(int number)  override;
-
     muse::ValCh<bool> midiUseWrittenPitch() const override;
     void setMidiUseWrittenPitch(bool value)  override;
-
-    bool useNewPercussionPanel() const override;
-    void setUseNewPercussionPanel(bool use) override;
-    muse::async::Notification useNewPercussionPanelChanged() const override;
-
-    bool percussionPanelUseNotationPreview() const override;
-    void setPercussionPanelUseNotationPreview(bool use) override;
-    muse::async::Notification percussionPanelUseNotationPreviewChanged() const override;
-
-    PercussionPanelAutoShowMode percussionPanelAutoShowMode() const override;
-    void setPercussionPanelAutoShowMode(PercussionPanelAutoShowMode autoShowMode) override;
-    muse::async::Notification percussionPanelAutoShowModeChanged() const override;
-
-    bool autoClosePercussionPanel() const override;
-    void setAutoClosePercussionPanel(bool autoClose) override;
-    muse::async::Notification autoClosePercussionPanelChanged() const override;
-
-    bool showPercussionPanelPadSwapDialog() const override;
-    void setShowPercussionPanelPadSwapDialog(bool show) override;
-    muse::async::Notification showPercussionPanelPadSwapDialogChanged() const override;
-
-    bool percussionPanelMoveMidiNotesAndShortcuts() const override;
-    void setPercussionPanelMoveMidiNotesAndShortcuts(bool move) override;
-    muse::async::Notification percussionPanelMoveMidiNotesAndShortcutsChanged() const override;
 
     muse::io::path_t styleFileImportPath() const override;
     void setStyleFileImportPath(const muse::io::path_t& path)  override;
     muse::async::Channel<std::string> styleFileImportPathChanged() const override;
 
-    int styleDialogLastPageIndex() const override;
-    void setStyleDialogLastPageIndex(int value) override;
-
-    int styleDialogLastSubPageIndex() const override;
-    void setStyleDialogLastSubPageIndex(int value) override;
-
-    void resetStyleDialogPageIndices() override;
 };
 }

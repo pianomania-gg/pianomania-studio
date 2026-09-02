@@ -26,9 +26,9 @@
 # MeiExporter to write MEI, and pianomaniaexport.cpp — compiled in here — for
 # MIDI), deliberately bypassing the editor-coupled project/notation modules.
 
-declare_module(pmwasm)
+muse_create_module(pmwasm)
 
-set(MODULE_SRC
+target_sources(pmwasm PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/pmconverter.cpp
     ${CMAKE_CURRENT_LIST_DIR}/pmconverter.h
 
@@ -39,7 +39,7 @@ set(MODULE_SRC
     ${CMAKE_CURRENT_LIST_DIR}/../project/internal/pianomaniaexport.h
     )
 
-set(MODULE_LINK
+target_link_libraries(pmwasm PRIVATE
     engraving
     iex_mei
     iex_midi
@@ -48,5 +48,5 @@ set(MODULE_LINK
 # NOTE: the app target (src/app/CMakeLists.txt, CC_IS_EMSCRIPTEN branch) embeds
 # pmwasm's objects via $<TARGET_OBJECTS:pmwasm>, which keeps the Embind
 # EMSCRIPTEN_BINDINGS static initializers in pmconverter.cpp alive at link.
-
-setup_module()
+# muse_create_module produces the same kind of target as every other module in
+# that loop, so the objects are collected the same way they always were.

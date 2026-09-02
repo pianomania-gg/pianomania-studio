@@ -294,19 +294,24 @@ void WebInteractive::raise(const UriQuery& uri)
     m_origin->raise(uri);
 }
 
-void WebInteractive::close(const UriQuery& uri)
+async::Promise<Ret> WebInteractive::close(const UriQuery& uri)
 {
-    m_origin->close(uri);
+    return m_origin->close(uri);
 }
 
-void WebInteractive::close(const Uri& uri)
+async::Promise<Ret> WebInteractive::close(const Uri& uri)
 {
-    m_origin->close(uri);
+    return m_origin->close(uri);
 }
 
-void WebInteractive::closeAllDialogs()
+Ret WebInteractive::closeSync(const UriQuery& uri)
 {
-    m_origin->closeAllDialogs();
+    return m_origin->closeSync(uri);
+}
+
+Ret WebInteractive::closeAllDialogsSync()
+{
+    return m_origin->closeAllDialogsSync();
 }
 
 ValCh<Uri> WebInteractive::currentUri() const
