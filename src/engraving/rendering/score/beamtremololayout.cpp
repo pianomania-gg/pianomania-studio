@@ -23,6 +23,7 @@
 #include "beamtremololayout.h"
 
 #include <array>
+#include <limits>
 
 #include "../dom/beam.h"
 #include "../dom/chordrest.h"
@@ -543,6 +544,271 @@ void BeamTremoloLayout::add8thSpaceSlant(BeamBase::LayoutData* ldata, PointF& di
     ldata->beamDist += 0.0625 * ldata->spatium;
 }
 
+bool BeamTremoloLayout::applyPianomaniaBeamPlacement(const BeamBase* item, const BeamBase::LayoutData* ldata,
+                                                     const std::vector<ChordRest*>& chordRests, int staffLines,
+                                                     bool isStartDictator, SlopeConstraint slopeConstraint, int interval,
+                                                     double startX, double endX,
+                                                     int& dictator, int& pointer)
+{
+    const Beam* beam = item->isType(ElementType::BEAM) ? item_cast<const Beam*>(item) : nullptr;
+    if (!beam || beam->userModified() || ldata->crossStaffBeamPos != BeamBase::CrossStaffBeamPosition::INVALID
+        || ldata->tab || ldata->isGrace || ldata->beamSpacing != 3
+        || !muse::RealIsEqual(beam->growLeft(), 1.0) || !muse::RealIsEqual(beam->growRight(), 1.0)) {
+        return false;
+    }
+
+    const staff_idx_t staffIdx = chordRests.front()->vStaffIdx();
+    for (const ChordRest* cr : chordRests) {
+        if (!cr->isChord()) {
+            return false;
+        }
+        const Chord* chord = toChord(cr);
+        const int beams = strokeCount(ldata, cr);
+        if (chord->vStaffIdx() != staffIdx || chord->up() != ldata->up || chord->tremoloTwoChord()
+            || beams < 1 || beams > 3) {
+            return false;
+        }
+    }
+
+    const double widthInSpaces = std::abs(endX - startX) / ldata->spatium;
+    const int maxRise = widthInSpaces < 3.0 ? 2 : widthInSpaces < 8.0 ? 4 : 8;
+
+    int desiredRise = 0;
+    if (!beam->noSlope() && slopeConstraint != SlopeConstraint::FLAT && interval != 0) {
+        const int startLine = ldata->up ? toChord(chordRests.front())->upNote()->line()
+                              : toChord(chordRests.front())->downNote()->line();
+        const int endLine = ldata->up ? toChord(chordRests.back())->upNote()->line()
+                            : toChord(chordRests.back())->downNote()->line();
+        const int desiredMagnitude = slopeConstraint == SlopeConstraint::SMALL_SLOPE ? 1 : std::min(interval, maxRise);
+        desiredRise = (endLine > startLine ? 1 : -1) * desiredMagnitude;
+    }
+
+    const int staffBottom = (staffLines - 1) * 4;
+    const double halfBeamThickness = ldata->beamWidth / ldata->spatium * 2.0;
+    auto isStaffLine = [staffBottom](double position) {
+        if (position < 0.0 || position > staffBottom) {
+            return false;
+        }
+        return muse::RealIsEqual(position / 4.0, std::round(position / 4.0));
+    };
+    auto intersectsStaff = [staffBottom, halfBeamThickness](double center) {
+        return center + halfBeamThickness >= 0.0 && center - halfBeamThickness <= staffBottom;
+    };
+    auto beamLevelMeetsStaffLine = [&](double center, int rise, bool isStart) {
+        if (!intersectsStaff(center)) {
+            return true;
+        }
+        if (isStaffLine(center)) {
+            return true;
+        }
+        if (rise == 0) {
+            return isStaffLine(center - halfBeamThickness) || isStaffLine(center + halfBeamThickness);
+        }
+        const bool useTopEdge = (isStart && rise < 0) || (!isStart && rise > 0);
+        return isStaffLine(center + (useTopEdge ? -halfBeamThickness : halfBeamThickness));
+    };
+    auto endpointIsValid = [&](double outer, int beamCount, bool isStart, int rise) {
+        for (int level = 0; level < beamCount; ++level) {
+            const double center = outer + level * (ldata->up ? ldata->beamSpacing : -ldata->beamSpacing);
+            if (!beamLevelMeetsStaffLine(center, rise, isStart)) {
+                return false;
+            }
+        }
+
+        if (rise != 0 || !intersectsStaff(outer) || beamCount == 1) {
+            return true;
+        }
+        const bool primaryCentered = isStaffLine(outer);
+        const bool primaryUsesDirectedEdge = isStaffLine(outer + (ldata->up ? -halfBeamThickness : halfBeamThickness));
+        if (beamCount == 2) {
+            return primaryCentered || primaryUsesDirectedEdge;
+        }
+        return primaryUsesDirectedEdge;
+    };
+    auto hasClearance = [&](int candidateStart, int candidateEnd) {
+        for (const ChordRest* cr : chordRests) {
+            const Chord* chord = toChord(cr);
+            const double chordX = chordBeamAnchorX(ldata, cr, ChordBeamAnchorType::Middle);
+            const double proportion = muse::RealIsEqual(endX, startX) ? 0.0 : (chordX - startX) / (endX - startX);
+            const double outer = candidateStart + proportion * (candidateEnd - candidateStart);
+            const int beamCount = strokeCount(ldata, cr);
+            const double inner = outer + (beamCount - 1) * (ldata->up ? ldata->beamSpacing : -ldata->beamSpacing);
+            const int noteLine = ldata->up ? chord->upNote()->line() : chord->downNote()->line();
+            const double noteCenter = noteLine * 2.0;
+
+            // A normal 3.5sp stem reaches through the far half of the outer beam, so its preferred
+            // beam-center distance is 3.25sp. Allow the established 3.25sp short-stem exception,
+            // whose center distance is 3sp, when seating or contour calls for it.
+            if (ldata->up ? noteCenter - outer < 12.0 : outer - noteCenter < 12.0) {
+                return false;
+            }
+
+            // Keep 2.5 spaces through the far edge of the innermost beam. This matches the
+            // total-stem convention: the corresponding near-edge clearance is 2 spaces.
+            if (ldata->up) {
+                if (noteCenter - (inner - halfBeamThickness) < 10.0) {
+                    return false;
+                }
+                // When the chord needs ledgers below the staff, leave the bottom staff line clear
+                // between the first ledger and the innermost beam.
+                if (noteLine >= staffLines * 2 && inner + halfBeamThickness >= staffBottom) {
+                    return false;
+                }
+            } else {
+                if ((inner + halfBeamThickness) - noteCenter < 10.0) {
+                    return false;
+                }
+                // The corresponding top-staff rule for down stems and ledgers above the staff.
+                if (noteLine <= -2 && inner - halfBeamThickness <= 0.0) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    };
+
+    auto runEndpointsAreValid = [&](int candidateStart, int candidateEnd) {
+        const int rise = candidateEnd - candidateStart;
+        const size_t lastIndex = chordRests.size() - 1;
+        auto outerAt = [&](size_t index) {
+            // The beam's ends are exactly the candidate positions. The first and last stems sit a
+            // fraction inside them, which must not move a slanted end off its staff line.
+            if (index == 0) {
+                return static_cast<double>(candidateStart);
+            }
+            if (index == lastIndex) {
+                return static_cast<double>(candidateEnd);
+            }
+            const double chordX = chordBeamAnchorX(ldata, chordRests[index], ChordBeamAnchorType::Middle);
+            const double proportion = muse::RealIsEqual(endX, startX) ? 0.0 : (chordX - startX) / (endX - startX);
+            return candidateStart + proportion * rise;
+        };
+        auto runEndpointIsValid = [&](size_t index, bool isStart) {
+            // A slanted beam crosses inner stems between quarter spaces, so only its two ends can
+            // sit, straddle or hang.
+            if (rise != 0 && index != 0 && index != lastIndex) {
+                return true;
+            }
+            return endpointIsValid(outerAt(index), strokeCount(ldata, chordRests[index]), isStart, rise);
+        };
+
+        // Validate the anchored ends of every continuous beam run: the group's two ends, and on a
+        // flat beam also the internal ends of secondary and tertiary runs where durations or
+        // explicit beam breaks change within the group.
+        for (int level = 0; level < 3; ++level) {
+            size_t runStart = chordRests.size();
+            for (size_t i = 0; i < chordRests.size(); ++i) {
+                bool broken16 = false;
+                bool broken32 = false;
+                beam->calcBeamBreaks(chordRests[i], i == 0 ? nullptr : chordRests[i - 1], level, broken16, broken32);
+                const bool startsNewRun = broken16 || broken32;
+                const bool hasLevel = level < strokeCount(ldata, chordRests[i]);
+                if (startsNewRun && runStart < i) {
+                    if (!runEndpointIsValid(runStart, true) || !runEndpointIsValid(i - 1, false)) {
+                        return false;
+                    }
+                    runStart = chordRests.size();
+                }
+                if (hasLevel && runStart == chordRests.size()) {
+                    runStart = i;
+                } else if (!hasLevel && runStart < chordRests.size()) {
+                    if (!runEndpointIsValid(runStart, true) || !runEndpointIsValid(i - 1, false)) {
+                        return false;
+                    }
+                    runStart = chordRests.size();
+                }
+            }
+            if (runStart < chordRests.size()
+                && (!runEndpointIsValid(runStart, true) || !runEndpointIsValid(chordRests.size() - 1, false))) {
+                return false;
+            }
+        }
+        return true;
+    };
+    bool found = false;
+    int bestStart = 0;
+    int bestRise = 0;
+    double bestScore = std::numeric_limits<double>::max();
+    const int maximumCandidateRise = desiredRise == 0 ? 0 : maxRise;
+    for (int magnitude = 0; magnitude <= maximumCandidateRise; ++magnitude) {
+        const int rise = desiredRise < 0 ? -magnitude : magnitude;
+        double minimumIdeal = std::numeric_limits<double>::max();
+        double maximumIdeal = std::numeric_limits<double>::lowest();
+        double hardBoundary = ldata->up ? std::numeric_limits<double>::max() : std::numeric_limits<double>::lowest();
+        for (const ChordRest* cr : chordRests) {
+            const Chord* chord = toChord(cr);
+            const double chordX = chordBeamAnchorX(ldata, cr, ChordBeamAnchorType::Middle);
+            const double proportion = muse::RealIsEqual(endX, startX) ? 0.0 : (chordX - startX) / (endX - startX);
+            const double preferred = (chordBeamAnchorY(ldata, cr) - item->pagePos().y()) / (ldata->spatium / 4.0);
+            const double idealStart = preferred - proportion * rise;
+            minimumIdeal = std::min(minimumIdeal, idealStart);
+            maximumIdeal = std::max(maximumIdeal, idealStart);
+
+            const int beamCount = strokeCount(ldata, cr);
+            const int levelOffset = (beamCount - 1) * ldata->beamSpacing;
+            const int noteLine = ldata->up ? chord->upNote()->line() : chord->downNote()->line();
+            const double noteCenter = noteLine * 2.0;
+            double boundary = ldata->up
+                              ? std::min(noteCenter - 12.0, noteCenter + halfBeamThickness - 10.0 - levelOffset)
+                              : std::max(noteCenter + 12.0, noteCenter + 10.0 + levelOffset - halfBeamThickness);
+            if (ldata->up && noteLine >= staffLines * 2) {
+                boundary = std::min(boundary, staffBottom - halfBeamThickness - levelOffset);
+            } else if (!ldata->up && noteLine <= -2) {
+                boundary = std::max(boundary, halfBeamThickness + levelOffset);
+            }
+            boundary -= proportion * rise;
+            hardBoundary = ldata->up ? std::min(hardBoundary, boundary) : std::max(hardBoundary, boundary);
+        }
+        constexpr int CANDIDATE_MARGIN = 16; // four staff spaces beyond the ideal and hard boundaries
+        const int minimumCandidate = static_cast<int>(std::floor(std::min(minimumIdeal, hardBoundary))) - CANDIDATE_MARGIN;
+        const int maximumCandidate = static_cast<int>(std::ceil(std::max(maximumIdeal, hardBoundary))) + CANDIDATE_MARGIN;
+        for (int candidateStart = minimumCandidate; candidateStart <= maximumCandidate; ++candidateStart) {
+            const int candidateEnd = candidateStart + rise;
+            if (!runEndpointsAreValid(candidateStart, candidateEnd) || !hasClearance(candidateStart, candidateEnd)) {
+                continue;
+            }
+            double score = 0.0;
+            for (const ChordRest* cr : chordRests) {
+                const double chordX = chordBeamAnchorX(ldata, cr, ChordBeamAnchorType::Middle);
+                const double proportion = muse::RealIsEqual(endX, startX) ? 0.0 : (chordX - startX) / (endX - startX);
+                const double candidate = candidateStart + proportion * rise;
+                const double preferred = (chordBeamAnchorY(ldata, cr) - item->pagePos().y()) / (ldata->spatium / 4.0);
+                const double error = candidate - preferred;
+                score += error * error;
+            }
+            const double riseError = rise - desiredRise;
+            score += 2.0 * riseError * riseError;
+            const bool betterTie = muse::RealIsEqual(score, bestScore)
+                                   && (std::abs(riseError) < std::abs(bestRise - desiredRise)
+                                       || (std::abs(riseError) == std::abs(bestRise - desiredRise)
+                                           && (std::abs(rise) < std::abs(bestRise)
+                                               || (std::abs(rise) == std::abs(bestRise) && candidateStart < bestStart))));
+            if (!found || score < bestScore || betterTie) {
+                found = true;
+                bestStart = candidateStart;
+                bestRise = rise;
+                bestScore = score;
+            }
+        }
+    }
+    if (found) {
+        const int bestEnd = bestStart + bestRise;
+        dictator = isStartDictator ? bestStart : bestEnd;
+        pointer = isStartDictator ? bestEnd : bestStart;
+        return true;
+    }
+
+    // Eligible inputs always admit a flat beam outside the staff. Continue away from the notes
+    // until every level clears the staff rather than silently retaining the legacy placement.
+    int outsideStart = ldata->up ? -4 : staffBottom + 4;
+    while (!runEndpointsAreValid(outsideStart, outsideStart) || !hasClearance(outsideStart, outsideStart)) {
+        outsideStart += ldata->up ? -1 : 1;
+    }
+    dictator = outsideStart;
+    pointer = outsideStart;
+    return true;
+}
+
 bool BeamTremoloLayout::computeTremoloUp(const BeamBase::LayoutData* ldata)
 {
     if (!ldata->beam || !ldata->beam->cross()) {
@@ -765,6 +1031,10 @@ bool BeamTremoloLayout::calculateAnchors(const BeamBase* item, BeamBase::LayoutD
         }
     }
 
+    const bool pianomaniaPlacementApplied = applyPianomaniaBeamPlacement(
+        item, ldata, chordRests, staffLines, isStartDictator, specialSlant, interval, startAnchor.x(), endAnchor.x(), dictator,
+        pointer);
+
     ldata->startAnchor.setY(quarterSpace * (isStartDictator ? dictator : pointer) + item->pagePos().y());
     ldata->endAnchor.setY(quarterSpace * (isStartDictator ? pointer : dictator) + item->pagePos().y());
 
@@ -772,7 +1042,7 @@ bool BeamTremoloLayout::calculateAnchors(const BeamBase* item, BeamBase::LayoutD
     if (item->isType(ElementType::BEAM) && item_cast<const Beam*>(item)->userModified()) {
         add8th = false;
     }
-    if (!ldata->tab && add8th) {
+    if (!ldata->tab && add8th && !pianomaniaPlacementApplied) {
         add8thSpaceSlant(ldata, isStartDictator ? ldata->startAnchor : ldata->endAnchor, dictator, pointer, beamCount, interval,
                          targetLine, isFlat);
     }

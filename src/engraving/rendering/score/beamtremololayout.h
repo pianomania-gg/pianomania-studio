@@ -95,6 +95,11 @@ private:
                                    int interval, int desiredSlant);
     static void add8thSpaceSlant(BeamBase::LayoutData* ldata, PointF& dictatorAnchor, int dictator, int pointer, int beamCount,
                                  int interval, int targetLine, bool Flat);
+    static bool applyPianomaniaBeamPlacement(const BeamBase* item, const BeamBase::LayoutData* ldata,
+                                             const std::vector<ChordRest*>& chordRests, int staffLines,
+                                             bool isStartDictator, SlopeConstraint slopeConstraint, int interval,
+                                             double startX, double endX,
+                                             int& dictator, int& pointer);
     static bool noSlope(const Beam* beam);
 
     static bool calculateAnchorsCross(const BeamBase* item, BeamBase::LayoutData* ldata, const LayoutConfiguration& conf);

@@ -45,7 +45,27 @@ class Engraving_BeamTests : public ::testing::Test
 {
 public:
     void beam(const char* path);
+    static std::vector<Beam*> beamsInScore(MasterScore* score);
 };
+
+std::vector<Beam*> Engraving_BeamTests::beamsInScore(MasterScore* score)
+{
+    std::vector<Beam*> beams;
+    for (Measure* measure = score->firstMeasure(); measure; measure = measure->nextMeasure()) {
+        for (Segment* segment = measure->first(SegmentType::ChordRest); segment;
+             segment = segment->next(SegmentType::ChordRest)) {
+            EngravingItem* item = segment->element(0);
+            if (!item || !item->isChordRest()) {
+                continue;
+            }
+            Beam* beam = toChordRest(item)->beam();
+            if (beam && (beams.empty() || beams.back() != beam)) {
+                beams.push_back(beam);
+            }
+        }
+    }
+    return beams;
+}
 
 //---------------------------------------------------------
 //   beam
@@ -97,6 +117,99 @@ TEST_F(Engraving_BeamTests, beamG)
 TEST_F(Engraving_BeamTests, beamPositions)
 {
     beam("beamPositions.mscx");
+}
+
+TEST_F(Engraving_BeamTests, pianomaniaAutomaticBeamPlacement)
+{
+    MasterScore* score = ScoreRW::readScore(BEAM_DATA_DIR + u"beamPositions.mscx");
+    ASSERT_TRUE(score);
+    score->doLayout();
+
+    const std::vector<Beam*> beams = beamsInScore(score);
+    ASSERT_EQ(beams.size(), 76u);
+    auto eighthSpaces = [](Beam* beam) {
+        return PairF(std::round(beam->beamPos().first * 8.0), std::round(beam->beamPos().second * 8.0));
+    };
+
+    // One-beam first-ledger cases leave a staff line between the beam and ledger, mirrored by stem direction.
+    EXPECT_EQ(eighthSpaces(beams[8]), PairF(-4.0, -4.0));
+    EXPECT_EQ(eighthSpaces(beams[9]), PairF(40.0, 40.0));
+    // Line-note semiquavers use the approved short 3.25sp total stem placement in both directions.
+    EXPECT_EQ(eighthSpaces(beams[23]), PairF(8.0, 8.0));
+    EXPECT_EQ(eighthSpaces(beams[31]), PairF(24.0, 24.0));
+    // Line-note demisemiquavers use 4sp total stems with hanging-up and sitting-down outer beams.
+    EXPECT_EQ(eighthSpaces(beams[42]), PairF(2.0, 2.0));
+    EXPECT_EQ(eighthSpaces(beams[50]), PairF(30.0, 30.0));
+
+    delete score;
+}
+
+TEST_F(Engraving_BeamTests, pianomaniaManualBeamPlacementIsPreserved)
+{
+    MasterScore* score = ScoreRW::readScore(BEAM_DATA_DIR + u"beamPositions.mscx");
+    ASSERT_TRUE(score);
+    score->doLayout();
+
+    const std::vector<Beam*> beams = beamsInScore(score);
+    ASSERT_FALSE(beams.empty());
+    beams.front()->setBeamPos(PairF(1.25, 1.75));
+    score->doLayout();
+
+    EXPECT_TRUE(beams.front()->userModified());
+    EXPECT_NEAR(beams.front()->beamPos().first, 1.25, 0.0001);
+    EXPECT_NEAR(beams.front()->beamPos().second, 1.75, 0.0001);
+
+    delete score;
+}
+
+TEST_F(Engraving_BeamTests, pianomaniaAutomaticBeamRiseCaps)
+{
+    MasterScore* score = ScoreRW::readScore(BEAM_DATA_DIR + u"flippedDirection.mscx");
+    ASSERT_TRUE(score);
+    score->doLayout();
+
+    bool foundNonFlatBeam = false;
+    for (Beam* beam : beamsInScore(score)) {
+        bool eligible = !beam->userModified() && !beam->cross() && !beam->isGrace()
+                        && std::abs(beam->beamSpacing() - 3) < 0.0001;
+        const staff_idx_t staffIdx = beam->elements().front()->vStaffIdx();
+        for (ChordRest* cr : beam->elements()) {
+            eligible = eligible && cr->isChord() && cr->vStaffIdx() == staffIdx && cr->up() == beam->up()
+                       && cr->beams() >= 1 && cr->beams() <= 3;
+        }
+        if (!eligible) {
+            continue;
+        }
+
+        const double width = std::abs(beam->endAnchor().x() - beam->startAnchor().x()) / beam->spatium();
+        const double maximumRise = width < 3.0 ? 0.5 : width < 8.0 ? 1.0 : 2.0;
+        const PairF position = beam->beamPos();
+        const double rise = std::abs(position.second - position.first);
+        EXPECT_LE(rise, maximumRise + 0.0001);
+        foundNonFlatBeam |= rise > 0.0001;
+    }
+    EXPECT_TRUE(foundNonFlatBeam);
+
+    delete score;
+}
+
+TEST_F(Engraving_BeamTests, pianomaniaRisingGroupsSlantWithTheMelody)
+{
+    MasterScore* score = ScoreRW::readScore(BEAM_DATA_DIR + u"pianomaniaRisingGroups.mscx");
+    ASSERT_TRUE(score);
+    score->doLayout();
+
+    // Für Elise bars 3 and 4: C4-E4-A4 and E4-G#4-B4 sixteenths, stems up, with the beam inside the staff.
+    const std::vector<Beam*> beams = beamsInScore(score);
+    ASSERT_EQ(beams.size(), 2u);
+    for (Beam* beam : beams) {
+        ASSERT_TRUE(beam->up());
+        // Positions grow downward, so a beam that rises with the melody ends at least a quarter space higher.
+        const PairF position = beam->beamPos();
+        EXPECT_LE(position.second, position.first - 0.25 + 0.0001);
+    }
+
+    delete score;
 }
 
 // if the beamNoSlope style parameter is true, all beams are flat

@@ -1998,7 +1998,9 @@ TEST_F(Engraving_PianomaniaPrettifyTests, prettifyButtonPersistsFingeringsAndTem
     // The slur and staff edge make the strict 3sp preference unreachable for
     // some of these notes. The repair must still bring the opening run into a
     // bounded, staff-adjacent pocket instead of leaving it near the page top.
-    constexpr double maximumSafeDetachmentSp = 4.5;
+    // The run is beamed, and the fingerings sit above a beam that rises with
+    // the melody, so the middle notes' fingerings land about 4.75sp away.
+    constexpr double maximumSafeDetachmentSp = 5.0;
     for (size_t i = 0; i < expectedPitches.size(); ++i) {
         ASSERT_TRUE(rightHand[i]->note());
         EXPECT_EQ(rightHand[i]->note()->pitch(), expectedPitches[i]);
