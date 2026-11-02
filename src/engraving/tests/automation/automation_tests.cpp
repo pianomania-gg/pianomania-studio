@@ -78,20 +78,20 @@ TEST_F(Engraving_AutomationTests, Init_Dynamics)
 
     // 1st measure
     AutomationCurve expectedCurve;
-    expectedCurve[480] = AutomationPoint { MID_VALUE, P_VALUE, InterpolationType::Linear }; // 2nd beat: p
-    expectedCurve[1440] = AutomationPoint { P_VALUE, MP_VALUE, InterpolationType::Linear }; // 4th beat: mp
+    expectedCurve[480] = AutomationPoint { MID_VALUE, P_VALUE, InterpolationType::Linear, std::nullopt }; // 2nd beat: p
+    expectedCurve[1440] = AutomationPoint { P_VALUE, MP_VALUE, InterpolationType::Linear, std::nullopt }; // 4th beat: mp
 
     // 2nd measure
-    expectedCurve[1920] = AutomationPoint { MP_VALUE, F_VALUE, InterpolationType::Linear }; // 1st beat: sf
-    expectedCurve[2400] = AutomationPoint { F_VALUE, MP_VALUE, InterpolationType::Linear }; // 2nd beat: mp
-    expectedCurve[2880] = AutomationPoint { MP_VALUE, P_VALUE, InterpolationType::Exponential }; // 3rd beat: p (pf)
-    expectedCurve[3264] = AutomationPoint { P_VALUE, F_VALUE, InterpolationType::Linear }; // 4th beat: f (pf)
+    expectedCurve[1920] = AutomationPoint { MP_VALUE, F_VALUE, InterpolationType::Linear, std::nullopt }; // 1st beat: sf
+    expectedCurve[2400] = AutomationPoint { F_VALUE, MP_VALUE, InterpolationType::Linear, std::nullopt }; // 2nd beat: mp
+    expectedCurve[2880] = AutomationPoint { MP_VALUE, P_VALUE, InterpolationType::Exponential, std::nullopt }; // 3rd beat: p (pf)
+    expectedCurve[3264] = AutomationPoint { P_VALUE, F_VALUE, InterpolationType::Linear, std::nullopt }; // 4th beat: f (pf)
 
     // 3rd measure
-    expectedCurve[4800] = AutomationPoint { F_VALUE, P_VALUE, InterpolationType::Linear }; // 3rd beat: p (hairpin starts)
+    expectedCurve[4800] = AutomationPoint { F_VALUE, P_VALUE, InterpolationType::Linear, std::nullopt }; // 3rd beat: p (hairpin starts)
 
     // 4th measure
-    expectedCurve[5760] = AutomationPoint { FF_VALUE, FF_VALUE, InterpolationType::Linear }; // 1st beat: ff (hairpin ends)
+    expectedCurve[5760] = AutomationPoint { FF_VALUE, FF_VALUE, InterpolationType::Linear, std::nullopt }; // 1st beat: ff (hairpin ends)
 
     checkCurvesMatch(actualCurve, expectedCurve);
 
@@ -101,7 +101,8 @@ TEST_F(Engraving_AutomationTests, Init_Dynamics)
 
     // 3rd measure
     expectedCurve.clear();
-    expectedCurve[3840] = AutomationPoint { MID_VALUE, F_VALUE, InterpolationType::Linear }; // 1st beat: f (applied only to 2nd voice)
+    // 1st beat: f (applied only to 2nd voice)
+    expectedCurve[3840] = AutomationPoint { MID_VALUE, F_VALUE, InterpolationType::Linear, std::nullopt };
 
     checkCurvesMatch(actualCurve, expectedCurve);
 
